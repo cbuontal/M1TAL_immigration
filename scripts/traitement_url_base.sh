@@ -34,6 +34,8 @@ fichier_tableau=$2 # le fichier HTML en sortie
 # on utilise la commande :
 # curl -I lien.html
 # pour obtenir seulement l'entête de la réponse du serveur
+# -L pour gérer les réponses 301 "moved permanently"
+# -s pour le mode silencieux et ne pas polluer l'affichage du terminal
 
 # la réponse se trouve dans la première ligne du résultat, deuxième élément
 # on peut l'obtenir en extrayant la première ligne et en sélectionnant son 2è élément
