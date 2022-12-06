@@ -30,6 +30,7 @@ fi
 fichier_urls=$1 # le fichier d'URL en entrée
 fichier_tableau=$2 # le fichier HTML en sortie
 
+basename=$(basename -s .txt $fichier_urls)
 
 # on utilise la commande :
 # curl -I lien.html
@@ -53,18 +54,52 @@ echo 	"<html>
 	<body>
 		<h1 class=\"title\">Tableau des URLs</h1>
 		<table class=\"table is-bordered\">
-			<thead><tr><th>ligne</th><th>code HTTP</th><th>URL</th></tr></thead>" > $fichier_tableau
+			<thead><tr><th>ligne</th><th>code HTTP</th><th>URL</th><th>encodage</th></tr></thead>" > "tableaux/$fichier_tableau"
 
 
 # pour chaque URL du fichier URL :
 
 lineno=1;
 
-while read -r line;
+while read -r URL;
 do
-	URL=$line
-	CODE_HTTP=$(curl -I $URL | grep HTTP | cut -d ' ' -f 2)
-	echo "			<tr><td>$lineno</td><td>$CODE_HTTP</td><td>$URL</td></tr>" >> $fichier_tableau
+	echo -e "\tURL : $URL";
+
+	# réponse HTTP
+	code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)
+	# récupération de l'encodage
+	charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
+	
+	if [[ -z $charset ]]
+	then
+		echo -e "\tencodage non détecté, on prendra UTF-8 par défaut.";
+		charset="UTF-8";
+	else
+		echo -e "\tencodage : $charset";
+	fi
+	
+	if [[ $code -eq 200 ]]
+	then
+		dump=$(lynx -dump -nolist -assume_charset=$charset -display_charset=$charset $URL)
+		if [[ $charset -ne "UTF-8" && -n "$dump" ]]
+		then
+			dump=$(echo $dump | iconv -f $charset -t UTF-8//IGNORE)
+		fi
+	else
+		echo -e "\tcode différent de 200 utilisation d'un dump vide"
+		dump=""
+		charset=""
+	fi
+	
+	echo "$dump" > "dumps-text/$basename-$lineno.txt"
+	
+	aspiration=$(curl $URL)
+	echo "$aspiration" > "aspirations/$basename-$lineno.html"
+	
+	
+	
+	
+	echo "			<tr><td>$lineno</td><td>$code</td><td>$URL</td><td>$charset</td></tr>" >> "tableaux/$fichier_tableau"
 	lineno=$((lineno+1));
 done < $fichier_urls
 
@@ -76,7 +111,7 @@ done < $fichier_urls
 #on ferme le fichier
 echo "		</table>
 	</body> 
-</html>" >> $fichier_tableau
+</html>" >> "tableaux/$fichier_tableau"
 
 
 
