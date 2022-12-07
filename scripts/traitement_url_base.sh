@@ -31,6 +31,7 @@ fichier_urls=$1 # le fichier d'URL en entrée
 fichier_tableau=$2 # le fichier HTML en sortie
 
 basename=$(basename -s .txt $fichier_urls)
+mot="移民"
 
 # on utilise la commande :
 # curl -I lien.html
@@ -52,9 +53,9 @@ echo 	"<html>
 		<title>Tableau des URLS</title>
 	</head>
 	<body>
-		<h1 class=\"title\">Tableau des URLs</h1>
+		<h1 class=\"title\">Tableau des URLs $basename</h1>
 		<table class=\"table is-bordered\">
-			<thead><tr><th>ligne</th><th>code HTTP</th><th>URL</th><th>encodage</th></tr></thead>" > "tableaux/$fichier_tableau"
+			<thead><tr><th>ligne</th><th>code HTTP</th><th>URL</th><th>encodage</th><th>dump</th><th>html</th><th>occurrences</th><th>contextes</th><th>concordances</th></tr></thead>" > "tableaux/$fichier_tableau"
 
 
 # pour chaque URL du fichier URL :
@@ -77,6 +78,8 @@ do
 	else
 		echo -e "\tencodage : $charset";
 	fi
+	# pour transformer les 'utf-8' en 'UTF-8' :
+	charset=$(echo $charset | tr "[a-z]" "[A-Z]")
 	
 	if [[ $code -eq 200 ]]
 	then
@@ -91,15 +94,23 @@ do
 		charset=""
 	fi
 	
-	echo "$dump" > "dumps-text/$basename-$lineno.txt"
+	echo "$dump" > "./dumps-text/$basename-$lineno.txt"
 	
 	aspiration=$(curl $URL)
-	echo "$aspiration" > "aspirations/$basename-$lineno.html"
+	echo "$aspiration" > "./aspirations/$basename-$lineno.html"
+
+	# compte du nombre d'occurrences
+  	NB_OCC=$(grep -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)
+
+  	# extraction des contextes
+  	grep -E -A2 -B2 $mot ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt
+
+  	# construction des concordances avec une commande externe
+  	bash scripts/concordance.sh ./dumps-text/$basename-$lineno.txt $mot > ./concordances/$basename-$lineno.html
+
 	
 	
-	
-	
-	echo "			<tr><td>$lineno</td><td>$code</td><td>$URL</td><td>$charset</td></tr>" >> "tableaux/$fichier_tableau"
+	echo "			<tr><td>$lineno</td><td>$code</td><td>$URL</td><td>$charset</td><td><a href="../aspirations/$basename-$lineno.html">html</a></td><td><a href="../dumps-text/$basename-$lineno.txt">text</a></td><td>$NB_OCC</td><td><a href="../contextes/$basename-$lineno.txt">contextes</a></td><td><a href="../concordances/$basename-$lineno.html">concordance</a></td></tr>" >> "tableaux/$fichier_tableau"
 	lineno=$((lineno+1));
 done < $fichier_urls
 
