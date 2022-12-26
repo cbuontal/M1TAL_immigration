@@ -281,7 +281,7 @@ References
   37. https://www.francemediasmonde.com/cn/legal-notice
   38. https://www.francemediasmonde.com/cn/privacy
   39. https://www.francemediasmonde.com/cn/cookies
-  40. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57735-9730TMP.html
+  40. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L64000-3755TMP.html
   41. https://savoirs.rfi.fr/cn
   42. https://musique.rfi.fr/
   43. https://www.rfi-instrumental.com/en
@@ -309,7 +309,7 @@ References
   65. file:///tw/
   66. file:///km/
   67. file:///fa/
-  68. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57735-9730TMP.html
+  68. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L64000-3755TMP.html
   69. file:///cn/再次收听/
   70. file:///cn/专栏检索/
   71. file:///cn/直播
@@ -318,7 +318,7 @@ References
   74. file:///cn/港澳台/
   75. file:///cn/亚洲
   76. file:///cn/美洲
-  77. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57735-9730TMP.html#main-content
+  77. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L64000-3755TMP.html#main-content
   78. file:///cn/
   79. file:///cn/欧洲/
   80. file:///cn/作者/阿曼亭/
@@ -340,16 +340,16 @@ References
   95. https://www.france24.com/
   96. https://www.mc-doualiya.com/
   97. https://www.francemediasmonde.com/cn/
-  98. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57735-9730TMP.html
-  99. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57735-9730TMP.html
- 100. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57735-9730TMP.html
+  98. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L64000-3755TMP.html
+  99. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L64000-3755TMP.html
+ 100. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L64000-3755TMP.html
  101. file://localhost/cn/
  102. https://www.facebook.com/dialog/share?app_id=113191652055439&href=https%3A%2F%2Frfi.my%2F8t3h.F&redirect_uri=https%3A%2F%2Fwww.rfi.fr%2Fcn%2F%25E6%25AC%25A7%25E6%25B4%25B2%2F20221107-%25E8%258B%25B1%25E9%25A6%2596%25E7%259B%25B8%25E8%258B%258F%25E7%25BA%25B3%25E5%2585%258B%25E8%25A1%25A8%25E7%25A4%25BA%25E6%2584%25BF%25E4%25B8%258E%25E6%25B3%2595%25E5%259B%25BD%25E5%259C%25A8%25E7%25A7%25BB%25E6%25B0%2591%25E9%2597%25AE%25E9%25A2%2598%25E4%25B8%258A-%25E5%25AF%2586%25E5%2588%2587%25E5%2590%2588%25E4%25BD%259C&locale=zh_CN
  103. whatsapp://send/?text=%E8%8B%B1%E9%A6%96%E7%9B%B8%E8%8B%8F%E7%BA%B3%E5%85%8B%E8%A1%A8%E7%A4%BA%E6%84%BF%E4%B8%8E%E6%B3%95%E5%9B%BD%E5%9C%A8%E7%A7%BB%E6%B0%91%E9%97%AE%E9%A2%98%E4%B8%8A%E2%80%9C%E5%AF%86%E5%88%87%E5%90%88%E4%BD%9C%E2%80%9D%20-%20https%3A%2F%2Frfi.my%2F8t3h.W
  104. https://web.whatsapp.com/send?text=%E8%8B%B1%E9%A6%96%E7%9B%B8%E8%8B%8F%E7%BA%B3%E5%85%8B%E8%A1%A8%E7%A4%BA%E6%84%BF%E4%B8%8E%E6%B3%95%E5%9B%BD%E5%9C%A8%E7%A7%BB%E6%B0%91%E9%97%AE%E9%A2%98%E4%B8%8A%E2%80%9C%E5%AF%86%E5%88%87%E5%90%88%E4%BD%9C%E2%80%9D%20-%20https%3A%2F%2Frfi.my%2F8t3h.W
  105. https://twitter.com/intent/tweet?url=https%3A%2F%2Frfi.my%2F8t3h.T&via=RFI_Cn&related=RFI_Cn&text=%E8%8B%B1%E9%A6%96%E7%9B%B8%E8%8B%8F%E7%BA%B3%E5%85%8B%E8%A1%A8%E7%A4%BA%E6%84%BF%E4%B8%8E%E6%B3%95%E5%9B%BD%E5%9C%A8%E7%A7%BB%E6%B0%91%E9%97%AE%E9%A2%98%E4%B8%8A%E2%80%9C%E5%AF%86%E5%88%87%E5%90%88%E4%BD%9C%E2%80%9D&lang=zh-cn
- 106. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57735-9730TMP.html
- 107. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57735-9730TMP.html
+ 106. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L64000-3755TMP.html
+ 107. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L64000-3755TMP.html
  108. file://localhost/cn/%E6%AC%A7%E6%B4%B2/20221225-%E6%AC%A7%E7%9B%9F%E4%B8%93%E5%91%98%E8%92%82%E9%BB%98%E6%9B%BC%E6%96%AF-%E6%99%AE%E4%BA%AC%E5%B7%B2%E7%BB%8F%E8%BE%93%E4%BA%86%EF%BC%8C%E5%B0%B1%E5%83%8F1943%E5%B9%B4%E7%9A%84%E5%B8%8C%E7%89%B9%E5%8B%92%E4%B8%80%E6%A0%B7
  109. file://localhost/cn/%E6%AC%A7%E6%B4%B2/20221225-%E4%BF%84%E6%B5%B7%E5%86%9B%E9%83%A8%E9%80%A0%E8%88%B9%E5%8E%82%E6%80%BB%E7%BB%8F%E7%90%86%E5%B8%83%E6%89%8E%E7%A7%91%E5%A4%AB66%E5%B2%81%E7%AA%81%E7%84%B6%E5%8E%BB%E4%B8%96%EF%BC%8C%E6%AD%BB%E5%9B%A0%E4%B8%8D%E6%98%8E
  110. file://localhost/cn/%E6%AC%A7%E6%B4%B2/20221222-%E4%B9%8C%E5%85%8B%E5%85%B0%E6%80%BB%E7%BB%9F%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA%E9%97%AA%E7%94%B5%E5%BC%8F%E8%AE%BF%E7%BE%8E%E5%90%8E%E7%BB%8F%E6%B3%A2%E5%85%B0%E8%BF%94%E5%9B%BD

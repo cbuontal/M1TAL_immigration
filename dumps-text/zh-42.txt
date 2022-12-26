@@ -109,8 +109,8 @@ References
    7. https://www.iask.ca/
    8. https://www.iask.ca/
    9. https://www.iask.ca/
-  10. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57530-6053TMP.html
-  11. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57530-6053TMP.html
+  10. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63778-9753TMP.html
+  11. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63778-9753TMP.html
   12. https://www.iask.ca/news/category/canada
   13. https://www.iask.ca/news/407939
   14. https://www.iask.ca/news/author/admin
@@ -130,18 +130,18 @@ References
   28. https://jetpack.wordpress.com/jetpack-comment/?blogid=202177651&postid=384771&comment_registration=0&require_name_email=1&stc_enabled=0&stb_enabled=0&show_avatars=1&avatar_default=gravatar_default&greeting=发表评论&jetpack_comments_nonce=e4ead183d2&greeting_reply=向%s进行回复&color_scheme=light&lang=zh_CN&jetpack_version=11.0&show_cookie_consent=10&has_cookie_consent=0&token_key=;normal;&sig=271b65bb02429179ea60e7f47cd9844bc133397e#parent=https://www.iask.ca/news/384771
 
    Hidden links:
-  30. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57530-6053TMP.html
-  31. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57530-6053TMP.html
-  32. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57530-6053TMP.html
-  33. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57530-6053TMP.html
-  34. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57530-6053TMP.html
-  35. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57530-6053TMP.html
-  36. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57530-6053TMP.html
+  30. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63778-9753TMP.html
+  31. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63778-9753TMP.html
+  32. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63778-9753TMP.html
+  33. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63778-9753TMP.html
+  34. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63778-9753TMP.html
+  35. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63778-9753TMP.html
+  36. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63778-9753TMP.html
   37. https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.iask.ca%2Fnews%2F384771
   38. https://twitter.com/intent/tweet?text=%E6%B8%A5%E4%BA%AC%E6%94%B670%E4%B8%87%E4%B8%B4%E6%97%B6%E7%AD%BE%E8%AF%81%E7%94%B3%E8%AF%B7+%E5%B7%B2%E8%8E%B7%E7%AD%BE%E8%AF%81%E4%B9%8C%E5%85%8B%E5%85%B0%E4%BA%BA%E4%BB%851%2F3%E6%8A%B5%E5%8A%A0%28%E5%9B%BE%29&url=https%3A%2F%2Fwww.iask.ca%2Fnews%2F384771&via=%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%AE%B6%E5%9B%AD
   39. https://pinterest.com/pin/create/button/?url=https://www.iask.ca/news/384771&media=https://www.iask.ca/wp-content/uploads/2022/11/frc-6d09359723b3b389dd43536a377643fa.jpg&description=%E6%B8%A5%E4%BA%AC%E6%94%B670%E4%B8%87%E4%B8%B4%E6%97%B6%E7%AD%BE%E8%AF%81%E7%94%B3%E8%AF%B7+%E5%B7%B2%E8%8E%B7%E7%AD%BE%E8%AF%81%E4%B9%8C%E5%85%8B%E5%85%B0%E4%BA%BA%E4%BB%851%2F3%E6%8A%B5%E5%8A%A0%28%E5%9B%BE%29
   40. https://api.whatsapp.com/send?text=%E6%B8%A5%E4%BA%AC%E6%94%B670%E4%B8%87%E4%B8%B4%E6%97%B6%E7%AD%BE%E8%AF%81%E7%94%B3%E8%AF%B7+%E5%B7%B2%E8%8E%B7%E7%AD%BE%E8%AF%81%E4%B9%8C%E5%85%8B%E5%85%B0%E4%BA%BA%E4%BB%851%2F3%E6%8A%B5%E5%8A%A0%28%E5%9B%BE%29%20%0A%0A%20https://www.iask.ca/news/384771
-  41. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L57530-6053TMP.html
+  41. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63778-9753TMP.html
   42. https://www.iask.ca/news/407939
   43. https://www.iask.ca/news/407935
   44. https://www.iask.ca/news/407934

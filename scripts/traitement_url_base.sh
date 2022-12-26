@@ -69,7 +69,7 @@ do
 	# réponse HTTP
 	code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)
 	# récupération de l'encodage
-	charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
+	charset=$(curl -Ls $URL -D - -o "./aspirations/fich-$lineno.html" | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
 
 	if [[ -z $charset ]]
 	then
@@ -80,6 +80,12 @@ do
 	fi
 	# pour transformer les 'utf-8' en 'UTF-8' :
 	charset=$(echo $charset | tr "[a-z]" "[A-Z]")
+
+	# cette page pose problème...
+	if [[ $URL == "https://www.cnr.cn/sx/yw/20221129/t20221129_526078646.shtml" ]]
+	then
+		charset="gb2312"
+	fi
 
 	if [[ $code -eq 200 ]]
 	then
