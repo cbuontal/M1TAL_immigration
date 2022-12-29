@@ -41,7 +41,7 @@ echo "
 <tbody>
 "
 
-grep -E -o "(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}" $fichier_text | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/"
+grep -E -o "(\P{Han}){0,5}\b$motif\b(\P{Han}){0,5}" $fichier_text | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/"
 
 echo "
 </tbody>
