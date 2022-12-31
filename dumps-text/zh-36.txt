@@ -119,13 +119,13 @@ References
   18. http://chihe.sohu.com/
   19. http://cul.sohu.com/
   20. http://astro.sohu.com/
-  21. https://www.sohu.com/subject
+  21. https://www.sohu.com/xchannel/TURBd01EQXhPVGt5
   22. http://game.sohu.com/
   23. http://fun.sohu.com/
   24. http://acg.sohu.com/
   25. http://pets.sohu.com/
   26. javascript:void(0)
-  27. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63619-2435TMP.html
+  27. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L19612-4469TMP.html
   28. javascript:;
   29. file://www.sohu.com/?strategyid=00001
   30. https://www.microsoft.com/zh-cn/store/p/搜狐uwp/9nb9229mmbjh
@@ -137,6 +137,6 @@ References
   35. https://mp.sohu.com/profile?xpt=b1NlSFRzOVlVNl9mUWZYU3RQY2xmdUdWTGFzSUB3ZWNoYXQuc29odS5jb20=&_f=index_pagemp_1
   36. javascript:void(0);
   37. javascript:void(0)
-  38. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63619-2435TMP.html
+  38. file://localhost/var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L19612-4469TMP.html
   39. http://www.sohu.com/?strategyid=00004
   40. javascript:void(0)

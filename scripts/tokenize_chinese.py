@@ -4,6 +4,9 @@ import thulac
 import errno
 import fileinput
 
+# utilisation : python3 tokenize_chinese.py chinois.txt
+# possibilité de rediriger la sortie avec >, >>
+
 # autre possibilité, lancer la commande:
 # python -m thulac chinois.txt chinois_seg_output.txt -seg_only
 # Mais ne permet pas les redirections d'entrées/sorties

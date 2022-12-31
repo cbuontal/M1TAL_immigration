@@ -30,7 +30,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="//statics.itc.cn/web/static/images/pic/sohu-logo/logo-72.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="//statics.itc.cn/web/static/images/pic/sohu-logo/logo-114.png" />
 <link rel="apple-touch-icon" sizes="144x144" href="//statics.itc.cn/web/static/images/pic/sohu-logo/logo-144.png" />
-<link href="//statics.itc.cn/web/static/css/main-fe7a658645.css" rel="stylesheet"/>
+<link href="//statics.itc.cn/web/static/css/main-42809146be.css" rel="stylesheet"/>
 <script>
     //  加载监控代码
 </script>
@@ -141,7 +141,7 @@
 																										<a href="http://chihe.sohu.com/">美食</a>
 																										<a href="http://cul.sohu.com/">文化</a>
 																										<a href="http://astro.sohu.com/">星座</a>
-																										<a href="https://www.sohu.com/subject">专题</a>
+																										<a href="https://www.sohu.com/xchannel/TURBd01EQXhPVGt5">专题</a>
 																										<a href="http://game.sohu.com/">游戏</a>
 																										<a href="http://fun.sohu.com/">搞笑</a>
 																										<a href="http://acg.sohu.com/">动漫</a>
@@ -380,7 +380,7 @@
                                     </div>
                 <div class="abroad-article-author-card-message">
                     <span class="abroad-article-author-card-message-label">文章</span>
-                    <span class="abroad-article-author-card-message-value" data-value="110" data-role="info-article-num"><em></em></span>
+                    <span class="abroad-article-author-card-message-value" data-value="114" data-role="info-article-num"><em></em></span>
                     <span class="abroad-article-author-card-message-divide"></span>
                     <span class="abroad-article-author-card-message-label">总阅读</span>
                     <span class="abroad-article-author-card-message-value" data-role="info-read-num"><em></em></span>
@@ -486,7 +486,7 @@
 <!--<script src="//statics.itc.cn/web/static/js/ie8hack-07e05e83f1.js"></script>-->
 <script src="//txt.go.sohu.com/ip/soip"></script>
 <script src="//statics.itc.cn/spm/prod/js/1.0.2/index.js"></script>
-<script src="//statics.itc.cn/web/static/js/main-6f6d4d2a0b.js"></script>
+<script src="//statics.itc.cn/web/static/js/main-3f930a1179.js"></script>
 <script src="//js.sohu.com/pv.js"></script>
              <script>
 try{console.log("执行成功")
@@ -522,7 +522,6 @@ catch(e){
                 '<a href="javascript:window.location.reload()" target="_blank" class="cached-btn"' +
                 '><em class="icon-cached"></em>刷新</a></div>';
     $(document.body).prepend(html);
-    // Raven.captureException(e);
     console.error("发生错误",e);
 }
 </script>
@@ -541,12 +540,11 @@ catch(e){
         if (version<8) {
             document.body.innerHTML=html;
             var reg = new RegExp("(^| )SUV=([^;]*)(;|$)");
-            var suvs = unescape(document.cookie.match(reg)[2]); 
+            var suvs = unescape(document.cookie.match(reg)[2]);
             var spv_server_src = "http://pv.sohu.com/action.gif?actionId=10078&SUV="+suvs;
             var scripts = document.createElement('script');
             scripts.src = spv_server_src;
-            document.body.appendChild(scripts);   
-            Raven.captureException(new Error('ie'+version));   
+            document.body.appendChild(scripts);
         }
     }
 })()
@@ -580,6 +578,5 @@ catch(e){
             window._taboola = window._taboola || [];
             _taboola.push({flush: true});
         </script>
-        <script type="text/javascript" src="//m2d.m2.ai/pg.sohu.com.js" async></script>
     </body>
 </html>

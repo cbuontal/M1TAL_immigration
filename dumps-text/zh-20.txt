@@ -213,7 +213,7 @@ References
    8. http://blog.sina.com.cn/
    9. http://photo.sina.com.cn/
   10. http://zhuanlan.sina.com.cn/
-  11. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63185-2417TMP.html
+  11. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L19178-3157TMP.html
   12. http://auto.sina.com.cn/
   13. http://edu.sina.com.cn/
   14. http://fashion.sina.com.cn/
@@ -231,7 +231,7 @@ References
   26. http://travel.sina.com.cn/
   27. http://mail.sina.com.cn/
   28. http://news.sina.com.cn/guide/
-  29. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63185-2417TMP.html
+  29. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L19178-3157TMP.html
   30. http://m.sina.com.cn/m/weibo.shtml
   31. http://news.sina.com.cn/m/sinanews.html
   32. http://finance.sina.com.cn/mobile/comfinanceweb.shtml?source=daohang01
@@ -243,7 +243,7 @@ References
   38. http://m.sina.com.cn/m/weather.shtml
   39. http://my.sina.com.cn/#location=fav
   40. https://login.sina.com.cn/signup/signup?entry=news
-  41. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L63185-2417TMP.html
+  41. file:///var/folders/xb/1x7j4xwd1lqc8q3190yj2dk00000gn/T/L19178-3157TMP.html
   42. https://news.sina.com.cn/
   43. javascript:;
   44. javascript:;
