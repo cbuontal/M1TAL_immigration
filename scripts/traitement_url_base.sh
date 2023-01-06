@@ -34,11 +34,13 @@ basename=$(basename -s .txt $fichier_urls)
 
 if [[ $lang == 'zh' ]]
 then
-mot="移民"
+	mot="移民"
 elif [[ $lang == 'ru' ]]
+then
  # mot russe
 elif [[ $lang == 'fr' ]]
-mot="(im|é)migr\w+"
+then
+	mot="(im|é)migr\w+"
 fi
 
 # on utilise la commande :
@@ -123,7 +125,7 @@ do
   NB_OCC=$(grep -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)
 
   # extraction des contextes
-  grep -E -A2 -B2 $mot ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt
+  grep -E -A1 -B1 $mot ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt
 
   # construction des concordances avec une commande externe
   bash scripts/concordance.sh $lang ./dumps-text/$basename-$lineno.txt $mot > ./concordances/$basename-$lineno.html
@@ -134,9 +136,11 @@ do
 done < $fichier_urls
 
 elif [[ $lang == 'ru' ]]
+then
 ## traitement en russe
 
 elif [[ $lang == 'fr' ]]
+then
 ## traitement en français
 
 fi

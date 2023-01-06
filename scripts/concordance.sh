@@ -57,8 +57,10 @@ if [[ $lang == 'fr' ]]
 then
 	## traitement du français
 elif [[ $lang == 'ru' ]]
+then
 	### traitement du russe
 elif [[ $lang == 'zh' ]]
+then
 
 grep -Po "(\p{Han}){0,5}$motif(\p{Han}){0,5}" $fichier_text | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/"
 
