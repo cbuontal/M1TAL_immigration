@@ -37,7 +37,7 @@ then
 	mot="移民"
 elif [[ $lang == 'ru' ]]
 then
- # mot russe
+ echo "russe"
 elif [[ $lang == 'fr' ]]
 then
 	mot="(im|é)migr\w+"
@@ -137,11 +137,11 @@ done < $fichier_urls
 
 elif [[ $lang == 'ru' ]]
 then
-## traitement en russe
+ echo "russe"
 
 elif [[ $lang == 'fr' ]]
 then
-## traitement en français
+echo "français"
 
 fi
 

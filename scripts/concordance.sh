@@ -55,10 +55,10 @@ echo "
 
 if [[ $lang == 'fr' ]]
 then
-	## traitement du français
+	echo "fr"
 elif [[ $lang == 'ru' ]]
 then
-	### traitement du russe
+	echo "ru"
 elif [[ $lang == 'zh' ]]
 then
 
