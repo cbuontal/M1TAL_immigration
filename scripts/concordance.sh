@@ -6,14 +6,14 @@
 #
 #
 
+lang=$1 # fr, ru, zh
+fichier_text=$2
+motif=$3
 
-fichier_text=$1
-motif=$2
-
-if [[ $# -ne 2 ]]
+if [[ $# -ne 3 ]]
 then
-	echo "Ce programme demande exactement deux arguments."
-	echo "Usage : $0 <fichier> <motif>"
+	echo "Ce programme demande exactement trois arguments."
+	echo "Usage : $0 <langue> <fichier> <motif>"
 	exit
 fi
 
@@ -27,6 +27,11 @@ if [[ -z $motif ]]
 then
   echo "le motif est vide"
   exit
+fi
+
+if [[ $lang != 'fr' || $lang != 'ru' || $lang != 'zh' ]]
+then
+	exit
 fi
 
 echo "
@@ -48,7 +53,16 @@ echo "
 <tbody>
 "
 
+if [[ $lang == 'fr' ]]
+then
+	## traitement du français
+elif [[ $lang == 'ru' ]]
+	### traitement du russe
+elif [[ $lang == 'zh' ]]
+
 grep -Po "(\p{Han}){0,5}$motif(\p{Han}){0,5}" $fichier_text | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/"
+
+fi
 
 echo "
 </tbody>

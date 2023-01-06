@@ -19,19 +19,27 @@
 # !!!!!!
 
 
-if [ $# -ne 2 ]
+if [ $# -ne 3 ]
 then
-	echo "Il faut deux paramètres."
-	echo "Utilisation : bash traitement_url_base.sh nom_fichier_URL nom_fichier_HTML"
+	echo "Il faut trois paramètres."
+	echo "Utilisation : bash traitement_url_base.sh <langue> <nom_fichier_URL> <nom_fichier_HTML>"
 	exit
 fi
 
-
-fichier_urls=$1 # le fichier d'URL en entrée
-fichier_tableau=$2 # le fichier HTML en sortie
+lang=$1
+fichier_urls=$2 # le fichier d'URL en entrée
+fichier_tableau=$3 # le fichier HTML en sortie
 
 basename=$(basename -s .txt $fichier_urls)
+
+if [[ $lang == 'zh' ]]
+then
 mot="移民"
+elif [[ $lang == 'ru' ]]
+ # mot russe
+elif [[ $lang == 'fr' ]]
+mot="(im|é)migr\w+"
+fi
 
 # on utilise la commande :
 # curl -I lien.html
@@ -61,6 +69,9 @@ echo 	"<html>
 # pour chaque URL du fichier URL :
 
 lineno=1;
+
+if [[ $lang == 'zh' ]]
+then
 
 while read -r URL;
 do
@@ -115,13 +126,20 @@ do
   grep -E -A2 -B2 $mot ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt
 
   # construction des concordances avec une commande externe
-  bash scripts/concordance.sh ./dumps-text/$basename-$lineno.txt $mot > ./concordances/$basename-$lineno.html
-
+  bash scripts/concordance.sh $lang ./dumps-text/$basename-$lineno.txt $mot > ./concordances/$basename-$lineno.html
 
 
 	echo "			<tr><td>$lineno</td><td>$code</td><td>$URL</td><td>$charset</td><td><a href="../aspirations/$basename-$lineno.html">html</a></td><td><a href="../dumps-text/$basename-$lineno.txt">text</a></td><td>$NB_OCC</td><td><a href="../contextes/$basename-$lineno.txt">contextes</a></td><td><a href="../concordances/$basename-$lineno.html">concordance</a></td></tr>" >> "tableaux/$fichier_tableau"
 	lineno=$((lineno+1));
 done < $fichier_urls
+
+elif [[ $lang == 'ru' ]]
+## traitement en russe
+
+elif [[ $lang == 'fr' ]]
+## traitement en français
+
+fi
 
 
 #on ferme le fichier
