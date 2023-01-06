@@ -29,8 +29,9 @@ then
   exit
 fi
 
-if [[ $lang != 'fr' || $lang != 'ru' || $lang != 'zh' ]]
+if [[ $lang != 'fr' && $lang != 'ru' && $lang != 'zh' ]]
 then
+	echo "C'est quoi cette langue ?"
 	exit
 fi
 
@@ -61,9 +62,7 @@ then
 	echo "ru"
 elif [[ $lang == 'zh' ]]
 then
-
-grep -Po "(\p{Han}){0,5}$motif(\p{Han}){0,5}" $fichier_text | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/"
-
+	grep -Po "(\p{Han}){0,5}$motif(\p{Han}){0,5}" $fichier_text | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/"
 fi
 
 echo "

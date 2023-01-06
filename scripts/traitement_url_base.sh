@@ -128,7 +128,7 @@ do
   grep -E -A1 -B1 $mot ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt
 
   # construction des concordances avec une commande externe
-  bash scripts/concordance.sh $lang ./dumps-text/$basename-$lineno.txt $mot > ./concordances/$basename-$lineno.html
+  bash scripts/concordance.sh zh ./dumps-text/$basename-$lineno.txt $mot > ./concordances/$basename-$lineno.html
 
 
 	echo "			<tr><td>$lineno</td><td>$code</td><td>$URL</td><td>$charset</td><td><a href="../aspirations/$basename-$lineno.html">html</a></td><td><a href="../dumps-text/$basename-$lineno.txt">text</a></td><td>$NB_OCC</td><td><a href="../contextes/$basename-$lineno.txt">contextes</a></td><td><a href="../concordances/$basename-$lineno.html">concordance</a></td></tr>" >> "tableaux/$fichier_tableau"
