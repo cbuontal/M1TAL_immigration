@@ -1,0 +1,1236 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><meta charset="UTF-8"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","errorBeacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-78923f4eeeb9214e963","applicationID":"287781646","transactionName":"JhpeRQoXXV4ASx0TVxYBQx4LEF5F","queueTime":0,"applicationTime":114,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.eu01.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"322542312",accountID:"3352208",trustKey:"3352208",xpid:"VwUCU1RTABACXFZVDwABUlI=",licenseKey:"NRJS-78923f4eeeb9214e963",applicationID:"287781646"};/*! For license information please see nr-loader-spa-1220.min.js.LICENSE.txt */
+!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.NRBA=t():e.NRBA=t()}(self,(function(){return function(){var e,t,n={9034:function(e,t,n){"use strict";var r=n(4168);t.Z=(0,r.ky)(16)},5973:function(e,t,n){"use strict";n.d(t,{I:function(){return r}});var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1])},4280:function(e,t,n){"use strict";n.d(t,{H:function(){return o}});var r=document.createElement("div");r.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e";var o,i=r.getElementsByTagName("div").length;o=4===i?6:3===i?7:2===i?8:1===i?9:0},5955:function(e,t,n){"use strict";n.d(t,{I:function(){return r}});var r=function(e,t){var n=this;return e&&"object"==typeof e?t&&"object"==typeof t?(Object.assign(this,t),void Object.entries(e).forEach((function(e){var t=e[0],r=e[1];n[t]=r}))):console.error("setting a Configurable requires a model to set its initial properties"):console.error("setting a Configurable requires an object as input")}},441:function(e,t,n){"use strict";n.d(t,{C:function(){return c},L:function(){return u}});var r=n(1424),o=n(5955),i={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function c(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for "+e+" was never set");return a[e]}function u(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=new o.I(t,i),(0,r.Qy)(e,a[e],"info")}},1476:function(e,t,n){"use strict";n.d(t,{Dg:function(){return u},Mt:function(){return s},P_:function(){return c}});var r=n(1424),o=n(5955),i={privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0},metrics:{enabled:!0},page_action:{enabled:!0},page_view_event:{enabled:!0},page_view_timing:{enabled:!0},session_trace:{enabled:!0},spa:{enabled:!0}},a={};function c(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!a[e])throw new Error("Configuration for "+e+" was never set");return a[e]}function u(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");a[e]=new o.I(t,i),(0,r.Qy)(e,a[e],"config")}function s(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var n=c(e);if(n){for(var r=t.split("."),o=0;o<r.length-1;o++)if("object"!=typeof(n=n[r[o]]))return;n=n[r[r.length-1]]}return n}},2085:function(e,t,n){"use strict";n.d(t,{Y:function(){return r}});var r=(0,n(1424).mF)().o},1220:function(e,t,n){"use strict";n.d(t,{O:function(){return w},s:function(){return O}});var r={};n.r(r),n.d(r,{agent:function(){return a},match:function(){return f},version:function(){return c}});var o=n(4280),i=n(6959),a=null,c=null;if(navigator.userAgent){var u=navigator.userAgent,s=u.match(/Version\/(\S+)\s+Safari/);s&&-1===u.indexOf("Chrome")&&-1===u.indexOf("Chromium")&&(a="Safari",c=s[1])}function f(e,t){if(!a)return!1;if(e!==a)return!1;if(!t)return!0;if(!c)return!1;for(var n=c.split("."),r=t.split("."),o=0;o<r.length;o++)if(r[o]!==n[o])return!1;return!0}var d=n(5955),l=n(1424),p=n(4168),h=window.sessionStorage,v="NRBA_SESSION_ID";var m=n(1476),g=window.XMLHttpRequest,y=g&&g.prototype,b={};function w(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!b[e])throw new Error("Runtime for "+e+" was never set");return b[e]}function O(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");var n,a;b[e]=new d.I(t,(n=e,{customTransaction:void 0,disabled:!1,features:{},maxBytes:6===o.H?2e3:3e4,offset:(0,i.yf)(),onerror:void 0,origin:""+window.location,ptid:void 0,releaseIds:{},sessionId:!0===(0,m.Mt)(n,"privacy.cookies_enabled")?(null===(a=h.getItem(v))&&(a=(0,p.ky)(16),h.setItem(v,a)),a):"0",xhrWrappable:g&&y&&y.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:r})),(0,l.Qy)(e,b[e],"runtime")}},158:function(e,t,n){"use strict";n.d(t,{q:function(){return r}});var r=["1220","PROD"].filter((function(e){return e})).join(".")},3707:function(e,t,n){"use strict";n.d(t,{w:function(){return o}});var r={agentIdentifier:""},o=function(e){var t=this;if("object"!=typeof e)return console.error("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,r),Object.entries(e).forEach((function(e){var n=e[0],o=e[1];Object.keys(r).includes(n)&&(t.sharedContext[n]=o)}))}},1776:function(e,t,n){"use strict";n.d(t,{c:function(){return f},ee:function(){return r}});var r,o=n(1424),i=n(4217),a=n(357),c="nr@context",u=(0,o.fP)();function s(){}function f(e){return(0,i.X)(e,c,d)}function d(){return new s}function l(){(r.backlog.api||r.backlog.feature)&&(r.aborted=!0,r.backlog={})}u.ee?r=u.ee:(r=function e(t,n){var o={},u={},f={},p={on:m,addEventListener:m,removeEventListener:g,emit:v,get:b,listeners:y,context:h,buffer:w,abort:l,aborted:!1,isBuffering:O,debugId:n,backlog:t&&t.backlog?t.backlog:{}};return p;function h(e){return e&&e instanceof s?e:e?(0,i.X)(e,c,d):d()}function v(e,n,o,i,a){if(!1!==a&&(a=!0),!r.aborted||i){t&&a&&t.emit(e,n,o);for(var c=h(o),s=y(e),f=s.length,d=0;d<f;d++)s[d].apply(c,n);var l=x()[u[e]];return l&&l.push([p,e,n,c]),c}}function m(e,t){o[e]=y(e).concat(t)}function g(e,t){var n=o[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function y(e){return o[e]||[]}function b(t){return f[t]=f[t]||e(p,t)}function w(e,t){var n=x();p.aborted||(0,a.D)(e,(function(e,r){t=t||"feature",u[r]=t,t in n||(n[t]=[])}))}function O(e){return!!x()[u[e]]}function x(){return p.backlog}}(void 0,"globalEE"),u.ee=r)},7361:function(e,t,n){"use strict";n.d(t,{E:function(){return r},p:function(){return o}});var r=n(1776).ee.get("handle");function o(e,t,n,o,i){i?(i.buffer([e],o),i.emit(e,t,n)):(r.buffer([e],o),r.emit(e,t,n))}},3350:function(e,t,n){"use strict";n.d(t,{X:function(){return i}});var r=n(7361);i.on=a;var o=i.handlers={};function i(e,t,n,i){a(i||r.E,o,e,t,n)}function a(e,t,n,o,i){i||(i="feature"),e||(e=r.E);var a=t[i]=t[i]||{};(a[n]=a[n]||[]).push([e,o])}},4408:function(e,t,n){"use strict";n.d(t,{m:function(){return i}});var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(e){}function i(e){return r?{passive:!0,capture:!!e}:!!e}},4168:function(e,t,n){"use strict";function r(){var e=null,t=0,n=window.crypto||window.msCrypto;function r(){return e?15&e[t++]:16*Math.random()|0}n&&n.getRandomValues&&(e=n.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)a+="x"===(o=i[c])?r().toString(16):"y"===o?(o=3&r()|8).toString(16):o;return a}function o(){return a(16)}function i(){return a(32)}function a(e){var t=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(t=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<e;i++)o.push(a().toString(16));return o.join("");function a(){return t?15&t[n++]:16*Math.random()|0}}n.d(t,{Ht:function(){return i},M:function(){return o},Rl:function(){return r},ky:function(){return a}})},6959:function(e,t,n){"use strict";n.d(t,{nb:function(){return u},os:function(){return s},yf:function(){return c},zO:function(){return a}});var r=n(2364),o=(new Date).getTime(),i=o;function a(){return r.G&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-i}function c(){return o}function u(e){i=e}function s(){return i}},2364:function(e,t,n){"use strict";n.d(t,{G:function(){return r}});var r=void 0!==window.performance&&window.performance.timing&&void 0!==window.performance.timing.navigationStart},1793:function(e,t,n){"use strict";function r(e){var t,n=0;for(t=0;t<e.length;t++)n+=(t+1)*e.charCodeAt(t);return Math.abs(n)}n.d(t,{v:function(){return s},s:function(){return u}});var o=n(6972),i=n(5973),a=n(6959),c=n(2364),u=!0;function s(e){var t=function(){if(i.I&&i.I<9)return;if(c.G)return u=!1,window.performance.timing.navigationStart}()||function(){for(var e=document.cookie.split(" "),t=0;t<e.length;t++)if(0===e[t].indexOf("NREUM=")){for(var n,o,i,a,c=e[t].substring("NREUM=".length).split("&"),u=0;u<c.length;u++)0===c[u].indexOf("s=")?i=c[u].substring(2):0===c[u].indexOf("p=")?";"===(o=c[u].substring(2)).charAt(o.length-1)&&(o=o.substr(0,o.length-1)):0===c[u].indexOf("r=")&&";"===(n=c[u].substring(2)).charAt(n.length-1)&&(n=n.substr(0,n.length-1));if(n){var s=r(document.referrer);(a=s==n)||(a=r(document.location.href)==n&&s==o)}if(a&&i){if((new Date).getTime()-i>6e4)return;return i}}}();t&&((0,o.B)(e,"starttime",t),(0,a.nb)(t))}},6972:function(e,t,n){"use strict";n.d(t,{B:function(){return i},L:function(){return a}});var r=n(6959),o={};function i(e,t,n){void 0===n&&(n=(0,r.zO)()+(0,r.os)()),o[e]=o[e]||{},o[e][t]=n}function a(e,t,n,r){var i,a,c=e.sharedContext.agentIdentifier,u=null==(i=o[c])?void 0:i[n],s=null==(a=o[c])?void 0:a[r];void 0!==u&&void 0!==s&&e.store("measures",t,{value:s-u})}},7001:function(e,t,n){"use strict";n.d(t,{e:function(){return o}});var r={};function o(e){if(e in r)return r[e];if(0===(e||"").indexOf("data:"))return{protocol:"data"};var t=document.createElement("a"),n=window.location,o={};t.href=e,o.port=t.port;var i=t.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=t.hostname||n.hostname,o.pathname=t.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!t.protocol||":"===t.protocol||t.protocol===n.protocol,c=t.hostname===document.domain&&t.port===n.port;return o.sameOrigin=a&&(!t.hostname||c),"/"===o.pathname&&(r[e]=o),o}},7299:function(e,t,n){"use strict";n.d(t,{T:function(){return a}});var r=window,o=r;function i(){return o}var a={isFileProtocol:function(){var e=i(),t=!(!e.location||!e.location.protocol||"file:"!==e.location.protocol);t&&(a.supportabilityMetricSent=!0);return t},supportabilityMetricSent:!1}},847:function(e,t,n){"use strict";n.d(t,{K:function(){return a}});var r=n(1220),o=n(1476),i=["ajax","jserrors","metrics","page_action","page_view_event","page_view_timing","session_trace","spa"];function a(e){var t={};return i.forEach((function(n){t[n]=function(e,t){return!0!==(0,r.O)(t).disabled&&!1!==(0,o.Mt)(t,e+".enabled")}(n,e)})),t}},5023:function(e,t,n){"use strict";n.d(t,{W:function(){return o}});var r=n(1776),o=function(e,t,n){void 0===n&&(n=[]),this.agentIdentifier=e,this.aggregator=t,this.ee=r.ee.get(e),this.externalFeatures=n}},4217:function(e,t,n){"use strict";n.d(t,{X:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(e,t,n){if(r.call(e,t))return e[t];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:o,writable:!0,enumerable:!1}),o}catch(e){}return e[t]=o,o}},357:function(e,t,n){"use strict";n.d(t,{D:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(e,t){var n=[],o="",i=0;for(o in e)r.call(e,o)&&(n[i]=t(o,e[o]),i+=1);return n}},603:function(e,t,n){"use strict";n.d(t,{$c:function(){return s},Ng:function(){return f},RR:function(){return u}});var r=n(1476),o=n(3707),i=n(7299);function a(e,t){return a=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},a(e,t)}var c={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"},u=function(e){var t,n;function r(t){return e.call(this,t)||this}n=e,(t=r).prototype=Object.create(n.prototype),t.prototype.constructor=t,a(t,n);var o=r.prototype;return o.shouldObfuscate=function(){return s(this.sharedContext.agentIdentifier).length>0},o.obfuscateString=function(e){if(!e||"string"!=typeof e)return e;for(var t=s(this.sharedContext.agentIdentifier),n=e,r=0;r<t.length;r++){var o=t[r].regex,i=t[r].replacement||"*";n=n.replace(o,i)}return n},r}(o.w);function s(e){var t=[],n=(0,r.Mt)(e,"obfuscate")||[];return t=t.concat(n),i.T.isFileProtocol()&&t.push(c),t}function f(e){for(var t=!1,n=!1,r=0;r<e.length;r++){"regex"in e[r]?"string"!=typeof e[r].regex&&e[r].regex.constructor!==RegExp&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),n=!0):(console&&console.warn&&console.warn('An obfuscation replacement rule was detected missing a "regex" value.'),n=!0);var o=e[r].replacement;o&&"string"!=typeof o&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),t=!0)}return!t&&!n}},1424:function(e,t,n){"use strict";n.d(t,{EZ:function(){return u},Qy:function(){return c},ce:function(){return o},fP:function(){return i},gG:function(){return s},mF:function(){return a}});var r=n(6959),o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function i(){return window.NREUM||(window.NREUM={}),void 0===window.newrelic&&(window.newrelic=window.NREUM),window.NREUM}function a(){var e=i();if(!e.o){var t=window,n=t.XMLHttpRequest;e.o={ST:setTimeout,SI:t.setImmediate,CT:clearTimeout,XHR:n,REQ:t.Request,EV:t.Event,PR:t.Promise,MO:t.MutationObserver,FETCH:t.fetch}}return e}function c(e,t,n){var o,a,c=i(),u=c.initializedAgents||{},s=u[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.zO)(),date:new Date}),c.initializedAgents=Object.assign({},u,((a={})[e]=Object.assign({},s,((o={})[n]=t,o)),a)),c}function u(e,t){i()[e]=t}function s(){var e,t;return e=i(),t=e.info||{},e.info=Object.assign({beacon:o.beacon,errorBeacon:o.errorBeacon},t),function(){var e=i(),t=e.init||{};e.init=Object.assign({},t)}(),a(),function(){var e=i(),t=e.loader_config||{};e.loader_config=Object.assign({},t)}(),i()}},5098:function(e,t,n){"use strict";function r(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}n.d(t,{W:function(){return r}})},8539:function(e){e.exports=function(e,t,n){t||(t=0),void 0===n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}},8118:function(e){e.exports=function(e,t,n){t||(t=0),void 0===n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}}},r={};function o(e){var t=r[e];if(void 0!==t)return t.exports;var i=r[e]={exports:{}};return n[e](i,i.exports,o),i.exports}o.m=n,o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,{a:t}),t},o.d=function(e,t){for(var n in t)o.o(t,n)&&!o.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},o.f={},o.e=function(e){return Promise.all(Object.keys(o.f).reduce((function(t,n){return o.f[n](e,t),t}),[]))},o.u=function(e){return e+"."+o.h().slice(0,8)+"-1220.js"},o.h=function(){return"2d6a2503b7f18a5b77dd"},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},e={},t="NRBA:",o.l=function(n,r,i,a){if(e[n])e[n].push(r);else{var c,u;if(void 0!==i)for(var s=document.getElementsByTagName("script"),f=0;f<s.length;f++){var d=s[f];if(d.getAttribute("src")==n||d.getAttribute("data-webpack")==t+i){c=d;break}}c||(u=!0,(c=document.createElement("script")).charset="utf-8",c.timeout=120,o.nc&&c.setAttribute("nonce",o.nc),c.setAttribute("data-webpack",t+i),c.src=n),e[n]=[r];var l=function(t,r){c.onerror=c.onload=null,clearTimeout(p);var o=e[n];if(delete e[n],c.parentNode&&c.parentNode.removeChild(c),o&&o.forEach((function(e){return e(r)})),t)return t(r)},p=setTimeout(l.bind(null,void 0,{type:"timeout",target:c}),12e4);c.onerror=l.bind(null,c.onerror),c.onload=l.bind(null,c.onload),u&&document.head.appendChild(c)}},o.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},o.p="https://js-agent.newrelic.com/",function(){var e={997:0,898:0};o.f.j=function(t,n){var r=o.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var i=new Promise((function(n,o){r=e[t]=[n,o]}));n.push(r[2]=i);var a=o.p+o.u(t),c=new Error;o.l(a,(function(n){if(o.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var i=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;c.message="Loading chunk "+t+" failed.\n("+i+": "+a+")",c.name="ChunkLoadError",c.type=i,c.request=a,r[1](c)}}),"chunk-"+t,t)}};var t=function(t,n){var r,i,a=n[0],c=n[1],u=n[2],s=0;if(a.some((function(t){return 0!==e[t]}))){for(r in c)o.o(c,r)&&(o.m[r]=c[r]);if(u)u(o)}for(t&&t(n);s<a.length;s++)i=a[s],o.o(e,i)&&e[i]&&e[i][0](),e[i]=0},n=self.webpackChunkNRBA=self.webpackChunkNRBA||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))}();var i={};return function(){"use strict";o.r(i);var e=o(4408),t=window,n=t.document;function r(e){"complete"===n.readyState&&e()}function a(o){r(o),n.addEventListener?t.addEventListener("load",o,(0,e.m)(!1)):t.attachEvent("onload",o)}function c(t){r(t),n.addEventListener?n.addEventListener("DOMContentLoaded",t,(0,e.m)(!1)):n.attachEvent("onreadystatechange",r)}var u=o(1776);function s(){s=function(){return e};var e={},t=Object.prototype,n=t.hasOwnProperty,r="function"==typeof Symbol?Symbol:{},o=r.iterator||"@@iterator",i=r.asyncIterator||"@@asyncIterator",a=r.toStringTag||"@@toStringTag";function c(e,t,n){return Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}),e[t]}try{c({},"")}catch(e){c=function(e,t,n){return e[t]=n}}function u(e,t,n,r){var o=t&&t.prototype instanceof l?t:l,i=Object.create(o.prototype),a=new j(r||[]);return i._invoke=function(e,t,n){var r="suspendedStart";return function(o,i){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===o)throw i;return _()}for(n.method=o,n.arg=i;;){var a=n.delegate;if(a){var c=O(a,n);if(c){if(c===d)continue;return c}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var u=f(e,t,n);if("normal"===u.type){if(r=n.done?"completed":"suspendedYield",u.arg===d)continue;return{value:u.arg,done:n.done}}"throw"===u.type&&(r="completed",n.method="throw",n.arg=u.arg)}}}(e,n,a),i}function f(e,t,n){try{return{type:"normal",arg:e.call(t,n)}}catch(e){return{type:"throw",arg:e}}}e.wrap=u;var d={};function l(){}function p(){}function h(){}var v={};c(v,o,(function(){return this}));var m=Object.getPrototypeOf,g=m&&m(m(P([])));g&&g!==t&&n.call(g,o)&&(v=g);var y=h.prototype=l.prototype=Object.create(v);function b(e){["next","throw","return"].forEach((function(t){c(e,t,(function(e){return this._invoke(t,e)}))}))}function w(e,t){function r(o,i,a,c){var u=f(e[o],e,i);if("throw"!==u.type){var s=u.arg,d=s.value;return d&&"object"==typeof d&&n.call(d,"__await")?t.resolve(d.__await).then((function(e){r("next",e,a,c)}),(function(e){r("throw",e,a,c)})):t.resolve(d).then((function(e){s.value=e,a(s)}),(function(e){return r("throw",e,a,c)}))}c(u.arg)}var o;this._invoke=function(e,n){function i(){return new t((function(t,o){r(e,n,t,o)}))}return o=o?o.then(i,i):i()}}function O(e,t){var n=e.iterator[t.method];if(void 0===n){if(t.delegate=null,"throw"===t.method){if(e.iterator.return&&(t.method="return",t.arg=void 0,O(e,t),"throw"===t.method))return d;t.method="throw",t.arg=new TypeError("The iterator does not provide a 'throw' method")}return d}var r=f(n,e.iterator,t.arg);if("throw"===r.type)return t.method="throw",t.arg=r.arg,t.delegate=null,d;var o=r.arg;return o?o.done?(t[e.resultName]=o.value,t.next=e.nextLoc,"return"!==t.method&&(t.method="next",t.arg=void 0),t.delegate=null,d):o:(t.method="throw",t.arg=new TypeError("iterator result is not an object"),t.delegate=null,d)}function x(e){var t={tryLoc:e[0]};1 in e&&(t.catchLoc=e[1]),2 in e&&(t.finallyLoc=e[2],t.afterLoc=e[3]),this.tryEntries.push(t)}function E(e){var t=e.completion||{};t.type="normal",delete t.arg,e.completion=t}function j(e){this.tryEntries=[{tryLoc:"root"}],e.forEach(x,this),this.reset(!0)}function P(e){if(e){var t=e[o];if(t)return t.call(e);if("function"==typeof e.next)return e;if(!isNaN(e.length)){var r=-1,i=function t(){for(;++r<e.length;)if(n.call(e,r))return t.value=e[r],t.done=!1,t;return t.value=void 0,t.done=!0,t};return i.next=i}}return{next:_}}function _(){return{value:void 0,done:!0}}return p.prototype=h,c(y,"constructor",h),c(h,"constructor",p),p.displayName=c(h,a,"GeneratorFunction"),e.isGeneratorFunction=function(e){var t="function"==typeof e&&e.constructor;return!!t&&(t===p||"GeneratorFunction"===(t.displayName||t.name))},e.mark=function(e){return Object.setPrototypeOf?Object.setPrototypeOf(e,h):(e.__proto__=h,c(e,a,"GeneratorFunction")),e.prototype=Object.create(y),e},e.awrap=function(e){return{__await:e}},b(w.prototype),c(w.prototype,i,(function(){return this})),e.AsyncIterator=w,e.async=function(t,n,r,o,i){void 0===i&&(i=Promise);var a=new w(u(t,n,r,o),i);return e.isGeneratorFunction(n)?a:a.next().then((function(e){return e.done?e.value:a.next()}))},b(y),c(y,a,"Generator"),c(y,o,(function(){return this})),c(y,"toString",(function(){return"[object Generator]"})),e.keys=function(e){var t=[];for(var n in e)t.push(n);return t.reverse(),function n(){for(;t.length;){var r=t.pop();if(r in e)return n.value=r,n.done=!1,n}return n.done=!0,n}},e.values=P,j.prototype={constructor:j,reset:function(e){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!e)for(var t in this)"t"===t.charAt(0)&&n.call(this,t)&&!isNaN(+t.slice(1))&&(this[t]=void 0)},stop:function(){this.done=!0;var e=this.tryEntries[0].completion;if("throw"===e.type)throw e.arg;return this.rval},dispatchException:function(e){if(this.done)throw e;var t=this;function r(n,r){return a.type="throw",a.arg=e,t.next=n,r&&(t.method="next",t.arg=void 0),!!r}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return r("end");if(i.tryLoc<=this.prev){var c=n.call(i,"catchLoc"),u=n.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return r(i.catchLoc,!0);if(this.prev<i.finallyLoc)return r(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return r(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return r(i.finallyLoc)}}}},abrupt:function(e,t){for(var r=this.tryEntries.length-1;r>=0;--r){var o=this.tryEntries[r];if(o.tryLoc<=this.prev&&n.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===e||"continue"===e)&&i.tryLoc<=t&&t<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=e,a.arg=t,i?(this.method="next",this.next=i.finallyLoc,d):this.complete(a)},complete:function(e,t){if("throw"===e.type)throw e.arg;return"break"===e.type||"continue"===e.type?this.next=e.arg:"return"===e.type?(this.rval=this.arg=e.arg,this.method="return",this.next="end"):"normal"===e.type&&t&&(this.next=t),d},finish:function(e){for(var t=this.tryEntries.length-1;t>=0;--t){var n=this.tryEntries[t];if(n.finallyLoc===e)return this.complete(n.completion,n.afterLoc),E(n),d}},catch:function(e){for(var t=this.tryEntries.length-1;t>=0;--t){var n=this.tryEntries[t];if(n.tryLoc===e){var r=n.completion;if("throw"===r.type){var o=r.arg;E(n)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(e,t,n){return this.delegate={iterator:P(e),resultName:t,nextLoc:n},"next"===this.method&&(this.arg=void 0),d}},e}function f(e,t,n,r,o,i,a){try{var c=e[i](a),u=c.value}catch(e){return void n(e)}c.done?t(u):Promise.resolve(u).then(r,o)}var d=0;function l(e){var t;(t=s().mark((function t(){var n,r;return s().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:if(!d++){t.next=2;break}return t.abrupt("return");case 2:return t.prev=2,t.next=5,o.e(552).then(o.bind(o,5552));case 5:return n=t.sent,r=n.aggregator,t.next=9,r(e);case 9:t.next=15;break;case 11:t.prev=11,t.t0=t.catch(2),console.error("Failed to successfully load all aggregators. Aborting...\n",t.t0),u.ee.abort();case 15:case"end":return t.stop()}}),t,null,[[2,11]])})),function(){var e=this,n=arguments;return new Promise((function(r,o){var i=t.apply(e,n);function a(e){f(i,r,o,a,c,"next",e)}function c(e){f(i,r,o,a,c,"throw",e)}a(void 0)}))})()}var p=o(9034),h=o(7361),v=o(6959),m=o(6972),g=o(1793),y=o(5023);function b(e,t){return b=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},b(e,t)}var w,O,x,E=function(e){var t,n;function r(t){var n;return n=e.call(this,t)||this,(0,g.v)(t),(0,m.B)(t,"firstbyte",(0,v.yf)()),a((function(){return n.measureWindowLoaded()})),c((function(){return n.measureDomContentLoaded()})),n}n=e,(t=r).prototype=Object.create(n.prototype),t.prototype.constructor=t,b(t,n);var o=r.prototype;return o.measureWindowLoaded=function(){var e=(0,v.zO)();(0,m.B)(this.agentIdentifier,"onload",e+(0,v.os)()),(0,h.p)("timing",["load",e],void 0,void 0,this.ee)},o.measureDomContentLoaded=function(){(0,m.B)(this.agentIdentifier,"domContent",(0,v.zO)()+(0,v.os)())},r}(y.W);void 0!==document.hidden?(w="hidden",O="visibilitychange",x="visibilityState"):void 0!==document.msHidden?(w="msHidden",O="msvisibilitychange"):void 0!==document.webkitHidden&&(w="webkitHidden",O="webkitvisibilitychange",x="webkitVisibilityState");var j=o(1476),P=o(2085);function _(e,t){return _=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},_(e,t)}var L=function(t){var n,r;function o(n){var r,o;if((r=t.call(this,n)||this).pageHiddenTime="hidden"===document.visibilityState?-1:1/0,r.performanceObserver,r.lcpPerformanceObserver,r.clsPerformanceObserver,r.fiRecorded=!1,!r.isEnabled())return function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(r);if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){r.performanceObserver=new PerformanceObserver((function(){var e;return(e=r).perfObserver.apply(e,arguments)}));try{r.performanceObserver.observe({entryTypes:["paint"]})}catch(e){}r.lcpPerformanceObserver=new PerformanceObserver((function(){var e;return(e=r).lcpObserver.apply(e,arguments)}));try{r.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(e){}r.clsPerformanceObserver=new PerformanceObserver((function(){var e;return(e=r).clsObserver.apply(e,arguments)}));try{r.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(e){}}if("addEventListener"in document){r.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((function(t){document.addEventListener(t,(function(){var e;return(e=r).captureInteraction.apply(e,arguments)}),(0,e.m)(!1))}))}return o=function(){var e;return(e=r).captureVisibilityChange.apply(e,arguments)},"addEventListener"in document&&O&&document.addEventListener(O,(function(){x&&document[x]?o(document[x]):document[w]?o("hidden"):o("visible")}),(0,e.m)(!1)),r}r=t,(n=o).prototype=Object.create(r.prototype),n.prototype.constructor=n,_(n,r);var i=o.prototype;return i.isEnabled=function(){return!1!==(0,j.Mt)(this.agentIdentifier,"page_view_timing.enabled")},i.perfObserver=function(e,t){var n=this;e.getEntries().forEach((function(e){"first-paint"===e.name?(0,h.p)("timing",["fp",Math.floor(e.startTime)],void 0,void 0,n.ee):"first-contentful-paint"===e.name&&(0,h.p)("timing",["fcp",Math.floor(e.startTime)],void 0,void 0,n.ee)}))},i.lcpObserver=function(e,t){var n=e.getEntries();if(n.length>0){var r=n[n.length-1];if(this.pageHiddenTime<r.startTime)return;var o=[r],i=this.addConnectionAttributes({});i&&o.push(i),(0,h.p)("lcp",o,void 0,void 0,this.ee)}},i.clsObserver=function(e){var t=this;e.getEntries().forEach((function(e){e.hadRecentInput||(0,h.p)("cls",[e],void 0,void 0,t.ee)}))},i.addConnectionAttributes=function(e){var t=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(t)return t.type&&(e["net-type"]=t.type),t.effectiveType&&(e["net-etype"]=t.effectiveType),t.rtt&&(e["net-rtt"]=t.rtt),t.downlink&&(e["net-dlink"]=t.downlink),e},i.captureInteraction=function(e){if(e instanceof P.Y.EV&&!this.fiRecorded){var t=Math.round(e.timeStamp),n={type:e.type};this.addConnectionAttributes(n),t<=(0,v.zO)()?n.fid=(0,v.zO)()-t:t>(0,v.os)()&&t<=Date.now()?(t-=(0,v.os)(),n.fid=(0,v.zO)()-t):t=(0,v.zO)(),this.fiRecorded=!0,(0,h.p)("timing",["fi",t,n],void 0,void 0,this.ee)}},i.captureVisibilityChange=function(e){"hidden"===e&&(this.pageHiddenTime=(0,v.zO)(),(0,h.p)("pageHide",[this.pageHiddenTime],void 0,void 0,this.ee))},o}(y.W),T=o(3350),C="React",S="Angular",I="AngularJS",R="Backbone",k="Ember",A="Vue",H="Meteor",N="Zepto",z="Jquery";function M(){var e=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var e=document.querySelectorAll("body > div"),t=0;t<e.length;t++)if(Object.keys(e[t]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(e){return!1}})()&&e.push(C),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(e){return!1}}()&&e.push(I),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(e){return!1}}()&&e.push(S),window.Backbone&&e.push(R),window.Ember&&e.push(k),window.Vue&&e.push(A),window.Meteor&&e.push(H),window.Zepto&&e.push(N),window.jQuery&&e.push(z)}catch(e){}return e}var D=o(7299),q=o(603),B=o(158);function F(e,t){return F=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},F(e,t)}var G=function(e){var t,n;function r(t){var n;return(n=e.call(this,t)||this).singleChecks(),(0,T.X)("record-supportability",(function(){var e;return(e=n).recordSupportability.apply(e,arguments)}),void 0,n.ee),(0,T.X)("record-custom",(function(){var e;return(e=n).recordCustom.apply(e,arguments)}),void 0,n.ee),n}n=e,(t=r).prototype=Object.create(n.prototype),t.prototype.constructor=t,F(t,n);var o=r.prototype;return o.recordSupportability=function(e,t){var n=["sm",e,{name:e},t];return(0,h.p)("storeMetric",n,null,void 0,this.ee),n},o.recordCustom=function(e,t){var n=["cm",e,{name:e},t];return(0,h.p)("storeEventMetrics",n,null,void 0,this.ee),n},o.singleChecks=function(){var e=this;this.recordSupportability("Generic/Version/"+B.q+"/Detected"),c((function(){M().forEach((function(t){e.recordSupportability("Framework/"+t+"/Detected")}))})),D.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),D.T.supportabilityMetricSent=!0);var t=(0,q.$c)(this.agentIdentifier);t.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),t.length>0&&!(0,q.Ng)(t)&&this.recordSupportability("Generic/Obfuscate/Invalid")},r}(y.W),U=o(1220),X=o(4217),Z=o(8118),W=o.n(Z),V=o(357),Y=window,Q="fetch-",K="fetch-body-",J=["arrayBuffer","blob","json","text","formData"],$=Y.Request,ee=Y.Response,te="prototype",ne="nr@context",re={};function oe(e){var t=function(e){return(e||u.ee).get("fetch")}(e);if(!($&&ee&&window.fetch))return t;if(re[t.debugId])return t;function n(e,n,r){var o=e[n];"function"==typeof o&&(e[n]=function(){var e,n=W()(arguments),i={};t.emit(r+"before-start",[n],i),i[ne]&&i[ne].dt&&(e=i[ne].dt);var a=o.apply(this,n);return t.emit(r+"start",[n,e],a),a.then((function(e){return t.emit(r+"end",[null,e],a),e}),(function(e){throw t.emit(r+"end",[e],a),e}))})}return re[t.debugId]=!0,(0,V.D)(J,(function(e,t){n($[te],t,K),n(ee[te],t,K)})),n(Y,"fetch",Q),t.on("fetch-end",(function(e,n){var r=this;if(n){var o=n.headers.get("content-length");null!==o&&(r.rxSize=o),t.emit("fetch-done",[null,n],r)}else t.emit("fetch-done",[e],r)})),t}var ie="nr@original",ae=Object.prototype.hasOwnProperty,ce=!1;function ue(e,t){return e||(e=u.ee),n.inPlace=function(e,t,r,o,i){r||(r="");var a,c,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)c=t[u],de(a=e[c])||(e[c]=n(a,s?c+r:r,o,c,i))},n.flag=ie,n;function n(t,n,o,i,a){return de(t)?t:(n||(n=""),c[ie]=t,fe(t,c,e),c);function c(){var c,u,s,f;try{u=this,c=W()(arguments),s="function"==typeof o?o(c,u):o||{}}catch(t){se([t,"",[c,u,i],s],e)}r(n+"start",[c,u,i],s,a);try{return f=t.apply(u,c)}catch(e){throw r(n+"err",[c,u,e],s,a),e}finally{r(n+"end",[c,u,f],s,a)}}}function r(n,r,o,i){if(!ce||t){var a=ce;ce=!0;try{e.emit(n,r,o,t,i)}catch(t){se([t,n,r,o],e)}ce=a}}}function se(e,t){t||(t=u.ee);try{t.emit("internal-error",e)}catch(e){}}function fe(e,t,n){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})})),t}catch(e){se([e],n)}for(var r in e)ae.call(e,r)&&(t[r]=e[r]);return t}function de(e){return!(e&&e instanceof Function&&e.apply&&!e[ie])}function le(e,t,n){var r=e[t];e[t]=function(e,t){var n=t(e);return n[ie]=e,fe(e,n,u.ee),n}(r,n)}function pe(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var he={};function ve(e){var t=function(e){return(e||u.ee).get("timer")}(e);if(he[t.debugId])return t;he[t.debugId]=!0;var n=ue(t),r="setTimeout",o="setInterval",i="clearTimeout",a="-start";return n.inPlace(window,[r,"setImmediate"],"setTimeout-"),n.inPlace(window,[o],"setInterval-"),n.inPlace(window,[i,"clearImmediate"],"clearTimeout-"),t.on(o+a,(function(e,t,r){e[0]=n(e[0],"fn-",null,r)})),t.on(r+a,(function(e,t,r){this.method=r,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=n(e[0],"fn-",this,r)})),t}var me={};function ge(e){var t=function(e){return(e||u.ee).get("raf")}(e);if(me[t.debugId])return t;me[t.debugId]=!0;var n=ue(t);return n.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),t.on("raf-start",(function(e){e[0]=n(e[0],"fn-")})),t}var ye={};function be(e){var t=function(e){return(e||u.ee).get("history")}(e);if(ye[t.debugId])return t;ye[t.debugId]=!0;var n=ue(t),r=window.history&&window.history.constructor&&window.history.constructor.prototype,o=window.history;return r&&r.pushState&&r.replaceState&&(o=r),n.inPlace(o,["pushState","replaceState"],"-"),t}var we={};function Oe(t){var n=function(e){return(e||u.ee).get("jsonp")}(t);if(we[n.debugId])return n;we[n.debugId]=!0;var r=ue(n),o=/[?&](?:callback|cb)=([^&#]+)/,i=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/,c=["appendChild","insertBefore","replaceChild"];function s(e,t){var n=e.match(a),r=n[1],o=n[3];return o?s(o,t[r]):t[r]}return"addEventListener"in window&&(Node&&Node.prototype&&Node.prototype.appendChild?r.inPlace(Node.prototype,c,"dom-"):(r.inPlace(HTMLElement.prototype,c,"dom-"),r.inPlace(HTMLHeadElement.prototype,c,"dom-"),r.inPlace(HTMLBodyElement.prototype,c,"dom-"))),n.on("dom-start",(function(t){!function(t){if(!t||"string"!=typeof t.nodeName||"script"!==t.nodeName.toLowerCase())return;if("function"!=typeof t.addEventListener)return;var a=(c=t.src,u=c.match(o),u?u[1]:null);var c,u;if(!a)return;var f=function(e){var t=e.match(i);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(a);if("function"!=typeof f.parent[f.key])return;var d={};function l(){n.emit("jsonp-end",[],d),t.removeEventListener("load",l,(0,e.m)(!1)),t.removeEventListener("error",p,(0,e.m)(!1))}function p(){n.emit("jsonp-error",[],d),n.emit("jsonp-end",[],d),t.removeEventListener("load",l,(0,e.m)(!1)),t.removeEventListener("error",p,(0,e.m)(!1))}r.inPlace(f.parent,[f.key],"cb-",d),t.addEventListener("load",l,(0,e.m)(!1)),t.addEventListener("error",p,(0,e.m)(!1)),n.emit("new-jsonp",[t.src],d)}(t[0])})),n}var xe={};function Ee(e){var t=function(e){return(e||u.ee).get("mutation")}(e);if(xe[t.debugId])return t;xe[t.debugId]=!0;var n=ue(t),r=P.Y.MO;return r&&(window.MutationObserver=function(e){return this instanceof r?new r(n(e,"fn-")):r.apply(this,arguments)},MutationObserver.prototype=r.prototype),t}var je={};function Pe(e){var t=function(e){return(e||u.ee).get("promise")}(e);if(je[t.debugId])return t;je[t.debugId]=!0;var n=u.c,r=ue(t),o=P.Y.PR;return o&&function(){function e(e){var n=t.context(),i=r(e,"executor-",n,null,!1),a=new o(i);return t.context(a).getCtx=function(){return n},a}window.Promise=e,["all","race"].forEach((function(e){var n=o[e];o[e]=function(r){var i=!1;(0,V.D)(r,(function(t,n){Promise.resolve(n).then(c("all"===e),c(!1))}));var a=n.apply(o,arguments);return o.resolve(a);function c(e){return function(){t.emit("propagate",[null,!i],a,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(e){var n=o[e];o[e]=function(e){var r=n.apply(o,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),o.prototype.catch=function(e){return this.then(null,e)},Object.assign(o.prototype,{constructor:{value:e}}),(0,V.D)(Object.getOwnPropertyNames(o),(function(t,n){try{e[n]=o[n]}catch(e){}})),le(o.prototype,"then",(function(e){return function(){var o=this,i=pe.apply(this,arguments),a=n(o);a.promise=o,i[0]=r(i[0],"cb-",a,null,!1),i[1]=r(i[1],"cb-",a,null,!1);var c=e.apply(this,i);return a.nextPromise=c,t.emit("propagate",[o,!0],c,!1,!1),c}})),t.on("executor-start",(function(e){e[0]=r(e[0],"resolve-",this,null,!1),e[1]=r(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,n){e[1](n)})),t.on("cb-end",(function(e,n,r){t.emit("propagate",[r,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,n,r){this.getCtx&&!n||(this.getCtx=function(){if(e instanceof Promise)var n=t.context(e);return n&&n.getCtx?n.getCtx():this})})),e.toString=function(){return""+o}}(),t}var _e={};function Le(e){var t=function(e){return(e||u.ee).get("events")}(e);if(_e[t.debugId])return t;_e[t.debugId]=!0;var n=ue(t,!0),r=XMLHttpRequest,o="addEventListener",i="removeEventListener";function a(e){for(var t=e;t&&!t.hasOwnProperty(o);)t=Object.getPrototypeOf(t);t&&c(t)}function c(e){n.inPlace(e,[o,i],"-",s)}function s(e,t){return e[1]}return"getPrototypeOf"in Object?(a(document),a(window),a(r.prototype)):r.prototype.hasOwnProperty(o)&&(c(window),c(r.prototype)),t.on("addEventListener-start",(function(e,t){var r=e[1];if(null!==r&&("function"==typeof r||"object"==typeof r)){var o=(0,X.X)(r,"nr@wrapped",(function(){var e={object:function(){if("function"!=typeof r.handleEvent)return;return r.handleEvent.apply(r,arguments)},function:r}[typeof r];return e?n(e,"fn-",null,e.name||"anonymous"):r}));this.wrapped=e[1]=o}})),t.on("removeEventListener-start",(function(e){e[1]=this.wrapped||e[1]})),t}var Te={};function Ce(t){var n=t||u.ee,r=function(e){return(e||u.ee).get("xhr")}(n);if(Te[r.debugId])return r;Te[r.debugId]=!0,Le(n);var o=ue(r),i=P.Y.XHR,a=P.Y.MO,c=P.Y.PR,s=P.Y.SI,f="readystatechange",d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],l=[],p=window.XMLHttpRequest.listeners,h=window.XMLHttpRequest=function(t){var n=new i(t);function o(){try{r.emit("new-xhr",[n],n),n.addEventListener(f,m,(0,e.m)(!1))}catch(e){console.error(e);try{r.emit("internal-error",[e])}catch(e){}}}return this.listeners=p?[].concat(p,[o]):[o],this.listeners.forEach((function(e){return e()})),n};function v(e,t){o.inPlace(t,["onreadystatechange"],"fn-",O)}function m(){var e=this,t=r.context(e);e.readyState>3&&!t.resolved&&(t.resolved=!0,r.emit("xhr-resolved",[],e)),o.inPlace(e,d,"fn-",O)}if(function(e,t){for(var n in e)t[n]=e[n]}(i,h),h.prototype=i.prototype,o.inPlace(h.prototype,["open","send"],"-xhr-",O),r.on("send-xhr-start",(function(e,t){v(e,t),function(e){l.push(e),a&&(g?g.then(w):s?s(w):(y=-y,b.data=y))}(t)})),r.on("open-xhr-start",v),a){var g=c&&c.resolve();if(!s&&!c){var y=1,b=document.createTextNode(y);new a(w).observe(b,{characterData:!0})}}else n.on("fn-end",(function(e){e[0]&&e[0].type===f||w()}));function w(){for(var e=0;e<l.length;e++)v(0,l[e]);l.length&&(l=[])}function O(e,t){return t}return r}function Se(e){return Le(e)}function Ie(e){return oe(e)}function Re(e){return be(e)}function ke(e){return ge(e)}function Ae(e){return ve(e)}function He(e){return Ce(e)}function Ne(e,t){return Ne=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},Ne(e,t)}var ze="nr@seenError",Me=function(e){var t,n;function r(t){var n;(n=e.call(this,t)||this).skipNext=0,n.handleErrors=!1,n.origOnerror=window.onerror;var r=function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(n),o=(0,U.O)(n.agentIdentifier);o.features.err=!0,r.ee.on("fn-start",(function(e,t,n){r.handleErrors&&(r.skipNext+=1)})),r.ee.on("fn-err",(function(e,t,n){r.handleErrors&&!n[ze]&&((0,X.X)(n,ze,(function(){return!0})),this.thrown=!0,qe(n,void 0,r.ee))})),r.ee.on("fn-end",(function(){r.handleErrors&&!this.thrown&&r.skipNext>0&&(r.skipNext-=1)})),r.ee.on("internal-error",(function(e){(0,h.p)("ierr",[e,(0,v.zO)(),!0],void 0,void 0,r.ee)}));var i=window.onerror;window.onerror=function(){var e;return i&&i.apply(void 0,arguments),(e=n).onerrorHandler.apply(e,arguments),!1};try{window.addEventListener("unhandledrejection",(function(e){var t=new Error(""+e.reason);(0,h.p)("err",[t,(0,v.zO)(),!1,{unhandledPromiseRejection:1}],void 0,void 0,n.ee)}))}catch(e){}try{throw new Error}catch(e){"stack"in e&&(Ae(n.ee),ke(n.ee),"addEventListener"in window&&Se(n.ee),o.xhrWrappable&&He(n.ee),r.handleErrors=!0)}return n}return n=e,(t=r).prototype=Object.create(n.prototype),t.prototype.constructor=t,Ne(t,n),r.prototype.onerrorHandler=function(e,t,n,r,o){try{this.skipNext?this.skipNext-=1:qe(o||new De(e,t,n),!0,this.ee)}catch(e){try{(0,h.p)("ierr",[e,(0,v.zO)(),!0],void 0,void 0,this.ee)}catch(e){}}return"function"==typeof this.origOnerror&&this.origOnerror.apply(this,W()(arguments))},r}(y.W);function De(e,t,n){this.message=e||"Uncaught error with no additional information",this.sourceURL=t,this.line=n}function qe(e,t,n){var r=t?null:(0,v.zO)();(0,h.p)("err",[e,r],void 0,void 0,n)}var Be=o(1424),Fe=o(5955),Ge={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},Ue={};function Xe(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!Ue[e])throw new Error("LoaderConfig for "+e+" was never set");return Ue[e]}var Ze=1;function We(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:(0,X.X)(e,"nr@id",(function(){return Ze++}))}var Ve=o(5973);function Ye(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return JSON.stringify(e).length}catch(e){return}}}var Qe=o(7001),Ke=o(4168),Je=function(){function e(e){this.agentIdentifier=e,this.generateTracePayload=this.generateTracePayload.bind(this),this.shouldGenerateTrace=this.shouldGenerateTrace.bind(this)}var t=e.prototype;return t.generateTracePayload=function(e){if(!this.shouldGenerateTrace(e))return null;var t=Xe(this.agentIdentifier);if(!t)return null;var n=(t.accountID||"").toString()||null,r=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!n||!r)return null;var i=(0,Ke.M)(),a=(0,Ke.Ht)(),c=Date.now(),u={spanId:i,traceId:a,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(i,a),u.traceContextStateHeader=this.generateTraceContextStateHeader(i,c,n,r,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(i,a,c,n,r,o)),u},t.generateTraceContextParentHeader=function(e,t){return"00-"+t+"-"+e+"-01"},t.generateTraceContextStateHeader=function(e,t,n,r,o){return o+"@nr=0-1-"+n+"-"+r+"-"+e+"----"+t},t.generateTraceHeader=function(e,t,n,r,o,i){if(!("btoa"in window&&"function"==typeof window.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:e,tr:t,ti:n}};return i&&r!==i&&(a.d.tk=i),btoa(JSON.stringify(a))},t.shouldGenerateTrace=function(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)},t.isAllowedOrigin=function(e){var t=!1,n={};if((0,j.Mt)(this.agentIdentifier,"distributed_tracing")&&(n=(0,j.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=(0,Qe.e)(n.allowed_origins[r]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t},t.isDtEnabled=function(){var e=(0,j.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled},t.excludeNewrelicHeader=function(){var e=(0,j.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header},t.useNewrelicHeaderForCors=function(){var e=(0,j.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header},t.useTraceContextHeadersForCors=function(){var e=(0,j.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers},e}();function $e(e,t){return $e=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},$e(e,t)}var et=["load","error","abort","timeout"],tt=et.length,nt=P.Y.REQ,rt=window.XMLHttpRequest,ot=function(t){var n,r;function o(n){var r;r=t.call(this,n)||this;var o=(0,U.O)(r.agentIdentifier);return!o.xhrWrappable||o.disabled?function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(r):(o.features.xhr=!0,r.dt=new Je(r.agentIdentifier),r.handler=function(e,t,n,o){return(0,h.p)(e,t,n,o,r.ee)},r.wrappedFetch=Ie(r.ee),He(r.ee),function(t,n,r,o){function i(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=O,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,n.params=this.params||{},n.metrics=this.metrics||{},t.addEventListener("load",(function(e){E(n,t)}),(0,e.m)(!1)),Ve.I&&(Ve.I>34||Ve.I<10)||t.addEventListener("progress",(function(e){n.lastSize=e.loaded}),(0,e.m)(!1))}function a(e){this.params={method:e[0]},x(this,e[1]),this.metrics={}}function c(e,n){var r=Xe(t);"xpid"in r&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",r.xpid);var i=o.generateTracePayload(this.parsedOrigin);if(i){var a=!1;i.newrelicHeader&&(n.setRequestHeader("newrelic",i.newrelicHeader),a=!0),i.traceContextParentHeader&&(n.setRequestHeader("traceparent",i.traceContextParentHeader),i.traceContextStateHeader&&n.setRequestHeader("tracestate",i.traceContextStateHeader),a=!0),a&&(this.dt=i)}}function u(t,r){var o=this.metrics,i=t[0],a=this;if(o&&i){var c=Ye(i);c&&(o.txSize=c)}this.startTime=(0,v.zO)(),this.listener=function(e){try{"abort"!==e.type||a.loadCaptureCalled||(a.params.aborted=!0),("load"!==e.type||a.called===a.totalCbs&&(a.onloadCalled||"function"!=typeof r.onload))&&a.end(r)}catch(e){try{n.emit("internal-error",[e])}catch(e){}}};for(var u=0;u<tt;u++)r.addEventListener(et[u],this.listener,(0,e.m)(!1))}function s(e,t,n){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}function f(e,t){var n=""+We(e)+!!t;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}function d(e,t){var n=""+We(e)+!!t;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}function l(){this.endTime=(0,v.zO)()}function p(e,t){t instanceof rt&&"load"===e[0]&&n.emit("xhr-load-added",[e[1],e[2]],t)}function h(e,t){t instanceof rt&&"load"===e[0]&&n.emit("xhr-load-removed",[e[1],e[2]],t)}function m(e,t,n){t instanceof rt&&("onload"===n&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,v.zO)()))}function g(e,t){this.xhrCbStart&&n.emit("xhr-cb-time",[(0,v.zO)()-this.xhrCbStart,this.onload,t],t)}function y(e){var t,n=e[1]||{};"string"==typeof e[0]?t=e[0]:e[0]&&e[0].url?t=e[0].url:window.URL&&e[0]&&e[0]instanceof URL&&(t=e[0].href),t&&(this.parsedOrigin=(0,Qe.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=o.generateTracePayload(this.parsedOrigin);if(r&&(r.newrelicHeader||r.traceContextParentHeader))if("string"==typeof e[0]||window.URL&&e[0]&&e[0]instanceof URL){var i={};for(var a in n)i[a]=n[a];i.headers=new Headers(n.headers||{}),c(i.headers,r)&&(this.dt=r),e.length>1?e[1]=i:e.push(i)}else e[0]&&e[0].headers&&c(e[0].headers,r)&&(this.dt=r);function c(e,t){var n=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),n=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),n=!0),n}}function b(e,t){this.params={},this.metrics={},this.startTime=(0,v.zO)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var n,r=this.opts||{},o=this.target;"string"==typeof o?n=o:"object"==typeof o&&o instanceof nt?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),x(this,n);var i=(""+(o&&o instanceof nt&&o.method||r.method||"GET")).toUpperCase();this.params.method=i,this.txSize=Ye(r.body)||0}function w(e,t){var n;this.endTime=(0,v.zO)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,v.zO)()-this.startTime};r("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this)}function O(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<tt;o++)e.removeEventListener(et[o],this.listener,!1);t.aborted||(n.duration=(0,v.zO)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,r("xhr",[t,n,this.startTime,this.endTime,"xhr"],this))}}function x(e,t){var n=(0,Qe.e)(t),r=e.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,e.parsedOrigin=n,e.sameOrigin=n.sameOrigin}function E(e,t){e.params.status=t.status;var n=function(e,t){var n=e.responseType;return"json"===n&&null!==t?t:"arraybuffer"===n||"blob"===n||"json"===n?Ye(e.response):"text"===n||""===n||void 0===n?Ye(e.responseText):void 0}(t,e.lastSize);if(n&&(e.metrics.rxSize=n),e.sameOrigin){var r=t.getResponseHeader("X-NewRelic-App-Data");r&&(e.params.cat=r.split(", ").pop())}e.loadCaptureCalled=!0}n.on("new-xhr",i),n.on("open-xhr-start",a),n.on("open-xhr-end",c),n.on("send-xhr-start",u),n.on("xhr-cb-time",s),n.on("xhr-load-added",f),n.on("xhr-load-removed",d),n.on("xhr-resolved",l),n.on("addEventListener-end",p),n.on("removeEventListener-end",h),n.on("fn-end",g),n.on("fetch-before-start",y),n.on("fetch-start",b),n.on("fn-start",m),n.on("fetch-done",w)}(r.agentIdentifier,r.ee,r.handler,r.dt),r)}return r=t,(n=o).prototype=Object.create(r.prototype),n.prototype.constructor=n,$e(n,r),o}(y.W);var it=o(5098);function at(e,t){return at=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},at(e,t)}var ct="addEventListener",ut="resourcetimingbufferfull",st="bstResource",ft="-start",dt="-end",lt="fn-start",pt="fn-end",ht="bstTimer",vt="pushState",mt=P.Y.EV,gt=function(t){var n,r;function o(n){var r;if(r=t.call(this,n)||this,!(window.performance&&window.performance.timing&&window.performance.getEntriesByType))return function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(r);(0,U.O)(r.agentIdentifier).features.stn=!0;var o=r.ee;function i(e){if((0,h.p)(st,[window.performance.getEntriesByType("resource")],void 0,void 0,o),window.performance.clearResourceTimings)try{window.performance.removeEventListener(ut,i,!1)}catch(e){}else try{window.performance.removeEventListener("webkitresourcetimingbufferfull",i,!1)}catch(e){}}return r.timerEE=Ae(r.ee),r.rafEE=ke(r.ee),Re(r.ee),Se(r.ee),r.ee.on(lt,(function(e,t){e[0]instanceof mt&&(this.bstStart=(0,v.zO)())})),r.ee.on(pt,(function(e,t){var n=e[0];n instanceof mt&&(0,h.p)("bst",[n,t,this.bstStart,(0,v.zO)()],void 0,void 0,o)})),r.timerEE.on(lt,(function(e,t,n){this.bstStart=(0,v.zO)(),this.bstType=n})),r.timerEE.on(pt,(function(e,t){(0,h.p)(ht,[t,this.bstStart,(0,v.zO)(),this.bstType],void 0,void 0,o)})),r.rafEE.on(lt,(function(){this.bstStart=(0,v.zO)()})),r.rafEE.on(pt,(function(e,t){(0,h.p)(ht,[t,this.bstStart,(0,v.zO)(),"requestAnimationFrame"],void 0,void 0,o)})),r.ee.on(vt+ft,(function(e){this.time=(0,v.zO)(),this.startPath=location.pathname+location.hash})),r.ee.on(vt+dt,(function(e){(0,h.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,void 0,o)})),(0,it.W)()?((0,h.p)(st,[window.performance.getEntriesByType("resource")],void 0,void 0,o),function(){var e=new PerformanceObserver((function(e,t){var n=e.getEntries();(0,h.p)(st,[n],void 0,void 0,o)}));try{e.observe({entryTypes:["resource"]})}catch(e){}}()):ct in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener(ut,i,(0,e.m)(!1)):window.performance.addEventListener("webkitresourcetimingbufferfull",i,(0,e.m)(!1))),document.addEventListener("scroll",r.noOp,(0,e.m)(!1)),document.addEventListener("keypress",r.noOp,(0,e.m)(!1)),document.addEventListener("click",r.noOp,(0,e.m)(!1)),r}return r=t,(n=o).prototype=Object.create(r.prototype),n.prototype.constructor=n,at(n,r),o.prototype.noOp=function(e){},o}(y.W);function yt(e,t){return yt=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},yt(e,t)}var bt=function(e){var t,n;function r(t){var n;return n=e.call(this,t)||this,(0,U.O)(n.agentIdentifier).features.ins=!0,n}return n=e,(t=r).prototype=Object.create(n.prototype),t.prototype.constructor=t,yt(t,n),r}(y.W);function wt(e,t){return wt=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(e,t){return e.__proto__=t,e},wt(e,t)}var Ot="fn-start",xt="fn-end",Et="cb-start",jt="cb-end",Pt=window,_t=Pt.location,Lt=function(t){var n,r;function o(n){var r;r=t.call(this,n)||this;var o=(0,U.O)(r.agentIdentifier);if(!Pt.addEventListener||!o.xhrWrappable||o.disabled)return function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(r);o.features.spa=!0;var i,a=0,c=r.ee.get("tracer"),u=Oe(r.ee),s=function(e){return Pe(e)}(r.ee),f=Se(r.ee),d=Ae(r.ee),l=He(r.ee),p=Ie(r.ee),h=Re(r.ee),m=function(e){return Ee(e)}(r.ee);function g(e,t){h.emit("newURL",[""+_t,t])}function y(){a++,i=_t.hash,this["fn-start"]=(0,v.zO)()}function b(){a--,_t.hash!==i&&g(0,!0);var e=(0,v.zO)();this.jsTime=~~this.jsTime+e-this["fn-start"],this["fn-end"]=e}function w(e,t){e.on(t,(function(){this[t]=(0,v.zO)()}))}return r.ee.on(Ot,y),s.on(Et,y),u.on(Et,y),r.ee.on(xt,b),s.on(jt,b),u.on(jt,b),r.ee.buffer([Ot,xt,"xhr-resolved"]),f.buffer([Ot]),d.buffer(["setTimeout-end","clearTimeout-start",Ot]),l.buffer([Ot,"new-xhr","send-xhr-start"]),p.buffer(["fetch-start","fetch-done","fetch-body-start","fetch-body-end"]),h.buffer(["newURL"]),m.buffer([Ot]),s.buffer(["propagate",Et,jt,"executor-err","resolve-start"]),c.buffer([Ot,"no-fn-start"]),u.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),w(p,"fetch-start"),w(p,"fetch-done"),w(u,"new-jsonp"),w(u,"jsonp-end"),w(u,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),Pt.addEventListener("hashchange",g,(0,e.m)(!0)),Pt.addEventListener("load",g,(0,e.m)(!0)),Pt.addEventListener("popstate",(function(){g(0,a>1)}),(0,e.m)(!0)),r}return r=t,(n=o).prototype=Object.create(r.prototype),n.prototype.constructor=n,wt(n,r),o}(y.W),Tt=o(847),Ct=o(8539),St=o.n(Ct),It=o(441);var Rt=!1;new Promise((function(e,t){if(Rt)e(Rt);else{var n=(0,Be.gG)();try{(0,It.L)(p.Z,n.info),(0,j.Dg)(p.Z,n.init),function(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");Ue[e]=new Fe.I(t,Ge),(0,Be.Qy)(e,Ue[e],"loader_config")}(p.Z,n.loader_config),(0,U.s)(p.Z,{}),function(e){var t=(0,Be.fP)(),n=u.ee.get(e),r=n.get("tracer"),o="api-",i="api-ixn-";function a(){}(0,V.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(e,n){t[n]=s(o,n,!0,"api")})),t.addPageAction=s(o,"addPageAction",!0),t.setCurrentRouteName=s(o,"routeName",!0),t.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,U.O)(e).customTransaction=(n||"http://custom.transaction")+t,s(o,"setPageViewName",!0,"api")()},t.setCustomAttribute=function(t,n){var r,i=(0,It.C)(e);return(0,It.L)(e,Object.assign({},i,{jsAttributes:Object.assign({},i.jsAttributes,(r={},r[t]=n,r))})),s(o,"setCustomAttribute",!0,"api")()},t.interaction=function(){return(new a).get()};var c=a.prototype={createTracer:function(e,t){var o={},i=this,a="function"==typeof t;return(0,h.p)("api-ixn-tracer",[(0,v.zO)(),e,o],i,void 0,n),function(){if(r.emit((a?"":"no-")+"fn-start",[(0,v.zO)(),i,a],o),a)try{return t.apply(this,arguments)}catch(e){throw r.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],o),e}finally{r.emit("fn-end",[(0,v.zO)()],o)}}}};function s(e,t,r,o){return function(){return(0,h.p)("record-supportability",["API/"+t+"/called"],void 0,void 0,n),(0,h.p)(e+t,[(0,v.zO)()].concat(St()(arguments)),r?null:this,o,n),r?void 0:this}}(0,V.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(e,t){c[t]=s(i,t)})),t.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,h.p)("record-supportability",["API/noticeError/called"],void 0,void 0,n),(0,h.p)("err",[e,(0,v.zO)(),!1,t],void 0,void 0,n)}}(p.Z),e(Rt=!0)}catch(e){t(e)}}})).then((function(){var e,t,n,r=(0,Tt.K)(p.Z);r.page_view_event&&new E(p.Z),r.page_view_timing&&new L(p.Z),r.metrics&&new G(p.Z),r.jserrors&&new Me(p.Z),r.ajax&&new ot(p.Z),r.session_trace&&new gt(p.Z),r.page_action&&new bt(p.Z),r.spa&&new Lt(p.Z),e="spa",t?setTimeout((function(){return l(e)}),n||1e3):a((function(){return l(e)}))}))}(),i}()}));</script><link rel="shortcut icon" href="https://lamcdn.net/www.wonderzine.com/gui/favicon-198b025b74fc67a864df23d011ddfb8fd5f6358aa16cc5aca3b57e755a4a3514.ico" /><link rel="apple-touch-icon" href="https://lamcdn.net/www.wonderzine.com/gui/apple-touch-icon-90db2513bf44ff583306216a33f219ef8d7c9041c01b6d46ba83f0c6618782c4.png"/><meta name="viewport" content="width=1024"><title>Что известно о женщинах, иммигрирующих в Россию и другие страны — Wonderzine</title><meta property="article:modified_time" content="2022-08-11T10:50:32+0300" />
+<meta property="article:published_time" content="2019-12-09T19:51:13+0300" />
+<meta property="article:tag" content="Гараж, Жизнь, Беженцы, Эмиграция, Иммиграция" />
+<meta property="fb:app_id" content="144132812440293" />
+<meta property="og:description" content="Почему женщины особенно уязвимы" />
+<meta property="og:image" content="https://lamcdn.net/wonderzine.com/post-og_image/64-BphnFQyE6LE7BpIEM1w.png" />
+<meta property="og:site_name" content="Wonderzine" />
+<meta property="og:title" content="Что известно о женщинах, иммигрирующих в Россию и другие страны" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.wonderzine.com/wonderzine/life/life/247551-garage-migration" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:description" content="Почему женщины особенно уязвимы" />
+<meta property="twitter:domain" content="www.wonderzine.com" />
+<meta property="twitter:image:src" content="https://lamcdn.net/wonderzine.com/post-og_image/64-BphnFQyE6LE7BpIEM1w.png" />
+<meta property="twitter:site" content="@Wonderzine" />
+<meta property="twitter:title" content="Что известно о женщинах, иммигрирующих в Россию
+и другие страны" />
+<meta property="vk:image" content="https://lamcdn.net/wonderzine.com/post-og_image/64-BphnFQyE6LE7BpIEM1w.png" />
+<meta name="robots" content="noarchive" /><link rel="alternate" type="application/rss+xml" title="Статьи — Wonderzine" href="/feeds.atom" />
+<link rel="alternate" type="application/rss+xml" title="Статьи рубрики «Жизнь» — Wonderzine" href="/feeds.atom?topic=life" />
+<link rel="alternate" type="application/rss+xml" title="Статьи в потоке «Жизнь» — Wonderzine" href="/feeds.atom?flow=life" /><meta name="description" content="Почему женщины особенно уязвимы — Wonderzine"/><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="bcAM1ak2t5ubpRWJC9OqUzZPAiy/YIQDF65oJbDJWb6v21he1Ckqeqw1eZkps/VSnW7A0qNMPIrleXlX4AZuAw==" /><link rel="stylesheet" media="all" href="https://lamcdn.net/www.wonderzine.com/gui/application-64e226ad111fb04ca80003154920abfaaea065230859d34fda9bdc182586adb9.css" /><link rel="stylesheet" media="all" href="https://lamcdn.net/www.wonderzine.com/gui/style-pack-37-e8c0c0c768299750f65f8c1f292f4bff23d1d11f934f49bf5b61316591777272.css" /><script type="text/javascript">var LAM = {CurrentUser: {"logged_in":false},CurrentCity: {"id":1,"name":"Москва","in_name":"Москве"},GeoCity: {"id":1,"name":"Москва","in_name":"Москве","permalink":"moscow","country_name":"Россия","country_english_name":"Russia","country_code":"RU"},Components: {},Apps: {},Applications: {},Utils: {},Observer: {},Threshold: true,Debug: function() { if (window.console) console.log(arguments); },DustGlobals: {lazy_img: true},WidgetsContent: { first_line: {"blocks":[{"posts":[{"id":267113,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"Сериалы года, которые вы могли пропустить","title_for_cover":"Сериалы года, которые вы могли пропустить","full_name":"А+","cover_color":"ffffff","url_params":{"space":"wonderzine","topic":"entertainment","flow":"tv-shows","post":"267113-tv-shows"},"space":"Wonderzine","topic":"Развлечения","flow":"Сериалы","flow_id":1213,"user":1501691,"published_at":"2023-01-06T14:51:28.000+03:00","url":"/wonderzine/entertainment/tv-shows/267113-tv-shows","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/E0tUgGPfjYsFPt5ZwUxv4g-default.jpg","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/xLQMDcy9ZUNoBKwFPxXuEg-big.jpg","image_orig":"https://lamcdn.net/wonderzine.com/post-image/xLQMDcy9ZUNoBKwFPxXuEg.jpg","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/xLQMDcy9ZUNoBKwFPxXuEg-thumbnail.jpg","cover":"https://lamcdn.net/wonderzine.com/post-cover/VEsvZpe-wz3b8KWJe3BrxQ-default.jpg","cover_style_id":2,"comments_count":0,"views_count":148,"is_online":false,"body_preamble":"Комедии, драмы и тру-крайм","weight":2,"badge_hide_title":false,"layout":"12col_16247","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""}]},{"posts":[{"id":267119,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"«Кому-то надо было начать говорить»: Как преследовали женщин, которые выступали против системы","title_for_cover":"«Кому-то надо было начать говорить»: Как преследовали женщин, которые выступали против системы","full_name":"Julia Taratuta","cover_color":"ffffff","url_params":{"space":"wonderzine","topic":"life","flow":"life","post":"267119-zhenschiny-protiv-sistemy"},"space":"Wonderzine","topic":"Жизнь","flow":"Жизнь","flow_id":1069,"user":1355893,"published_at":"2023-01-06T14:51:09.000+03:00","url":"/wonderzine/life/life/267119-zhenschiny-protiv-sistemy","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/ryQ0ViJqKOTGvEVvBX2w4g-default.jpg","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/K-U0lrdpyoJHmjKhyX_cqA-big.jpg","image_orig":"https://lamcdn.net/wonderzine.com/post-image/K-U0lrdpyoJHmjKhyX_cqA.jpg","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/K-U0lrdpyoJHmjKhyX_cqA-thumbnail.jpg","cover":"https://lamcdn.net/wonderzine.com/post-cover/yYi79TSU-AfTqu5T6Uf0UQ-default.jpg","cover_style_id":2,"comments_count":0,"views_count":77,"is_online":false,"body_preamble":"Депутатки, активистки и дочери","weight":2,"badge_hide_title":false,"layout":"12col_16247","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""}]},{"posts":[{"id":267143,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"Как россияне переживали мобилизацию","title_for_cover":"Как россияне переживали мобилизацию","full_name":"Алиса Попова","cover_color":"ffffff","url_params":{"space":"wonderzine","topic":"life","flow":"life","post":"267143-mobilization"},"space":"Wonderzine","topic":"Жизнь","flow":"Жизнь","flow_id":1069,"user":1503865,"published_at":"2023-01-06T14:50:02.000+03:00","url":"/wonderzine/life/life/267143-mobilization","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/1-0zAMpgcIJB3ttCF-F79g-default.jpg","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/bfzAGheTohr_iwmU0ouXtw-big.jpg","image_orig":"https://lamcdn.net/wonderzine.com/post-image/bfzAGheTohr_iwmU0ouXtw.jpg","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/bfzAGheTohr_iwmU0ouXtw-thumbnail.jpg","cover":"https://lamcdn.net/wonderzine.com/post-cover/W217DIx_5jxz6ASzwKxr6g-default.jpg","cover_style_id":2,"comments_count":0,"views_count":77,"is_online":false,"body_preamble":"От военнобязанных мужчин до трансгендерной женщины","weight":2,"badge_hide_title":false,"layout":"12col_16247","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""}]}],"page":null}, materials: {"Post":{"objects":[{"id":219545,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"«Салам Масква»: Криминальный сериал Павла Бардина о мигрантах","title_for_cover":"«Салам Масква»: Криминальный сериал Павла Бардина о мигрантах","full_name":"Даша Татаркова","cover_color":"ffffff","url_params":{"space":"wonderzine","topic":"entertainment","flow":"tv-shows","post":"219545-salam-maskva"},"space":"Wonderzine","topic":"Развлечения","flow":"Сериалы","flow_id":1213,"user":755913,"published_at":"2016-07-14T17:03:00.000+03:00","url":"/wonderzine/entertainment/tv-shows/219545-salam-maskva","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/oya6M9-oPTIqwnURL6zdcg-default.jpg","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/NHw67ruBjPca85oLVhy7MA-big.jpg","image_orig":"https://lamcdn.net/wonderzine.com/post-image/NHw67ruBjPca85oLVhy7MA.jpg","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/NHw67ruBjPca85oLVhy7MA-thumbnail.jpg","cover":"https://lamcdn.net/wonderzine.com/post-cover/8aoKbyMjW1WzfgtXb8eqOQ-default.jpg","cover_style_id":2,"comments_count":2,"views_count":11143,"is_online":false,"body_preamble":"Полиция, бандиты и просто люди","weight":2,"badge_hide_title":false,"layout":null,"theme":null,"with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":null},{"id":234751,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"Пловчиха Юсра Мардини: Как я бежала из Сирии, чтобы заниматься спортом","title_for_cover":"Пловчиха Юсра Мардини: Как я бежала из Сирии, чтобы заниматься спортом","full_name":"Olga Lukinskaya","cover_color":null,"url_params":{"space":"wonderzine","topic":"health","flow":"personal","post":"234751-yusra-mardini"},"space":"Wonderzine","topic":"Здоровье","flow":"Личный опыт","flow_id":1259,"user":766359,"published_at":"2018-04-23T14:33:58.000+03:00","url":"/wonderzine/health/personal/234751-yusra-mardini","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/d3D0MXcmhUMdpGoKtOIE3A-default.jpg","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/PzBKsnApCUwijhstew6FEg-big.jpg","image_orig":"https://lamcdn.net/wonderzine.com/post-image/PzBKsnApCUwijhstew6FEg.jpg","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/PzBKsnApCUwijhstew6FEg-thumbnail.jpg","cover":"https://lamcdn.net/wonderzine.com/post-cover/3KMhWW1rwA1bLyUOVJexoQ-default.jpg","cover_style_id":2,"comments_count":2,"views_count":21362,"is_online":false,"body_preamble":"«Плавание спасло мою жизнь»","weight":2,"badge_hide_title":false,"layout":null,"theme":null,"with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""},{"id":236147,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"Дети в вольерах: Как и зачем в США разлучают семьи мигрантов","title_for_cover":"Дети в вольерах: Как и зачем в США разлучают семьи мигрантов","full_name":"Dmitry Kurkin","cover_color":"000000","url_params":{"space":"wonderzine","topic":"life","flow":"life","post":"236147-families-separated"},"space":"Wonderzine","topic":"Жизнь","flow":"Жизнь","flow_id":1069,"user":1375380,"published_at":"2018-06-21T19:02:27.000+03:00","url":"/wonderzine/life/life/236147-families-separated","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/k3yPoR60G7jSJH8Xvp94sQ-default.png","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/iZoBHgYRFywDH8Adq0UyjA-big.png","image_orig":"https://lamcdn.net/wonderzine.com/post-image/iZoBHgYRFywDH8Adq0UyjA.png","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/iZoBHgYRFywDH8Adq0UyjA-thumbnail.png","cover":"https://lamcdn.net/wonderzine.com/post-cover/tnJqolWJYUr-wGAivtUd2w-default.png","cover_style_id":2,"comments_count":3,"views_count":8348,"is_online":false,"body_preamble":"Ужесточение борьбы с нелегалами всего за шесть недель обернулось гуманитарным кризисом","weight":2,"badge_hide_title":false,"layout":null,"theme":null,"with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""},{"id":241357,"published":true,"is_featured":false,"is_any_featured":true,"is_super_featured":true,"is_news_post":false,"title":"Идти некуда: «Айка» — болезненная и честная драма о выживании мигранток в Москве","title_for_cover":"Идти некуда: «Айка» — болезненная и честная драма о выживании мигранток в Москве","full_name":"Аня Захарова","cover_color":"ffffff","url_params":{"space":"wonderzine","topic":"entertainment","flow":"movies","post":"241357-ayka"},"space":"Wonderzine","topic":"Развлечения","flow":"Кино","flow_id":1211,"user":756593,"published_at":"2019-02-20T20:41:41.000+03:00","url":"/wonderzine/entertainment/movies/241357-ayka","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/8-EZ-ihQyVIaid2Zg3r_uA-default.png","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/V9rt4qmIT-u_f9mDQc97_g-big.png","image_orig":"https://lamcdn.net/wonderzine.com/post-image/V9rt4qmIT-u_f9mDQc97_g.png","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/V9rt4qmIT-u_f9mDQc97_g-thumbnail.png","cover":"https://lamcdn.net/wonderzine.com/post-cover/FSgWpPzyn33qiD-NjUnU3A-default.png","cover_style_id":1,"comments_count":148,"views_count":69754,"is_online":false,"body_preamble":"Номинант на «Оскар» от Казахстана","weight":3,"badge_hide_title":false,"layout":"6col_16246","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""},{"id":241611,"published":true,"is_featured":false,"is_any_featured":true,"is_super_featured":true,"is_news_post":false,"title":"«Я как заключённая»: Беженки о жизни\r\nв России","title_for_cover":"«Я как заключённая»: Беженки о жизни\r<br>в России","full_name":"Александра Савина","cover_color":"ffffff","url_params":{"space":"wonderzine","topic":"life","flow":"experience","post":"241611-refugees"},"space":"Wonderzine","topic":"Жизнь","flow":"Личный опыт","flow_id":1209,"user":763747,"published_at":"2019-03-04T19:03:47.000+03:00","url":"/wonderzine/life/experience/241611-refugees","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/AhdHwTvV8LaQad2SNQ7J-w-default.png","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/SNYAr76VyJXbDqp1kSkWqw-big.png","image_orig":"https://lamcdn.net/wonderzine.com/post-image/SNYAr76VyJXbDqp1kSkWqw.png","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/SNYAr76VyJXbDqp1kSkWqw-thumbnail.png","cover":"https://lamcdn.net/wonderzine.com/post-cover/ohSAu8ID3bascWw3FZ5lnw-default.png","cover_style_id":1,"comments_count":25,"views_count":16114,"is_online":false,"body_preamble":"Как жить в России без документов","weight":3,"badge_hide_title":false,"layout":"12col_16309","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""}]}}, interesting_posts: {"posts":[{"id":266849,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"«Не хочу помогать им зарабатывать»: Бывшая сотрудница LUDI Анна Головина о том, почему уволилась","title_for_cover":"«Не хочу помогать им зарабатывать»: Бывшая сотрудница LUDI Анна Головина о том, почему уволилась","full_name":"Алиса Попова","cover_color":"000000","url_params":{"space":"wonderzine","topic":"life","flow":"life","post":"266849-ludi"},"space":"Wonderzine","topic":"Жизнь","flow":"Жизнь","flow_id":1069,"user":1503865,"published_at":"2022-12-12T16:19:02.000+03:00","url":"/wonderzine/life/life/266849-ludi","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/awkU64k2vXrmoy-nrcVvHw-default.jpg","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/vAbpDmg6awEwLYQMhuiu5Q-big.jpg","image_orig":"https://lamcdn.net/wonderzine.com/post-image/vAbpDmg6awEwLYQMhuiu5Q.jpg","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/vAbpDmg6awEwLYQMhuiu5Q-thumbnail.jpg","cover":"https://lamcdn.net/wonderzine.com/post-cover/H7A2E-JDgd1MaWyMVc-hfA-default.jpg","cover_style_id":2,"comments_count":2,"views_count":2627,"is_online":false,"body_preamble":"«Идея сделать горизонтальное образование столкнулась с жизнью»","weight":2,"badge_hide_title":false,"layout":"12col_16247","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""},{"id":267093,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"Лучший подарок: 5 вариантов на Новый год для ценителей книг\r\n","title_for_cover":"Лучший подарок: 5 вариантов на Новый год для ценителей книг\r<br>","full_name":"А+","cover_color":"000000","url_params":{"space":"wonderzine","topic":"life","flow":"life","post":"267093-book-gifts"},"space":"Wonderzine","topic":"Жизнь","flow":"Жизнь","flow_id":1069,"user":1501691,"published_at":"2022-12-28T17:10:26.000+03:00","url":"/wonderzine/life/life/267093-book-gifts","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/LNpD_HVnFiqrfVjBIJSGqQ-default.jpg","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/F3-ZaipW-OdDMU5H73Z_nQ-big.jpg","image_orig":"https://lamcdn.net/wonderzine.com/post-image/F3-ZaipW-OdDMU5H73Z_nQ.jpg","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/F3-ZaipW-OdDMU5H73Z_nQ-thumbnail.jpg","cover":"https://lamcdn.net/wonderzine.com/post-cover/T0jOJDknPQwgcXJGZPGPNA-default.jpg","cover_style_id":1,"comments_count":0,"views_count":1077,"is_online":false,"body_preamble":"На любой вкус и кошелёк","weight":2,"badge_hide_title":false,"layout":"12col_16247","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""},{"id":266843,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"Подарки для «Тайного Санты» со смыслом: 8 вещей, чтобы поддержать благотворителей в России","title_for_cover":"Подарки для «Тайного Санты» со смыслом: 8 вещей, чтобы поддержать благотворителей в России","full_name":"a d","cover_color":"000000","url_params":{"space":"wonderzine","topic":"life","flow":"life","post":"266843-gifts"},"space":"Wonderzine","topic":"Жизнь","flow":"Жизнь","flow_id":1069,"user":1435897,"published_at":"2022-12-09T17:56:35.000+03:00","url":"/wonderzine/life/life/266843-gifts","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/pWC4OOQh5WSEl22iuAtTpg-default.png","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/A1iYOiOA4d496JSXXdrL0w-big.png","image_orig":"https://lamcdn.net/wonderzine.com/post-image/A1iYOiOA4d496JSXXdrL0w.png","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/A1iYOiOA4d496JSXXdrL0w-thumbnail.png","cover":"https://lamcdn.net/wonderzine.com/post-cover/HAeGiN0ev1fPmy3EI2wm3A-default.png","cover_style_id":1,"comments_count":0,"views_count":2856,"is_online":false,"body_preamble":"Худи, керамика, деревянные пазлы и не только","weight":2,"badge_hide_title":false,"layout":"12col_16247","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""},{"id":267149,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"«Обнимаемся, слёзы наворачиваются сами собой»: Pussy Riot подводят итоги ужасного года\r\n","title_for_cover":"«Обнимаемся, слёзы наворачиваются сами собой»: Pussy Riot подводят итоги ужасного года\r<br>","full_name":"a d","cover_color":"ffffff","url_params":{"space":"wonderzine","topic":"life","flow":"life","post":"267149-pussy-riot"},"space":"Wonderzine","topic":"Жизнь","flow":"Жизнь","flow_id":1069,"user":1435897,"published_at":"2022-12-31T09:00:21.000+03:00","url":"/wonderzine/life/life/267149-pussy-riot","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/JAg7VclYUpOkaDM5LPxeUw-default.jpg","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/k6xi0f5QCIx88g6GTTDGEw-big.jpg","image_orig":"https://lamcdn.net/wonderzine.com/post-image/k6xi0f5QCIx88g6GTTDGEw.jpg","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/k6xi0f5QCIx88g6GTTDGEw-thumbnail.jpg","cover":"https://lamcdn.net/wonderzine.com/post-cover/dIS9IHWGtFMtw2CCexyEEg-default.jpg","cover_style_id":1,"comments_count":0,"views_count":845,"is_online":false,"body_preamble":"И загадывают желание на 2023 год","weight":2,"badge_hide_title":false,"layout":"12col_16247","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""},{"id":267087,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"«В хорошие новости верить перестала»: Журналистки подводят итоги года","title_for_cover":"«В хорошие новости верить перестала»: Журналистки подводят итоги года","full_name":"Алиса Попова","cover_color":"ffffff","url_params":{"space":"wonderzine","topic":"life","flow":"life","post":"267087-zhurnalistki-itogi-goda"},"space":"Wonderzine","topic":"Жизнь","flow":"Жизнь","flow_id":1069,"user":1503865,"published_at":"2022-12-30T19:41:14.000+03:00","url":"/wonderzine/life/life/267087-zhurnalistki-itogi-goda","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/OGCzskR5bfLD3XfueEs05w-default.jpg","image_featured_meta":{"w":300,"h":300},"image":"https://lamcdn.net/wonderzine.com/post-image/713qtGAuuVPeQaRburwZdw-big.jpg","image_orig":"https://lamcdn.net/wonderzine.com/post-image/713qtGAuuVPeQaRburwZdw.jpg","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/713qtGAuuVPeQaRburwZdw-thumbnail.jpg","cover":"https://lamcdn.net/wonderzine.com/post-cover/SysW_qy0YoUpyJLoCR9cZg-default.jpg","cover_style_id":1,"comments_count":0,"views_count":838,"is_online":false,"body_preamble":"«Хочу защищать от лжи и манипуляций»","weight":2,"badge_hide_title":false,"layout":"12col_16247","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""},{"id":267059,"published":true,"is_featured":true,"is_any_featured":true,"is_super_featured":false,"is_news_post":false,"title":"В закладки: Подкаст «говорит республика _» об азиатских национальных регионах России","title_for_cover":"В закладки: Подкаст «говорит республика _» об азиатских национальных регионах России","full_name":"Polina","cover_color":"ffffff","url_params":{"space":"wonderzine","topic":"life","flow":"life","post":"267059-re-public_speaking"},"space":"Wonderzine","topic":"Жизнь","flow":"Жизнь","flow_id":1069,"user":1493835,"published_at":"2022-12-26T19:25:35.000+03:00","url":"/wonderzine/life/life/267059-re-public_speaking","image_featured":"https://lamcdn.net/wonderzine.com/post-image_featured/VPz_rSAWQY7xkGuN0L626w-default.png","image_featured_meta":{"w":300,"h":200},"image":"https://lamcdn.net/wonderzine.com/post-image/Pb2KD4Cmy05P0P28xZDVqQ-big.png","image_orig":"https://lamcdn.net/wonderzine.com/post-image/Pb2KD4Cmy05P0P28xZDVqQ.png","image_thumbnail":"https://lamcdn.net/wonderzine.com/post-image/Pb2KD4Cmy05P0P28xZDVqQ-thumbnail.png","cover":"https://lamcdn.net/wonderzine.com/post-cover/Z-SU-qAv6oW-yviHPJK7nw-default.png","cover_style_id":2,"comments_count":0,"views_count":680,"is_online":false,"body_preamble":"Голоса людей из Хакасии, Бурятии, Калмыкии и не только","weight":2,"badge_hide_title":false,"layout":"4col_16244","theme":"21941","with_missing_images":false,"is_promoted":false,"promoted_color":"5594D7","promoted_name":""}]} }};LAM.Errbit = {"api_key":"https://3d3315e6a8e84b2995acc1d20d0b1f67:58bab3ac4c204262bb5d9b5c26f63171@sentry.cms-platform.tools/42","host":"sentry.setka.io","port":80};LAM.Errbit.env = 'production';</script><script>LAM.Config = {CLIENT_TYPE: "desktop",APP_NAME: 'Wonderzine',GRID_AUTH: true,LOGGED_IN: false,FB_APP_ID: '144132812440293',FBAUTH_SESSION_PATH: '/session.json?connect=fb',FBAUTH_RETURN_TO: null,VKButtons: [],DOMAIN_NAME: 'https://www.wonderzine.com',USERNAME_SYMBOLS: /^[a-zA-Z0-9-_]*$/,BUTTON_DISABLE_ON_PROCESSING: true,UPLOADER_IMAGE_PATH: '/uploaded_images',Z_IMG_BASE64: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==',PAYWALL_SUBSCRIBED: false,POST_WIDE: true,STYLE_PACK_ID: '37'};</script><script src="https://lamcdn.net/www.wonderzine.com/gui/application-c248e6d2bae887b103c0daa8f1da5606213c7050639a7cacd9343d5b3311d875.js"></script><script src="https://lamcdn.net/www.wonderzine.com/gui/read_stats-709e310ee7d8182168afd416959d2bf3d7a49fa5b4a6252f1df4e930f9baa35d.js"></script><script type="text/javascript">var I18n = I18n || {};I18n.defaultLocale = 'ru';I18n.locale = 'ru';/* Init dust context */var dustContext = dust.makeBase(dust.handlers || {}).push(LAM.DustGlobals);var WTF = {FB_APP_ID: LAM.Config.FB_APP_ID,onItemRender: LAM.Config.WTF_onItemRender,onBroadcastRender: LAM.Config.WTF_onBroadcastRender};</script><script data-ad-client="ca-pub-4932399522347634" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<meta name="google-site-verification" content="BGL1Tiwr8iVDcztpLT26Du76pLgswVpPsD9NwLyiS-c" />
+<meta name="pmail-verification" content="7b8aa75fa308063835f354aba6799348">
+
+<!-- START Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2116764-36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2116764-36', { 'optimize_id': 'GTM-P5WH644' });
+</script>
+<!-- END Global site tag (gtag.js) - Google Analytics -->
+
+
+<!-- Anti-flicker snippet (recommended)  - Google Analytics -->
+<style>
+  .async-hide {
+    opacity: 0 !important
+  }
+</style>
+<script>(function (a, s, y, n, c, h, i, d, e) {
+    s.className += ' ' + y; h.start = 1 * new Date;
+    h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+    (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
+  })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
+    { 'GTM-P5WH644': true });</script>
+<!--OVER Anti-flicker snippet - Google Analytics -->
+
+
+<!-- START Yandex Metrika tracking code -->
+<script type="text/javascript">
+  (function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+      try {
+        w.yaCounter21364705 = new Ya.Metrika({
+          id: 21364705,
+          webvisor: false,
+          clickmap: true,
+          trackLinks: true
+        });
+      } catch (e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+  <div><img src="//mc.yandex.ru/watch/21364705" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- END Yandex Metrika tracking code -->
+
+<!-- START HEADER BIDDING WONDERZINE Desktop-->
+<!--
+<script async="" src="https://yandex.ru/ads/system/header-bidding.js"></script>
+<script>
+var adfoxBiddersMap = {
+  "myTarget": "808046",
+  "betweenDigital": "890130",
+  "buzzoola": "1315118",
+  "astralab": "1696542",
+  "videonow": "1591235"
+};
+var adUnits = [
+//верхняя перетяжка desktop
+{
+  "code": "adfox_149814990417757352",
+  "codeType":"combo",
+  "bids": [
+    {
+      "bidder": "myTarget",
+      "params": {
+      "placementId": "954246"
+      }
+    },
+    {
+      "bidder": "betweenDigital",
+      "params": {
+      "placementId": "4423589"
+      }
+    }
+  ],
+  "sizes":
+            [
+                [
+                    300,
+                    100
+                ],
+                [
+                    320,
+                    50
+                ],
+                [
+                    320,
+                    100
+                ],
+                [
+                    300,
+                    50
+                ]
+            ]
+},
+//боковой баннер desktop
+{
+  "code": "adfox_149492677993798234",
+  "codeType":"combo",
+  "bids": [
+    {
+      "bidder": "myTarget",
+      "params": {
+      "placementId": "954248"
+      }
+    },
+    {
+      "bidder": "betweenDigital",
+      "params": {
+      "placementId": "4423590"
+      }
+    }
+  ],
+  "sizes":
+            [
+                [
+                    300,
+                    500
+                ],
+                [
+                    300,
+                    600
+                ],
+                [
+                    240,
+                    400
+                ],
+                [
+                    300,
+                    300
+                ]
+            ]
+ },
+//inread первый баннер desktop
+{
+  "code": "adfox_in_read_1",
+  "codeType":"combo",
+  "bids": [
+    {
+      "bidder": "buzzoola",
+      "params": {
+      "placementId": "1215502"
+      }
+    },
+    {
+      "bidder": "astralab",
+      "params": {
+      "placementId": "615da5783b1b03e1a530ff54"
+      }
+    },
+    {
+      "bidder": "videonow",
+      "params": {
+      "placementId": "5394333"
+      }
+    }
+  ],
+  "sizes":
+            [
+                [
+                    640,
+                    480
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+ },
+ //мобилка статьи под обложкой поста
+ {
+  "code": "adfox_149814993283345639",
+  "codeType":"combo",
+  "bids": [
+    {
+      "bidder": "myTarget",
+      "params": {
+      "placementId": "954250"
+      }
+    },
+    {
+      "bidder": "betweenDigital",
+      "params": {
+      "placementId": "4423622"
+      }
+    }
+  ],
+  "sizes":
+            [
+                [
+                    300,
+                    300
+                ],
+                [
+                    320,
+                    250
+                ],
+                [
+                    300,
+                    250
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+ },
+//мобилка статьи под завершением поста
+ {
+  "code": "adfox_150875691330999173",
+  "codeType":"combo",
+  "bids": [
+    {
+      "bidder": "myTarget",
+      "params": {
+      "placementId": "954252"
+      }
+    },
+    {
+      "bidder": "betweenDigital",
+      "params": {
+      "placementId": "4423623"
+      }
+    }
+  ],
+  "sizes":
+            [
+                [
+                    300,
+                    300
+                ],
+                [
+                    320,
+                    250
+                ],
+                [
+                    300,
+                    250
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+ },
+// мобильный баннер в контенте
+ {
+  "code": "adfox_in_read_first",
+  "codeType":"combo",
+  "bids": [
+    {
+      "bidder": "myTarget",
+      "params": {
+      "placementId": "954016"
+      }
+    },
+    {
+      "bidder": "betweenDigital",
+      "params": {
+      "placementId": "4423624"
+      }
+    },
+    {
+      "bidder": "buzzoola",
+      "params": {
+      "placementId": "89628"
+      }
+    },
+    {
+      "bidder": "astralab",
+      "params": {
+      "placementId": "615da5a53b1b03e1a530ff62"
+      }
+    },
+    {
+      "bidder": "videonow",
+      "params": {
+      "placementId": "5395718"
+      }
+    }
+  ],
+  "sizes":
+            [
+                [
+                    300,
+                    300
+                ],
+                [
+                    320,
+                    250
+                ],
+                [
+                    320,
+                    240
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+ },
+// мобильный баннер в контенте 2
+ {
+  "code": "adfox_in_read_all_1",
+  "codeType":"combo",
+  "bids": [
+    {
+      "bidder": "myTarget",
+      "params": {
+      "placementId": "954456"
+      }
+    },
+    {
+      "bidder": "betweenDigital",
+      "params": {
+      "placementId": "4424190"
+      }
+    },
+    {
+      "bidder": "buzzoola",
+      "params": {
+      "placementId": "89623"
+      }
+    },
+    {
+      "bidder": "astralab",
+      "params": {
+      "placementId": "615e97cb3b1b03e1a53100fa"
+      }
+    },
+    {
+      "bidder": "videonow",
+      "params": {
+      "placementId": "5396857"
+      }
+    }
+  ],
+  "sizes":
+            [
+                [
+                    300,
+                    300
+                ],
+                [
+                    320,
+                    250
+                ],
+                [
+                    320,
+                    240
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+ }
+];
+var userTimeout = 1000;
+window.YaHeaderBiddingSettings = {
+    biddersMap: adfoxBiddersMap,
+    adUnits: adUnits,
+    timeout: userTimeout
+};
+</script>
+-->
+<!-- END HEADER BIDDING WONDERZINE Desktop-->
+
+<!-- START yaContextCb lib -->
+<script>window.yaContextCb = window.yaContextCb || []</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+<!-- END yaContextCb lib -->
+
+
+<!-- START JS for AdFox initialisation -->
+<script>
+  var AdFoxPlaceParams = [],
+    adfoxDomain = undefined;
+
+//  if (LAM.GeoCity) {
+//    if (LAM.GeoCity.country_english_name == 'Ukraine') {
+//      adfoxDomain = 'ads.adfox.me';
+//    }
+//  }
+
+  function setAdFoxCustomDomain(index) {
+      delete AdFoxPlaceParams[index].params.customDomain;
+  }
+
+  function initAllAdFoxAds() {
+    if (!isInReadInited) {
+      initDesktopInReadNew();
+    }
+
+    if (AdFoxPlaceParams.length) {
+      for (var i = 0; i < AdFoxPlaceParams.length; i++) {
+        let currentBanner = AdFoxPlaceParams[i];
+        setAdFoxCustomDomain(i);
+
+        currentBanner.params.params["puid14"] = isArticleAboutCOVID;
+
+        if (puid && i == 0) {
+          currentBanner.params.params["puid12"] = puid;
+        }
+
+        window.yaContextCb.push(()=>{
+          Ya.adfoxCode[currentBanner.method](currentBanner.params, currentBanner.options)
+        });
+      }
+      AdFoxPlaceParams = [];
+    }
+  }
+
+  function getBannerIndex(id) {
+    var index = undefined;
+
+    for (var i = 0; i < AdFoxPlaceParams.length; i++) {
+      if (AdFoxPlaceParams[i].params.containerId == id) {
+        index = i;
+      }
+    }
+
+    return index;
+  }
+
+  function initBannerByid(id) {
+    var index =  getBannerIndex(id);
+    let banner = AdFoxPlaceParams[index];
+
+    if (index != undefined) {
+      setAdFoxCustomDomain(index);
+
+      AdFoxPlaceParams[index].params.params["puid14"] = isArticleAboutCOVID;
+
+      if (puid) {
+        AdFoxPlaceParams[index].params.params['puid12'] = puid;
+      }
+
+      window.yaContextCb.push(()=>{
+        Ya.adfoxCode[banner.method](banner.params, banner.options)
+      });
+      AdFoxPlaceParams.splice(index, 1);
+    }
+  }
+
+  function AdFoxTopBannerInit() {
+    if (AdFoxPlaceParams.length == 0) {
+      return false;
+    }
+
+    var index;
+
+    if (LAM.Config.CLIENT_TYPE == 'mobile' || LAM.Config.CLIENT_TYPE == 'tablet') {
+      initBannerByid('adfox_15373609375666506');
+    } else {
+      initBannerByid('adfox_149814990417757352');
+    }
+  }
+
+  function AdFoxSecondBannerInit() {
+    if (LAM.Config.CLIENT_TYPE == 'mobile' || LAM.Config.CLIENT_TYPE == 'tablet') {
+      initBannerByid('adfox_15369326722433679');
+      initBannerByid('adfox_149814993283345639');
+    }
+  }
+
+  function AdFoxRightBannerInit() {
+    // console.log("AdFoxRightBannerInit");
+    if (AdFoxPlaceParams.length == 0) {
+      return false;
+    }
+
+    initBannerByid('adfox_1498214315581946');
+  }
+
+</script>
+<!-- END JS for AdFox initialisation -->
+
+<!-- START Get AdFox User ID -->
+<script>
+  var isInReadInited = false,
+    ls,
+    puid,
+    isArticleAboutCOVID = false;
+  $(document).on('ready', function () {
+    ls = localStorage;
+    puid = undefined;
+
+    if (ls) {
+      puid = ls.getItem('adfoxCustomPuid');
+    }
+
+    if (LAM.Post && LAM.Post.tags.indexOf('Коронавирус') != -1) {
+      isArticleAboutCOVID = true;
+    }
+
+    AdFoxTopBannerInit();
+  });
+</script>
+<!-- END Get AdFox User ID -->
+
+<!-- Moneylink -->
+<script>
+  window.ao_subid = "";
+</script>
+<script src="//js.mamydirect.com/js/?h=XXZ0eqa1" type="text/javascript" async></script>
+<!-- End Moneylink --><meta name="referrer" content="no-referrer-when-downgrade">
+<!-- Facebook Pixel Code 
+<script>
+  console.log('Facebook Pixel Code', LAM.GeoCity.country_code)
+  !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1719332354960318');
+  fbq('track', 'PageView');
+  setTimeout(function (){fbq('trackCustom','MoreThan30Seconds')},30000);
+  setTimeout(function (){fbq('trackCustom','MoreThan60Seconds')},60000);
+  !function sendPvPerSessionToFb () {
+    let sessionLength = 30 * 60 * 1000;
+    let pvPerSession, pvPerSessionOld;
+    let date = new Date(Date.now() + sessionLength);
+    if (document.cookie.indexOf("pv_per_session=") == -1) {
+      pvPerSession = 1;
+    } else {
+      pvPerSessionOld = parseInt(document.cookie.split("pv_per_session=")[1].split(";")[0]);
+      pvPerSession = pvPerSessionOld + 1;
+      fbq('trackCustom', 'Pageviews Per Session', {'Pages Viewed': pvPerSession});
+    }
+    document.cookie = "pv_per_session=" + pvPerSession + "; path=/; expires=" + date.toUTCString();
+  }();
+  document.addEventListener('DOMContentLoaded', () => {
+    var el = document.querySelector('.article-text');
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    if (el && el.getBoundingClientRect().bottom > viewportHeight) {
+      document.addEventListener('scroll', function scrolled100percent() {
+        let rect = el.getBoundingClientRect();
+        if (rect.bottom <= viewportHeight) {
+          fbq('trackCustom', 'ContentScrolled');
+          document.removeEventListener('scroll', scrolled100percent);
+        }
+      });
+      document.addEventListener('scroll', function scrolled75percent() {
+          let rect = el.getBoundingClientRect();
+          if ((viewportHeight - rect.top)/(rect.bottom - rect.top) >= 0.75) {
+            fbq('trackCustom', 'Scrolled 75%');
+            document.removeEventListener('scroll', scrolled75percent);
+          }
+        });
+    }
+  });
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1719332354960318&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- START Buzzoola Init -->
+<script type="text/javascript">
+  (function (w, d) {
+    var c = d.createElement("script");
+    c.src = "https://tube.buzzoola.com/new/build/buzzlibrary.js";
+    c.type = "text/javascript";
+    c.async = !0;
+    var f = function () {
+      var p = d.getElementsByTagName("script")[0];
+      p.parentNode.insertBefore(c, p);
+    };
+      "[object Opera]" == w.opera ? d.addEventListener("DOMContentLoaded", f, !1) : f();
+    })(window, document);
+</script>
+<!-- END Buzzoola Init -->
+
+<style>
+  .buzzplayer-container:not(:empty) { max-width: 620px !important; margin-top: 20px; margin-bottom: 30px; }
+</style>
+<!-- END Buzzoola Player Targeting -->
+
+<meta name="google-site-verification" content="alZXTmPk-0XMbDNcw27VtmEKLzAKF4UJvFUAy4NiKMc" />
+
+<style>.instagram-media { position: static !important }</style>
+
+<style>
+  .post-cover_4.post-cover_4-style_1 .cover-content .article-title .flow {
+    line-height: 12px;
+  }
+
+  .g-item-post.superfeature .cover-content .article-title .flow {
+    line-height: 12px;
+  }
+</style>
+
+
+
+<!-- START change style of FB button-share in share-buttons-bar -->
+<style>
+  .share-buttons-bar .button-fb-native{
+    background: #1877f2 !important;
+  }
+  .share-buttons-bar .button-fb-native_hover{
+  background: #186cda !important;
+  }
+</style>
+<script>
+  window.addEventListener("load", function(){
+    if(!document.querySelector("body").classList.contains("mobile")){
+      setTimeout(function(){
+        Array.from(document.querySelectorAll(".button-fb-native span")).forEach(function(element){
+          element.addEventListener("mouseover", function(){
+            Array.from(document.querySelectorAll(".button-fb-native")).forEach(function(elem){
+              elem.classList.add("button-fb-native_hover");
+            });
+          });
+          element.addEventListener("mouseout", function(){
+            Array.from(document.querySelectorAll(".button-fb-native")).forEach(function(elem){
+              elem.classList.remove("button-fb-native_hover");
+            });
+          });
+        });
+      },1000);
+    }
+  });
+</script>
+<!-- END change style of FB button-share in share-buttons-bar -->
+<script type="text/javascript">var AUTH = {mobile: false,client_id: 'a82ab9138daf10f81e625fc6f208bbadddb86baf798c331e96380f5a94752ef1',redirect_url: 'https://www.wonderzine.com',provider_login: 'https://www.wonderzine.com/auth/lookatmedia',use_ssl: true,hide_close_button: false,with_provider: true,space: 'wonderzine'};</script></head><body class="narrow-window   wide editor-version-3-0 style-pack-37 posts show" data-post-layout="6col_16246"><svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">&#13;<defs>&#13;<symbol id="icon_star" viewbox="0 0 620 620">&#13;<title>Star</title>&#13;<polygon fill="#D29D39" points="310,11.13 222.12,222.8 11.13,310 222.79,397.89 310,608.87 397.47,398.15 608.87,310 397.89,222.79 "></polygon>&#13;</symbol>&#13;<symbol id="icon_views" viewbox="0 0 14 10">&#13;<title>Views</title>&#13;<path fill-rule="evenodd" clip-rule="evenodd" d="M7,10c-2.7,0-5.5-2.6-7-5c1.5-2.4,4.3-5,7-5c2.7,0,5.5,2.7,7,5 C12.5,7.4,9.7,10,7,10z M7,2C5.3,2,4,3.3,4,5c0,1.7,1.3,3,3,3c1.7,0,3-1.3,3-3C10,3.3,8.6,2,7,2z M7,6C6.4,6,6,5.6,6,5 c0-0.6,0.4-1,1-1s1,0.4,1,1C8,5.6,7.6,6,7,6z"></path>&#13;</symbol>&#13;<symbol id="icon_plus" viewbox="0 0 17 17">&#13;<title>+</title>&#13;<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">&#13;<g id="Main_page_category_1" transform="translate(-1526.000000, -210.000000)">&#13;<g id="+++" transform="translate(1527.000000, 211.000000)">&#13;<circle id="Oval" stroke="#262261" fill="#FFFFFF" cx="7.5" cy="7.5" r="7.5"></circle>&#13;<polygon id="+" fill="#262261" fill-rule="nonzero" points="8.49252014 10.9090909 8.49252014 8.42059839 10.9090909 8.42059839 10.9090909 6.55063291 8.49252014 6.55063291 8.49252014 4.09090909 6.47871116 4.09090909 6.47871116 6.55063291 4.09090909 6.55063291 4.09090909 8.42059839 6.47871116 8.42059839 6.47871116 10.9090909"></polygon>&#13;</g>&#13;</g>&#13;</g>&#13;</symbol>&#13;<symbol id="icon_comments" viewbox="0 0 11 11">&#13;<title>Comments</title>&#13;<path d="M3,10.9l0-4H0V0h11v7H7L3,10.9z"></path>&#13;</symbol>&#13;<symbol id="icon_prev" viewbox="0 0 12 21">&#13;<title>Previous</title>&#13;<polygon points="12,19.5 10.5,21 0,10.5 10.5,0 12,1.5 3,10.5 "></polygon>&#13;</symbol>&#13;<symbol id="icon_next" viewbox="0 0 12 21">&#13;<title>Next</title>&#13;<polygon points="0,19.5 1.5,21 12,10.5 1.5,0 0,1.5 9,10.5 "></polygon>&#13;</symbol>&#13;<symbol id="icon_search" viewbox="0 0 13 13">&#13;<title>Search</title>&#13;<path d="M10.2,8.9l2.8,2.8L11.7,13l-2.8-2.8c-0.9,0.7-2.1,1-3.2,1c-1.5,0-2.9-0.6-4-1.6C0.6,8.5,0,7.1,0,5.6s0.6-2.9,1.6-4 C2.7,0.6,4.1,0,5.6,0c1.5,0,2.9,0.6,4,1.7c1,1,1.5,2.2,1.6,3.5C11.3,6.5,11,7.8,10.2,8.9z M3,8.3C3.7,9,4.6,9.3,5.6,9.3 S7.5,9,8.2,8.3C9,7.5,9.3,6.6,9.3,5.6S9,3.7,8.2,3C7.5,2.3,6.6,1.9,5.6,1.9C4.6,1.9,3.7,2.3,3,3C2.3,3.7,1.9,4.6,1.9,5.6 C1.9,6.6,2.3,7.5,3,8.3z"></path>&#13;</symbol>&#13;<symbol id="village_logo" viewbox="0 0 242 84.62">&#13;<title>The Village</title>&#13;<path d="M104.46.16H91.56l-.25.65c1.3.8,4.12,6.69,4.12,8.31v39l-.81,15.08h12.26c-1.13-2.9-2.42-10.73-2.42-15.08Z"></path><path d="M84.54.16H71.63l-.24.65c1.29.8,4.11,6.69,4.11,8.31v39l-.8,15.08H87c-1.13-2.9-2.42-10.73-2.42-15.08Z"></path><path d="M56.55,56.47l-.24-.25,9.84-26.13H53.24l-.32.64c.88,1.05,2.66,3.71,2.09,5.17l-7.9,20.57c-1.45,3.71.32,7.1,4.11,7.1s6.62-2.51,9.44-5.09l5.89-5.24-1.37-1.86S58.24,55.58,56.55,56.47Z"></path><path d="M54.69.16H41.79l-.33.65c1.54,2.5,5,10.32,4.52,11.77L32.59,50.17l-13-33.31c-.89-2.18-2.9-12.58-3.47-16.7H.32L0,.81,7.82,16.86,27.1,63.16h4.44L50,12Z"></path><path d="M64.37,13.55A6.51,6.51,0,0,0,57.76,20c0,3.14,1.61,5.24,5.24,5.24a6.61,6.61,0,0,0,6.45-6.62A4.74,4.74,0,0,0,64.37,13.55Z"></path><path d="M240.14,40.41c-2.33,0-5.48,2.18-6.69,3.55l-.08.65A20.51,20.51,0,0,1,238,51.3c-2.42,4.2-9.68,8.07-17.83,8.07-12.91,0-19.89-6.15-20.66-17.78,5.91-.62,18-1.86,21.87-2,0-10.49-4.2-16.78-14-16.78-10.16,0-17.18,8.39-17.18,20.08,0,14.2,8.87,24,24.93,24,13.07,0,26.94-8.63,26.94-20.65C242,44.45,241.44,41.54,240.14,40.41ZM205.78,26.06c4,0,6.05,4.67,6.7,10l-13.07,3C199.46,31.34,201.63,26.06,205.78,26.06Z"></path><path d="M151.65,14.6l-.72-.56a6.17,6.17,0,0,1-3.63,1.45c-2.31,0-3-1.65-3.14-3.94l6.69-.5c-.08-3.23-1.78-5.32-4.52-5.32-3.31,0-5.49,2.26-5.49,6.21,0,3.55,2,6,5.57,6C148.75,18,150.36,16.62,151.65,14.6Zm-5.56-7.74c1.21,0,1.61,1.13,1.77,2.82l-3.71.93C144.19,8.45,144.56,6.86,146.09,6.86Z"></path><path d="M178,58.32H159.16a24.4,24.4,0,0,1,2.58-5.63,20.48,20.48,0,0,0,3.55.31c9.76,0,16.45-5.65,16.45-16.3A14.24,14.24,0,0,0,180,29.56l8.88,1.09V23.47a87.61,87.61,0,0,1-10.65,3.7c-2.7-2.85-6.82-4.5-12-4.5-10.4,0-16.21,6.53-16.21,15.65,0,7.16,3.73,11.81,9.21,13.71-3.25,3.14-7.25,7.84-9.13,12.1.69,2.39,3.09,3.16,7.39,3.22-3.93,2.65-7,5.26-7,8.88,0,5,5.65,8.39,15.73,8.39,9.2-1.94,23.24-11.62,23.24-18.88C189.41,60.82,185.13,58.32,178,58.32ZM165.37,25.81c4.68,0,6.69,6.78,6.69,13.8,0,5.72-1.53,10.48-5.32,10.48-5.08,0-6.7-7.42-6.7-14.19C160,30.41,161.58,25.81,165.37,25.81ZM171,79.05c-6.37,0-13.63-1.29-13.63-6.21,0-1.85,1.34-4,2.74-5.48h15.25c4.92,0,6.69,1.13,6.69,3.22C182.06,73.41,177.14,77.28,171,79.05Z"></path><path d="M116.48,1.45h2.34V12.5a36.57,36.57,0,0,1-.48,5.25h4.6a21.45,21.45,0,0,1-.49-5.33v-11h2.26A7.83,7.83,0,0,1,128.11,3c0,.35.07.64.07.81V14.2l-.32,3.55h4.27a14.28,14.28,0,0,1-.56-3.63V9a3.66,3.66,0,0,1,2.18-1c1.93,0,1.93,1.45,1.93,3.38v6.38h3.95a11.8,11.8,0,0,1-.56-3.55V9.76c0-2.42-1.29-4.11-3.63-4.11a4.9,4.9,0,0,0-3.87,2.14V0H112.21V3.87h.32C113.82,2.82,115.84,1.45,116.48,1.45Z"></path><path d="M141.65,33.15c0-7-6.05-10.48-13.07-10.48S113.09,28,113.09,35a10.46,10.46,0,0,0,.57,3.47c2.66,0,7.5-1.86,8.87-3.23-.16-4.84.33-7.42.73-8.31a5.71,5.71,0,0,1,3.39-.88c3.63,0,5.8,4,5.8,8.79v3.22A17.6,17.6,0,0,1,126.73,42c-8.39,4-14.2,6.45-14.2,13.31,0,4.68,2.42,8.63,9,8.63,4.68,0,8.72-3.39,10.89-6.13v5.4h11.14c-1.13-2.18-1.94-7.66-1.94-11.37Zm-9.2,21.3c-1.37,1.86-3.38,3.39-5.32,3.39-3.15,0-4.76-2.42-4.76-5.57,0-3.55,1.94-5.48,5-7.1a27.28,27.28,0,0,0,5.08-3.38Z"></path>&#13;</symbol>&#13;<symbol id="spletnik_logo" viewbox="0 0 91 25">&#13;<title>spletnik</title>&#13;<path d="M9.09711103,15.2962515 C9.09711103,13.0290206 7.38183084,12.0616687 5.32962061,11.2756953 C3.73686042,10.6711004 2.6341803,10.0362757 2.6341803,8.76662636 C2.6341803,7.58766626 3.36930038,7.04353083 4.34946049,7.04353083 C5.14584058,7.04353083 5.97285068,7.40628779 6.64671076,8.01088271 C7.32057083,8.64570738 7.84128089,9.5828295 8.02506091,10.5501814 L8.20884093,10.5501814 L8.05569092,6.9528416 L7.9638009,6.9528416 L7.22868082,7.70858525 L7.13679081,7.70858525 C6.64671076,7.16444982 5.2683606,6.74123337 4.28820049,6.74123337 C1.68465019,6.74123337 0,8.40386941 0,10.3990326 C0,12.8174123 1.92969022,13.8754534 3.58371041,14.5707376 C5.2683606,15.2962515 6.43230073,15.9915357 6.43230073,17.140266 C6.43230073,18.5610641 5.94222068,19.04474 4.59450052,19.04474 C2.6648103,19.04474 0.551340063,17.0495768 0.153150017,14.6311971 L0,14.6311971 L0.122520014,19.04474 L0.245040028,19.04474 L1.22520014,18.1680774 L1.34772015,18.1680774 C2.17473025,18.8633615 3.64497041,19.286578 4.65576053,19.286578 C7.0142708,19.2563482 9.09711103,17.8355502 9.09711103,15.2962515 Z M23.4319527,13.0290206 C23.4319527,16.9286578 21.1347024,19.286578 18.010442,19.286578 C16.6627219,19.286578 15.7744518,18.9842805 15.0087017,18.3192261 L14.9168117,18.3192261 L14.9168117,21.3422007 C14.9168117,22.1281741 14.8861817,22.974607 15.0393317,23.5792019 C15.2231117,24.3349456 15.4375218,24.4558646 16.0194918,24.7279323 C16.2339018,24.8186215 16.4176819,24.8186215 16.6014619,24.8488513 L16.6014619,25 L9.80160111,25 L9.80160111,24.8488513 C9.98538113,24.8186215 10.1691612,24.8186215 10.3835712,24.7279323 C10.9655412,24.4860943 11.2105813,24.3349456 11.3637313,23.5792019 C11.5168813,23.0048368 11.4862513,22.1281741 11.4862513,21.3422007 L11.4862513,10.3688029 C11.4862513,9.85489722 11.4862513,8.88754534 11.4249913,8.4643289 C11.3637313,7.95042322 11.2412113,7.79927449 10.9042812,7.52720677 C10.5673512,7.25513906 9.89349112,7.13422007 9.6484511,7.10399033 L9.6484511,6.98307134 L14.6717717,6.98307134 C14.7942917,6.98307134 14.8861817,7.04353083 14.8861817,7.22490931 L14.8555517,9.00846433 L15.0087017,9.00846433 C15.5294118,7.58766626 16.9996519,6.74123337 18.3167421,6.74123337 C21.1347024,6.74123337 23.4319527,8.76662636 23.4319527,13.0290206 Z M19.7257222,12.9081016 C19.7257222,8.4643289 18.9599722,7.40628779 17.520362,7.40628779 C16.0501218,7.40628779 14.9168117,9.15961306 14.9168117,11.3966143 L14.9168117,14.7521161 C14.9168117,15.9613059 15.2231117,17.3216445 15.7438218,17.8960097 C16.2645318,18.4703748 16.7852419,18.8029021 17.550992,18.8029021 C18.9906022,18.8331318 19.7257222,17.3518742 19.7257222,12.9081016 Z M31.0281935,19.0145103 L31.0281935,18.8633615 C30.8444135,18.8331318 30.5381135,18.8331318 30.3543334,18.7424426 C29.8948834,18.5610641 29.6498434,18.4099154 29.4660633,17.6844015 C29.3435433,17.1704958 29.3435433,16.1426844 29.3435433,15.356711 L29.3435433,1.93470375 C29.3435433,1.1789601 29.3741733,0.604594921 29.3741733,0.181378476 C29.3741733,0.0302297461 29.3129133,1.77635684e-15 29.1903933,1.77635684e-15 L24.3814828,1.77635684e-15 L24.3814828,0.15114873 C24.6571528,0.181378476 25.0247128,0.181378476 25.3003829,0.392986699 C25.5454229,0.574365175 25.6985729,0.785973398 25.7904629,1.29987908 C25.8823529,1.75332527 25.8823529,2.93228537 25.8823529,3.44619105 L25.8823529,15.3869407 C25.8823529,16.2031439 25.8823529,17.2309553 25.7292029,17.7146312 C25.5454229,18.4401451 25.3003829,18.5912938 24.8409328,18.7726723 C24.6265228,18.8633615 24.4121128,18.8633615 24.2283328,18.8935913 L24.2283328,19.04474 L31.0281935,19.0145103 Z M42.8513749,12.3639661 L35.530804,12.3639661 C35.530804,15.5380895 36.0821441,16.9891173 36.8172642,17.8053204 C37.2767142,18.2889964 37.9812043,18.5308343 38.6856944,18.5308343 C40.9216847,18.5308343 41.9631048,16.7170496 42.4225548,15.0544135 L42.7288549,15.1451028 C42.2081448,17.4727932 40.5234946,19.2563482 37.7974243,19.2563482 C36.4190741,19.2563482 34.918204,18.923821 33.8155238,17.9866989 C32.5290637,16.8681983 31.7939436,15.3264813 31.7939436,13.0290206 C31.7939436,8.91777509 34.5812739,6.71100363 37.5830143,6.71100363 C41.1973547,6.71100363 42.8513749,9.12938331 42.8513749,11.6082225 C42.8820049,11.8198307 42.8820049,12.1523579 42.8513749,12.3639661 Z M39.5739645,10.9129383 C39.5739645,9.34099154 39.3595545,8.16203144 38.8388444,7.55743652 C38.5325444,7.22490931 38.1037243,7.07376058 37.6442743,7.07376058 C37.1541942,7.07376058 36.7866342,7.22490931 36.4190741,7.58766626 C35.8983641,8.16203144 35.561434,9.5828295 35.500174,12.0012092 L38.6550644,12.0012092 C39.3595545,11.9709794 39.5739645,11.7593712 39.5739645,10.9129383 Z M51.8872259,17.2007255 C51.4890359,17.8355502 50.7845458,18.1983071 50.0187957,18.1983071 C48.8242255,18.1983071 48.5485555,17.382104 48.5485555,16.3845224 L48.6710755,7.46674728 L51.3358858,7.46674728 L51.3358858,6.9528416 L48.6710755,6.9528416 L48.6710755,2.08585248 L48.3035155,2.08585248 C47.4152454,5.19951632 45.8531152,6.71100363 43.5558649,7.16444982 L43.5558649,7.37605804 C43.984685,7.43651753 44.7504351,7.40628779 45.1792551,7.46674728 C45.1486251,8.82708585 45.0567351,15.4474002 45.0567351,15.9915357 C45.0567351,17.0798065 45.2711451,17.8355502 45.9756352,18.4401451 C46.5576053,18.9540508 47.5071354,19.2563482 48.6710755,19.2563482 C50.3250957,19.2563482 51.6115559,18.1378476 51.9791159,17.3216445 L51.8872259,17.2007255 Z M66.4671076,19.0145103 L66.4671076,18.8935913 C66.2833275,18.8633615 66.0382875,18.8331318 65.8238775,18.7424426 C65.3644274,18.5610641 65.1500174,18.4099154 64.9356074,17.6844015 C64.8130874,17.1704958 64.8130874,16.1426844 64.8130874,15.356711 L64.8130874,10.5804111 C64.8130874,9.2503023 64.4455273,8.31318017 64.0473373,7.73881499 C63.4959972,6.9528416 62.6077271,6.71100363 61.321267,6.71100363 C60.5861469,6.71100363 59.4834668,6.98307134 58.8096067,7.49697703 C58.2582666,7.95042322 57.6456666,8.58524788 57.3393665,9.70374849 L57.2781065,9.70374849 C57.2781065,9.40145103 57.3393665,7.3458283 57.3393665,7.13422007 C57.3393665,7.01330109 57.2781065,6.9528416 57.1555865,6.9528416 L52.377306,6.9528416 L52.377306,7.10399033 C52.622346,7.13422007 52.989906,7.13422007 53.2655761,7.3458283 C53.5106161,7.52720677 53.6943961,7.73881499 53.7862861,8.25272068 C53.8475461,8.70616687 53.8475461,9.85489722 53.8475461,10.3688029 L53.8475461,15.356711 C53.8475461,16.1729141 53.8781761,17.2309553 53.7250261,17.7146312 C53.5412461,18.4401451 53.2962061,18.5610641 52.836756,18.7424426 C52.622346,18.8331318 52.3466759,18.8633615 52.1935259,18.8935913 L52.1935259,19.0145103 L58.8096067,19.0145103 L58.8096067,18.8935913 C58.6258267,18.8633615 58.4114166,18.8331318 58.1970066,18.7424426 C57.6762966,18.5308343 57.5231465,18.2889964 57.3699965,17.5937122 C57.2474765,17.0798065 57.2474765,16.3845224 57.2474765,15.6590085 L57.2474765,12.9987908 C57.2474765,12.1523579 57.3087365,11.4570738 57.3699965,10.7920193 C57.5537765,8.52478839 58.9321267,7.61789601 59.6978768,7.61789601 C60.3411069,7.61789601 60.6780369,7.79927449 60.9230769,8.13180169 C61.229377,8.49455865 61.321267,9.00846433 61.321267,10.0665054 L61.321267,15.6590085 C61.321267,16.3845224 61.290637,17.0798065 61.198747,17.5634825 C61.0455969,18.2889964 60.8618169,18.5006046 60.3717369,18.7424426 C60.1573268,18.8331318 59.9735468,18.8633615 59.7591368,18.8935913 L59.7591368,19.0145103 L66.4671076,19.0145103 Z M73.6957884,19.0145103 L73.6957884,18.8935913 C73.5120084,18.8633615 73.2669683,18.8633615 73.0525583,18.7726723 C72.5931082,18.5912938 72.3480682,18.4401451 72.1642882,17.7146312 C72.0417682,17.3216445 72.0417682,16.4752116 72.0417682,15.8101572 L72.0417682,8.88754534 C72.0417682,8.16203144 72.0723982,7.58766626 72.0723982,7.16444982 C72.0723982,7.01330109 72.0111382,6.98307134 71.8886182,6.98307134 L67.1103376,6.98307134 L67.1103376,7.13422007 C67.3860077,7.16444982 67.7535677,7.19467956 68.0292377,7.37605804 C68.2742778,7.55743652 68.4580578,7.76904474 68.5499478,8.28295042 C68.6112078,8.73639661 68.6112078,9.88512696 68.6112078,10.3990326 L68.6112078,15.8101572 C68.6112078,16.4752116 68.5805778,17.3518742 68.4580578,17.7146312 C68.2742778,18.4401451 68.0292377,18.5912938 67.6004177,18.7726723 C67.3860077,18.8633615 67.1409676,18.8633615 66.9571876,18.8935913 L66.9571876,19.0145103 L73.6957884,19.0145103 Z M72.2255482,2.56952842 C72.2255482,1.45102781 71.2760181,0.69528416 70.295858,0.69528416 C69.3463279,0.69528416 68.4274278,1.5114873 68.4274278,2.56952842 C68.4274278,3.62756953 69.3156979,4.38331318 70.295858,4.38331318 C71.3066481,4.35308343 72.2255482,3.65779927 72.2255482,2.56952842 Z M79.117299,2.01370561e-16 L74.3083884,2.01370561e-16 L74.3083884,0.15114873 C74.5534285,0.181378476 74.9516185,0.181378476 75.2272885,0.392986699 C75.4723286,0.574365175 75.6254786,0.785973398 75.7173686,1.29987908 C75.7786286,1.75332527 75.8092586,2.90205562 75.8092586,3.41596131 L75.8092586,15.3869407 C75.8092586,16.1729141 75.8092586,17.2309553 75.6561086,17.7146312 C75.4723286,18.4401451 75.2579186,18.5912938 74.7678385,18.7726723 C74.5534285,18.8633615 74.3390184,18.8633615 74.1552384,18.8935913 L74.1552384,19.04474 L80.9550992,19.04474 L80.9550992,18.8935913 C80.7713192,18.8633615 80.4650191,18.8633615 80.2506091,18.7726723 C79.7605291,18.5912938 79.546119,18.4401451 79.362339,17.7146312 C79.239819,17.2007255 79.209189,16.1426844 79.209189,15.3869407 L79.209189,13.814994 L80.4343891,12.6058041 C81.3226592,13.0592503 81.6902193,13.814994 82.0271493,15.5683192 C82.2415593,17.1100363 82.8541594,18.6517533 83.4054995,19.0145103 L88,19.0145103 L88,18.8633615 C87.2955099,18.7726723 86.9279499,18.6215236 86.6216498,18.2587666 C86.1009398,17.6844015 85.5495997,15.719468 85.3045597,14.4498186 C84.9369997,12.6058041 84.0180995,11.185006 82.3640794,10.7617896 L83.2217195,9.88512696 C84.0180995,9.03869407 85.3351897,7.98065296 85.6414897,7.79927449 C86.2847198,7.40628779 86.8973199,7.19467956 87.3873999,7.10399033 L87.3873999,6.9528416 L82.1496693,6.9528416 L82.1496693,7.10399033 C82.3947094,7.13422007 82.8847894,7.25513906 83.0991994,7.3458283 C83.4973895,7.52720677 83.5586495,7.82950423 83.5586495,8.16203144 C83.5586495,8.67593712 83.0685694,9.43168077 82.3334494,10.2176542 L79.270449,13.2708585 L79.270449,2.47883918 C79.270449,1.26964933 79.331709,0.453446191 79.331709,0.211608222 C79.270449,0.0604594921 79.209189,0 79.117299,0 Z"></path>&#13;<polygon points="87 17.1384615 88.006993 16 89.993007 16 91 17.1384615 88.986014 20 87 17.1384615"></polygon>&#13;</symbol>&#13;<symbol id="wonderzine_logo" viewbox="0 0 142 28">&#13;<title>Wonderzine</title>&#13;<path d="M32.83 2.453a.434.434 0 0 0-.057-.225.4.4 0 0 0-.329-.178H27.92a.402.402 0 0 0-.37.247c-.063.15-4.876 12.083-4.94 12.239a.404.404 0 0 1-.375.247.39.39 0 0 1-.363-.259C21.814 14.37 16.84.644 16.782.49a.367.367 0 0 0-.358-.26.392.392 0 0 0-.37.26l-5.257 14.04a.393.393 0 0 1-.739.006c-.057-.156-4.726-12.078-4.783-12.233a.401.401 0 0 0-.37-.253H.392a.395.395 0 0 0-.329.172.415.415 0 0 0-.063.202c0 .075-.006.15.023.218.029.064 9.943 24.955 10.001 25.105a.393.393 0 0 0 .733-.012c.058-.155 5.02-13.505 5.079-13.66a.392.392 0 0 1 .739 0c.057.155 4.933 13.488 4.991 13.643a.399.399 0 0 0 .739.017c.063-.143 10.474-25.023 10.503-25.087.023-.063.029-.132.023-.195Z"></path>&#13;<path d="M44.361 1.612c-7 0-12.28 5.319-12.28 12.377 0 7.023 5.28 12.313 12.28 12.313 7 0 12.28-5.296 12.28-12.313-.005-7.058-5.28-12.377-12.28-12.377Zm0 19.93c-4.218 0-7.167-3.11-7.167-7.554 0-4.484 2.943-7.615 7.167-7.615 4.219 0 7.168 3.131 7.168 7.615-.006 4.445-2.95 7.553-7.168 7.553Z"></path>&#13;<path d="M97.038 4.37c-2.58-1.94-5.136-2.315-8.679-2.315h-5.032a.394.394 0 0 0-.393.397v23.01c0 .218.18.397.393.397h4.969c3.289 0 5.863-.38 8.535-2.274 3.087-2.188 4.784-5.601 4.784-9.596.006-2.309-.589-6.626-4.576-9.62ZM93.94 19.675c-1.696 1.307-3.67 1.422-5.39 1.422h-.236a.394.394 0 0 1-.393-.397V7.213c0-.219.18-.397.393-.397h.236c1.864 0 3.81.173 5.43 1.399 1.553 1.174 2.523 3.379 2.523 5.774 0 2.371-.935 4.432-2.563 5.687Z"></path>&#13;<path d="M117.456 2.055h-12.973a.393.393 0 0 0-.392.397v23.01c0 .218.178.397.392.397h12.973a.394.394 0 0 0 .393-.398v-3.966a.394.394 0 0 0-.393-.397h-7.987a.393.393 0 0 1-.392-.397v-2.93c0-.22.179-.398.392-.398h5.552a.393.393 0 0 0 .392-.397v-3.891a.393.393 0 0 0-.392-.397h-5.552a.393.393 0 0 1-.392-.398V7.213c0-.219.179-.397.392-.397h7.987a.394.394 0 0 0 .393-.397V2.452a.397.397 0 0 0-.393-.397Z"></path>&#13;<path d="M141.867 21.835a.388.388 0 0 0-.311-.092 3.893 3.893 0 0 1-.52.034c-.398 0-.802-.069-1.2-.196-.872-.27-1.57-.77-2.193-1.421l-.006-.006s-2.666-3.281-2.735-3.362a.304.304 0 0 1-.064-.288.324.324 0 0 1 .191-.224c.473-.202.935-.46 1.373-.76.433-.3.883-.72 1.351-1.244.45-.512.819-1.185 1.096-1.997.277-.818.421-1.75.421-2.769 0-2.285-.761-4.133-2.279-5.486-1.53-1.364-3.901-1.975-7.052-1.975-1.085 0-8.12-.005-8.83 0a.393.393 0 0 0-.392.398v22.796c0 .132.069.259.179.334a.395.395 0 0 0 .375.034c.121-.052 4.068-1.773 4.218-1.836a.397.397 0 0 0 .237-.363v-5.641c0-.22.179-.398.398-.398h3.313c.127 0 .242.058.317.162l3.728 5.111c.744.685 1.281 1.52 2.043 2.079.756.558 1.529.955 2.291 1.191a7.44 7.44 0 0 0 2.21.351h.093c.559 0 1.096-.075 1.604-.218a.389.389 0 0 0 .288-.38v-3.53a.472.472 0 0 0-.144-.304Zm-9.187-9.706c-.848.599-2.02.547-3.359.547h-3.214a.398.398 0 0 1-.398-.397V7.144c0-.178.138-.328.317-.328 1.743 0 2.926-.006 3.607 0 1.546.017 2.516.11 3.197.65.704.553 1.068 1.261 1.068 2.09.005 1.007-.381 1.975-1.218 2.573Z"></path>&#13;<path d="M79.518 2.314 75.317 4.14a.397.397 0 0 0-.237.363v10.73a.4.4 0 0 1-.248.369.404.404 0 0 1-.433-.093L59.787.121a.395.395 0 0 0-.681.276v24.857c0 .133.07.26.179.328.11.075.254.087.375.035.121-.052 4.051-1.767 4.196-1.825a.397.397 0 0 0 .236-.363V12.55a.395.395 0 0 1 .681-.276L79.385 27.66a.395.395 0 0 0 .681-.276V2.677a.395.395 0 0 0-.179-.334.4.4 0 0 0-.37-.029Z"></path>&#13;</symbol>&#13;<symbol id="wonderzine_logo_white" viewbox="0 0 93 18">&#13;<title>Wonderzine</title>&#13;<image width="93" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF0AAAASCAYAAAA5f9J6AAAABGdBTUEAALGOfPtRkwAABllJREFUWAnNmHmIllUUxmdGM5LKJCsrNdqgaEHTsAUZawgqMlosI03HhMIsiyRaIJqsNPsjIcsFRMfMmpqxZaz+yWXQ0CZaMC20LPeESMHIbEydfs8793yd9871m5kmyAPPd855zjn3ve/d3jtTUtJOaW5ungb6tTO902k8axiYB0o73dhR1kBXXqqOPnUN/aovLS2dF/eRnO5w48FeMCURPxFuPugSYotop9byqL8Cewy4BpwJlLcTfAqUuxQdi3LGgibqHyCnOU7wPjll+MPAXnIb8J/BHuBzsP8AP4CVoIG8Q+icUDcT4owc2dp5mNqt5Pqxi7M0VhvAB+R+lwtSuASYbMewgSvkwd0TEjYWSGcQmxDiprKXxTkZ1BlZRC8l1sc1WYJ/i8t/2cdim7zxYHPIr1IcWwNfTDYQrEi0taVYUYj1D89oR2qWMovff8YVR9vYi1ZLTgiucAlatTkhts7FVymI3wusd3xb5g4SzraGsf2gq/ZFi8WamB+oKsXhGlTUhhwifp9vD9+3daTyjg662imcEDpWPgLbgJ3X6sQSkAnJ52AMbfGy39H8fmY+8SHYF5uPnhHsueiLHK+tNh2sAdrWA8FEMAhIdOzU0N6VbMfDGZP/eZzYPmLP5el2eV+RtRD0BhXAnlmGrVX4Pe02YMeisUkdfVvjRPwa0Bh4javeXWOlZ0gm8pzJPOfPzMN5Gpho9vtmAX6wJ1sg6D3oY138TRffia3vRLnjZH4MjrMa03BdwALg5S7FIeKVbjlPWL1pAn51VomHa7ACdLU4E/wR4ICLr8UuVRzt23rEalLa1cusjHPgpkQ52bFrs6BVeTAUiRsnmwLZlbKd9MTOjiDip2IPd7HZzKTaqXScPiij4Pc7LjPhtOK1s7a72L3OTplTee6DqUB7OZ77NrkvuPxLsS93/n9lbo4a6iY/G3Q6sQu73iWM48W64FeAwqp3cW0byThwTGaVlBxAzwn20KClFtP+HufnTGJNENWOLHe2N1u2ZQszg/7pNtUZmUWxP8aGJBrLxifBp6hsp1iA/p2O/ZD5QW+S9o2qEyZ9MG4EftVpVZrcQKOn4dxvBLqGAfwl+DqfTb4xo4he72LdaFs7KJZLIH525EzyRjm/Q2boq66tJhqkWJ7lGTpuDFPjBOdPd3nq5w6gPpvoOr5bjg58k2UYP4JzAzEFfX6wpW4D+ljobFbdh+AsYGIfUPnNRqJzK8DxHTLp8CZe6nqKloNeoVjfA5l+8YRQh5UfCys+HkMwSU2MxXpgCCnZCFnYmYXO8lLq/RxXoRuJfTB/wtaN5j0XH+TsRuq/cL5fkTov2xK/Ippoy3ZMrg5+HcS1wI4r9X8h6As6JEyWBlA72iR1I7FYZ/QbFA+g74UxKQx6aHU+WmdzLAso0qQsiAPBfyXitRpN7uQFTzEn1sS0c8Y43tc6usUMA6+j77dWwY4Rj5Lud+GKRPmrcLpxGJ5M5Bj1fMgbjNaJYaJFcpI5Sc0gLAJeDuP0UzK6DOiPGC+7cLr5xvCv8gnYK8AJPie0p/P7HeDljhDLXRkTtYMp2ucLg10V6htcrNrq4fQOk1xM5hoX1/lt8q+ujBQPBPr3hcnnGN3tGalzbDbBuy0BvZzVtU0+WhPwOqaf8Tnwud2Bv5q8xeTdrjpkKNBfp9oRjeAw0OqZAC4EJqsx6swppnlGI+0NI0ffFu2WYnIZuVUk6AN9HTgPmKjv6kdKbqIuXqXa8a/x/F9TBeKIfUndJMwZIUfX0WVwj6HXBi6vCH4LTEb6KOQFFkDrDwydja0Evgf4GrRX9KEs3Hqwi650eyB5FcD/oVOlGJxf6bhJ2Q97s7UV6vxKTxZB9g+5Pl7p2wnxWp9gdlmcGHytdonOzXczK/wwixswtVoldfi7Wsz8L/xemHKg74BWRzF5n+DV1PgrnOWLe8qcWFOjW9dw8Fcca8NfSnwg9fVt5LUVbiKhGqi9WLRgW7WfOl5UqBvBNKC7934RkVTj64Oh4+KIQq0mrZIZfgk9BmgSdNPQZGuyVoK3yLNJxC3IeiwNpv41erDAJgzi9TxjBCF/NC3B3xKl/46/EXxCjRZPSnQt7p0KOG53sMeja2nLfJeSHTPagbdCjgZjgY61Ix5L2p5zgQa2lcD3BKtaBf5ngj6NBBqIo1r+Bo9YOifhHMfXAAAAAElFTkSuQmCC"></image>&#13;</symbol>&#13;<symbol id="redefine_logo" viewbox="0 0 205 41.32">&#13;<title>Redefine</title>&#13;<path d="M26.49,40.75,24.73,30.51c-.56-3.34-1.69-5.21-5.2-5.21H5.94V40.75H0V0H16.87C26,0,29.66,4.41,29.66,12.34c0,4.53-2,8.94-7.3,9.51v.45c6.11.23,7.41,2,8.26,7l1.87,11.43ZM16.64,20c5.09,0,7.13-3.11,7.13-7.58,0-4.82-2-7.08-7.13-7.08H6V20Z"></path><path d="M47.09,41.32C38.83,41.32,34,35.09,34,26.38c0-8.21,5.6-14.49,13.3-14.49,7.47,0,12.62,6.11,12.62,14.77,0,.34,0,1.41-.06,1.81H39.79c.4,5.15,3.45,8,7.36,8a7.08,7.08,0,0,0,7.18-5.26l5,.45C58.35,37.24,53.71,41.32,47.09,41.32ZM39.85,24.11H54.11c-.17-4.13-2.61-7.36-6.79-7.36C42.9,16.75,40.13,20,39.85,24.11Z"></path><path d="M75.5,41.32C68,41.32,62.88,35,62.88,26.54S68,11.89,75.79,11.89c4.75,0,7.18,2.49,8.43,5.26h.34V0h5.55V40.75H84.5V36.11h-.34C82.75,39,80.31,41.32,75.5,41.32Zm9.06-14.78c0-5.2-3.28-9.11-8.49-9.11s-8.43,3.91-8.43,9.11,3.28,9.23,8.43,9.23S84.56,31.87,84.56,26.54Z"></path><path d="M106.75,41.32c-8.27,0-13.08-6.23-13.08-14.94,0-8.21,5.6-14.49,13.3-14.49,7.47,0,12.62,6.11,12.62,14.77,0,.34,0,1.41,0,1.81H99.44c.4,5.15,3.46,8,7.36,8A7.08,7.08,0,0,0,114,31.19l5,.45C118,37.24,113.37,41.32,106.75,41.32ZM99.5,24.11h14.26c-.17-4.13-2.6-7.36-6.79-7.36C102.56,16.75,99.78,20,99.5,24.11Z"></path><path d="M137,12.45V17h-6.4V40.75h-5.55V17h-4.92V12.45h4.92V0h12V4.53h-6.4v7.92Z"></path><path d="M145.52,5.66h-5.66V0h5.66Zm0,35.09h-5.66V12.45h5.66Z"></path><path d="M169.8,40.92V25.81c0-5.72-2.32-8.94-6.57-8.94s-7,3.22-7,8.88v15h-5.66V12.45h5.66v4.81c1.36-3.11,4.13-5.37,8.88-5.37,5.72,0,10.31,4,10.31,13.92V40.92Z"></path><path d="M192.15,41.32c-8.26,0-13.07-6.23-13.07-14.94,0-8.21,5.6-14.49,13.3-14.49C199.85,11.89,205,18,205,26.66c0,.34,0,1.41-.06,1.81H184.85c.4,5.15,3.45,8,7.36,8a7.1,7.1,0,0,0,7.19-5.26l5,.45C203.42,37.24,198.77,41.32,192.15,41.32Zm-7.24-17.21h14.26c-.17-4.13-2.6-7.36-6.79-7.36C188,16.75,185.19,20,184.91,24.11Z"></path>&#13;</symbol>&#13;<symbol id="republic_logo" viewbox="0 0 150 34">&#13;<title>Republic</title>&#13;<path fill-rule="evenodd" clip-rule="evenodd" d="M127.766 7.389c2.089 0 3.735-1.628 3.735-3.695 0-2.066-1.709-3.694-3.735-3.694-2.089 0-3.734 1.628-3.734 3.694 0 2.067 1.645 3.695 3.734 3.695ZM40.923 23.606s.19 1.002.253 1.19c-.048.095-.28.3-.415.419-.043.038-.076.067-.09.082-1.52 1.19-4.685 2.191-6.584 2.191-6.013 0-9.62-3.13-9.62-8.891 0-5.698 4.62-8.829 9.114-8.829 3.924 0 7.216 2.004 7.216 6.575v.626l-8.672 3.506.253.564c.443 1.002 1.013 1.94 2.026 2.692 1.582 1.19 4.05 1.252 6.013.188.052-.026.105-.063.166-.105.087-.061.192-.135.34-.208Zm108.744 1.377s-.57.627-1.329 1.065c-1.393.814-2.849 1.252-4.431 1.44-.507.063-.95.063-1.456.063-6.013 0-9.115-3.757-9.115-8.892 0-7.2 6.013-8.89 9.938-8.89 1.139 0 2.278.187 3.418.688 1.709.751 2.785 2.317 2.785 3.945 0 1.628-.95 2.817-2.785 2.817-1.076 0-1.836-.438-2.216-1.315-.142-.328-.178-.657-.213-.986-.012-.11-.024-.219-.04-.329-.016-.11-.027-.219-.039-.328-.036-.33-.072-.658-.214-.986-.253-.752-.949-1.19-1.646-1.128-.506 0-.949.188-1.329.627-.506.563-.696 1.315-.696 2.066-.127 2.442.126 4.884 1.392 7.075 1.013 1.816 2.785 2.88 4.621 2.88.506 0 1.076-.062 1.582-.25a7.326 7.326 0 0 0 1.583-.751l.19 1.19Zm-117.32-6.517h-.002l-.726.319c-.696-3.82-.317-6.637 1.772-6.637.76 0 1.33.876 1.456 2.504 0 .08.004.225.01.404v.001c.014.523.037 1.335-.01 1.661-.063.501-.316.752-.95 1.065-.088.043-.882.39-1.55.682v.001Zm-6.741 8.396V25.61h-.08c-.412.01-1.552.037-2.2-1.128l-3.354-5.948c-.696.125-1.835.25-2.912.25-1.139 0-2.531-.125-3.67-.5l.063-.188h.38c4.05 0 8.86-2.38 8.86-7.89 0-1.628-.505-3.256-1.455-4.696-1.203-1.816-3.481-3.068-5.823-3.068-1.71 0-3.038.563-3.861 1.315-.633.626-.95 1.252-.95 1.252V2.191l-9.368 3.82c-.19.125-.38.188-.57.25l2.28 2.255c.253.25.38.563.38.939v14.527c-.064.814-.57 1.377-1.33 1.565a9.656 9.656 0 0 1-.633.063 9.585 9.585 0 0 0-.633.062v1.19h12.85V25.61h-.254c-1.709 0-2.279-.627-2.279-2.317v-5.448c.032 0 .08.016.127.032.047.015.095.03.127.03 1.041 1.767 2.017 3.49 3.004 5.233.693 1.223 1.392 2.456 2.123 3.722h9.178ZM10.857 10.645c0 3.005 0 5.384 1.963 5.384 1.962 0 1.962-2.441 1.962-5.384 0-3.006-.19-5.385-1.962-5.385-1.773 0-1.963 2.38-1.963 5.385Zm107.605 13.462c0 .876.506 1.377 1.455 1.44.254 0 .507 0 .76-.063v1.252h-12.026v-1.252h.759c.886-.062 1.329-.438 1.456-1.315.063-.188.063-.438.063-.626V8.14a1.426 1.426 0 0 0-.379-.752c-.633-.563-1.773-1.753-1.773-1.753l9.685-3.945V24.107Zm13.861 1.44c-.886-.063-1.392-.564-1.455-1.44V9.58l-9.621 3.945s1.139 1.19 1.772 1.753c.253.25.38.564.38 1.065v7.513c0 1.19-.57 1.754-1.519 1.754h-.76v1.252h12.026V25.61c-.316-.063-.569-.063-.823-.063Zm-48.042-1.565c.064 1.002.57 1.503 1.583 1.565.19 0 .443 0 .57-.063v1.253h-9.368v-2.13s-.064-.062-.127-.062a.616.616 0 0 1-.126.157.614.614 0 0 0-.127.156c-1.52 1.691-3.292 2.505-5.38 2.505-.57 0-1.14-.063-1.773-.188-2.278-.438-3.734-2.254-3.734-4.696v-6.387c0-.375-.127-.688-.38-.939-.633-.564-1.772-1.753-1.772-1.753l9.684-3.945v12.71c0 1.003.76 1.692 1.646 1.692 1.013 0 1.772-.69 1.772-1.691v-6.199c-.063-.313-.19-.564-.38-.751-.632-.564-1.772-1.754-1.772-1.754l9.684-3.944v14.464ZM61.685 12.899c.95 1.44 1.392 3.256 1.456 5.197 0 2.442-.76 4.947-2.47 6.7-1.518 1.503-3.797 2.755-7.215 2.755-.696 0-1.392-.125-2.152-.313v3.757c0 1.19.506 1.69 1.71 1.753h.569V34H41.556v-1.19c.151 0 .303-.014.46-.029.173-.016.355-.033.553-.033.76-.125 1.266-.564 1.266-1.315v-15.09a1.57 1.57 0 0 0-.38-1.065c-.633-.563-1.772-1.753-1.772-1.753l9.368-3.82v2.693l.127.063s.38-.69.822-1.127c1.266-1.127 2.532-1.44 3.925-1.44 2.215-.126 4.557 1.127 5.76 3.005Zm-8.419-.314c1.772 0 1.962 2.88 1.962 6.387 0 3.507 0 6.387-1.962 6.387s-1.962-2.88-1.962-6.387c0-3.506.19-6.387 1.962-6.387Zm52.853-.125c1.266 1.628 1.772 3.444 1.772 5.573 0 2.88-.823 5.322-3.102 7.264-1.455 1.252-3.671 2.191-6.836 2.191-1.519 0-3.038-.25-4.494-1.002a17.755 17.755 0 0 1-2.025-1.252 264.36 264.36 0 0 0-1.772 1.565h-1.077V8.39a1.57 1.57 0 0 0-.38-1.064c-.632-.564-1.772-1.753-1.772-1.753l9.685-3.945v10.269l.126.063s1.266-2.255 4.558-2.255a6.895 6.895 0 0 1 5.317 2.755Zm-8.039.125c1.772 0 1.962 2.88 1.962 6.387 0 3.507 0 6.324-1.962 6.387-1.962 0-1.962-2.88-1.962-6.387 0-3.506.19-6.387 1.962-6.387Z"></path>&#13;</symbol>&#13;<symbol id="icon_lock" viewbox="0 0 17 20">&#13;<path fill-rule="evenodd" clip-rule="evenodd" d="M5.87 3.096A3.709 3.709 0 0 1 8.5 2c.985 0 1.931.394 2.63 1.096a3.764 3.764 0 0 1 1.092 2.653v3.8H4.778v-3.8c0-.996.393-1.95 1.092-2.653ZM2.778 9.55v-3.8c0-1.523.601-2.984 1.674-4.063A5.709 5.709 0 0 1 8.5 0c1.52 0 2.976.607 4.048 1.686a5.763 5.763 0 0 1 1.674 4.063v3.8h.89c1.042 0 1.888.85 1.888 1.9v6.649c0 1.049-.846 1.9-1.889 1.9H1.89A1.894 1.894 0 0 1 0 18.098v-6.65c0-1.049.846-1.9 1.889-1.9h.889Z"></path>&#13;</symbol>&#13;<symbol id="icon_blankAvatar" viewbox="0 0 18 20">&#13;<g clip-path="url(#BlankAvatarClip)">&#13;<path fill-rule="evenodd" clip-rule="evenodd" d="M9.23 0C6.7 0 4.616 2.02 4.616 4.545c0 2.492 2.052 4.546 4.616 4.546 2.564 0 4.615-2.02 4.615-4.546C13.846 2.02 11.761 0 9.231 0ZM0 19.57c.23-4.826 4.156-8.66 9-8.66s8.77 3.834 9 8.66c0 .232-.196.43-.425.43H.425A.435.435 0 0 1 0 19.57Z"></path>&#13;</g>&#13;</symbol>&#13;<symbol id="icon_menu_toogle" viewbox="0 0 25 20">&#13;<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.25C0 .56.56 0 1.25 0h22.5a1.25 1.25 0 1 1 0 2.5H1.25C.56 2.5 0 1.94 0 1.25ZM0 10c0-.69.56-1.25 1.25-1.25h22.5a1.25 1.25 0 1 1 0 2.5H1.25C.56 11.25 0 10.69 0 10Zm1.25 7.5a1.25 1.25 0 1 0 0 2.5h22.5a1.25 1.25 0 1 0 0-2.5H1.25Z">&#13;</path></symbol>&#13;</defs>&#13;</svg><div class="page-content"><div class="row row-banner"><div class="row-cont"><div class="banner banner-top"><!--AdFox START-->
+<!--lookatme.ru-->
+<!--Площадка: wonderzine.com / * / *-->
+<!--Тип баннера: 990x90 js-->
+<!--Расположение: <верх страницы>-->
+
+<div id="adfox_149814990417757352"></div>
+<script>
+  AdFoxPlaceParams.push({
+    method: 'create',
+    params: {
+      ownerId: 5024,
+      containerId: 'adfox_149814990417757352',
+      onError: function () {
+        // console.log('990x90 onError: call AdFoxRightBannerInit');
+        AdFoxRightBannerInit();
+      },
+      onStub: function () {
+        // console.log('990x90 onSub: call AdFoxRightBannerInit');
+        AdFoxRightBannerInit();
+      },
+      onLoad: function (data) {
+        if ((typeof data != 'undefined') && (data.bundleName === "banner.background")) {
+          LAM.Config.BANNER_BRANDING = true;
+          $('.row-banner').css({ background: 'none', height: '149px', position: 'static', margin: 0, padding: 0 });
+          $('.page-content').css({ background: 'none', position: 'static' });
+          $('.row-banner .row-cont').css({ display: 'none' });
+          $('body').append('<a href="' + data.bundleParams.reference + '" target="_blank" style="position: fixed; left:0; top:0; height: 100%; width: calc(50% - 510px); text-decoration: none; z-index:10;"></a><a href="' + data.bundleParams.reference + '" target="_blank" style="position: fixed; right:0; top:0; height: 100%; width: calc(50% - 510px); text-decoration: none; z-index:10;"></a>');
+          $('body').addClass('branding-layout').removeClass('responsive');
+          $('.header').removeClass('row-colored');
+          $('.news-block').remove();
+          $(window).trigger('resize');
+          $('.wide_image').css({ width: 'auto', left: 'auto' });
+          $('.wide_image img').css({ width: 'auto' });
+          $('.buzzplayer-container').remove();
+        }
+        AdFoxRightBannerInit();
+      },
+      params: {
+        pp: 'g',
+        ps: 'bksq',
+        p2: 'dtye',
+        puid1: '',
+        puid2: '',
+        puid3: '',
+        puid4: '',
+        puid5: '',
+        puid6: '',
+        puid7: '',
+        puid8: '',
+        puid9: '',
+        puid10: ''
+      }
+    }
+  });
+</script></div></div></div><div class="row site-header" role="user_panel"><div class="row-cont"><div class="site-logo"><a href="/" title="Wonderzine"><span class="wonder">Wonder</span><span class="zine">zine</span></a></div><div class="site-topics menu" data-mark_active="service-/wonderzine/life/life"><ul><li data-mark="service-/wonderzine/life" class="menu-item"><a href="/wonderzine/life">Жизнь</a></li><li data-mark="service-/wonderzine/health" class="menu-item"><a href="/wonderzine/health"> Здоровье</a></li><li data-mark="service-/wonderzine/beauty" class="menu-item"><a href="/wonderzine/beauty">Красота</a></li></ul><ul><li data-mark="service-/wonderzine/opportunities" class="menu-item"><a href="/wonderzine/opportunities">Возможности</a></li><li data-mark="service-/wonderzine/entertainment" class="menu-item"><a href="/wonderzine/entertainment">Развлечения</a></li><li data-mark="service-/wonderzine/style" class="menu-item"><a href="/wonderzine/style">Стиль</a></li></ul></div><div class="services menu unlogined"><ul><li class="menu-item service-talks"><a href="/talks">Комьюнити</a></li><li class="menu-item menu-item-search"><div class="search"><!-- Search --><form action="/search"><label for="query" class="b-form-label">Поиск</label><input type="text" name="query" class="query" /><button type="submit" class="submit"><svg class="icon icon-search"><use xlink:href="#icon_search"></use></svg></button><input type="image" src="https://lamcdn.net/www.wonderzine.com/images/d.gif" /></form></div></li><!-- Login --><li class="menu-item up-block login"><a href="/login" class="u-p-login" role="show_login_form"><span class="text">Войти</span></a></li></ul><ul class="subscription"><li class="menu-item"><a href="https://redefine.media/subscription">Подписка<svg class="icon icon-star" width="12" height="12"><use xlink:href="#icon_star"></use></svg></a></li></ul></div></div></div><link rel="stylesheet" type="text/css" href="https://lamcdn.net/wonderzine.com/editor/theme_files/theme.css?_dc=1_1672931972"/><script src="https://lamcdn.net/wonderzine.com/editor/plugins/public.js?_dc=1_1672931972"></script><div class="row main-content post-cover-row"><div class="row-cont"><div class="content"><div class="post-cover_4 post-cover_4-style_2 post-cover_4-color_ffffff"><div class="cover-content"><div class="cover-top"><h1 class="article-title" role="title"><a href="/wonderzine/life/life" class="flow">Жизнь</a>Что известно о женщинах, иммигрирующих в Россию<br>и другие страны</h1><div class="cover-image"><img src="https://lamcdn.net/wonderzine.com/post-cover/pFKFgciko36IEK3LwRJJfA-default.jpg" alt="Что известно о женщинах, иммигрирующих в Россию
+и другие страны — Жизнь на Wonderzine" /></div></div><div class="cover-bottom"><p class="article-lead">Почему женщины особенно уязвимы</p><ul class="post-meta"><li class="item-meta meta-posted"><span>9 декабря 2019</span></li><li class="item-meta meta-views-counter"><span><svg class="icon icon-views"><use xlink:href="#icon_views"></use></svg>5387</span></li><li class="item-meta meta-comments-counter"><a href="#comments"><svg class="icon icon-comments"><use xlink:href="#icon_comments"></use></svg>7</a></li></ul></div></div><div class="share-buttons-bar"><div class="share-button button-fb-native"><div class="fb-like" data-send="false" data-width="140" data-show-faces="false" data-layout="button_count"></div></div><a target="_blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.wonderzine.com%2Fwonderzine%2Flife%2Flife%2F247551-garage-migration" class="share-button button-fb"><span class="share-button-text">Поделиться</span></a><a target="_blank" href="https://vkontakte.ru/share.php?url=https%3A%2F%2Fwww.wonderzine.com%2Fwonderzine%2Flife%2Flife%2F247551-garage-migration" class="share-button button-vk"><span class="share-button-text">Поделиться</span><span class="share-button-counter"></span><i class="share-button-spinner"></i></a><a target="_blank" href="https://twitter.com/share?url=https%3A%2F%2Fwww.wonderzine.com%2Fwonderzine%2Flife%2Flife%2F247551-garage-migration&lang=en&text=%D0%A7%D1%82%D0%BE%20%D0%B8%D0%B7%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D0%BE%20%D0%BE%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D0%B0%D1%85,%20%D0%B8%D0%BC%D0%BC%D0%B8%D0%B3%D1%80%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B8%D1%85%20%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8E%0D%0A%D0%B8%20%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%8B&via=wonderzine" class="share-button button-tw"><span class="share-button-text">Твитнуть</span></a></div></div><div class="pseudosidebar"><div class="banner-centering-wrap banner-border-wrap"><div id="rightTopBanner" class="banner banner-on_z_top"><!--AdFox START-->
+<!--lookatme.ru-->
+<!--Площадка: wonderzine.com / * / *-->
+<!--Тип баннера: 240x400 / 300x500-->
+<!--Расположение: <верх страницы>-->
+<div id="adfox_1498214315581946"></div>
+<script>
+  AdFoxPlaceParams.push({
+    method: 'create',
+    params: {
+      ownerId: 5024,
+      containerId: 'adfox_1498214315581946',
+      onError: function () {
+        // console.log('300x500 onError: call initAllAdFoxAds');
+        initAllAdFoxAds();
+      },
+      onStub: function () {
+        // console.log('300x500 onSub: call initAllAdFoxAds');
+        initAllAdFoxAds();
+      },
+      onLoad: function () {
+        // console.log('300x500 onLoad: call initAllAdFoxAds');
+        initAllAdFoxAds();
+      },
+      params: {
+        pp: 'g',
+        ps: 'bksq',
+        p2: 'cbf',
+        puid1: '',
+        puid2: '',
+        puid3: '',
+        puid4: '',
+        puid5: '',
+        puid6: '',
+        puid7: '',
+        puid8: '',
+        puid9: '',
+        puid10: ''
+      }
+    }
+  });
+</script></div><a href="/pages/ads" class="banner-ad-link">Купить рекламу</a></div><div class="banner"></div></div></div></div></div><div class="row post-body app-content"><div class="b-article is_article_start"><div class="article-text post " data-io-article-url="https://www.wonderzine.com/wonderzine/life/life/247551-garage-migration"><div class="stk-post stk-layout_6col_16246 stk-theme_21941" data-ui-id="post" data-reset-type="class" data-editor-version="2.7.9" data-stk='{"images":[{"id":3229381,"alt":"","caption":""},{"id":3229341,"alt":"","caption":""},{"id":3229291,"alt":"","caption":""},{"id":3229289,"alt":"","caption":""}]}' data-layout-type="auto">
+<div class="stk-grid stk-grid__layout_reverse stk-theme_21941__mb_2" data-ce-tag="grid">
+<div data-col-width="4" class="stk-grid-col stk-grid-col_last" data-ce-tag="grid-col"><p class="stk-reset"><strong class="stk-reset">В музее «Гараж» прошла пятая <a class="stk-reset" href="https://garagemca.org/ru/event/conference-experiencing-the-museum-people-with-migrant-backgrounds" target="_blank">конференция</a> </strong>«Музей ощущений: люди с миграционным опытом» — о том, как культурным институциям взаимодействовать с людьми, у которых есть опыт иммиграции. Мы послушали выступления Ольги Нарымски — старшего советника отдела правовой защиты УВКБ ООН в Российской Федерации, Ольги Бредниковой — социолога-исследователя, научного сотрудника Центра независимых социологических исследований, и Екатерины Деминцевой — ведущего научного сотрудника Лаборатории исследований культуры и института управления социальными процессами НИУ ВШЭ, преподавателя отделения культурологии НИУ ВШЭ, и собрали несколько интересных фактов о женщинах, иммигрирующих в Россию и другие страны — добровольно и из-за непреодолимых обстоятельств.</p></div>
+<div data-col-width="2" class="stk-grid-col" data-ce-tag="grid-col"><div class="stk-container stk-theme_2393__post-portrait-block stk-theme_21941__mb_05" data-ce-tag="container">
+<figure class="stk-reset stk-image-figure post-portrait-image--placeholder stk-theme_21941__mb_0" data-caption-disabled="true" data-ce-tag="image-figure"><div class="stk-mask" data-ce-tag="mask"><img src="https://lamcdn.net/wonderzine.com/post_image-image/oWRUMNnon-LGxq62Ut7O7Q.png" data-image-id="3229289" data-image-name="FWWbJ7VP0zNjiiCAtsYZ7A.png" alt="" title="" class="stk-reset stk-image"></div></figure><div class="stk-container portrait-text" data-ce-tag="container"><p class="stk-reset stk-theme_21941__mb_0">
+      <strong class="stk-reset">александра Савина</strong>     </p></div>
+</div></div>
+</div>
+<figure class="stk-reset stk-image-figure stk-layout__overhangs_both stk-theme_21941__mb_2" data-ce-tag="image-figure"><div data-ce-tag="mask" class="stk-mask"><img src="https://lamcdn.net/wonderzine.com/post_image-image/bs8yrYawWYd48DKRGFah0w.jpg" data-image-id="3229381" data-image-name="1.jpg" alt="" title="" class="stk-reset stk-image"></div></figure><div data-type="paywall" data-ce-tag="container" class="stk-container"></div>
+<div class="stk-grid" data-ce-tag="grid">
+<div data-col-width="1" class="stk-grid-col stk-grid-col_empty" data-ce-tag="grid-col"><p class="stk-reset ce-element--empty stk-element_no-text"></p></div>
+<div data-col-width="4" class="stk-grid-col stk-grid-col_last" data-ce-tag="grid-col">
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png">  <strong class="stk-reset">По данным ООН на конец 2018 года, </strong>в мире было около 26 миллионов беженцев, покинувших свою страну. Ещё около 41 миллиона людей были перемещены внутри своей страны — это означает, что люди были вынуждены переехать в другое место внутри своей страны из-за политической ситуации, убеждений и так далее. Примерно каждый 108-й человек на земле — или беженец, или вынужденный бежать в другое место внутри своей страны. 80 % из них составляют женщины и дети.</p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png">  <strong class="stk-reset">Женщины, вынужденные иммигрировать,</strong> особенно уязвимы. Они подвергаются гендерному насилию — сталкиваются с изнасилованиями и домогательствами, побоями, принудительными и ранними браками, калечащими операциями на половых органах, психологическим насилием. Ещё женщины, вынужденные бежать из страны, сталкиваются с большим количеством медицинских сложностей, чем мужчины, — из-за беременности и родов.</p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png"> <strong class="stk-reset"> Тяжёлая экономическая ситуация женщин, </strong>вынужденных бежать из своего места жительства, часто усугубляется тем, что именно они заботятся о детях. Если ребёнок ещё маленький, женщина не может оставить его и пойти работать. По словам экспертов ООН, многие женщины, особенно с неурегулированным статусом в стране убежища, также подвергаются насилию со стороны работодателей.</p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png">  <strong class="stk-reset">Девочки-беженцы</strong> более уязвимы по сравнению с мальчиками, находящимися в таком же положении. Например, по оценкам ООН, на десять мальчиков-беженцев, посещающих школу, приходится меньше восьми девочек. Часто это происходит из-за того, что девочки помогают семье, занимаются другими детьми и вынуждены оставаться дома вместо того, чтобы идти на учёбу. Бывает и так, что семьи в принципе не приветствуют образование девочек или боятся отпускать их в школу, особенно если она далеко от дома.</p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png">  <strong class="stk-reset">По мнению экспертов ООН,</strong> из-за экономических трудностей в семьях, вынужденных мигрировать, возрастает уровень стресса — из-за этого дети могут чаще подвергаться домашнему насилию. Также из-за тяжёлой экономической ситуации многие семьи выдают дочерей замуж до того, как им исполнится восемнадцать лет.</p>
+</div>
+<div data-col-width="1" class="stk-grid-col stk-grid-col_empty" data-ce-tag="grid-col"><p class="stk-reset ce-element--empty stk-element_no-text"></p></div>
+</div>
+<div class="stk-grid" data-ce-tag="grid">
+<div data-col-width="1" class="stk-grid-col stk-grid-col_empty" data-ce-tag="grid-col"><p class="stk-reset ce-element--empty stk-element_no-text"></p></div>
+<div data-col-width="4" class="stk-grid-col stk-grid-col_last" data-ce-tag="grid-col">
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png"><strong class="stk-reset">  Для решения проблем беженцев</strong> возможны разные варианты — вернуться на родину, интегрироваться в общество страны, которая предоставила убежище, или попробовать переехать в другое государство, если первая страна не разрешает остаться. Если женщины решают остаться в стране-убежище, им необходимо влиться в новое общество — в том числе найти работу и, возможно, получить новое или дополнительное образование. </p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png"> <strong class="stk-reset"> В этой ситуации у женщин</strong> могут возникать особенные потребности, которых у мужчин нет — например, бывает, что женщина не может получать образование, потому что ей негде на это время оставить ребёнка, или она не может посещать курсы вместе с мужчинами. Нередко у женщин бывает и отдельная потребность в языковых курсах. Мужчине может быть проще выучить язык, потому что он ходит на работу и осваивает язык там — женщине, которая всё время следит за домом, это делать негде.</p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png">  <strong class="stk-reset">Иммиграция может быть для женщины и,</strong> наоборот, способом обрести новые возможности, получить больше прав — найти работу, получить образование.</p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png"> <strong class="stk-reset"> Социолог-исследователь Ольга Бредникова </strong>считает, что в России помимо классических сценариев иммиграции (человек приезжает в другую страну и планирует остаться там навсегда или временно приезжает в другую страну на заработки) существуют и другие варианты. Например, она отмечает, что в последние несколько лет появился сценарий «туриста», который в основном встречается у молодых мужчин из Средней Азии: они едут не только чтобы заработать, но и чтобы развлечься, получить удовольствие, попробовать что-то новое.</p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" data-gtm-vis-has-fired-10171822_255="1" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png">  <strong class="stk-reset" data-gtm-vis-has-fired-10171822_255="1">Новый типично женский сценарий</strong> — сценарий «починки социального статуса». Он касается миграции одиноких женщин из Средней Азии: вдов или разведённых. Этим женщинам сложно найти место в своём обществе — вплоть до того, что им может быть попросту негде жить. Миграция для них — возможность сделать паузу в решении сложных вопросов или найти нового партнёра, то есть восстановить свой статус.</p>
+</div>
+<div data-col-width="1" class="stk-grid-col stk-grid-col_empty" data-ce-tag="grid-col"><p class="stk-reset ce-element--empty stk-element_no-text"></p></div>
+</div>
+<div class="stk-grid stk-theme_21941__mb_3" data-ce-tag="grid">
+<div data-col-width="1" class="stk-grid-col stk-grid-col_empty" data-ce-tag="grid-col"><p class="stk-reset ce-element--empty stk-element_no-text"></p></div>
+<div data-col-width="4" class="stk-grid-col stk-grid-col_last" data-ce-tag="grid-col">
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png">  <strong class="stk-reset">Сегодня исследователи много говорят о</strong> теории транснационализма. Если говорить грубо, это подразумевает, что люди в миграции находятся сразу в нескольких контекстах и системах координат: строят новую жизнь в другой стране, но по-прежнему сохраняют много связей с родиной, живут по нормам и правилам и своего, и нового общества. Женщин это тоже касается: например, женщина может снимать хиджаб на работе, потому что боится негативной реакции, а при встрече с соотечественниками, наоборот, надевать его.</p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png"><strong class="stk-reset">  В ситуации миграции </strong>возникают и новые формы семьи — например, в семейные отношения вовлекаются самые разные родственники. Часто, когда родители уезжают из страны на заработки, заботу о детях берут на себя другие члены семьи или даже те, кто не являются ребёнку родственниками — например, в опыте исследователей есть случай, когда за ребёнком оставили следить соседку. Кроме того, в миграции люди могут заводить параллельные семьи. Касается это в том числе и женщин — они могут заводить несколько партнёров. </p>
+<p class="stk-reset stk-theme_21941__mb_15"><strong class="stk-reset"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png"></strong>  <strong class="stk-reset">В России было несколько потоков иммигрантов</strong> из стран постсоветского пространства: первый начался в девяностые годы и был преимущественно мужским. Женщины стали чаще приезжать в Россию уже позже, в двухтысячных. Речь прежде всего о тех, кто приезжает в Россию из Средней Азии: женщины стали приезжать в страну вместе с мужчинами, целой семьёй, чтобы зарабатывать больше. </p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png">  <strong class="stk-reset">Детьми семейной пары </strong>в это время чаще всего занимаются родственники, оставшиеся на родине — многие хотели бы забрать их к себе, но не могут этого позволить. По мнению Екатерины Деминцевой, сейчас в России началась первая волна иммигрировавших людей, которые привозят детей с собой, у которых есть возможность обеспечивать детей в иммиграции. Также детей могут брать с собой, если их не с кем оставить на родине, в безвыходной ситуации.</p>
+<p class="stk-reset stk-theme_21941__mb_15"><img class="stk-reset stk-theme_21941__symbol_custom_image_2620737 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/1_V3q60w.png">  <strong class="stk-reset">По официальным данным,</strong> среди тех, кто иммигрирует в Россию для работы, 86 % составляют мужчины, а 14 % — женщины. Но в сферах работы, где работников не оформляют официально, женщин больше.</p>
+<p class="stk-reset stk-theme_21941__mb_2 stk-theme_21941__style_small_text"><strong class="stk-reset" data-gtm-vis-has-fired-10171822_255="1">ФОТОГРАФИИ: </strong><a class="stk-reset" href="https://stock.adobe.com/ru/129704202?asset_id=129704202" target="_blank">time4studio — stock.adobe.com</a>, <a class="stk-reset" href="https://www.palomarweb.com/product/here-3/" target="_blank">palomarweb</a></p>
+<p class="stk-reset stk-theme_21941__mb_2 align-center stk-element_no-text"><img class="stk-reset stk-theme_21941__symbol_custom_image_2376849 stk-icon" src="https://ceditor.setka.io/clients/VlFTDYGze2_DpCsn9rqHe10smi695wG2/css/assets/21941/img/w-small_OsYYaA.png"></p>
+</div>
+<div data-col-width="1" class="stk-grid-col stk-grid-col_empty" data-ce-tag="grid-col"><p class="stk-reset ce-element--empty stk-element_no-text"></p></div>
+</div>
+</div><p> </p></div><div class="is_article_end"></div><div class="banner_sidebar_300_scroll_stop"></div><script type="text/javascript">LAM.Utils.initSlideshow();LAM.Utils.lazy_embeds();$(function(){new LAM.Components.ShareButtons({fbButton: '.share-buttons-bar .button-fb',vkButton: '.share-buttons-bar .button-vk',twButton: '.share-buttons-bar .button-tw'});});new LAM.Components.ImagesSharer();</script><script type="text/javascript">LAM.Utils.initLazyImages();</script></div></div><script>LAM.Post = {"title":"Что известно о женщинах, иммигрирующих в Россию\r\nи другие страны","flow":"Жизнь","topic":"Жизнь","space":"Wonderzine","tags":["Жизнь","Гараж","Иммиграция","Эмиграция","Беженцы"],"published_at":"Mon, 09 Dec 2019 19:51:13 +0300","published_at_iso":"2019-12-09T19:51:13+0300","is_news_post":false,"is_featured":true,"is_super_featured":false,"user_name":"Александра Савина","url":"https://www.wonderzine.com/wonderzine/life/life/247551-garage-migration","is_paywall_on":true,"id":247551,"user_id":763747}</script><div class="row post-additions"><div class="row-cont"><section class="hype-panel hype-panel-desktop  g-clearfix"><h6>Рассказать друзьям</h6><a href="#comments" class="button button-hollow">7 комментариев</a><a class="w-icon-new w-icon-abuse" role="abuse:show_form" title="пожаловаться">пожаловаться<i></i></a><div class="share-buttons-bar share-buttons-bar-small"><div class="share-button button-fb-native"><div class="fb-like" data-send="false" data-width="140" data-show-faces="false" data-layout="button_count"></div></div><a target="_blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.wonderzine.com%2Fwonderzine%2Flife%2Flife%2F247551-garage-migration" class="share-button button-fb"><span class="share-button-text">Поделиться</span></a><a target="_blank" href="https://vkontakte.ru/share.php?url=https%3A%2F%2Fwww.wonderzine.com%2Fwonderzine%2Flife%2Flife%2F247551-garage-migration" class="share-button button-vk"><span class="share-button-text">Поделиться</span><span class="share-button-counter"></span><i class="share-button-spinner"></i></a><a target="_blank" href="https://twitter.com/share?url=https%3A%2F%2Fwww.wonderzine.com%2Fwonderzine%2Flife%2Flife%2F247551-garage-migration&lang=en&text=%D0%A7%D1%82%D0%BE%20%D0%B8%D0%B7%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D0%BE%20%D0%BE%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D0%B0%D1%85,%20%D0%B8%D0%BC%D0%BC%D0%B8%D0%B3%D1%80%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B8%D1%85%20%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8E%0D%0A%D0%B8%20%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%8B&via=wonderzine" class="share-button button-tw"><span class="share-button-text">Твитнуть</span></a></div><div id="subscription_digest"></div><script>new LAM.Components.SubscriptionDigest({el: '#subscription_digest',permalink: 'wonderzine-digest',template: 'default'});</script></section><script type="text/javascript">LAM.Utils.init({items: [{type: 'AbuseController',options: {url: document.location.href}}]});</script><div data-post_id='247551' data-widget_name='materials' role="widgetPlaceholder" class="widget-materials"></div><div class="post-tags" role="trackAnalytics" data-analytics_type="wdgt" data-analytics_name="tags"><h2>Другие статьи по темам</h2><div class="post-tag-list"><div class="title">Сюжет</div><div class="tags"><a href="/tags/%D0%96%D0%B8%D0%B7%D0%BD%D1%8C" role="trackEvent:click">Жизнь</a></div></div><div class="g-clear"></div><div class="post-tag-list"><div class="title">Бренды</div><div class="tags"><a href="/tags/%D0%93%D0%B0%D1%80%D0%B0%D0%B6" role="trackEvent:click">Гараж</a></div></div><div class="g-clear"></div><div class="post-tag-list"><div class="title">Прочее</div><div class="tags"><a href="/tags/%D0%98%D0%BC%D0%BC%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F" role="trackEvent:click">Иммиграция</a><a href="/tags/%D0%AD%D0%BC%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F" role="trackEvent:click">Эмиграция</a><a href="/tags/%D0%91%D0%B5%D0%B6%D0%B5%D0%BD%D1%86%D1%8B" role="trackEvent:click">Беженцы</a></div></div><div class="g-clear"></div></div><div data-post_id='247551' data-count='6' data-widget_name='interesting_posts' role="widgetPlaceholder" class="widget-interesting_posts"></div><!--AdFox START-->
+<!--lookatme.ru-->
+<!--Площадка: wonderzine.com / * / *-->
+<!--Тип баннера: 990x90_niz-->
+<!--Расположение: <низ страницы>-->
+<div id="adfox_150123952426546421"></div>
+<script>
+  AdFoxPlaceParams.push({
+    method: 'create',
+    params: {
+      ownerId: 5024,
+      containerId: 'adfox_150123952426546421',
+      params: {
+        pp: 'i',
+        ps: 'bksq',
+        p2: 'exzd',
+        puid1: '',
+        puid2: '',
+        puid3: '',
+        puid4: '',
+        puid5: '',
+        puid6: '',
+        puid7: '',
+        puid8: '',
+        puid9: '',
+        puid10: ''
+      }
+    },
+    options: {
+      lazyLoad: {
+        fetchMargin: 200,
+        mobileScaling: 2
+      }
+    },
+  });
+</script></div></div><div class="row entry-comments-wrap"><div class="row-cont row-shadow"></div><div class="row-cont block-jusitifier"><div class="just-bl just-bl-x4"><div id="comments" class="entry-comments"><div class="article-comments-header"><h2>Комментарии</h2><a class="button button-hollow" role="subscribe" data-resource_type="Post" data-topic-id="247551" data-allowed-for="!banned !unactivated" data-is-favorite="false" href="#" title="Подписаться">Подписаться</a></div><div id="app_comments" role="comments"><div class="loading" role="comments:loader"><span class="loading-dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i></span>Комментарии загружаются</div></div><div class="button-group comment-message g-mt-20"><button class="button " data-allowed-for="activated" ><span class="text">Авторизуйтесь</span></button><span class="button-group-text">чтобы можно было оставлять комментарии.</span></div></div><script type="text/javascript">LAM.Utils.init({items: [{type: 'SubscribeController',options: {subscribe_text: 'Подписаться',unsubscribe_text: 'Отписаться'}},{type: 'CommunityComments',options: {multipart_params: { klass: 'PostCommentImage' },textarea_id: 'topic_wysiwyg',resource_type: 'Post',resource_id: 247551,width: 560}},{type: 'CommunityRating',options: {vote_sel: '[role="topic:comment:vote"]',resource_type: 'Post',resource_id: 247551,success: function (el, id, operator, response) {var rating = parseInt(response.comment.rating);var votes_count_el = $(el).parent().parent().find('[role="topic:comment:vote:count"]');votes_count_el.removeClass('count-negative').removeClass('count-positive');if (rating > 0) {votes_count_el.addClass('count-positive');} else if (rating < 0) {votes_count_el.addClass('count-negative');}votes_count_el.text(rating);}}}]});</script></div><div class="just-bl sidebar"></div></div></div><script type="text/javascript">LAM.Utils.initLazyImages('.entry-comments-wrap');</script><div class="row clearfix"><div class="row-cont"><div data-widget_name='first_line' role="widgetPlaceholder" class="widget-first_line"></div></div></div><div class="page-footer"><div class="row"><div class="row-cont"><div class="block-justifier"><div class="footer-links"><ul class="just-bl"><li><a href="http://www.wonderzine.com/pages/about">О сайте</a></li><li><a href="http://www.wonderzine.com/pages/faq">Помощь</a></li><li><a href="http://www.wonderzine.com/pages/contact">Контакты</a></li><li><a href="http://www.wonderzine.com/pages/ads">Рекламодателям</a></li><li><a href="http://www.wonderzine.com/pages/license">Правила</a></li><li><a href="http://www.wonderzine.com/pages/copyright">Правообладателям</a></li><li class="footer-counters"><!-- START Yandex Metrika informer -->
+<a href="http://metrika.yandex.ru/stat/?id=21364705&amp;from=informer"
+target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/21364705/1_0_F3F3F3FF_F3F3F3FF_0_uniques"
+style="width:80px; height:15px; border:0; vertical-align:middle;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (уникальные посетители)" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- START G+ Informer -->
+<a href="https://plus.google.com/109225504039823415414?rel=publisher" style="display: none;">g+</a>
+<!-- END G+ Informer -->
+
+<style>
+  .wide[data-post-layout="12col_16309"] .b-paywall-container,
+  .wide[data-post-layout="6col_16248"] .b-paywall-container { max-width: 1040px; margin: 0 auto; }
+</style></li></ul></div></div></div><div class="row-cont block-justifier"><div class="block-justifier"><div class="just-bl just-bl-x1"><a href="/" class="footer-logo">Wonderzine</a></div><div class="just-bl just-bl-x4"><p class="footer-copy">&copy; 2022  Wonderzine. Онлайн-журнал об интересах и возможностях современных женщин. Использование материалов Wonderzine разрешено только с предварительного согласия правообладателей. Все права на картинки и тексты принадлежат их авторам.
+Сайт может содержать контент, не предназначенный для лиц младше <strong>16 лет</strong></p><p class="footer-copy cookie">Мы используем cookie, чтобы собирать статистику и делать контент более интересным. Также cookie используются для отображения более релевантной рекламы. Вы можете прочитать подробнее о <a href="https://ru.wikipedia.org/wiki/Cookie">cookie-файлах</a> и изменить настройки вашего браузера.</p><ul class="footer-socials"><li class="footer-fb"><a href="https://www.facebook.com/wonderzinemag" target="_blank">Fb</a></li><li class="footer-vk"><a href="https://vk.com/wonderzine" target="_blank">Vk.com</a></li><li class="footer-tw"><a href="https://twitter.com/Wonderzine" target="_blank">Twitter</a></li><li class="footer-instagram"><a href="https://www.instagram.com/wonderzine_mag/ " target="_blank">I</a></li><li class="footer-telegram"><a href="https://t.me/wonderzinemag" target="_blank">Telegram</a></li><li class="footer-ok"><a href="https://ok.ru/wonderzine" target="_blank">OK</a></li></ul></div></div></div></div></div><!-- Счетчики -->
+
+
+<!-- START TNS tracking code -->
+<script type="text/javascript">
+  (function (win, doc, cb) {
+    (win[cb] = win[cb] || []).push(function () {
+      try {
+        tnsCounterLookatmedia_ru = new TNS.TnsCounter({
+          'account': 'lookatmedia_ru',
+          'tmsec': 'wonderzine_total'
+        });
+      } catch (e) { }
+    });
+
+    var tnsscript = doc.createElement('script');
+    tnsscript.type = 'text/javascript';
+    tnsscript.async = true;
+    tnsscript.src = ('https:' == doc.location.protocol ? 'https:' : 'http:') +
+      '//www.tns-counter.ru/tcounter.js';
+    var s = doc.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(tnsscript, s);
+  })(window, this.document, 'tnscounter_callback');
+</script>
+<noscript>
+  <img src="//www.tns-counter.ru/V13a****lookatmedia_ru/ru/UTF-8/tmsec=wonderzine_total/" width="0" height="0" alt="" />
+</noscript>
+<!-- END TNS tracking code -->
+
+
+<!-- START Facebook init -->
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      appId: LAM.Config.FB_APP_ID,
+      xfbml: true,
+      version: 'v2.8'
+    });
+  };
+
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- END Facebook init -->
+
+<!-- START IO Tracking Code -->
+<script>
+  window._io_config = window._io_config || {};
+  window._io_config["0.2.0"] = window._io_config["0.2.0"] || [];
+
+  var ioOptions = {
+    page_url: window.location.href,
+    page_url_canonical: window.location.origin + window.location.pathname,
+    page_title: document.title,
+    page_type: window.location.pathname == "/" || window.location.pathname == "" ? 'main' : 'default',
+    page_language: 'ru'
+  }
+  if (LAM.Post) {
+    ioOptions.article_publication_date = LAM.Post.published_at;
+    ioOptions.article_authors = [LAM.Post.user_name.toUpperCase()];
+    ioOptions.article_categories = [LAM.Post.topic.toUpperCase()];
+    ioOptions.article_subcategories = [LAM.Post.flow.toUpperCase()];
+    ioOptions.page_type = 'article';
+  }
+  window._io_config['0.2.0'].push(ioOptions);
+</script>
+<!-- END IO Tracking Code -->
+
+<!-- *END* Счетчики --><!-- START adblock detector -->
+<script type="text/javascript"
+  src="https://lamcdn.net/specials.lookatme.ru/0000000001/banners/system/the-village.ru/banners/scripts/advert-761c8d0c5fc62a665703d354829941cd.js"></script>
+<script>
+  var $block;
+  if ($('.banner-centering-wrap.banner-border-wrap .banner').length === 0) {
+    $block = $('aside.sidebar');
+  } else {
+    $block = $('.banner-centering-wrap.banner-border-wrap .banner');
+  }
+  if (this.lam_banners_loaded != true) {
+
+
+    blockHack = function (html) { // function to use in posts
+      $block.html(html);
+    }
+    var banners = [
+      {
+        //   name: 'carfix',
+        //    pixel: 'https://goo.gl/BG4iJ1',
+        //   click: 'http://www.the-village.ru/village/service-shopping/back-to-season/280416-carfix-digest',
+        //    img: 'https://lamcdn.net/specials.lookatme.ru/0000000001/banners/system/the-village.ru/branding/bannersblock/300x500-carfix.gif'
+      }
+    ]
+    var banner = banners[Math.floor(Math.random() * banners.length)];
+    $.get(banner.pixel); // register view
+    var html = '<a target="_blank" href="' + banner.click + '"><img src="' + banner.img + '"></a>';
+    blockHack(html);
+  }
+</script>
+<!-- END adblock detector -->
+
+
+
+<!-- START In-Read -->
+<script>
+var isInReadMobileFirstInited = false;
+var isInReadMobileAllInited = false;
+function isShowInRead() {
+  return !$('.article-text').hasClass('disable-native-roll') && !$('body').hasClass('pages') && !window.location.href.match(/\/new|\/edit/)
+}
+function inReadContainer() {
+  return ($('.stk-post').length > 0) ? $('.article-text .stk-post') : $('.article-text');
+}
+function initMobileInReadFirst() {
+  var container = inReadContainer();
+
+  if (!isInReadMobileFirstInited && !isBranded() && isShowInRead() && container.children('*').length > 1) {
+    var el = container.children('*').eq(1);
+    el.after('<div id="adfox_in_read_first"></div>');
+    if ($('#adfox_in_read_first').length == 1){
+      addMobileAdsMarker('adfox_in_read_first');
+      window.Ya.adfoxCode.create({
+        ownerId: 5024,
+        containerId: 'adfox_in_read_first',
+        params: {
+          pp: 'h',
+          ps: 'bksq',
+          p2: 'esdk'
+        },
+        onError: function () {
+          initMobileInReadAll();
+        },
+        onStub: function () {
+          initMobileInReadAll();
+        },
+        onLoad: function (data) {
+          initMobileInReadAll();
+        },
+        onRender: function() {
+          $('#adfox_in_read_first').css({ marginBottom: el.css('margin-bottom'), width: '320px', marginLeft: '-10px' });
+        }
+      });
+      isInReadMobileFirstInited = true;
+    }
+  }
+}
+function initMobileInReadAll() {
+  var container = inReadContainer();
+  var inReadContent = container.children('*');
+  var inReadFirstBannerBlocks = 3;
+  var bannersCounter = 0;
+  
+  if (!isInReadMobileAllInited && !isBranded() && $('body').is('.mobile') && isShowInRead()) {
+    inReadContent.each(function(i, el){
+      var allowedTags = ['P', 'DIV', 'FIGURE']
+      var classNames = el.classList.toString();
+      var allowsClassNames = {
+        'P': ['stk-reset'],
+        'DIV': ['stk-grid'],
+        'FIGURE': ['stk-embed_rendered', 'stk-image-figure']
+      }
+
+      if ((allowedTags.indexOf(el.tagName) != -1) &&
+          ($.map(allowsClassNames[el.tagName], function(allowedClassName, ii){if (classNames.indexOf(allowedClassName) != -1){return allowedClassName}}).length > 0) &&
+          (i >= inReadFirstBannerBlocks) &&
+          (inReadContent.length > inReadFirstBannerBlocks) &&
+          // начинаем через два блока после первого
+          (((i - inReadFirstBannerBlocks + 1) % 2) === 0)){
+        bannersCounter += 1;
+        var el = $(el);
+        var id = 'adfox_in_read_all_' + bannersCounter;
+        el.after('<div id="' + id + '"></div>');
+        if ($('#'+ id).length == 1){
+          window.Ya.adfoxCode.create({
+            ownerId: 5024,
+            containerId: id,
+            params: {
+                pp: 'h',
+                ps: 'bksq',
+                p2: 'hcpc'
+            },
+            onRender: function() {
+              addMobileAdsMarker(id);
+              $('#' + id).css({ marginBottom: el.css('margin-bottom'), width: '320px', marginLeft: '-10px' });
+            }
+          });
+        }
+        isInReadMobileAllInited = true;
+      }
+    });
+    initAllAdFoxAds();
+  }
+}
+
+function addMobileAdsMarker(id){
+  if ($('#' + id + ' .mobile_ads_marker').length == 0) {
+    $('<div class="mobile_ads_marker">РЕКЛАМА</div>').insertBefore('#' + id);
+  }
+}
+
+function isBranded(){
+  LAM.Config.BANNER_BRANDING || LAM.Config.BRANDED
+}
+function initDesktopInReadNew() {
+  if (!isInReadInited && $('body').is('.wide') && !$('body').is('.tablet') && !$('body').is('.mobile') && !isBranded() && isShowInRead()) {
+    var container = inReadContainer();
+    var currentTop = container.offset().top;
+    var bannersCounter = 0;
+
+    container.children('*').each(function(i, el){
+      var el = $(el);
+      var elTop = el.offset().top;
+      if ( elTop >= currentTop + 700){
+        currentTop = elTop + el.height();
+        bannersCounter++;
+        var id = 'adfox_in_read_' + bannersCounter;
+        el.after('<div id="' + id + '"></div>');
+        if ($('#'+ id).length > 0){
+          window.Ya.adfoxCode.create({
+            ownerId: 5024,
+            containerId: id,
+            params: {
+                pp: 'h',
+                ps: 'bksq',
+                p2: 'hcqk'
+            },
+            onRender: function() {
+              $('#' + id).css('margin-bottom', el.css('margin-bottom'));
+            }
+          });
+        }
+        isInReadInited = true;
+      }
+    });
+  }
+}
+</script>
+<!-- END In-Read -->
+
+<!-- START VK Retargeting -->
+<script
+  type="text/javascript">!function () { var t = document.createElement("script"); t.type = "text/javascript", t.async = !0, t.src = "https://vk.com/js/api/openapi.js?159", t.onload = function () { VK.Retargeting.Init("VK-RTRG-294031-9uYWr"), VK.Retargeting.Hit() }, document.head.appendChild(t) }();</script>
+<noscript><img src="https://vk.com/rtrg?p=VK-RTRG-294031-9uYWr" style="position:fixed; left:-999px;"
+    alt="" /></noscript>
+<!-- END VK Retargeting -->
+
+<!-- START Google Remarketing Tag -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 1000080637;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt=""
+      src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1000080637/?guid=ON&amp;script=0" />
+  </div>
+</noscript>
+<!-- END Google Remarketing Tag -->
+
+<!-- START remove post from best posts widgets
+<script>
+  LAM.Observer.bind('widget:loaded', function (widget) {
+  if (widget.name === 'best_posts') {
+    jQuery('#widget_best_posts .pic a[href$="/wonderzine/life/life/243211-rita-forever?utm_campaign=editorial-widgets&utm_medium=wonderzine&utm_source=popularmainpage"]').parents('.just-bl-x2').remove();
+    LAM.Utils.init({
+      items: [
+        {
+          type: 'FeatureSlider',
+          options: {
+            el: $('[data-widget_name="' + widget.name + '"]')
+          }
+        }
+      ]
+    });
+  }
+});
+</script>
+<!-- END remove post from best posts widgets -->
+
+
+<!-- START post scroll tracker -->
+<script>
+  $(function () {
+    pageScrollTrackerInit();
+  });
+
+
+  function pageScrollTrackerInit(){
+    if(LAM.Post !== undefined){
+      pageScrollTracker()
+    }
+  }
+
+  function pageScrollTracker() {
+    try{
+      // let debug = false;
+      LAM.Post.tracked25 = false;
+      LAM.Post.tracked50 = false;
+      LAM.Post.tracked75 = false;
+      LAM.Post.tracked100 = false;
+
+      document.addEventListener('scroll', pageScrollTrackerHandler, true);
+      window.addEventListener("resize", pageScrollTrackerHandler);
+      window.addEventListener("orientationchange", pageScrollTrackerHandler);
+      pageScrollTrackerHandler();
+
+
+      function pageScrollTrackerHandler(){
+        const innerHeight = window.innerHeight;
+        const containerEl = document.querySelector('.article-text');
+        const offsetHeight = containerEl.offsetHeight;
+
+        const currentPos = -containerEl.getBoundingClientRect().top;
+        if (currentPos < 0) return;
+        const totalScrollLength = offsetHeight - innerHeight;
+        const pageScrollRate = (totalScrollLength > 0) ? currentPos / totalScrollLength : 1;
+        // if (debug) console.log({ currentPos, totalScrollLength, pageScrollRate });
+        if ((pageScrollRate >= 0.25) && (!LAM.Post.tracked25)) {
+          LAM.Post.tracked25 = true;
+          // if (debug) console.log('25!', id, pageScrollRate);
+          pageScrolled(0.25);
+        }
+        if ((pageScrollRate >= 0.50) && (!LAM.Post.tracked50)) {
+          LAM.Post.tracked50 = true;
+          // if (debug) console.log('50!', pageScrollRate);
+          pageScrolled(0.50);
+        }
+        if ((pageScrollRate >= 0.75) && (!LAM.Post.tracked75)) {
+          LAM.Post.tracked75 = true;
+          // if (debug) console.log('75!', pageScrollRate);
+          pageScrolled(0.75);
+        }
+        if ((pageScrollRate >= 1) && (!LAM.Post.tracked100)) {
+          LAM.Post.tracked100 = true;
+          document.removeEventListener('scroll', pageScrollTrackerHandler, true);
+          // if (debug) console.log('100!', pageScrollRate);
+          pageScrolled(1);
+        }
+        // if (debug) console.log(containerEl.offsetTop );
+      }
+
+      function pageScrolled(scrolledPercent) {
+        gtag('event', `read ${scrolledPercent*100}%`, {
+                'event_category': "general",
+                'non_interaction': true
+            });
+      }
+    } catch(e){
+
+      console.log(`Error in pageScrollTracker: ${e}`);
+    }
+  }
+</script>
+<!-- END post scroll tracker -->
+
+
+<!-- START MOBILE ADS MARKER -->
+<style>
+  .mobile_ads_marker {
+    letter-spacing: 3px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 10px;
+  }
+</style>
+<!-- END OF MOBILE ADS MARKER -->
+</div><script>LAM.Utils.mark_active();</script></body></html>
