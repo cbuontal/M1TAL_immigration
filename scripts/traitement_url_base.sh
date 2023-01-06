@@ -40,7 +40,7 @@ then
  	mot="(иммигр\w+|эмигр\w+)"
 elif [[ $lang == 'fr' ]]
 then
-	mot="(im|é)migr\w+"
+	mot="([Ii]mmigr\w+)|([Éé]migr\w+)"
 fi
 
 # on utilise la commande :
@@ -186,7 +186,52 @@ done  < $fichier_urls
 
 elif [[ $lang == 'fr' ]]
 then
-echo "français"
+while read -r URL; 
+do
+			echo -e "\tURL : $URL";
+			code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1) # de la manière attendue, sans l'option -w de cURL
+			charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
+			charset=$(echo $charset | tr "[a-z]" "[A-Z]") #ici nous définissons pour la valeur sharset la commande "convertir toutes les petites lettres en majuscules, afin que toutes les lettres UTF-8 soient du même type
+			echo -e "\tcode : $code"; 
+
+			if [[ -z $charset ]]
+			then
+						echo -e "\tencodage non détecté, on prendra UTF-8 par défaut.";
+						charset="UTF-8";
+			else
+						echo -e "\tencodage : $charset";
+			fi
+
+			if [[  $code -eq 200 || $code -eq 403 ]] 
+				then
+						aspiration=$(curl $URL)
+						dump=$(lynx -dump -nolist -accept_all_cookies -assume_charset=$charset -display_charset=$charset $URL)
+						if [[  $charset -ne 'UTF-8' ]]
+						then
+							dump=$(iconv -f $charset -t UTF-8)
+						fi
+			else
+						echo -e "\tcode différent de 200 utilisation d'un dump vide"
+						dump=""
+						charset=""
+			fi
+
+			echo "$dump" > "./dumps-text/$basename-$lineno.txt"
+			echo "$aspiration" > "./aspirations/$basename-$lineno.html"
+
+# compte du nombre d'occurrences
+NB_OCC=$(grep -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)
+  # extraction des contextes
+grep -E -A2 -B2 $mot ./dumps-text/$basename-$lineno.txt > "./contextes/$basename-$lineno.txt" 
+  # construction des concordance avec une commande externe
+bash scripts/concordance.sh fr ./dumps-text/$basename-$lineno.txt $mot > "./concordances/$basename-$lineno.html"
+
+echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td><a href="../aspirations/$basename-$lineno.html">html</a></td><td><a href="../dumps-text/$basename-$lineno.txt">text</a></td><td>$NB_OCC</td><td><a href="../contextes/$basename-$lineno.txt">contextes</a></td><td><a href="../concordances/$basename-$lineno.html">concordance</a></td></tr>" >> "tableaux/$fichier_tableau" #Nous spécifions ici où placer toutes les informations et notons qu'il n'est pas nécessaire de les supprimer à chaque itération
+echo -e "\t--------------------------------"
+
+lineno=$((lineno+1));
+
+done  < $fichier_urls
 
 fi
 

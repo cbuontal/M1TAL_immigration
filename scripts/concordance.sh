@@ -37,7 +37,7 @@ fi
 
 echo 	"
             <html>
-             <html lang=\"ru\">
+             <html lang=\"$lang\">
 			 <head>
 							<meta charset=\"utf-8\" /> 
 							<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css\">
@@ -58,7 +58,7 @@ echo 	"
 
 if [[ $lang == 'fr' ]]
 then
-	echo "fr"
+	grep -E -o "(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}" $fichier_text | sed -E "s/(.*)($motif)(.*)/<tr><td class="has-text-right">\1<\/td><td class="has-text-danger">\2<\/td><td class="has-text-left">\3<\/td><\/tr>/"
 elif [[ $lang == 'ru' ]]
 then
 	#pour utiliser cette ligne, il faut installer gnu-sed : brew install gnu-sed
