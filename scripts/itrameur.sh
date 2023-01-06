@@ -31,9 +31,9 @@ do
 	content=$(cat $filepath)
 	# ordre important : & en premier
 	# sinon : < => &lt; => &amp;lt;
-	content=$(echo "$content" | sed 's/&/&amp;/g')
-	content=$(echo "$content" | sed 's/</&lt;/g')
-	content=$(echo "$content" | sed 's/>/&gt;/g')
+	content=$(echo "$content" | gsed -E "s/&/&amp;/g")
+	content=$(echo "$content" | gsed -E "s/</&lt;/g")
+	content=$(echo "$content" | gsed -E "s/>/&gt;/g")
 
 	echo "$content" >> "./itrameur/$folder-$basename.txt"
 

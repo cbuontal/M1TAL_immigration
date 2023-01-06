@@ -257,9 +257,29 @@ width:99.5%;
 		width:100%!important;
 		float:none!important;	
 	}
-	}
+	}
+.qtip{width:95%!important;max-width:200px;}.qtip-default .qtip-titlebar{
+					background-color:#F1F1F1;
+					color:#444444;
+					border-color: #E2E2E2;	
+					}
+					.qtip-content
+					{
+					background-color:#FFFFFF;
+					color:#444444;
+					border-color: #E2E2E2;	
+					}
+					.qtip-default
+					{
+					background-color:#F1F1F1;
+					border:1px solid #E2E2E2;
+					color:#444444;
+					font-size:12px;
+					}
+					
+					
 	</style>
-	<script type="application/json" class="joomla-script-options new">{"csrf.token":"02f5c10bbbfea4d87d93b36d55a8c69b","system.paths":{"root":"","base":""}}</script>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"941c0186923f608fd06b6082a61978d0","system.paths":{"root":"","base":""}}</script>
 	<script src="/media/jui/js/jquery.min.js?35d7e6a17db77637d2f1296800487563" type="text/javascript"></script>
 	<script src="/media/jui/js/jquery-noconflict.js?35d7e6a17db77637d2f1296800487563" type="text/javascript"></script>
 	<script src="/media/jui/js/jquery-migrate.min.js?35d7e6a17db77637d2f1296800487563" type="text/javascript"></script>
@@ -342,7 +362,30 @@ $GK_URL = "https://rua.gr/";
 		"0",	
 		"Add to compare",
 		"Remove to compare"	
-	];function do_nothing() { return; }
+	];jQuery(document).ready(function() {jQuery('.mytool a,.mytool abbr').qtip({
+			style: { classes: 'qtip-plain' },
+			position: {
+				   my: 'bottom center',
+				   at:'top center',
+				   target: 'mouse' ,
+				   viewport: jQuery(window),
+					adjust: {
+					    method: 'flipinvert'
+					}
+			},
+			content: {      
+			    text: function(event, api) {
+		        return jQuery(this).attr('title');
+			},
+			title: function(event, api) {
+		        return jQuery(this).text();
+			}
+			
+			},
+				hide: {
+				delay: '500'
+				}
+			})});function do_nothing() { return; }
 	</script>
 	<script type="application/x-k2-headers">
 {"Last-Modified": "Mon, 02 Jan 2023 12:37:00 GMT", "ETag": "d88faf921f3b8053b7309c54f44b6a39"}
@@ -634,7 +677,7 @@ enable_page_level_ads: true
 																											<li class="itemAuthor"> Автор&nbsp;
 																								<a rel="author" href="/news/migrantskij-front/author/72-pavelonoyko.html">Павел Онойко</a>
 																					</li>
-																											<li class="itemHitsBlock"><span class="itemHits"><img src="/templates/gk_news/html/com_k2/templates/eye.png" alt="Просмотров"> <span id="k2hits"> 1331</span>
+																											<li class="itemHitsBlock"><span class="itemHits"><img src="/templates/gk_news/html/com_k2/templates/eye.png" alt="Просмотров"> <span id="k2hits"> 1334</span>
 									</span> </li>
 						</ul>
 									</header>
@@ -868,6 +911,134 @@ box-shadow: 2px 4px 4px 0px #edf0f3;
 </div></div></div><div class="box  pattern nomobile notablet"><h3 class="header">Последние новости</h3><div class="content">
 <div id="k2ModuleBox998" class="k2ItemsBlock  pattern nomobile notablet">
 						<ul>
+								<li class="even"> 
+						
+						<!-- Plugins: BeforeDisplay --> 
+						 
+						
+						<!-- K2 Plugins: K2BeforeDisplay --> 
+																								<a class="moduleItemTitle" href="/news/koronavirus/52859-chto-takoe-kraken-ecdc-o-novom-variante-covid-naskolko-eto-opasno.html">Что такое «Кракен»: ECDC о новом варианте Covid — насколько это опасно</a>
+												
+						<!-- Plugins: AfterDisplayTitle --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplayTitle --> 
+						 
+						
+						<!-- Plugins: BeforeDisplayContent --> 
+						 
+						
+						<!-- K2 Plugins: K2BeforeDisplayContent --> 
+																								<div class="clr"></div>
+												<div class="clr"></div>
+						
+						<!-- Plugins: AfterDisplayContent --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplayContent --> 
+																																																						
+						<!-- Plugins: AfterDisplay --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplay --> 
+												<div class="clr"></div>
+				</li>
+								<li class="odd"> 
+						
+						<!-- Plugins: BeforeDisplay --> 
+						 
+						
+						<!-- K2 Plugins: K2BeforeDisplay --> 
+																								<a class="moduleItemTitle" href="/news/news/52858-minkult-gretsii-skulptury-parfenona-v-arendu-eto-lozh.html">Минкульт Греции: "Скульптуры Парфенона в аренду? Это ложь"</a>
+												
+						<!-- Plugins: AfterDisplayTitle --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplayTitle --> 
+						 
+						
+						<!-- Plugins: BeforeDisplayContent --> 
+						 
+						
+						<!-- K2 Plugins: K2BeforeDisplayContent --> 
+																								<div class="clr"></div>
+												<div class="clr"></div>
+						
+						<!-- Plugins: AfterDisplayContent --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplayContent --> 
+																																																						
+						<!-- Plugins: AfterDisplay --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplay --> 
+												<div class="clr"></div>
+				</li>
+								<li class="even"> 
+						
+						<!-- Plugins: BeforeDisplay --> 
+						 
+						
+						<!-- K2 Plugins: K2BeforeDisplay --> 
+																								<a class="moduleItemTitle" href="/news/sobmn/52857-tsipras-i-marinakis-simvolicheskoe-rukopozhatie-o-chem-ono-signaliziruet.html">Ципрас и Маринакис: символическое рукопожатие - о чем оно сигнализирует</a>
+												
+						<!-- Plugins: AfterDisplayTitle --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplayTitle --> 
+						 
+						
+						<!-- Plugins: BeforeDisplayContent --> 
+						 
+						
+						<!-- K2 Plugins: K2BeforeDisplayContent --> 
+																								<div class="clr"></div>
+												<div class="clr"></div>
+						
+						<!-- Plugins: AfterDisplayContent --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplayContent --> 
+																																																						
+						<!-- Plugins: AfterDisplay --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplay --> 
+												<div class="clr"></div>
+				</li>
+								<li class="odd"> 
+						
+						<!-- Plugins: BeforeDisplay --> 
+						 
+						
+						<!-- K2 Plugins: K2BeforeDisplay --> 
+																								<a class="moduleItemTitle" href="/news/sobmn/52856-kak-frantsuzy-duryat-grekov-s-fregatami-belharra-i-istrebitelyami-rafale.html">Как французы дурят ​​греков с фрегатами Belharra и истребителями Rafale</a>
+												
+						<!-- Plugins: AfterDisplayTitle --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplayTitle --> 
+						 
+						
+						<!-- Plugins: BeforeDisplayContent --> 
+						 
+						
+						<!-- K2 Plugins: K2BeforeDisplayContent --> 
+																								<div class="clr"></div>
+												<div class="clr"></div>
+						
+						<!-- Plugins: AfterDisplayContent --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplayContent --> 
+																																																						
+						<!-- Plugins: AfterDisplay --> 
+						 
+						
+						<!-- K2 Plugins: K2AfterDisplay --> 
+												<div class="clr"></div>
+				</li>
 								<li class="even"> 
 						
 						<!-- Plugins: BeforeDisplay --> 
@@ -2148,141 +2319,13 @@ box-shadow: 2px 4px 4px 0px #edf0f3;
 						<!-- K2 Plugins: K2AfterDisplay --> 
 												<div class="clr"></div>
 				</li>
-								<li class="even"> 
-						
-						<!-- Plugins: BeforeDisplay --> 
-						 
-						
-						<!-- K2 Plugins: K2BeforeDisplay --> 
-																								<a class="moduleItemTitle" href="/news/sobmn/52815-vasilis-topalos-politsiya-rassmatrivaet-ego-uchastie-v-nelegalnykh-matchakh.html">Василис Топалос: полиция рассматривает его участие в нелегальных матчах</a>
-												
-						<!-- Plugins: AfterDisplayTitle --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplayTitle --> 
-						 
-						
-						<!-- Plugins: BeforeDisplayContent --> 
-						 
-						
-						<!-- K2 Plugins: K2BeforeDisplayContent --> 
-																								<div class="clr"></div>
-												<div class="clr"></div>
-						
-						<!-- Plugins: AfterDisplayContent --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplayContent --> 
-																																																						
-						<!-- Plugins: AfterDisplay --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplay --> 
-												<div class="clr"></div>
-				</li>
-								<li class="odd"> 
-						
-						<!-- Plugins: BeforeDisplay --> 
-						 
-						
-						<!-- K2 Plugins: K2BeforeDisplay --> 
-																								<a class="moduleItemTitle" href="/events/52814-new-star-art-cinema-31-film-sovetskoj-epokhi-s-7-po-11-yanvarya.html">New Star Art Cinema: 31 фильм советской эпохи с 7 по 11 января</a>
-												
-						<!-- Plugins: AfterDisplayTitle --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplayTitle --> 
-						 
-						
-						<!-- Plugins: BeforeDisplayContent --> 
-						 
-						
-						<!-- K2 Plugins: K2BeforeDisplayContent --> 
-																								<div class="clr"></div>
-												<div class="clr"></div>
-						
-						<!-- Plugins: AfterDisplayContent --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplayContent --> 
-																																																						
-						<!-- Plugins: AfterDisplay --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplay --> 
-												<div class="clr"></div>
-				</li>
-								<li class="even"> 
-						
-						<!-- Plugins: BeforeDisplay --> 
-						 
-						
-						<!-- K2 Plugins: K2BeforeDisplay --> 
-																								<a class="moduleItemTitle" href="/news/migrantskij-front/52813-kos-dva-intsidenta-s-pogonej-i-arestom-perevozchikov-nelegalov-video.html">Кос: два инцидента с погоней и арестом перевозчиков нелегалов (видео)</a>
-												
-						<!-- Plugins: AfterDisplayTitle --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplayTitle --> 
-						 
-						
-						<!-- Plugins: BeforeDisplayContent --> 
-						 
-						
-						<!-- K2 Plugins: K2BeforeDisplayContent --> 
-																								<div class="clr"></div>
-												<div class="clr"></div>
-						
-						<!-- Plugins: AfterDisplayContent --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplayContent --> 
-																																																						
-						<!-- Plugins: AfterDisplay --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplay --> 
-												<div class="clr"></div>
-				</li>
-								<li class="odd"> 
-						
-						<!-- Plugins: BeforeDisplay --> 
-						 
-						
-						<!-- K2 Plugins: K2BeforeDisplay --> 
-																								<a class="moduleItemTitle" href="/news/european-news/52812-es-meta-oshtrafovana-na-390-mln-evro-za-personalizirovannuyu-reklamu-v-facebook-i-instagram.html">ЕС: Meta оштрафована на 390 млн евро за персонализированную рекламу в Facebook и Instagram</a>
-												
-						<!-- Plugins: AfterDisplayTitle --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplayTitle --> 
-						 
-						
-						<!-- Plugins: BeforeDisplayContent --> 
-						 
-						
-						<!-- K2 Plugins: K2BeforeDisplayContent --> 
-																								<div class="clr"></div>
-												<div class="clr"></div>
-						
-						<!-- Plugins: AfterDisplayContent --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplayContent --> 
-																																																						
-						<!-- Plugins: AfterDisplay --> 
-						 
-						
-						<!-- K2 Plugins: K2AfterDisplay --> 
-												<div class="clr"></div>
-				</li>
 								<li class="even lastItem"> 
 						
 						<!-- Plugins: BeforeDisplay --> 
 						 
 						
 						<!-- K2 Plugins: K2BeforeDisplay --> 
-																								<a class="moduleItemTitle" href="/news/procrim/52810-ograblenie-s-nozhom-na-minimarkete.html">Ограбление с ножом в минимаркете</a>
+																								<a class="moduleItemTitle" href="/news/sobmn/52815-vasilis-topalos-politsiya-rassmatrivaet-ego-uchastie-v-nelegalnykh-matchakh.html">Василис Топалос: полиция рассматривает его участие в нелегальных матчах</a>
 												
 						<!-- Plugins: AfterDisplayTitle --> 
 						 
@@ -2323,7 +2366,7 @@ box-shadow: 2px 4px 4px 0px #edf0f3;
 	<p style="text-align: center;"><a href="https://www.facebook.com/Athens.News.Russian" target="_blank" rel="noopener noreferrer"><img src="/images/social/facebook.png" alt="facebook" width="26" height="26" /></a> <a href="https://twitter.com/russianathens/" target="_blank" rel="noopener noreferrer"><img src="/images/social/twitter.png" alt="twitter" width="26" height="26" /></a> <a href="https://www.youtube.com/russianathens/" target="_blank" rel="noopener noreferrer"><img src="/images/social/youtube.png" alt="youtube" width="26" height="26" /></a> <a href="http://odnoklassniki.ru/russian.athens/" target="_blank" rel="noopener noreferrer"><img src="/images/social/odnoklassniki.png" alt="одноклассники" width="26" height="26" /></a> <a href="https://vk.com/russian.athens" target="_blank" rel="noopener noreferrer"><img src="/images/social/vk.png" alt="в контакте" width="26" height="26" /></a> <a href="https://t.me/ruassianathens" target="_blank" rel="noopener noreferrer"><img src="/images/social/telegram.png" width="26" height="26" /></a> <a href="https://www.instagram.com/russianathens/" target="_blank" rel="noopener noreferrer"><img src="/images/1/instagramm.png" alt="instagramm" width="26" height="26" /></a> <a href="https://invite.viber.com/?g2=AQBNt%2Fn%2BbJrQS0%2BWqR5f8YcJzcdXX4ySlc57cMadK0AErgfvp7MoNu6OMuLINCxX" target="_blank" rel="noopener noreferrer"><strong><img src="/images/1/viber.png" alt="viber" width="26" height="26" /></strong></a></p>
 <p style="text-align: center;"><a title="Нужные телефоны" href="/help/hotphone.html" target="_blank" rel="noopener noreferrer"><img title="горячие телефоны" src="/images/1/phone.png" alt="горячие телефоны" width="26" height="26" /></a> <a title="Справка - бизнес каталог" href="/catalog.html" target="_blank" rel="noopener noreferrer"><img title="Бизнес каталог" src="/images/1/3/catalog1.png" alt="Бизнес каталог" width="26" height="26" /></a> <a title="Погода в Греции" href="/athina/pogoda.html" target="_blank" rel="noopener noreferrer"><img title="Погода" src="/images/maps/weather.png" alt="Погода" width="26" height="26" /></a> <a title="Трафик на дорогах" href="/athina/trafik.html" target="_blank" rel="noopener noreferrer"> <img title="Трафик" src="/images/maps/traffik.png" alt="Трафик" width="26" height="26" /></a> <a title="Землетрясения" href="/news/procrim/sejsmicheskaya-aktivnost.html" target="_blank" rel="noopener noreferrer"><img title="Землетрясения" src="/images/maps/earthtr.png" alt="Землетрясения" width="26" height="26" /></a> <a title="Карта коронавируса в Греции" href="/help/slovar-sokrashchenij" target="_blank" rel="noopener noreferrer"><img src="/images/1/4/slovar38.png" alt="греко-русский словарь сокращений" width="26" height="26" /></a> <a title="Опасности" href="/help/opasnosti.html" target="_blank" rel="noopener noreferrer"><img src="/images/1/danger.png" alt="опасности" width="26" height="26" /></a> <a title="Пандемия" href="/news/koronavirus.html" target="_blank" rel="noopener noreferrer"><img src="/images/1/Biohazard.png" alt="пандемия" width="26" height="26" /></a></p>	
 </div>
-</div></div><div class="box  pattern nomobile notablet"><h3 class="header">Для подписчиков</h3><div class="content">
+</div></div><div class="box  pattern nomobile notablet nomargin"><h3 class="header">Для подписчиков</h3><div class="content">
 <div id="k2ModuleBox995" class="k2ItemsBlock  pattern nomobile notablet">
 						<ul>
 								<li class="even"> 
@@ -2678,11 +2721,11 @@ box-shadow: 2px 4px 4px 0px #edf0f3;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/component/banners/click/60.html" target="_blank" rel="noopener noreferrer"
-							title="wstudio2">
+							href="/component/banners/click/61.html" target="_blank" rel="noopener noreferrer"
+							title="wstudio3">
 							<img
-								src="https://rua.gr/images/banners/wstudio5.jpg"
-								alt="Создание сайтов под ключ"
+								src="https://rua.gr/images/banners/wstudiogif2.gif"
+								alt="Создание сайтов"
 								 width="290"															/>
 						</a>
 																<div class="clr"></div>
@@ -2739,27 +2782,27 @@ box-shadow: 2px 4px 4px 0px #edf0f3;
 	list-style: none;
 	float: left;
 }
-#mod_mt_listings63b859edeb8b9 li {
+#mod_mt_listings63b860f9c4367 li {
 	width: 100%;
 clear: both;
 }
 .mod_mt_listings.tiles li.showmore {
 	clear: both;
 }
-#mod_mt_listings63b859edeb8b9 li a img {
+#mod_mt_listings63b860f9c4367 li a img {
 	width: 50px;
 	height: 50px;
 }
-#mod_mt_listings63b859edeb8b9.mod_mt_listings.tiles .name {
+#mod_mt_listings63b860f9c4367.mod_mt_listings.tiles .name {
 	text-align:left;
 }
-#mod_mt_listings63b859edeb8b9.mod_mt_listings.tiles .name {
+#mod_mt_listings63b860f9c4367.mod_mt_listings.tiles .name {
 	display:block;;
 }
-#mod_mt_listings63b859edeb8b9.mod_mt_listings.tiles li small {
+#mod_mt_listings63b860f9c4367.mod_mt_listings.tiles li small {
 	display:block;;
 }
-#mod_mt_listings63b859edeb8b9.mod_mt_listings.tiles li a.top-listing-thumb {
+#mod_mt_listings63b860f9c4367.mod_mt_listings.tiles li a.top-listing-thumb {
 	width: 50px;
 	vertical-align:top;
 	float:left;
@@ -2769,15 +2812,15 @@ clear: both;
 	padding:2px;
 	margin-bottom:.5em;
 }
-#mod_mt_listings63b859edeb8b9.mod_mt_listings.tiles li small {
+#mod_mt_listings63b860f9c4367.mod_mt_listings.tiles li small {
 	display:block;
 	line-height:1.6em;
 	font-size:.9em;
 }
 
 </style>
-<ul id="mod_mt_listings63b859edeb8b9" class="mod_mt_listings tiles">
-<li class="first"><a class="top-listing-thumb" href="/catalog/companies/576-apostil-konsultatsii-po-semenomu-pravu.html"><img align="bottom" border="0" src="https://rua.gr/media/com_mtree/images/listings/s/375.jpg" alt="Апостиль( Россия,Украина, Грузия)" /></a><a href="/catalog/companies/576-apostil-konsultatsii-po-semenomu-pravu.html" class="name">Апостиль(...</a></li></ul></div></div><div class="box  ads"><div class="content">
+<ul id="mod_mt_listings63b860f9c4367" class="mod_mt_listings tiles">
+<li class="first"><a class="top-listing-thumb" href="/catalog/byuro-perevodov/529-athens-translation-center.html"><img align="bottom" border="0" src="https://rua.gr/media/com_mtree/images/listings/s/288.png" alt="ATHENS TRANSLATION CENTER" /></a><a href="/catalog/byuro-perevodov/529-athens-translation-center.html" class="name">ATHENS TRANSLATION...</a></li></ul></div></div><div class="box  ads"><div class="content">
 
 <div class="custom ads"  >
 
@@ -2785,15 +2828,22 @@ clear: both;
 </div>
 </div></div><div class="box "><h3 class="header">Советы Юриста главная</h3><div class="content">	<ul class="mod_smfaq">
 					<li class="list-item">
-									<p class="question-label" onclick="location.href='/law/lawcons/semejnoe-pravo/1608.html'">
-						<strong>Вопрос: </strong><span class="question-content"  title="1. Hi, working in Greece, Athens in shipping Company. Have delay for the salary payment for July, August, September, October month.  What to do ?
-2. In the office I am working my boss, Greek person non stop smoking. Any law about non smoking in enclosed spaces exist ?
-">1. Hi, working in Greece, Athens in shipping Company. Have delay for the salary payment for July, Au...</span>
+									<p class="question-label" onclick="location.href='/law/lawcons/semejnoe-pravo/1632.html'">
+						<strong>Вопрос: </strong><span class="question-content"  title="Добрый день!
+
+Я собираюсь поехать на трехмесячные курсы языка для знакомства со страной. У меня есть финский туристический шенген и университет сказал что этого им достаточно. Курсы идут с 1 марта по 2 июня, а виза подразумевает 90 дней на территории шенгена. В Россию возвращаться очень накладно, могу ли я выехать за пределы шенгена, например в Турцию, на неделю и потом вернуться? Чтобы вписаться в нужные 90 дней? Не будет ли проблем на границе?
+
+Ответьте, пожалуйста, как можно скорее, очень хочу подучить греческий и пожить немного в стране, но надо скорее делать документы, а без понимания что делать с визой все очень шатко.
+
+Спасибо вам большое за ваши консультации!
+С уважением, Мария.">Добрый день!
+
+Я собираюсь поехать на трехмесячные курсы языка для знакомства со страной. У меня ес...</span>
 					</p>
 											</li>
 					<li class="list-item">
-									<p class="question-label" onclick="location.href='/law/lawcons/semejnoe-pravo/1208.html'">
-						<strong>Вопрос: </strong><span class="question-content"  title="здраствуйте! у меня такой вопрос.у меня внж греческое.могу ли я по нему поехать в германию через болгарию? и какие страны мне придется проехать? т.к через скопью меня не пропустили .спасибо ">здраствуйте! у меня такой вопрос.у меня внж греческое.могу ли я по нему поехать в германию через бол...</span>
+									<p class="question-label" onclick="location.href='/law/lawcons/semejnoe-pravo/141.html'">
+						<strong>Вопрос: </strong><span class="question-content"  title="Подскажите пожалуйста,я в браке с греком прожила 2 месяца и меня есть сидетельство о браке,мой муж меня обманывает с документами не хочет мне делать разрешение на жительство,что я могу сделать что бы остаться жить в греции???  ">Подскажите пожалуйста,я в браке с греком прожила 2 месяца и меня есть сидетельство о браке,мой муж м...</span>
 					</p>
 											</li>
 			</ul>
@@ -2861,39 +2911,39 @@ clear: both;
 				//-->
 				</script><script type="text/javascript">
 				<!--
-					acymailingModule['reqFieldsformAcymailing99961'] = Array('name','html');
-		acymailingModule['validFieldsformAcymailing99961'] = Array('Пожалуйста, введите значение для поля Имя','Пожалуйста, введите значение для поля Получить');
+					acymailingModule['reqFieldsformAcymailing18091'] = Array('name','html');
+		acymailingModule['validFieldsformAcymailing18091'] = Array('Пожалуйста, введите значение для поля Имя','Пожалуйста, введите значение для поля Получить');
 				//-->
-					</script><div class="acymailing_module" id="acymailing_module_formAcymailing99961">
-	<div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing99961" style="text-align:center" >
-		<form id="formAcymailing99961" action="/news/sobmn.html" onsubmit="return submitacymailingform('optin','formAcymailing99961')" method="post" name="formAcymailing99961"  >
+					</script><div class="acymailing_module" id="acymailing_module_formAcymailing18091">
+	<div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing18091" style="text-align:center" >
+		<form id="formAcymailing18091" action="/news/procrim.html" onsubmit="return submitacymailingform('optin','formAcymailing18091')" method="post" name="formAcymailing18091"  >
 		<div class="acymailing_module_form" >
 			<div class="acymailing_introtext"><p>Не пропусти другие интересные статьи, подпишись:</p></div>			<table class="acymailing_form">
 				<tr>
 													<td class="acyfield_email acy_requiredField">
-								<input id="user_email_formAcymailing99961"  style="width:200px" onfocus="if(this.value == 'Введите ваш email адрес:') this.value = '';" onblur="if(this.value=='') this.value='Введите ваш email адрес:';" type="text" class="inputbox required" name="user[email]" value="Введите ваш email адрес:" title="Введите ваш email адрес:"/>								</td></tr><tr>
+								<input id="user_email_formAcymailing18091"  style="width:200px" onfocus="if(this.value == 'Введите ваш email адрес:') this.value = '';" onblur="if(this.value=='') this.value='Введите ваш email адрес:';" type="text" class="inputbox required" name="user[email]" value="Введите ваш email адрес:" title="Введите ваш email адрес:"/>								</td></tr><tr>
 					
 					<td  class="acysubbuttons">
-												<input class="button subbutton btn btn-primary" type="submit" value="Подписаться" name="Submit" onclick="try{ return submitacymailingform('optin','formAcymailing99961'); }catch(err){alert('The form could not be submitted '+err);return false;}"/>
+												<input class="button subbutton btn btn-primary" type="submit" value="Подписаться" name="Submit" onclick="try{ return submitacymailingform('optin','formAcymailing18091'); }catch(err){alert('The form could not be submitted '+err);return false;}"/>
 											</td>
 				</tr>
 			</table>
 			<script type="text/javascript">
 						<!--
 						
-acymailingModule['excludeValuesformAcymailing99961'] = [];
-acymailingModule['excludeValuesformAcymailing99961']['email'] = 'Введите ваш email адрес:';
+acymailingModule['excludeValuesformAcymailing18091'] = [];
+acymailingModule['excludeValuesformAcymailing18091']['email'] = 'Введите ваш email адрес:';
 
 						//-->
 						</script>			<input type="hidden" name="ajax" value="1" />
 			<input type="hidden" name="acy_source" value="module_621" />
 			<input type="hidden" name="ctrl" value="sub"/>
 			<input type="hidden" name="task" value="notask"/>
-			<input type="hidden" name="redirect" value="https%3A%2F%2Frua.gr%2Fnews%2Fsobmn%2F52855-sovetnik-pravitelstva-golosujte-za-nd-eto-professionalnye-vory-a-v-siriza-diletanty-video.html"/>
-			<input type="hidden" name="redirectunsub" value="https%3A%2F%2Frua.gr%2Fnews%2Fsobmn%2F52855-sovetnik-pravitelstva-golosujte-za-nd-eto-professionalnye-vory-a-v-siriza-diletanty-video.html"/>
+			<input type="hidden" name="redirect" value="https%3A%2F%2Frua.gr%2Fnews%2Fprocrim%2F51201-khalkidiki-byvshie-postoyaltsy-v-shoke-ot-izvestiya-o-slezhke-v-gostinichnykh-nomerakh.html"/>
+			<input type="hidden" name="redirectunsub" value="https%3A%2F%2Frua.gr%2Fnews%2Fprocrim%2F51201-khalkidiki-byvshie-postoyaltsy-v-shoke-ot-izvestiya-o-slezhke-v-gostinichnykh-nomerakh.html"/>
 			<input type="hidden" name="option" value="com_acymailing"/>
 						<input type="hidden" name="hiddenlists" value="2"/>
-			<input type="hidden" name="acyformname" value="formAcymailing99961" />
+			<input type="hidden" name="acyformname" value="formAcymailing18091" />
 									</div>
 		</form>
 	</div>
@@ -2937,7 +2987,7 @@ acymailingModule['excludeValuesformAcymailing99961']['email'] = 'Введите 
     Адрес:
     <span>ул. Каниггос 19, 1-й этаж</span><span> 10677</span> <span>Афины, Греция</span>,
   </div>
-  Электронная почта: <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="472e29212807353226692035">[email&#160;protected]</a></span>
+  Электронная почта: <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="620b0c040d221017034c0510">[email&#160;protected]</a></span>
 </div>
 <p>При использовании материалов <strong> www.rua.gr </strong>активная ссылка (hyperlink) на источник обязательна.| Настоящий ресурс содержит материалы категории +5 и может содержать материалы 16+ (о чем в публикации ставиться пометка)<br /><a href="https://rua.gr/useragriment.html">Copyright © 2004-22 <strong>Афинские Новости</strong></a><strong> | <a href="https://www.wstudio.gr">Powered by Wstudio.gr</a> </strong></p>
 	</div>
@@ -2993,7 +3043,7 @@ acymailingModule['excludeValuesformAcymailing99961']['email'] = 'Введите 
 	<input type="hidden" name="option" value="com_users" />
 	<input type="hidden" name="task" value="user.login" />
 	<input type="hidden" name="return" value="aHR0cHM6Ly9ydWEuZ3IvbmV3cy9taWdyYW50c2tpai1mcm9udC81Mjc1OC1teS1uZS16bmFlbS1rb2xpY2hlc3R2by1uZWxlZ2FsbnlraC1pbW1pZ3JhbnRvdi12LWdyZXRzaWktbGVnYWxueWtoLTEtMDAwLTAwMC5odG1s" />
-	<input type="hidden" name="02f5c10bbbfea4d87d93b36d55a8c69b" value="1" />	</fieldset>
+	<input type="hidden" name="941c0186923f608fd06b6082a61978d0" value="1" />	</fieldset>
 	<ul class="ul-jlslogin">
 		<li>
 			<a  rel="nofollow" href="/login.html?view=reset">

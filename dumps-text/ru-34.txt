@@ -6,15 +6,15 @@
    ____________________________________________________________
    ____________________________________________________________
 
-   {"id":13794,"url":"\/distributions\/13794\/click?bit=1&hash=efd4b71c5bd
-   66aaf115c05462de50ba34a7e68a510f7bc039a006347dd71aa1e","title":"\u041a
-   \u043a\u043e\u043d\u0446\u0443 \u0433\u043e\u0434\u0430
-   \u0441\u0442\u0430\u043b\u043e \u0441\u043e\u0432\u0441\u0435\u043c
-   \u0442\u044f\u0436\u043a\u043e? \u042d\u0442\u043e\u0442
-   \u0431\u043e\u0442 \u0432\u0430\u0441
-   \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0442","buttonText":"\
-   u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435","imageUuid":"027
-   0d3b6-a3e4-508b-938a-52739ace6f52","isPaidAndBannersEnabled":false}
+   {"id":13803,"url":"\/distributions\/13803\/click?bit=1&hash=90342957f56
+   97a9a43d8932eeb7337c14a1aaa6909caada27554cfaabfcfb765","title":"\u041f\
+   u0440\u0430\u0432\u0434\u0430 \u043b\u0438, \u0447\u0442\u043e
+   \u0444\u0438\u043d\u0430\u043d\u0441\u0438\u0441\u0442\u044b
+   \u0442\u0430\u043a\u0438\u0435 \u0436\u0435
+   \u00ab\u043f\u0441\u0438\u0445\u043e\u043f\u0430\u0442\u044b\u00bb,
+   \u043a\u0430\u043a \u0432
+   \u043a\u0438\u043d\u043e?","buttonText":"","imageUuid":"","isPaidAndBan
+   nersEnabled":false}
    [gif;base64,R0lGODlhAQABAJAAAP8AAAAAACH5BAUQAAAALAAAAAABAAEAAAICBAEAOw=
    =]
    Еда
