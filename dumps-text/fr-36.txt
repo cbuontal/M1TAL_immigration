@@ -1,0 +1,302 @@
+   (BUTTON) Accès au menu d’accessibilité
+     * aller au contenu principal
+     * aller au menu de navigation
+     * aller au moteur de recherche
+     * aller au direct tv
+     * aller au direct radio
+
+   (BUTTON) Menu principal
+   Accueil France Info
+     * vidéos
+     * radio
+     * jt
+     * magazines
+
+   Rechercher une actualité
+   DIRECT TV TV
+   DIRECT Radio Radio
+   Le live
+   ____________________ (BUTTON) Rechercher
+     * accueil
+     * le live
+     * direct tv
+     * direct radio
+     * vidéos
+     * radio
+     * jt
+     * magazines
+
+   Accueil
+     * politique (BUTTON) Sous-menu politique
+     * vrai ou fake
+     * société (BUTTON) Sous-menu société
+     * faits-divers (BUTTON) Sous-menu faits-divers
+     * santé (BUTTON) Sous-menu santé
+     * éco/conso (BUTTON) Sous-menu éco/conso
+     * monde (BUTTON) Sous-menu monde
+     * europe
+     * culture (BUTTON) Sous-menu culture
+     * sport (BUTTON) Sous-menu sport
+     * environnement (BUTTON) Sous-menu environnement
+     * météo (BUTTON) Sous-menu météo
+
+   LE LIVE
+     * Confidentialité
+     * Newsletters
+
+Vidéo Loi sur l'immigration : "Construire une loi avec l'objectif de renvoyer le
+ maximum de gens ou de faire entrer le minimum est un non-sens", déplore Benoît
+                              Hamon de l'ONG Singa
+
+   Publié le 06/12/2022 09:13
+
+   IFRAME:
+   data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAO
+   w==
+
+   Article rédigé par
+   franceinfo
+   Radio France
+
+   "Tous les pays qui ont décidé de fermer leurs frontières aux migrations
+   n'ont pas empêché l'immigration de changer d'échelle", observe l'ancien
+   candidat candidat socialiste à la présidentielle, Benoît Hamon qui
+   dirige aujourd'hui Benoît Hamon, l’ONG européenne Singa.
+
+   "Construire une loi avec l'objectif de renvoyer le maximum de gens ou
+   de faire entrer le minimum de gens est à nos yeux un non-sens", a
+   estimé mardi 6 décembre sur franceinfo Benoît Hamon, directeur général
+   de l’ONG européenne Singa, spécialisée dans l’intégration des personnes
+   réfugiées et migrantes par l’entrepreneuriat. La Première ministre,
+   Élisabeth Borne, présente mardi à l'Assemblée nationale les grandes
+   lignes du projet de loi du gouvernement sur l'immigration qui prévoit
+   notamment des titres de séjour pour les métiers en tension. "C'est
+   quand même une conception très utilitariste et assez déshumanisante de
+   l'immigration", a réagi l'ancien candidat à l'élection présidentielle.
+   Quarante associations, dont l'ONG Singa, appellent le gouvernement �
+   tenir une convention citoyenne sur la migration : "Nous pensons qu'il y
+   a besoin d'un diagnostic apaisé sur ces questions-là", dit-il.
+
+   franceinfo : Est-il possible d'avoir un débat apaisé sur l'immigration
+   en France ?
+
+   Benoît Hamon : C'est la 22ᵉ loi depuis 1990 sur l'immigration. Ça dit
+   l'impuissance des politiques en France à traiter la question migratoire
+   et à la traiter de manière apaisée. C'est assez frappant de faire la
+   comparaison avec l'Allemagne, qui est un pays qui accueille beaucoup
+   plus. Souvenez-vous de l'épisode de la crise syrienne. Un million de
+   réfugiés, 17 fois plus de personnes accueillies en Allemagne qu'en
+   France. Et pourtant, le débat sur la migration et l'inclusion n'occupe
+   pas la place dans le champ politique en Allemagne qu'il occupe en
+   France.
+
+   Le projet de loi du gouvernement vous semble-t-il équilibré ?
+
+   Honnêtement, je ne crois pas. D'abord, j'attends de voir, comme la
+   plupart des organisations et des associations, ce qu'il y aura dans ce
+   texte. Mais il me semble prolonger ce que nous avons déjà entendu dans
+   les épisodes précédents, c'est-à-dire quand il y avait d'autres
+   ministres de l'Intérieur à la place de monsieur Darmanin, qui voulaient
+   faire leur loi sur l'immigration. D'abord, l'immigration,
+   incontestablement, change d'échelle. Elle change d'échelle pour des
+   raisons qui sont liées au réchauffement climatique, aux inégalités dans
+   le monde, aux conflits et aux guerres. Et on parle de 60% de migration
+   en plus rien que pour le continent européen depuis 1990. Ce que nous
+   contestons, c'est qu'on puisse être pour ou contre la migration. C'est
+   aussi absurde que de considérer que la Terre est plate. C'est aussi
+   absurde que de dire qu'on est pour ou contre la pluie et le soleil.
+
+   >>CARTE. Pourquoi l'immigration irrégulière augmente légèrement en
+   Europe, après des années de baisse
+
+   Fermer les frontières ne sert à rien ?
+
+   C'est déjà quasiment le cas pour la France à l'immigration légale,
+   l'immigration de travail. Ce qui augmente, ce sont les demandes
+   d'asile, ce qui augmente, c'est l'immigration illégale et invisible,
+   c'est-à-dire celle qui génère de la pauvreté, de la précarité et toute
+   une série d'effets négatifs. Tous les pays qui ont décidé de fermer
+   leurs frontières aux migrations n'ont pas empêché l'immigration de
+   changer d'échelle. C'est valable pour la France, c'est valable pour le
+   continent européen. Donc construire une loi avec l'objectif de renvoyer
+   le maximum de gens ou de faire entrer le minimum de gens est à nos yeux
+   un non-sens.
+
+   Soutenez-vous le titre de séjour pour les métiers en tension ?
+
+   C'est quand même une conception très utilitariste et assez
+   déshumanisante de l'immigration. Ça veut dire qu'on aura un titre de
+   séjour le temps où un secteur économique est en tension, mais que ce
+   titre de séjour tomberait dès lors que le secteur économique n'est pas
+   en tension. Ce n'est pas moi qui le dis, c'est le ministre de
+   l'Intérieur qui l'avait évoqué. Quel est le contrat de travail associé
+   à un tel titre de séjour si on peut décider que quelqu'un redevient
+   irrégulier dès lors que le secteur n'est plus en tension ? Nous
+   souhaitons que les travailleurs sans papiers, c'est-à-dire ceux qui
+   aujourd'hui travaillent et cotisent à la Sécurité sociale, payent des
+   impôts aient un titre de séjour, qu'on reconnaisse socialement leur
+   utilité, leur contribution à la richesse de ce pays. De ce point de vue
+   là, nous sommes favorables à une politique beaucoup plus pragmatique,
+   sur la question des travailleurs sans titre de séjour.
+
+   Faut-il accélérer les obligations de quitter le territoire français
+   (OQTF) ?
+
+   La France est la championne d'Europe pour les OQTF. En France,
+   effectivement, on prononce une obligation de quitter le territoire
+   français, mais on ne l'exécute que dans à peu près 10% des cas. En
+   Allemagne, on exécute quasiment 50% des OQTF parce qu'en réalité, quand
+   on constate qu'un étranger est en situation irrégulière, on ne prononce
+   pas une OQTF automatiquement. Dans 60% des cas, on régularise le
+   travailleur sans papiers parce que l’on considère qu'il est utile à la
+   collectivité. Il y a en France une crise de l'accueil, une incapacité
+   aujourd'hui à regarder le bénéfice que l'on peut tirer de
+   l'immigration. Chez Singa, notre travail, c'est d'incuber des projets
+   entrepreneuriaux, c'est-à-dire des migrants, des nouveaux arrivants,
+   des réfugiés qui créent des entreprises. Contrairement à cet argument
+   selon lequel, l'immigration prend le travail de ceux qui sont sur le
+   territoire national, c'est exactement le contraire qui se passe en
+   France, en Angleterre ou en Allemagne. Les immigrés, les nouveaux
+   arrivants créent plus d'emplois qu'ils n'en occupent en réalité et
+   contribuent donc à la richesse et à la prospérité de ce pays. Ces
+   faits-là, nous aimerions en discuter dans une convention citoyenne
+   parce que nous pensons qu'il y a besoin d'un diagnostic apaisé sur ces
+   questions-là.
+
+   Voir les commentaires
+
+   Partager l'article sur les réseaux sociaux :
+
+   Partager :
+     * (BUTTON) Partager sur Twitter
+     * (BUTTON) Partager sur Facebook
+     * (BUTTON) Partager par mail
+     * (BUTTON) Partager le lien
+
+   Abonnement Newsletter
+
+   toute l’actualité en vidéo
+
+   Recevez l’essentiel
+   de nos JT
+   avec notre newsletter
+
+   Abonnement Newsletter
+   ____________________
+
+   Votre adresse e-mail
+   (BUTTON) s'inscrire
+   France Télévisions utilise votre adresse e-mail afin de vous adresser
+   des newsletters.
+   Notre politique de confidentialité Contactez-nous
+
+   articles sur le même thème
+
+   sur le même thème
+     * Le ministre de la Justice, Eric Dupond-Moretti, lors d'une
+       conférence de presse à Paris, le 5 janvier 2023. (LUDOVIC MARIN /
+       AFP) Le ministre de la Justice, Eric Dupond-Moretti, lors d'une
+       conférence de presse à Paris, le 5 janvier 2023. (LUDOVIC MARIN /
+       AFP)
+       Plan d'action de la justice : l'USM a un "sentiment de grande
+       satisfaction" mais reste "dubitative" sur l'accélération de la
+       justice civile via la médiation
+     * Jean-François Achilli présente Les informés sur franceinfo.
+       (FRANCEINFO / RADIO FRANCE) Jean-François Achilli présente Les
+       informés sur franceinfo. (FRANCEINFO / RADIO FRANCE)
+       60 mesures pour la justice, Emmanuel Macron au chevet des TPE, LR
+       et la réforme des retraites... Les informés de franceinfo du jeudi
+       5 janvier
+     * Yannick Jadot, eurodéputé EELV, était jeudi 5 janvier l’invité du
+       8h30 franceinfo. (FRANCEINFO / RADIOFRANCE) Yannick Jadot,
+       eurodéputé EELV, était jeudi 5 janvier l’invité du 8h30 franceinfo.
+       (FRANCEINFO / RADIOFRANCE)
+       Projet de loi énergies renouvelables : "Ce n’est pas un bon texte",
+       estime l'écologiste Yannick Jadot
+     * La ville a décidé de renommer symboliquement sa commune "Pantine"
+       cette année pour sensibiliser les habitants aux inégalités
+       hommes-femme, le 3 janvier 2023. (HELENE HAUS / MAXPPP) La ville a
+       décidé de renommer symboliquement sa commune "Pantine" cette année
+       pour sensibiliser les habitants aux inégalités hommes-femme, le 3
+       janvier 2023. (HELENE HAUS / MAXPPP)
+       Pantin rebaptisé Pantine : qui est Bertrand Kern, le maire qui veut
+       mobiliser sur l’égalité hommes-femmes ?
+     * Echarpe tricolore portée par un élu (photo d'illustration). (ALEXIS
+       SCIARD / MAXPPP) Echarpe tricolore portée par un élu (photo
+       d'illustration). (ALEXIS SCIARD / MAXPPP)
+       Info franceinfo
+       Trois parlementaires ou ex-parlementaires visés par une plainte
+       d'Anticor pour détournement de fonds publics
+
+   les sujets associés
+     * Immigration
+     * Société
+     * Benoît Hamon
+     * Politique
+     * Assemblée nationale
+     * Parlement français
+
+   Vu d'Europe
+
+   Franceinfo sélectionne chaque jour des contenus issus de médias
+   audiovisuels publics européens, membres de l'Eurovision. Ces contenus
+   sont publiés en anglais ou en français.
+
+   contenus sponsorisés
+
+   Commentaires :
+
+   Connectez-vous à votre compte franceinfo pour participer à la
+   conversation.
+
+   (BUTTON) Voir les commentaires
+
+    1. Accueil
+    2. Politique
+    3. Parlement français
+    4. Assemblée nationale
+
+   Abonnement Newsletter
+
+   toute l’actu dès 7h30
+   ____________________
+
+   Votre adresse e-mail
+   (BUTTON) s'inscrire
+   France Télévisions utilise votre adresse e-mail afin de vous adresser
+   des newsletters.
+   Pour exercer vos droits, contactez-nous.
+   Notre politique de confidentialité Contactez-nous
+
+   Suivez-nous sur les réseaux sociaux :
+     * Notre compte Twitter (nouvelle fenêtre)
+     * Notre compte Facebook (nouvelle fenêtre)
+     * Notre compte Instagram (nouvelle fenêtre)
+     * Notre compte Youtube (nouvelle fenêtre)
+
+   Suivez l'actualité en direct :
+     * le live
+     * direct tv
+     * direct radio
+
+   Soyez alerté(e) en temps réel avec l'application franceinfo :
+     * Télécharger dans l'App Store Télécharger dans l'App Store
+     * Disponible sur Google Play Disponible sur Google Play
+
+   Télécharger l'application
+
+     * Politique de confidentialité
+     * CGU et mentions légales
+     * Gérer mes traceurs
+     * Index
+
+     * Nous contacter
+     * Qui sommes-nous
+     * Charte déontologique
+     * Devenir annonceur
+     * Recrutement
+
+   [hit.xiti?s=573499&s2=25&p=parlement-francais::videos::video_loi_sur_l_
+   immigration_construire_une_loi_avec_l_objectif_de_renvoyer_le_maximum_d
+   e_gens_ou_de_faire_entrer_le_minimum_est_un_non_sens_deplore_benoit_ham
+   on_de_l_ong_singa__5526522]
