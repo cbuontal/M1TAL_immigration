@@ -80,9 +80,9 @@ do
 	echo -e "\tURL : $URL";
 
 	# réponse HTTP
-	code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)
+	code=$(curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)
 	# récupération de l'encodage
-	charset=$(curl -Ls $URL -D - -o "./aspirations/fich-$lineno.html" | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
+	charset=$(curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" -Ls $URL -D - -o "./aspirations/fich-$lineno.html" | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
 
 	if [[ -z $charset ]]
 	then
@@ -102,14 +102,14 @@ do
 
 	if [[ $code -eq 200 ]]
 	then
-		aspiration=$(curl $URL)
+		aspiration=$(curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" $URL)
 
 		if [[ $charset == 'UTF-8' ]]
 		then
-			dump=$(curl $URL | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8)
+			dump=$(curl $URL | iconv -f UTF-8 -t UTF-8//IGNORE | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8 | sed -E '/(BUTTON)/d' | sed -E '/   [*+#_©×]/d' | sed -E '/   \[/d' | sed -E "/^IFRAME/d")
 		else
 			# charset=$(curl $URL | urchardet)
-			dump=$(curl $URL | iconv -f $charset -t UTF-8 | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8)
+			dump=$(curl $URL | iconv -f $charset -t UTF-8//IGNORE | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8 | sed -E '/(BUTTON)/d' | sed -E '/   [*+#_©×]/d' | sed -E '/   \[/d' | sed -E "/^IFRAME/d")
 		fi
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
@@ -117,12 +117,15 @@ do
 		charset=""
 	fi
 
-	echo "$dump" > "./dumps-text/$basename-$lineno.txt"
-
 	echo "$aspiration" > "./aspirations/$basename-$lineno.html"
 
+	echo "$dump" > "./dumps-text/$basename-$lineno.txt"
+	# segmentation du dump avec thulac, on supprime aussi les indications du scripts qui polluent le dump :
+	dumpseg=$(python3 scripts/tokenize_chinese.py "./dumps-text/$basename-$lineno.txt" | sed -E "/Model loaded succeed/d")
+	echo "$dumpseg" > "./dumps-text/$basename-$lineno.txt"
+
 	# compte du nombre d'occurrences
-  NB_OCC=$(grep -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)
+  NB_OCC=$(grep -a -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)
 
   # extraction des contextes
   grep -E -A1 -B1 $mot ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt
@@ -137,13 +140,13 @@ done < $fichier_urls
 
 elif [[ $lang == 'ru' ]]
 then
-while read -r URL; 
+while read -r URL;
 do
 			echo -e "\tURL : $URL";
 			code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1) # de la manière attendue, sans l'option -w de cURL
 			charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
 			charset=$(echo $charset | tr "[a-z]" "[A-Z]") #ici nous définissons pour la valeur sharset la commande "convertir toutes les petites lettres en majuscules, afin que toutes les lettres UTF-8 soient du même type
-			echo -e "\tcode : $code"; 
+			echo -e "\tcode : $code";
 
 			if [[ -z $charset ]]
 			then
@@ -153,7 +156,7 @@ do
 						echo -e "\tencodage : $charset";
 			fi
 
-			if [[  $code -eq 200 || $code -eq 403 ]] 
+			if [[  $code -eq 200 || $code -eq 403 ]]
 						then
 						aspiration=$(curl $URL)
 						dump=$(lynx -dump -nolist -accept_all_cookies -assume_charset=$charset -display_charset=$charset $URL)
@@ -186,13 +189,13 @@ done  < $fichier_urls
 
 elif [[ $lang == 'fr' ]]
 then
-while read -r URL; 
+while read -r URL;
 do
 			echo -e "\tURL : $URL";
 			code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1) # de la manière attendue, sans l'option -w de cURL
 			charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
 			charset=$(echo $charset | tr "[a-z]" "[A-Z]") #ici nous définissons pour la valeur sharset la commande "convertir toutes les petites lettres en majuscules, afin que toutes les lettres UTF-8 soient du même type
-			echo -e "\tcode : $code"; 
+			echo -e "\tcode : $code";
 
 			if [[ -z $charset ]]
 			then
@@ -202,7 +205,7 @@ do
 						echo -e "\tencodage : $charset";
 			fi
 
-			if [[  $code -eq 200 || $code -eq 403 ]] 
+			if [[  $code -eq 200 || $code -eq 403 ]]
 				then
 						aspiration=$(curl $URL)
 						dump=$(lynx -dump -nolist -accept_all_cookies -assume_charset=$charset -display_charset=$charset $URL)
@@ -222,7 +225,7 @@ do
 # compte du nombre d'occurrences
 NB_OCC=$(grep -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)
   # extraction des contextes
-grep -E -A2 -B2 $mot ./dumps-text/$basename-$lineno.txt > "./contextes/$basename-$lineno.txt" 
+grep -E -A2 -B2 $mot ./dumps-text/$basename-$lineno.txt > "./contextes/$basename-$lineno.txt"
   # construction des concordance avec une commande externe
 bash scripts/concordance.sh fr ./dumps-text/$basename-$lineno.txt $mot > "./concordances/$basename-$lineno.html"
 

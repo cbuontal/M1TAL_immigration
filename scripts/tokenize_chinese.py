@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 import thulac
 import errno
@@ -8,7 +8,7 @@ import fileinput
 # possibilité de rediriger la sortie avec >, >>
 
 # autre possibilité, lancer la commande:
-# python -m thulac chinois.txt chinois_seg_output.txt -seg_only
+# python3 -m thulac chinois.txt chinois_seg_output.txt -seg_only
 # Mais ne permet pas les redirections d'entrées/sorties
 
 seg = thulac.thulac(seg_only=True)
