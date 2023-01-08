@@ -20,6 +20,7 @@
    (BUTTON) Logo France 3 Regarder la TV
    (BUTTON) Logo France Bleu Écouter la radio
      * En ce moment
+     * Coupe de France de football
      * Panier France Bleu
      * Économies d'énergie – Éco-gestes
      * Horoscope 2023
@@ -138,18 +139,17 @@ Sur le même sujet
 
 Pyrénées-Atlantiques : l'info en continu
 
-   16h35
-   Pelote basque : Larralde - Sanchez, rebelote deux ans après en finale
-   du Super Prestige
-   10h12
-   VIDÉO - Bayonne : le concert du Nouvel An se prépare sous l'œil des
-   élèves musiciens
-   4h41
-   Pro D2 : "Des moments comme ça, j'en ai rêvé des tonnes de fois," les
-   déclas de Biarritz après Montauban
-   19h18
-   Pau : du sursis pour un homme malvoyant qui casse les côtes de sa
-   compagne aveugle
+   (BUTTON) (BUTTON)
+   17h45
+   Accident de moto à Billère : le motard est décédé
+   15h46
+   DIRECT - Top 14 : vivez le match de la Section Paloise face à Lyon en
+   intégralité
+   13h04
+   Plusieurs voitures brûlées cette nuit à Pau près de la gare
+   10h56
+   Incendie à Espelette, cinq hectares de végétation partent en fumée au
+   col de Pinodieta
    (BUTTON) ⓘ Publicité
    Logo France Bleu
 
@@ -158,7 +158,7 @@ Pyrénées-Atlantiques : l'info en continu
    Écoutez en direct la radio qui vous ressemble !
    (BUTTON)
    France Bleu Pays Basque
-   En direct : France Bleu Collector
+   En direct : Le 18 - 19 : Personnalités remarquables
 
 Nous contacter
 
@@ -183,7 +183,7 @@ Newsletter
    Écoutez en direct la radio qui vous ressemble !
    (BUTTON)
    France Bleu Pays Basque
-   En direct : France Bleu Collector
+   En direct : Le 18 - 19 : Personnalités remarquables
    (BUTTON) ⓘ Publicité
    Logo France Bleu
 

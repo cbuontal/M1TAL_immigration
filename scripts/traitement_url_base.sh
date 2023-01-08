@@ -40,8 +40,9 @@ then
  	mot="(иммигр\w+|эмигр\w+)"
 elif [[ $lang == 'fr' ]]
 then
-	mot="([Ii]mmigr\w+)|([Éé]migr\w+)"
+	mot="(émigr\w+|immigr\w+)"
 fi
+
 
 # on utilise la commande :
 # curl -I lien.html
