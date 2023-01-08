@@ -4,8 +4,6 @@
           + Communiqués
           + Focus
 --
-          + Le directeur général
-          + Directions et services
      * Immigration
           + Les visas
           + L'immigration professionnelle
@@ -36,8 +34,6 @@ L'actu immigration
 
      * La continuité pédagogique des formations linguistiques de l'OFII
 --
-          + Le directeur général
-          + Directions et services
      * Immigration
           + Les visas
           + L'immigration professionnelle

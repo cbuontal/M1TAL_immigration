@@ -4,8 +4,6 @@
           + Communiqués
           + Focus
 --
-          + Le directeur général
-          + Directions et services
      * Immigration
           + Les visas
           + L'immigration professionnelle
@@ -35,7 +33,6 @@ Les chiffres clés de l'immigration 2021
    Les Chiffres clés de l’immigration, publication du service statistique
    ministériel Immigration – Intégration, vise à fournir chaque année au
    grand public et aux décideurs un ensemble d’indicateurs de référence,
-   outils pour analyser la situation migratoire en France et son évolution
 --
     4. L’asile
     5. L’intégration et l’accès à la nationalité française
@@ -49,8 +46,6 @@ Les chiffres clés de l'immigration 2021
 
    Télécharger : Format pdf [4,03 MB]
 --
-          + Le directeur général
-          + Directions et services
      * Immigration
           + Les visas
           + L'immigration professionnelle

@@ -85,12 +85,12 @@
    Newsletters
      * (BUTTON) ____________________ (BUTTON)
        Les plus recherchés
-          + naissances
           + accident
+          + naissances
           + obseques
           + lanester
-          + Cleguer
           + deces
+          + Cleguer
           + vegedream
           + Auray
           + klenschi
