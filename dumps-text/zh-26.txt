@@ -278,7 +278,7 @@ Visible links :
 7 . http : // blog . sina . com . cn /
 8 . http : // photo . sina . com . cn /
 9 . http : // zhuanla n . sina . com . cn /
-10 . file : // / var / folders / xb / 1 x 7 j 4 x wd1 l qc8 q 3190yj 2 d k00000gn / T / L 40526 - 5725TM P . html
+10 . file : // / var / folders / xb / 1 x 7 j 4 x wd1 l qc8 q 3190yj 2 d k00000gn / T / L 61047 - 4226TM P . html
 11 . http : // auto . sina . com . cn /
 12 . http : // edu . sina . com . cn /
 13 . http : // fashion . sina . com . cn /
@@ -296,7 +296,7 @@ Visible links :
 25 . http : // trave l . sina . com . cn /
 26 . http : // mail . sina . com . cn /
 27 . http : // new s . sina . com . cn / guide /
-28 . file : // / var / folders / xb / 1 x 7 j 4 x wd1 l qc8 q 3190yj 2 d k00000gn / T / L 40526 - 5725TM P . html
+28 . file : // / var / folders / xb / 1 x 7 j 4 x wd1 l qc8 q 3190yj 2 d k00000gn / T / L 61047 - 4226TM P . html
 29 . http : // m . sina . com . cn / m / weibo . shtml
 30 . http : // new s . sina . com . cn / m / sinanew s . html
 31 . https : // financ e . sina . com . cn / mobile / comfinanceweb . shtml ? source = daohang01
@@ -308,7 +308,7 @@ Visible links :
 37 . http : // m . sina . com . cn / m / weather . shtml
 38 . http : // m y . sina . com . cn / # location = fav
 39 . https : // login . sina . com . cn / signup / signu p ? ent ry = news
-40 . file : // / var / folders / xb / 1 x 7 j 4 x wd1 l qc8 q 3190yj 2 d k00000gn / T / L 40526 - 5725TM P . html
+40 . file : // / var / folders / xb / 1 x 7 j 4 x wd1 l qc8 q 3190yj 2 d k00000gn / T / L 61047 - 4226TM P . html
 41 . https : // financ e . sina . com . cn / mobile / comfinanceweb . shtml ? source = cj zhengwen08
 42 . http : // financ e . sina . com . cn / world /
 43 . https : // w w w . time - weekl y . com / post / 297898

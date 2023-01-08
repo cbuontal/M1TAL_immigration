@@ -75,6 +75,10 @@ lineno=1;
 if [[ $lang == 'zh' ]]
 then
 
+# nécessaire pour le bon fonctionnement de `sed`
+lang_base=$LANG
+export LANG=C
+
 while read -r URL;
 do
 	echo -e "\tURL : $URL";
@@ -106,10 +110,10 @@ do
 
 		if [[ $charset == 'UTF-8' ]]
 		then
-			dump=$(curl $URL | iconv -f UTF-8 -t UTF-8//IGNORE | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8 | sed -E '/(BUTTON)/d' | sed -E '/   [*+#_©×]/d' | sed -E '/   \[/d' | sed -E "/^IFRAME/d")
+			dump=$(curl $URL | iconv -f UTF-8 -t UTF-8//IGNORE | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8 | sed -E "/(BUTTON)/d" | sed -E "/   [*+#_©×]/d" | sed -E "/   \[/d" | sed -E "/^IFRAME/d")
 		else
 			# charset=$(curl $URL | urchardet)
-			dump=$(curl $URL | iconv -f $charset -t UTF-8//IGNORE | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8 | sed -E '/(BUTTON)/d' | sed -E '/   [*+#_©×]/d' | sed -E '/   \[/d' | sed -E "/^IFRAME/d")
+			dump=$(curl $URL | iconv -f $charset -t UTF-8//IGNORE | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8 | sed -E "/(BUTTON)/d" | sed -E "/   [*+#_©×]/d" | sed -E "/   \[/d" | sed -E "/^IFRAME/d")
 		fi
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
@@ -122,6 +126,7 @@ do
 	echo "$dump" > "./dumps-text/$basename-$lineno.txt"
 	# segmentation du dump avec thulac, on supprime aussi les indications du scripts qui polluent le dump :
 	dumpseg=$(python3 scripts/tokenize_chinese.py "./dumps-text/$basename-$lineno.txt" | sed -E "/Model loaded succeed/d")
+	# on écrase le dump non segmenté
 	echo "$dumpseg" > "./dumps-text/$basename-$lineno.txt"
 
 	# compte du nombre d'occurrences
@@ -137,6 +142,9 @@ do
 	echo "			<tr><td>$lineno</td><td>$code</td><td>$URL</td><td>$charset</td><td><a href="../aspirations/$basename-$lineno.html">html</a></td><td><a href="../dumps-text/$basename-$lineno.txt">text</a></td><td>$NB_OCC</td><td><a href="../contextes/$basename-$lineno.txt">contextes</a></td><td><a href="../concordances/$basename-$lineno.html">concordance</a></td></tr>" >> "tableaux/$fichier_tableau"
 	lineno=$((lineno+1));
 done < $fichier_urls
+
+# on revient à la variable globale de base une fois le traitement terminé
+export LANG=lang_base
 
 elif [[ $lang == 'ru' ]]
 then

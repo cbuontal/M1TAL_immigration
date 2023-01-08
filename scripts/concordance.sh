@@ -65,8 +65,7 @@ then
 	grep -E -o "(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}" $fichier_text | gsed -E "s/(.*)$motif(.*)/<tr><td class="has-text-right">\1<\/td><td class="has-text-danger">\2<\/td><td class="has-text-left">\3<\/td><\/tr>/"
 elif [[ $lang == 'zh' ]]
 then
-	grep -P "\p{Han}{0,5}$motif(\p{Han}){0,5}" $fichier_text | sed -E "s/(.*)($motif)(.*)/<tr><td class="has-text-right">\1<\/td><td class="has-text-danger">\2<\/td><td class="has-text-left">\3<\/td><\/tr>/"
-#	ggrep -o -P "[\p{Han}\p{L}]+"
+	LANG=zh_CN.UTF-8 grep -Po "((\p{Han}|，){1,5} ){0,5}$motif( (\p{Han}|，){1,5}){0,5}" $fichier_text | LANG=C sed -E "s/(.*)($motif)(.*)/<tr><td class="has-text-right">\1<\/td><td class="has-text-danger">\2<\/td><td class="has-text-left">\3<\/td><\/tr>/"
 fi
 
 echo "
