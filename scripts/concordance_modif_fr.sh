@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+/#!/usr/bin/env bash
 
 #
 #		Script qui établit une table de concordance en HTML autour d'un motif
