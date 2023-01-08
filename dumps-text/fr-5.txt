@@ -395,9 +395,9 @@ Sondage : Soutenez-vous les dernières caricatures de Charlie Hebdo ?
 Soutenez BVoltaire
 
    IFRAME:
-   https://rcm-eu.amazon-adsystem.com/e/cm?o=8&p=12&l=ur1&category=jewelry
-   &banner=1YVCHZTWZAYNH819H382&f=ifr&linkID=4463c20792aff423945e76df93651
-   d8d&t=bvoltaire-21&tracking_id=bvoltaire-21
+   https://rcm-eu.amazon-adsystem.com/e/cm?o=8&p=12&l=ur1&category=bricola
+   ge&banner=199C6JRRBTHPFZEXC402&f=ifr&linkID=e84fdcabd55056e7025fde1bdeb
+   aa2b3&t=bvoltaire-21&tracking_id=bvoltaire-21
 
 LES PLUS LUS DE LA SEMAINE
 
@@ -455,10 +455,10 @@ les morts ?
        Gabrielle Cluzel - 32 416 vues
 
    Dossiers populaires
-   François Hollande Italie Emmanuel Macron Olivier véran Christophe
-   Castaner Etats-Unis Écologie Brigitte Macron Union des droites Gérald
-   Darmanin Réforme des retraites Iran Ukraine Laïcité RN immigration
-   Bruno Le Maire USA
+   Ukraine Iran Christophe Castaner Réforme des retraites Gérald Darmanin
+   François Hollande Etats-Unis Olivier véran Brigitte Macron Emmanuel
+   Macron immigration RN Italie Bruno Le Maire Écologie Laïcité Union des
+   droites USA
    Boulevard Voltaire 7.0.1 Les contenus écrits publiés par Boulevard
    Voltaire sont mis à disposition selon les termes de la Licence Creative
    Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les
