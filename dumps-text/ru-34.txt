@@ -41,7 +41,7 @@
    ____________________________________________________________
    ____________________________________________________________
    ____________________________________________________________
-   5061 просмотров
+   5064 просмотров
 
    Привет всем, кто эмигрировал из России и кто — нет. На связи Костя
    Зимен, сооснователь сети доставки суши и роллов «ЁбиДоёби».
@@ -192,59 +192,6 @@
    Вакансии Разместить
    Показать ещё
    Все вакансии
-   ((d, w) => { const makeSnow = (container) => { const svg =
-   Snap(container.querySelector('svg')); const snowHolder =
-   Snap.select('.nyg-snow > svg > g').group(); const snowflakes = [];
-   const settings = { snowCount: 0 }; let snowCount =
-   parseInt(container.offsetHeight / 10); let requestId;
-   TweenMax.to(settings, 3, { snowCount, ease: Power2.easeInOut }); var
-   fps = 1; var now; var then = Date.now(); var interval = 1000/fps; var
-   delta; const tick = () => { now = Date.now(); delta = now - then; if
-   (delta > interval) { if (snowflakes.length < settings.snowCount) {
-   makeSnowflake(); } then = now - (delta % interval); } requestId =
-   requestAnimationFrame(tick); } const makeSnowflake = () => { var scale
-   = 0.5 + Math.random() * 0.5; var x = 20 + Math.random() *
-   (container.offsetWidth - 40); var endX; var y = -10; var endY; const
-   snowflake = snowHolder.circle(0, 0, 5).attr({ fill: '#D0E5FF' }); endY
-   = container.offsetHeight + 10; snowflakes.push(snowflake);
-   TweenMax.fromTo( snowflake.node, (container.offsetHeight / 30) +
-   Math.random() * 5, { x: x, y: y }, { y: endY, onComplete: onSnowEnd,
-   onCompleteParams: [snowflake], ease: Power0.easeIn } );
-   TweenMax.fromTo( snowflake.node, 1, { scale: 0 }, { scale: scale, ease:
-   Power1.easeInOut } ); TweenMax.to( snowflake.node, 3, { x: x +
-   (Math.random() * 90 - 45), repeat: -1, yoyo: true, ease:
-   Power1.easeInOut, }, ); } const onSnowEnd = (snowflake) => {
-   snowflake.remove(); snowflake = null; for (var i in snowflakes) { if
-   (!snowflakes[i].paper) snowflakes.splice(i, 1); } if (snowflakes.length
-   < settings.snowCount) { makeSnowflake(); } } const setSize = () => {
-   svg.attr({ width: container.offsetWidth, height:
-   container.offsetHeight, }); snowCount = parseInt(container.offsetHeight
-   / 10); TweenMax.to(settings, 3, { snowCount, ease: Power2.easeInOut });
-   console.log('snowCount', snowCount); } setSize(); requestId =
-   requestAnimationFrame(tick); w.addEventListener('resize', setSize);
-   const destroy = () => { cancelAnimationFrame(requestId);
-   snowflakes.forEach((snowflake) => { snowflake.remove(); });
-   TweenMax.killAll(); w.removeEventListener('resize', setSize); } return
-   { destroy }; } const loadScript = (url, container) => { return new
-   Promise((resolve, reject) => { const script =
-   d.createElement('script'); script.src = url; script.async = false;
-   script.onload = () => resolve(url); script.onerror = () => reject(url);
-   container.appendChild(script); }); } const onLoad = () => { const
-   comments = d.querySelector('.comments'); if (!comments) { return; }
-   const container = comments.parentElement; container.style.position =
-   'relative'; const nyg = d.createElement('a'); nyg.href =
-   'https://vc.ru/special/nytoys'; nyg.target = '_blank';
-   nyg.classList.add('nyg-snow'); nyg.innerHTML = ``;
-   container.appendChild(nyg); let snow; Promise.all([
-   loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax
-   .min.js', nyg),
-   loadScript('https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.
-   svg-min.js', nyg), ]) .then(() => { snow = makeSnow(nyg);
-   }).catch((script) => { console.log(script + ' failed to load'); })
-   nyg.addEventListener('click', () => { if (snow) { snow.destroy();
-   nyg.remove(); } }); if (w.Air) { const ajaxify =
-   Air.import('module.ajaxify'); ajaxify.one('Before page changed', () =>
-   { if (snow) { snow.destroy(); } }); } } onLoad(); })(document, window);
    0
 
            {___________________________________________________

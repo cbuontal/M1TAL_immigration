@@ -6,13 +6,17 @@
    ____________________________________________________________
    ____________________________________________________________
 
-   {"id":13801,"url":"\/distributions\/13801\/click?bit=1&hash=3f363b01cc2
-   f35b158fa8c948ca607537e8ccd7ff446aa9437551363c36aa918","title":"\u0420\
-   u0430\u0437\u043e\u0431\u043e\u0440 \u0442\u0440\u0451\u0445
-   \u043a\u0440\u0443\u043f\u043d\u0435\u0439\u0448\u0438\u0445
-   \u043a\u0440\u0438\u0437\u0438\u0441\u043e\u0432 \u0432
-   \u0421\u0428\u0410","buttonText":"","imageUuid":"","isPaidAndBannersEna
-   bled":false}
+   {"id":13815,"url":"\/distributions\/13815\/click?bit=1&hash=7044898c179
+   996dd4b2d8fe1446c714854ebb446f7b6a3279d2683c2cec2afa5","title":"\u041a\
+   u043e\u043f\u0438\u0442\u044c \u043d\u0430
+   \u043f\u0435\u043d\u0441\u0438\u044e \u0432
+   \u043d\u0435\u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u043
+   2\u0435\u043d\u043d\u044b\u0445 \u0444\u043e\u043d\u0434\u0430\u0445
+   \u0441\u0442\u0430\u043b\u043e
+   \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u0435\u0435","buttonTe
+   xt":"\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435","imageUuid
+   ":"5fefa1b4-d701-5217-a337-effbc085727e","isPaidAndBannersEnabled":fals
+   e}
    [gif;base64,R0lGODlhAQABAJAAAP8AAAAAACH5BAUQAAAALAAAAAABAAEAAAICBAEAOw=
    =]
    Миграция
@@ -42,7 +46,7 @@
    ____________________________________________________________
    ____________________________________________________________
    ____________________________________________________________
-   1148 просмотров
+   1177 просмотров
 
    Коротко о визе талантов
 
@@ -317,59 +321,6 @@
    Вакансии Разместить
    Показать ещё
    Все вакансии
-   ((d, w) => { const makeSnow = (container) => { const svg =
-   Snap(container.querySelector('svg')); const snowHolder =
-   Snap.select('.nyg-snow > svg > g').group(); const snowflakes = [];
-   const settings = { snowCount: 0 }; let snowCount =
-   parseInt(container.offsetHeight / 10); let requestId;
-   TweenMax.to(settings, 3, { snowCount, ease: Power2.easeInOut }); var
-   fps = 1; var now; var then = Date.now(); var interval = 1000/fps; var
-   delta; const tick = () => { now = Date.now(); delta = now - then; if
-   (delta > interval) { if (snowflakes.length < settings.snowCount) {
-   makeSnowflake(); } then = now - (delta % interval); } requestId =
-   requestAnimationFrame(tick); } const makeSnowflake = () => { var scale
-   = 0.5 + Math.random() * 0.5; var x = 20 + Math.random() *
-   (container.offsetWidth - 40); var endX; var y = -10; var endY; const
-   snowflake = snowHolder.circle(0, 0, 5).attr({ fill: '#D0E5FF' }); endY
-   = container.offsetHeight + 10; snowflakes.push(snowflake);
-   TweenMax.fromTo( snowflake.node, (container.offsetHeight / 30) +
-   Math.random() * 5, { x: x, y: y }, { y: endY, onComplete: onSnowEnd,
-   onCompleteParams: [snowflake], ease: Power0.easeIn } );
-   TweenMax.fromTo( snowflake.node, 1, { scale: 0 }, { scale: scale, ease:
-   Power1.easeInOut } ); TweenMax.to( snowflake.node, 3, { x: x +
-   (Math.random() * 90 - 45), repeat: -1, yoyo: true, ease:
-   Power1.easeInOut, }, ); } const onSnowEnd = (snowflake) => {
-   snowflake.remove(); snowflake = null; for (var i in snowflakes) { if
-   (!snowflakes[i].paper) snowflakes.splice(i, 1); } if (snowflakes.length
-   < settings.snowCount) { makeSnowflake(); } } const setSize = () => {
-   svg.attr({ width: container.offsetWidth, height:
-   container.offsetHeight, }); snowCount = parseInt(container.offsetHeight
-   / 10); TweenMax.to(settings, 3, { snowCount, ease: Power2.easeInOut });
-   console.log('snowCount', snowCount); } setSize(); requestId =
-   requestAnimationFrame(tick); w.addEventListener('resize', setSize);
-   const destroy = () => { cancelAnimationFrame(requestId);
-   snowflakes.forEach((snowflake) => { snowflake.remove(); });
-   TweenMax.killAll(); w.removeEventListener('resize', setSize); } return
-   { destroy }; } const loadScript = (url, container) => { return new
-   Promise((resolve, reject) => { const script =
-   d.createElement('script'); script.src = url; script.async = false;
-   script.onload = () => resolve(url); script.onerror = () => reject(url);
-   container.appendChild(script); }); } const onLoad = () => { const
-   comments = d.querySelector('.comments'); if (!comments) { return; }
-   const container = comments.parentElement; container.style.position =
-   'relative'; const nyg = d.createElement('a'); nyg.href =
-   'https://vc.ru/special/nytoys'; nyg.target = '_blank';
-   nyg.classList.add('nyg-snow'); nyg.innerHTML = ``;
-   container.appendChild(nyg); let snow; Promise.all([
-   loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax
-   .min.js', nyg),
-   loadScript('https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.
-   svg-min.js', nyg), ]) .then(() => { snow = makeSnow(nyg);
-   }).catch((script) => { console.log(script + ' failed to load'); })
-   nyg.addEventListener('click', () => { if (snow) { snow.destroy();
-   nyg.remove(); } }); if (w.Air) { const ajaxify =
-   Air.import('module.ajaxify'); ajaxify.one('Before page changed', () =>
-   { if (snow) { snow.destroy(); } }); } } onLoad(); })(document, window);
    0
 
            {___________________________________________________
