@@ -112,29 +112,3 @@
 增值 电信 业务 经营 许可证 ： 沪 B 2 - 2017116
 
 反馈
-
-References
-
-Visible links :
-1 . file : // /
-2 . javascript : void ( 0 )
-3 . file : // / list _ 25600
-4 . file : // / tag / 5866
-5 . file : // / tag / 4974123
-6 . file : // / tag / 4974124
-7 . file : // / tag / 96
-8 . file : // / tag / 1762887
-9 . https : // m . thepaper . cn / download ? id = 2
-10 . https : // apps . apple . com / cn / app / id 878962716 ? mt = 8
-11 . https : // apps . apple . com / cn / app / id 986646876 ? mt = 8
-12 . https : // weibo . com / thepapernewsapp
-13 . https : // w w w . douyin . com / user / MS 4 w LjABAAAAzMDwcAi4 v - k dwAGtt9Ni1 jfE0 hV9 - TiUVlNLX 7mb9 H w
-14 . https : // w w w . ipshanghai . cn /
-15 . https : // w w w . sixthtone . com /
-16 . mailto : news @ thepaper . cn
-17 . https : // beian . miit . gov . cn /
-18 . https : // w w w . beian . gov . cn / portal / registerSystemInfo ? recordcode = 31010602000299
-
-Hidden links :
-20 . file : // localhost / feedbackPage
-21 . https : // v . yuna q . com / certificate ? domain = w w w . thepaper . cn & from = label & code = 90030

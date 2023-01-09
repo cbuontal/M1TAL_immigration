@@ -126,7 +126,7 @@ do
 
 	echo "$dump" > "./dumps-text/$basename-$lineno.txt"
 	# segmentation du dump avec thulac, on supprime aussi les indications du scripts qui polluent le dump :
-	dumpseg=$(python3 scripts/tokenize_chinese.py "./dumps-text/$basename-$lineno.txt" | sed -E "/Model loaded succeed/d")
+	dumpseg=$(python3 scripts/tokenize_chinese.py "./dumps-text/$basename-$lineno.txt" | sed -E "/Model loaded succeed/d" | sed -E '/References/,$d')
 	# on écrase le dump non segmenté
 	echo "$dumpseg" > "./dumps-text/$basename-$lineno.txt"
 
