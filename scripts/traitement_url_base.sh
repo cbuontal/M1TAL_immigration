@@ -40,7 +40,7 @@ then
  	mot="(иммигр\w+|эмигр\w+)"
 elif [[ $lang == 'fr' ]]
 then
-	mot="(émigr\w+|immigr\w+)"
+	mot="([Éé]migr\w+|[Ii]mmigr\w+)"
 fi
 
 
@@ -140,7 +140,7 @@ do
   bash scripts/concordance.sh zh ./dumps-text/$basename-$lineno.txt $mot > ./concordances/$basename-$lineno.html
 
 
-	echo "			<tr><td>$lineno</td><td>$code</td><td>$URL</td><td>$charset</td><td><a href="../aspirations/$basename-$lineno.html">html</a></td><td><a href="../dumps-text/$basename-$lineno.txt">text</a></td><td>$NB_OCC</td><td><a href="../contextes/$basename-$lineno.txt">contextes</a></td><td><a href="../concordances/$basename-$lineno.html">concordance</a></td></tr>" >> "tableaux/$fichier_tableau"
+	echo "			<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td><a href="../aspirations/$basename-$lineno.html">html</a></td><td><a href="../dumps-text/$basename-$lineno.txt">text</a></td><td>$NB_OCC</td><td><a href="../contextes/$basename-$lineno.txt">contextes</a></td><td><a href="../concordances/$basename-$lineno.html">concordance</a></td></tr>" >> "tableaux/$fichier_tableau"
 	lineno=$((lineno+1));
 done < $fichier_urls
 
@@ -229,6 +229,13 @@ do
 			fi
 
 			echo "$dump" > "./dumps-text/$basename-$lineno.txt"
+			# une fois le fichier créé, on peut utiliser la commande suivante pour supprimer les espaces en début de ligne :
+			LANG=C sed -i.bak 's/^[[:space:]]*//' "./dumps-text/$basename-$lineno.txt"
+			# une fois les espaces de début de ligne supprimés, on peut nettoyer
+			dump_propre=$(cat "./dumps-text/$basename-$lineno.txt" | LANG=C sed '/Également sur RFI/,$d' | LANG=C sed '/(BUTTON)/d' | LANG=C sed '/^[+*©►]/d' | LANG=C sed '/^Price:/,$d' | LANG=C sed '/^http/d' | LANG=C sed '/^IFRAME/d' )
+			# et on remplace le dump initial par le dump nettoyé
+			echo "$dump_propre" > "./dumps-text/$basename-$lineno.txt"
+
 			echo "$aspiration" > "./aspirations/$basename-$lineno.html"
 
 # compte du nombre d'occurrences

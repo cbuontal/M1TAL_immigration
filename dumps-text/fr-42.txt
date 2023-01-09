@@ -1,259 +1,198 @@
-   (BUTTON) Accès au menu d’accessibilité
-     * aller au contenu principal
-     * aller au menu de navigation
-     * aller au moteur de recherche
-     * aller au direct tv
-     * aller au direct radio
 
-   (BUTTON) Menu principal
-   Accueil France Info
-     * vidéos
-     * radio
-     * jt
-     * magazines
+Accueil France Info
 
-   Rechercher une actualité
-   DIRECT TV TV
-   DIRECT Radio Radio
-   Le live
-   ____________________ (BUTTON) Rechercher
-     * accueil
-     * le live
-     * direct tv
-     * direct radio
-     * vidéos
-     * radio
-     * jt
-     * magazines
+Rechercher une actualité
+DIRECT TV TV
+DIRECT Radio Radio
+Le live
 
-   Accueil
-     * politique (BUTTON) Sous-menu politique
-     * vrai ou fake
-     * société (BUTTON) Sous-menu société
-     * faits-divers (BUTTON) Sous-menu faits-divers
-     * santé (BUTTON) Sous-menu santé
-     * éco/conso (BUTTON) Sous-menu éco/conso
-     * monde (BUTTON) Sous-menu monde
-     * europe
-     * culture (BUTTON) Sous-menu culture
-     * sport (BUTTON) Sous-menu sport
-     * environnement (BUTTON) Sous-menu environnement
-     * météo (BUTTON) Sous-menu météo
+Accueil
 
-   LE LIVE
-     * Confidentialité
-     * Newsletters
+LE LIVE
 
- Carte Loire-Atlantique, Martinique, Nièvre... Quels départements français ont
-               gagné ou perdu des habitants entre 2014 et 2020 ?
+Carte Loire-Atlantique, Martinique, Nièvre... Quels départements français ont
+gagné ou perdu des habitants entre 2014 et 2020 ?
 
-   Entre 2014 et 2020, la population a diminué dans 21 départements, selon
-   la dernière note de l'Insee sur la démographie française.
+Entre 2014 et 2020, la population a diminué dans 21 départements, selon
+la dernière note de l'Insee sur la démographie française.
 
-   Article rédigé par
-   Léa Prati
-   France Télévisions
+Article rédigé par
+Léa Prati
+France Télévisions
 
-   Publié le 30/12/2022 18:26 Mis à jour le 30/12/2022 21:49
-   Temps de lecture : 3 min.
+Publié le 30/12/2022 18:26 Mis à jour le 30/12/2022 21:49
+Temps de lecture : 3 min.
 
-   Les Champs-Elysées, à Paris, le 15 décembre 2022. (ADRIEN FILLON / HANS
-   LUCAS / AFP) Les Champs-Elysées, à Paris, le 15 décembre 2022. (ADRIEN
-   FILLON / HANS LUCAS / AFP)
+Les Champs-Elysées, à Paris, le 15 décembre 2022. (ADRIEN FILLON / HANS
+LUCAS / AFP) Les Champs-Elysées, à Paris, le 15 décembre 2022. (ADRIEN
+FILLON / HANS LUCAS / AFP)
 
-   La France connaît une période de ralentissement démographique. C'est le
-   constat fait par l'Insee dans sa dernière note, publiée jeudi 29
-   décembre. Entre 2014 et 2020, la population française a augmenté de
-   +0,3 % par an en moyenne. C'est moins que pour la précédente période
-   2009-2014, où l'augmentation était de +0,5 % par an en moyenne. Ce
-   ralentissement à l'échelle nationale est dû notamment à la diminution
-   du solde naturel (la différence entre le nombre de naissances et de
-   décès) de 0,1 point par rapport à la période 2009-2014, ce qui
-   s'explique par "l'arrivée à des âges avancés des générations nombreuses
-   du baby-boom", mais aussi par "un recul des naissances", selon les
-   statisticiens.
+La France connaît une période de ralentissement démographique. C'est le
+constat fait par l'Insee dans sa dernière note, publiée jeudi 29
+décembre. Entre 2014 et 2020, la population française a augmenté de
+2009-2014, où l'augmentation était de +0,5 % par an en moyenne. Ce
+ralentissement à l'échelle nationale est dû notamment à la diminution
+du solde naturel (la différence entre le nombre de naissances et de
+décès) de 0,1 point par rapport à la période 2009-2014, ce qui
+s'explique par "l'arrivée à des âges avancés des générations nombreuses
+du baby-boom", mais aussi par "un recul des naissances", selon les
+statisticiens.
 
-   Mais qu'en est-il au niveau départemental ? La croissance démographique
-   ralentit-elle de manière homogène sur tout le territoire ? Pour
-   l'Insee, la réponse est non. Les taux de variation départementaux,
-   calculés en additionnant le solde naturel et le solde migratoire (la
-   différence entre le nombre de personnes entrées sur le territoire et
-   celles qui en sont sorties) montrent une évolution démographique
-   particulièrement contrastée.
+Mais qu'en est-il au niveau départemental ? La croissance démographique
+ralentit-elle de manière homogène sur tout le territoire ? Pour
+l'Insee, la réponse est non. Les taux de variation départementaux,
+calculés en additionnant le solde naturel et le solde migratoire (la
+différence entre le nombre de personnes entrées sur le territoire et
+celles qui en sont sorties) montrent une évolution démographique
+particulièrement contrastée.
 
-   "On considère qu'un département est en diminution de population �
-   partir de -0,2% de variation annuelle moyenne, qu'il est stable entre
-   -0,1 et 0,1%, et qu'il augmente au-delà", explique l'Insee �
-   franceinfo. En se basant sur cette évaluation, la population a ainsi
-   augmenté dans 53 départements. "Elle est restée stable dans 26 d'entre
-   eux et a diminué dans 21 autres", précise l'institut français. A noter
-   que Mayotte n'a jamais intégré le système de recensement national. Il
-   n'y a donc aucune donnée disponible.
+"On considère qu'un département est en diminution de population �
+partir de -0,2% de variation annuelle moyenne, qu'il est stable entre
+-0,1 et 0,1%, et qu'il augmente au-delà", explique l'Insee �
+franceinfo. En se basant sur cette évaluation, la population a ainsi
+augmenté dans 53 départements. "Elle est restée stable dans 26 d'entre
+eux et a diminué dans 21 autres", précise l'institut français. A noter
+que Mayotte n'a jamais intégré le système de recensement national. Il
+n'y a donc aucune donnée disponible.
 
 Une baisse marquée dans le Grand-Est, le Centre et le Massif central
 
-   C'est en Martinique que la population a baissé le plus fortement, avec
-   une variation annuelle de -1% en moyenne. "Ces nombreux départs, vers
-   la France métropolitaine essentiellement, concernent en grande partie
-   les jeunes qui poursuivent des études ou cherchent un emploi", détaille
-   l'Insee. L'île est suivie de près par la Guadeloupe qui a connu une
-   diminution de sa population de 0,7%, par an, en moyenne.
+C'est en Martinique que la population a baissé le plus fortement, avec
+une variation annuelle de -1% en moyenne. "Ces nombreux départs, vers
+la France métropolitaine essentiellement, concernent en grande partie
+les jeunes qui poursuivent des études ou cherchent un emploi", détaille
+l'Insee. L'île est suivie de près par la Guadeloupe qui a connu une
+diminution de sa population de 0,7%, par an, en moyenne.
 
-   Dans l'Hexagone, plusieurs départements situés dans la région Grand Est
-   ont également connu une baisse démographique. C'est notamment le cas de
-   la Meuse (-0,8%) qui cumule déficits naturel et migratoire apparent.
-   Dans la région, on retrouve aussi la Haute-Marne (-0,8%), des Ardennes
-   (-0,6%), mais aussi des Vosges (-0,5%). Dans le centre du pays,
-   plusieurs départements ont vu leur population diminuer. On retrouve
-   entre autres la Nièvre (-0,9%), la Creuse (-0,6%), l'Indre (-0,6%), ou
-   encore le Cher.
+Dans l'Hexagone, plusieurs départements situés dans la région Grand Est
+ont également connu une baisse démographique. C'est notamment le cas de
+la Meuse (-0,8%) qui cumule déficits naturel et migratoire apparent.
+Dans la région, on retrouve aussi la Haute-Marne (-0,8%), des Ardennes
+(-0,6%), mais aussi des Vosges (-0,5%). Dans le centre du pays,
+plusieurs départements ont vu leur population diminuer. On retrouve
+entre autres la Nièvre (-0,9%), la Creuse (-0,6%), l'Indre (-0,6%), ou
+encore le Cher.
 
-   En Ile-de-France, région la plus peuplée du pays, la capitale continue
-   de perdre des habitants, une dynamique enclenchée il y a déjà neuf ans.
-   Entre 2014 et 2020, Paris a perdu quelque 75 000 habitants, soit un
-   taux de variation annuel de -0,6%. "Ces départs de la capitale sont
-   notamment motivés par le coût élevé du logement, l'offre réduite de
-   logements de grande taille pour les familles et la recherche d'un autre
-   cadre de vie", affirme l'Insee.
+En Ile-de-France, région la plus peuplée du pays, la capitale continue
+de perdre des habitants, une dynamique enclenchée il y a déjà neuf ans.
+Entre 2014 et 2020, Paris a perdu quelque 75 000 habitants, soit un
+taux de variation annuel de -0,6%. "Ces départs de la capitale sont
+notamment motivés par le coût élevé du logement, l'offre réduite de
+logements de grande taille pour les familles et la recherche d'un autre
+cadre de vie", affirme l'Insee.
 
 Une croissance démographique importante dans l'Ouest, en Corse et en Guyane
 
-   La population augmente de manière frappante en Guyane (2,1%), en
-   Gironde (+1,2%), en Loire‑Atlantique (+1,2%), en Haute‑Garonne (+1,2%),
-   dans l'Hérault (+1,2%), ainsi que dans les deux départements corses
-   (+1% à chaque fois) et en Haute‑Savoie (+1,1%).
+La population augmente de manière frappante en Guyane (2,1%), en
+Gironde (+1,2%), en Loire‑Atlantique (+1,2%), en Haute‑Garonne (+1,2%),
+dans l'Hérault (+1,2%), ainsi que dans les deux départements corses
+(+1% à chaque fois) et en Haute‑Savoie (+1,1%).
 
-   Cette croissance démographique s'étend sur l'ensemble de la façade
-   ouest, dans le sud du pays et en Ile-de-France (Paris mis à part).
-   Ainsi, plusieurs territoires franciliens ont connu une augmentation de
-   population, notamment la Seine-Saint-Denis (+0,9%).
+Cette croissance démographique s'étend sur l'ensemble de la façade
+ouest, dans le sud du pays et en Ile-de-France (Paris mis à part).
+Ainsi, plusieurs territoires franciliens ont connu une augmentation de
+population, notamment la Seine-Saint-Denis (+0,9%).
 
-   Le constat s'avère similaire en Ille-et-Vilaine (+0,9%), qui enregistre
-   la plus forte progression en nombre d'habitants de Bretagne. Le
-   département représente 32% de la population vivant dans la région. Ce
-   chiffre est particulièrement poussé par l'attractivité de la métropole
-   rennaise qui fait office de locomotive avec ses +0,7% en moyenne chaque
-   année.
+Le constat s'avère similaire en Ille-et-Vilaine (+0,9%), qui enregistre
+la plus forte progression en nombre d'habitants de Bretagne. Le
+département représente 32% de la population vivant dans la région. Ce
+chiffre est particulièrement poussé par l'attractivité de la métropole
+rennaise qui fait office de locomotive avec ses +0,7% en moyenne chaque
+année.
 
-   Voir les commentaires
+Voir les commentaires
 
-   Partager :
-   (BUTTON) Partager sur Twitter (BUTTON) Partager sur Facebook (BUTTON)
-   Partager par mail (BUTTON) Partager le lien
+Partager :
 
-   actualités analyses vidéos
+actualités analyses vidéos
 
-   Prolongez votre lecture autour de ce sujet
-   tout l'univers Immigration
+Prolongez votre lecture autour de ce sujet
+tout l'univers Immigration
 
-   articles sur le même thème
+articles sur le même thème
 
-   sur le même thème
-     * En Provence-Alpes-Côte d'Azur, la croissance démographique entre
-       2014 et 2020 est resté identique à celle des années précédentes
-       (+0,4%). Marseille, le 11 janvier 2021. (NICOLAS TUCAT / AFP) En
-       Provence-Alpes-Côte d'Azur, la croissance démographique entre 2014
-       et 2020 est resté identique à celle des années précédentes (+0,4%).
-       Marseille, le 11 janvier 2021. (NICOLAS TUCAT / AFP)
-       La croissance de la population française ralentit dans tout le
-       pays, à l'exception de la région Provence-Alpes-Côte d'Azur
-     * Laurent Jacobelli, député de la Moselle et porte-parole du
-       Rassemblement national était l'invité du 8.30 de franceinfo du
-       mardi 27 décembre,&nbsp;il répondait aux questions de Julie
-       Marie-Leconte et Nicolas Teillard. (FRANCEINFO / RADIOFRANCE)
-       Laurent Jacobelli, député de la Moselle et porte-parole du
-       Rassemblement national était l'invité du 8.30 de franceinfo du
-       mardi 27 décembre,&nbsp;il répondait aux questions de Julie
-       Marie-Leconte et Nicolas Teillard. (FRANCEINFO / RADIOFRANCE)
-       Grève des médecins généralistes, projet de loi immigration,
-       pollution de l'air... Ce qu'il faut retenir de l'interview de
-       Laurent Jacobelli
-     * Jean-Philippe Tanguy, député RN de la Somme, sur franceinfo,
-       vendredi 23 décembre 2022. (FRANCEINFO / RADIOFRANCE) Jean-Philippe
-       Tanguy, député RN de la Somme, sur franceinfo, vendredi 23 décembre
-       2022. (FRANCEINFO / RADIOFRANCE)
-       Grève à la SNCF, enquête sur les ingérences étrangères, loi
-       immigration... Ce qu'il faut retenir de l'interview de
-       Jean-Philippe Tanguy
-     * Le projet de loi immigration, qui sera officiellement présenté
-       début 2023, devrait faciliter la régularisation de travailleurs
-       sans-papiers. (PAULINE LE NOURS / FRANCEINFO.FR) Le projet de loi
-       immigration, qui sera officiellement présenté début 2023, devrait
-       faciliter la régularisation de travailleurs sans-papiers. (PAULINE
-       LE NOURS / FRANCEINFO.FR)
-       Témoignages
-       Projet de loi immigration : ces patrons de PME "obligés de recruter
-       des sans-papiers", faute de main-d'œuvre
-     * Olivier Dussopt (à gauche) et Gérald Darmanin, ministres du Travail
-       et de l'Intérieur, à l'Elysée, à Paris, le 13 avril 2022. (XOSE
-       BOUZAS / HANS LUCAS / AFP) Olivier Dussopt (à gauche) et Gérald
-       Darmanin, ministres du Travail et de l'Intérieur, à l'Elysée, �
-       Paris, le 13 avril 2022. (XOSE BOUZAS / HANS LUCAS / AFP)
-       Immigration : cartes de séjour temporaires pour les "métiers en
-       tension", demandes d'asile, passeurs… Ce que contient le projet de
-       loi du gouvernement
+sur le même thème
+2014 et 2020 est resté identique à celle des années précédentes
+(+0,4%). Marseille, le 11 janvier 2021. (NICOLAS TUCAT / AFP) En
+Provence-Alpes-Côte d'Azur, la croissance démographique entre 2014
+et 2020 est resté identique à celle des années précédentes (+0,4%).
+Marseille, le 11 janvier 2021. (NICOLAS TUCAT / AFP)
+La croissance de la population française ralentit dans tout le
+pays, à l'exception de la région Provence-Alpes-Côte d'Azur
+Rassemblement national était l'invité du 8.30 de franceinfo du
+mardi 27 décembre,&nbsp;il répondait aux questions de Julie
+Marie-Leconte et Nicolas Teillard. (FRANCEINFO / RADIOFRANCE)
+Laurent Jacobelli, député de la Moselle et porte-parole du
+Rassemblement national était l'invité du 8.30 de franceinfo du
+mardi 27 décembre,&nbsp;il répondait aux questions de Julie
+Marie-Leconte et Nicolas Teillard. (FRANCEINFO / RADIOFRANCE)
+Grève des médecins généralistes, projet de loi immigration,
+pollution de l'air... Ce qu'il faut retenir de l'interview de
+Laurent Jacobelli
+vendredi 23 décembre 2022. (FRANCEINFO / RADIOFRANCE) Jean-Philippe
+Tanguy, député RN de la Somme, sur franceinfo, vendredi 23 décembre
+2022. (FRANCEINFO / RADIOFRANCE)
+Grève à la SNCF, enquête sur les ingérences étrangères, loi
+immigration... Ce qu'il faut retenir de l'interview de
+Jean-Philippe Tanguy
+début 2023, devrait faciliter la régularisation de travailleurs
+sans-papiers. (PAULINE LE NOURS / FRANCEINFO.FR) Le projet de loi
+immigration, qui sera officiellement présenté début 2023, devrait
+faciliter la régularisation de travailleurs sans-papiers. (PAULINE
+LE NOURS / FRANCEINFO.FR)
+Témoignages
+Projet de loi immigration : ces patrons de PME "obligés de recruter
+des sans-papiers", faute de main-d'œuvre
+et de l'Intérieur, à l'Elysée, à Paris, le 13 avril 2022. (XOSE
+BOUZAS / HANS LUCAS / AFP) Olivier Dussopt (à gauche) et Gérald
+Darmanin, ministres du Travail et de l'Intérieur, à l'Elysée, �
+Paris, le 13 avril 2022. (XOSE BOUZAS / HANS LUCAS / AFP)
+Immigration : cartes de séjour temporaires pour les "métiers en
+tension", demandes d'asile, passeurs… Ce que contient le projet de
+loi du gouvernement
 
-   les sujets associés
-     * Société
-     * Immigration
+les sujets associés
 
-   Vu d'Europe
+Vu d'Europe
 
-   Franceinfo sélectionne chaque jour des contenus issus de médias
-   audiovisuels publics européens, membres de l'Eurovision. Ces contenus
-   sont publiés en anglais ou en français.
+Franceinfo sélectionne chaque jour des contenus issus de médias
+audiovisuels publics européens, membres de l'Eurovision. Ces contenus
+sont publiés en anglais ou en français.
 
-   contenus sponsorisés
+contenus sponsorisés
 
-   Commentaires :
+Commentaires :
 
-   Connectez-vous à votre compte franceinfo pour participer à la
-   conversation.
+Connectez-vous à votre compte franceinfo pour participer à la
+conversation.
 
-   (BUTTON) Voir les commentaires
 
-    1. Accueil
-    2. Société
-    3. Immigration
+1. Accueil
+2. Société
+3. Immigration
 
-   Abonnement Newsletter
+Abonnement Newsletter
 
-   toute l’actu dès 7h30
-   ____________________
+toute l’actu dès 7h30
+____________________
 
-   Votre adresse e-mail
-   (BUTTON) s'inscrire
-   France Télévisions utilise votre adresse e-mail afin de vous adresser
-   des newsletters.
-   Pour exercer vos droits, contactez-nous.
-   Notre politique de confidentialité Contactez-nous
+Votre adresse e-mail
+France Télévisions utilise votre adresse e-mail afin de vous adresser
+des newsletters.
+Pour exercer vos droits, contactez-nous.
+Notre politique de confidentialité Contactez-nous
 
-   Suivez-nous sur les réseaux sociaux :
-     * Notre compte Twitter (nouvelle fenêtre)
-     * Notre compte Facebook (nouvelle fenêtre)
-     * Notre compte Instagram (nouvelle fenêtre)
-     * Notre compte Youtube (nouvelle fenêtre)
+Suivez-nous sur les réseaux sociaux :
 
-   Suivez l'actualité en direct :
+Suivez l'actualité en direct :
 
-     * le live
-     * direct tv
-     * direct radio
 
-   Soyez alerté(e) en temps réel avec l'application franceinfo :
-   App store
-   Play store
-   Télécharger l'application
+Soyez alerté(e) en temps réel avec l'application franceinfo :
+App store
+Play store
+Télécharger l'application
 
-     * Politique de confidentialité
-     * CGU et mentions légales
-     * Gérer mes traceurs
 
-     * Nous contacter
-     * Qui sommes-nous?
-     * Charte déontologique
-     * Devenir annonceur
-     * Recrutement
 
-   [hit.xiti?s=573499&s2=25&p=immigration::articles::carte_quels_departeme
-   nts_gagnent_ou_perdent_des_habitants_en_france__5571579]
+[hit.xiti?s=573499&s2=25&p=immigration::articles::carte_quels_departeme
+nts_gagnent_ou_perdent_des_habitants_en_france__5571579]

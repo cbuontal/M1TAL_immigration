@@ -1,224 +1,164 @@
-   (BUTTON) Accès au menu d’accessibilité
-     * aller au contenu principal
-     * aller au menu de navigation
-     * aller au moteur de recherche
-     * aller au direct tv
-     * aller au direct radio
 
-   (BUTTON) Menu principal
-   Accueil France Info
-     * vidéos
-     * radio
-     * jt
-     * magazines
+Accueil France Info
 
-   Rechercher une actualité
-   DIRECT TV TV
-   DIRECT Radio Radio
-   Le live
-   ____________________ (BUTTON) Rechercher
-     * accueil
-     * le live
-     * direct tv
-     * direct radio
-     * vidéos
-     * radio
-     * jt
-     * magazines
+Rechercher une actualité
+DIRECT TV TV
+DIRECT Radio Radio
+Le live
 
-   Accueil
-     * politique (BUTTON) Sous-menu politique
-     * vrai ou fake
-     * société (BUTTON) Sous-menu société
-     * faits-divers (BUTTON) Sous-menu faits-divers
-     * santé (BUTTON) Sous-menu santé
-     * éco/conso (BUTTON) Sous-menu éco/conso
-     * monde (BUTTON) Sous-menu monde
-     * europe
-     * culture (BUTTON) Sous-menu culture
-     * sport (BUTTON) Sous-menu sport
-     * environnement (BUTTON) Sous-menu environnement
-     * météo (BUTTON) Sous-menu météo
+Accueil
 
-   LE LIVE
-     * Confidentialité
-     * Newsletters
+LE LIVE
 
-  Union européenne : la Croatie s'apprête à intégrer la zone euro et l'espace
-                                    Schengen
+Union européenne : la Croatie s'apprête à intégrer la zone euro et l'espace
+Schengen
 
-   Le pays des Balkans va dire adieu à sa monnaie et adopter l'euro. Plus
-   de 70 postes-frontières vont aussi fermer lors du passage à 2023.
+Le pays des Balkans va dire adieu à sa monnaie et adopter l'euro. Plus
+de 70 postes-frontières vont aussi fermer lors du passage à 2023.
 
-   Article rédigé par
-   franceinfo avec AFP
-   France Télévisions
+Article rédigé par
+franceinfo avec AFP
+France Télévisions
 
-   Publié le 31/12/2022 07:38 Mis à jour le 31/12/2022 10:34
-   Temps de lecture : 2 min.
+Publié le 31/12/2022 07:38 Mis à jour le 31/12/2022 10:34
+Temps de lecture : 2 min.
 
-   Une rue de Zagreb (Croatie), le 16 septembre 2021. (BEATA ZAWRZEL /
-   NURPHOTO / AFP) Une rue de Zagreb (Croatie), le 16 septembre 2021.
-   (BEATA ZAWRZEL / NURPHOTO / AFP)
+Une rue de Zagreb (Croatie), le 16 septembre 2021. (BEATA ZAWRZEL /
+NURPHOTO / AFP) Une rue de Zagreb (Croatie), le 16 septembre 2021.
+(BEATA ZAWRZEL / NURPHOTO / AFP)
 
-   A minuit, la Croatie dira adieu à sa monnaie, la kuna, pour devenir le
-   vingtième pays appartenant à la zone euro. Elle rejoindra en même temps
-   l'espace Schengen en tant que 27e membre de cette vaste zone au sein de
-   laquelle plus de 400 millions de personnes peuvent voyager librement,
-   sans contrôles aux frontières intérieures. Deux étapes majeures pour ce
-   petit pays qui a rejoint l'Union européenne en juillet 2013.
+A minuit, la Croatie dira adieu à sa monnaie, la kuna, pour devenir le
+vingtième pays appartenant à la zone euro. Elle rejoindra en même temps
+l'espace Schengen en tant que 27e membre de cette vaste zone au sein de
+laquelle plus de 400 millions de personnes peuvent voyager librement,
+sans contrôles aux frontières intérieures. Deux étapes majeures pour ce
+petit pays qui a rejoint l'Union européenne en juillet 2013.
 
-   L'entrée dans la zone euro et dans l'espace Schengen constituent "deux
-   objectifs stratégiques pour davantage d'intégration à l'UE", a insisté
-   le Premier ministre Andrej Plenkovic. Les dirigeants croates soulignent
-   régulièrement les avantages attendus pour ce pays des Balkans, qui
-   compte 3,9 millions d'habitants. La présidente de la Commission
-   européenne, Ursula von der Leyen, est attendue dimanche pour marquer
-   les deux événements.
+L'entrée dans la zone euro et dans l'espace Schengen constituent "deux
+objectifs stratégiques pour davantage d'intégration à l'UE", a insisté
+le Premier ministre Andrej Plenkovic. Les dirigeants croates soulignent
+régulièrement les avantages attendus pour ce pays des Balkans, qui
+compte 3,9 millions d'habitants. La présidente de la Commission
+européenne, Ursula von der Leyen, est attendue dimanche pour marquer
+les deux événements.
 
-   >>  La Croatie va devenir le 20e membre de la zone euro, un symbole
-   pour les Balkans
+>>  La Croatie va devenir le 20e membre de la zone euro, un symbole
+pour les Balkans
 
-   Pour les experts, le passage à l'euro contribuera à protéger l'économie
-   croate, l'une des plus faibles de l'UE. En novembre, l'inflation a
-   atteint 13,5%, comparé à 10% dans la zone euro. Des pays d'Europe de
-   l'Est membres de l'UE mais pas de la zone euro, comme la Pologne ou la
-   Hongrie, se sont révélés encore plus vulnérables face à l'inflation
-   croissante.
+Pour les experts, le passage à l'euro contribuera à protéger l'économie
+croate, l'une des plus faibles de l'UE. En novembre, l'inflation a
+atteint 13,5%, comparé à 10% dans la zone euro. Des pays d'Europe de
+l'Est membres de l'UE mais pas de la zone euro, comme la Pologne ou la
+Hongrie, se sont révélés encore plus vulnérables face à l'inflation
+croissante.
 
 L'immigration illégale, un enjeu aux frontières
 
-   L'euro est déjà très présent en Croatie. Environ 80% des dépôts
-   bancaires sont libellés en euros et les principaux partenaires de la
-   Croatie se trouvent en zone euro. Le pays a accueilli cette année
-   quatre fois plus de touristes qu'elle ne compte d'habitants, mais
-   l'entrée dans la zone Schengen devrait encore donner un coup de fouet
-   au secteur. Les longues files d'attente aux frontières croates avec ses
-   voisins européens, la Slovénie et la Hongrie, feront partie du passé.
-   Dimanche, 73 postes-frontière vont fermer.
+L'euro est déjà très présent en Croatie. Environ 80% des dépôts
+bancaires sont libellés en euros et les principaux partenaires de la
+Croatie se trouvent en zone euro. Le pays a accueilli cette année
+quatre fois plus de touristes qu'elle ne compte d'habitants, mais
+l'entrée dans la zone Schengen devrait encore donner un coup de fouet
+au secteur. Les longues files d'attente aux frontières croates avec ses
+voisins européens, la Slovénie et la Hongrie, feront partie du passé.
+Dimanche, 73 postes-frontière vont fermer.
 
-   La répression de l'immigration illégale reste un défi majeur. Depuis
-   que le pays a rejoint l'UE, il a hérité de la lourde tâche de protéger
-   une frontière extérieure terrestre longue de plus de 1 350 km dont la
-   majeure partie est avec la Bosnie. La Croatie se trouve sur la route
-   dite des Balkans occidentaux empruntée par les migrants, mais aussi par
-   des trafiquants d'armes, de drogues et d'êtres humains.
+La répression de l'immigration illégale reste un défi majeur. Depuis
+que le pays a rejoint l'UE, il a hérité de la lourde tâche de protéger
+une frontière extérieure terrestre longue de plus de 1 350 km dont la
+majeure partie est avec la Bosnie. La Croatie se trouve sur la route
+dite des Balkans occidentaux empruntée par les migrants, mais aussi par
+des trafiquants d'armes, de drogues et d'êtres humains.
 
-   La frontière avec la Bosnie est la plus délicate à gérer, en raison de
-   sa longueur, mais aussi de son terrain accidenté. Après le reflux des
-   passages clandestins lié à la crise sanitaire, la Croatie a enregistré
-   30 000 migrants illégaux au cours des dix premiers mois de 2022, soit
-   une augmentation de 150% par rapport à la même période de l'année
-   précédente.
+La frontière avec la Bosnie est la plus délicate à gérer, en raison de
+sa longueur, mais aussi de son terrain accidenté. Après le reflux des
+passages clandestins lié à la crise sanitaire, la Croatie a enregistré
+30 000 migrants illégaux au cours des dix premiers mois de 2022, soit
+une augmentation de 150% par rapport à la même période de l'année
+précédente.
 
-   Voir les commentaires
+Voir les commentaires
 
-   Partager :
-   (BUTTON) Partager sur Twitter (BUTTON) Partager sur Facebook (BUTTON)
-   Partager par mail (BUTTON) Partager le lien
+Partager :
 
-   actualités analyses vidéos
+actualités analyses vidéos
 
-   Prolongez votre lecture autour de ce sujet
-   tout l'univers Europe
+Prolongez votre lecture autour de ce sujet
+tout l'univers Europe
 
-   articles sur le même thème
+articles sur le même thème
 
-   sur le même thème
-     * Un immeuble endommagé par un missile russe, à Kiev, en Ukraine, le
-       31 décembre 2022. (OLEKSII CHUMACHENKO / ANADOLU AGENCY / AFP) Un
-       immeuble endommagé par un missile russe, à Kiev, en Ukraine, le 31
-       décembre 2022. (OLEKSII CHUMACHENKO / ANADOLU AGENCY / AFP)
-       Direct
-       Guerre en Ukraine : des frappes russes s'abattent sur Kiev peu
-       après minuit
-     * Le portrait de Benoît XVI dans la cathédrale Saint-Pierre de
-       Ratisbonne, en Allemagne, en décembre 2022. (FLORIAN CAZERES / AFP)
-       Le portrait de Benoît XVI dans la cathédrale Saint-Pierre de
-       Ratisbonne, en Allemagne, en décembre 2022. (FLORIAN CAZERES / AFP)
-       Reportage
-       Mort de Benoît XVI : en Bavière, les habitants se souviennent de
-       "l'un d'entre eux" et tentent d'oublier les controverses
-     * Des pièces de 1 kuna, de 5 kunas et de 2 euros, alors que la
-       Croatie a adopté l'euro et rejoint l'espace Schengen au 1er janvier
-       2023. (BAPTISTE ROMAN / HANS LUCAS / AFP) Des pièces de 1 kuna, de
-       5 kunas et de 2 euros, alors que la Croatie a adopté l'euro et
-       rejoint l'espace Schengen au 1er janvier 2023. (BAPTISTE ROMAN /
-       HANS LUCAS / AFP)
-       La Croatie adopte l'euro et intègre l'espace Schengen
-     * Guerre en Ukraine : un réveillon sous les bombes (France 3) Guerre
-       en Ukraine : un réveillon sous les bombes (France 3)
-       Guerre en Ukraine : un réveillon sous les bombes
-     * Deux hommes ramassent des débris dans un village bombardé près de
-       Kiev (Ukraine), le 31 décembre 2022. (OLEKSII CHUMACHENKO / ANADOLU
-       AGENCY / AFP) Deux hommes ramassent des débris dans un village
-       bombardé près de Kiev (Ukraine), le 31 décembre 2022. (OLEKSII
-       CHUMACHENKO / ANADOLU AGENCY / AFP)
-       Guerre en Ukraine : Kiev "ne pardonnera pas" à Moscou, prévient
-       Zelensky, après de nouvelles frappes russes
+sur le même thème
+31 décembre 2022. (OLEKSII CHUMACHENKO / ANADOLU AGENCY / AFP) Un
+immeuble endommagé par un missile russe, à Kiev, en Ukraine, le 31
+décembre 2022. (OLEKSII CHUMACHENKO / ANADOLU AGENCY / AFP)
+Direct
+Guerre en Ukraine : des frappes russes s'abattent sur Kiev peu
+après minuit
+Ratisbonne, en Allemagne, en décembre 2022. (FLORIAN CAZERES / AFP)
+Le portrait de Benoît XVI dans la cathédrale Saint-Pierre de
+Ratisbonne, en Allemagne, en décembre 2022. (FLORIAN CAZERES / AFP)
+Reportage
+Mort de Benoît XVI : en Bavière, les habitants se souviennent de
+"l'un d'entre eux" et tentent d'oublier les controverses
+Croatie a adopté l'euro et rejoint l'espace Schengen au 1er janvier
+2023. (BAPTISTE ROMAN / HANS LUCAS / AFP) Des pièces de 1 kuna, de
+5 kunas et de 2 euros, alors que la Croatie a adopté l'euro et
+rejoint l'espace Schengen au 1er janvier 2023. (BAPTISTE ROMAN /
+HANS LUCAS / AFP)
+La Croatie adopte l'euro et intègre l'espace Schengen
+en Ukraine : un réveillon sous les bombes (France 3)
+Guerre en Ukraine : un réveillon sous les bombes
+Kiev (Ukraine), le 31 décembre 2022. (OLEKSII CHUMACHENKO / ANADOLU
+AGENCY / AFP) Deux hommes ramassent des débris dans un village
+bombardé près de Kiev (Ukraine), le 31 décembre 2022. (OLEKSII
+CHUMACHENKO / ANADOLU AGENCY / AFP)
+Guerre en Ukraine : Kiev "ne pardonnera pas" à Moscou, prévient
+Zelensky, après de nouvelles frappes russes
 
-   les sujets associés
-     * Europe
-     * Monde
+les sujets associés
 
-   Vu d'Europe
+Vu d'Europe
 
-   Franceinfo sélectionne chaque jour des contenus issus de médias
-   audiovisuels publics européens, membres de l'Eurovision. Ces contenus
-   sont publiés en anglais ou en français.
+Franceinfo sélectionne chaque jour des contenus issus de médias
+audiovisuels publics européens, membres de l'Eurovision. Ces contenus
+sont publiés en anglais ou en français.
 
-   contenus sponsorisés
+contenus sponsorisés
 
-   Commentaires :
+Commentaires :
 
-   Connectez-vous à votre compte franceinfo pour participer à la
-   conversation.
+Connectez-vous à votre compte franceinfo pour participer à la
+conversation.
 
-   (BUTTON) Voir les commentaires
 
-    1. Accueil
-    2. Monde
-    3. Europe
+1. Accueil
+2. Monde
+3. Europe
 
-   Abonnement Newsletter
+Abonnement Newsletter
 
-   toute l’actu dès 7h30
-   ____________________
+toute l’actu dès 7h30
+____________________
 
-   Votre adresse e-mail
-   (BUTTON) s'inscrire
-   France Télévisions utilise votre adresse e-mail afin de vous adresser
-   des newsletters.
-   Pour exercer vos droits, contactez-nous.
-   Notre politique de confidentialité Contactez-nous
+Votre adresse e-mail
+France Télévisions utilise votre adresse e-mail afin de vous adresser
+des newsletters.
+Pour exercer vos droits, contactez-nous.
+Notre politique de confidentialité Contactez-nous
 
-   Suivez-nous sur les réseaux sociaux :
-     * Notre compte Twitter (nouvelle fenêtre)
-     * Notre compte Facebook (nouvelle fenêtre)
-     * Notre compte Instagram (nouvelle fenêtre)
-     * Notre compte Youtube (nouvelle fenêtre)
+Suivez-nous sur les réseaux sociaux :
 
-   Suivez l'actualité en direct :
+Suivez l'actualité en direct :
 
-     * le live
-     * direct tv
-     * direct radio
 
-   Soyez alerté(e) en temps réel avec l'application franceinfo :
-   App store
-   Play store
-   Télécharger l'application
+Soyez alerté(e) en temps réel avec l'application franceinfo :
+App store
+Play store
+Télécharger l'application
 
-     * Politique de confidentialité
-     * CGU et mentions légales
-     * Gérer mes traceurs
 
-     * Nous contacter
-     * Qui sommes-nous?
-     * Charte déontologique
-     * Devenir annonceur
-     * Recrutement
 
-   [hit.xiti?s=573499&s2=19&p=europe::articles::union_europeenne_la_croati
-   e_pays_des_balkans_s_apprete_a_integrer_l_euro_et_l_espace_schengen__55
-   72947]
+[hit.xiti?s=573499&s2=19&p=europe::articles::union_europeenne_la_croati
+e_pays_des_balkans_s_apprete_a_integrer_l_euro_et_l_espace_schengen__55
+72947]
