@@ -59,11 +59,11 @@ echo 	"
 
 if [[ $lang == 'fr' ]]
 then
-	grep -E -o -i "(\w+\W+| {0,5})$motif\b(\W+\w+| ){0,5}" $fichier_text | gsed -E -r "s/(.*)$motif(.*)/<tr><td class=\"has-text-right\">\1<\/td><td class=\"has-text-danger\">\2<\/td><td class=\"has-text-left\">\3<\/td><\/tr>/I"
+	grep -E -o -i "(\w+\W+| {0,5})$motif\b(\W+\w+| ){0,5}" $fichier_text | sed -E -r "s/(.*)$motif(.*)/<tr><td class=\"has-text-right\">\1<\/td><td class=\"has-text-danger\">\2<\/td><td class=\"has-text-left\">\3<\/td><\/tr>/I"
 elif [[ $lang == 'ru' ]]
 then
 	#pour utiliser cette ligne, il faut installer gnu-sed : brew install gnu-sed
-	grep -E -o -i "(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}" $fichier_text | gsed -E "s/(.*)$motif(.*)/<tr><td class=\"has-text-right\">\1<\/td><td class=\"has-text-danger\">\2<\/td><td class=\"has-text-left\">\3<\/td><\/tr>/I"
+	grep -E -o -i "(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}" $fichier_text | sed -E "s/(.*)$motif(.*)/<tr><td class=\"has-text-right\">\1<\/td><td class=\"has-text-danger\">\2<\/td><td class=\"has-text-left\">\3<\/td><\/tr>/I"
 elif [[ $lang == 'zh' ]]
 then
 	LANG=zh_CN.UTF-8 grep -Po "((\p{Han}|，){1,5} ){0,5}$motif( (\p{Han}|，){1,5}){0,5}" $fichier_text | LANG=C sed -E "s/(.*)($motif)(.*)/<tr><td class=\"has-text-right\">\1<\/td><td class=\"has-text-danger\">\2<\/td><td class=\"has-text-left\">\3<\/td><\/tr>/"
