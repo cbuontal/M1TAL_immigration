@@ -82,12 +82,59 @@
 					<!--analyse fr-->
 					<h2 class="title has-text-centered" style="color: #06213e; font-size: 32px; letter-spacing: -0.02em;">Français</h2>
 					<p class="block">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam ac mi euismod accumsan vel quis diam. Etiam et gravida tortor. Praesent laoreet finibus velit quis laoreet. Fusce ut ex suscipit, sodales diam quis, dictum nunc. Sed a enim ultrices, molestie erat vel, condimentum ipsum. Aliquam quis interdum nulla. Aenean laoreet a nisl vel malesuada. Suspendisse luctus ac lacus non placerat. Phasellus porttitor mi eu diam auctor porta sit amet id lectus. Nunc non nisi cursus, fermentum ex fermentum, venenatis ex. Suspendisse tempor, leo ac eleifend mattis, purus libero vulputate justo, vitae vestibulum velit lectus ut mi. Aenean dictum bibendum nisi sed dictum. Donec nec lectus ut turpis pulvinar bibendum.
+						Dans le cadre de notre projet, nous avons été amenés à utiliser iTrameur pour comparer la distribution des mots ‘immigration’ et ‘émigration’. Pour ce faire, nous avons effectué une analyse des cooccurrents de ces deux mots.
 					</p>
 					<p class="block">
-						Nulla euismod ullamcorper commodo. Phasellus bibendum sodales velit quis eleifend. Proin eget dolor lacus. Maecenas vel lorem rutrum, convallis elit vitae, sagittis mauris. Nulla vel purus eu odio imperdiet pretium. Suspendisse potenti. Quisque molestie tellus non est cursus auctor. Nullam felis quam, laoreet a ultrices ut, vestibulum pulvinar nunc. Suspendisse bibendum augue nisl, ac porta orci lacinia in.
+						Nous avons alors quelques hypothèses en ce qui concerne le français, des hypothèses que nous faisons à partir de nos intuitions pour pouvoir aiguiller nos recherches et enfin les affirmer ou les infirmer :
 					</p>
-					<!--analyse ru-->
+					<ul style="list-style-type: disc; margin-left: 50px; margin-bottom: 25px;">
+						<li>Le mot ‘immigration’ est plus courant que le mot ‘émigration’,</li>
+						<li>Ces mots sont perçus négativement,</li>
+						<li>Leurs contextes d’apparition ne diffèrent pas.</li>
+					</ul>
+					<p class="block">
+						Dans un premier temps, nous nous sommes intéressés au mot ‘immigration’. Le mot est présent 249 fois dans le corpus. À l’aide de la recherche des cooccurrents, nous avons pu distinguer plusieurs caractéristiques.
+					</p>
+					<p class="block">
+						Quelque chose apparaît d’abord clairement, ‘immigration’ est souvent entouré d’autres mots à charge négative tels que ‘clandestine’, ‘irrégulière’, ‘illégale’ ou encore dans une moindre mesure ‘contre’.
+					</p>
+					<p class="block">
+						Nous voyons aussi l’apparition du cooccurrent ‘masse’, témoignant d’un qualificatif souvent associé à l’immigration. On parle alors dans nos textes d’‘immigration de masse’.
+					</p>
+					<div class="columns has-text-centered">
+						<div class="column" style="position: relative;">
+							  <img src="images/fr_immigration_arbre.png" style="position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);" alt="Résultat 'arbre' du mot immigration en français">
+						</div>
+						<div class="column">
+							  <img src="images/fr_immigration_tab.png" alt="Résultat 'table' du mot immigration en français">
+						</div>
+				    </div>
+				    <p class="block">
+						Nous pouvons aussi distinguer deux cooccurrents assez intrigants : ‘chiffres’ et ‘clés’. La présence de ces deux mots de manière assez similaire, et leur accord commun au pluriel nous on mit la puce à l’oreille qu’il y avait peut-être quelque chose de plus profond derrière ces résultats. Pour en avoir le cœur net, nous avons décidé de faire une recherche des cooccurrents de ‘clés’. Nous pouvons alors voir que ‘clés’ se retrouvent souvent en contact avec le terme de ‘chiffres’. Nous pouvons en conclure que nous parlons ici de ‘chiffres clés’, qui seraient donc reliés à ‘immigration’.
+				    </p>
+					<img src="images/fr_cles_tab.png" style="display: block; margin-left: auto; margin-right: auto; width: 25%;" alt="Résultat 'table' du mot clés en français">
+				    <p class="block">
+						Dans un second temps, nous avons cherché à en savoir plus sur le terme ‘émigration’. Tout d’abord, le mot n’est présent que 15 fois dans le corpus, bien moins que le mot ‘immigration’. Les cooccurrents nous en disent un peu plus.
+				    </p>
+				    <p class="block">
+						Pour commencer, nous voyons que le mot ‘émigration’ présente lui aussi un contexte négatif, néanmoins bien moins marqué que pour ‘immigration’. Nous pouvons voir autour de lui des mots tels que ‘pauvres’, ou encore ‘mal’.
+				    </p>
+				    <p class="block">
+						Assez surprenamment, nous pouvons aussi noter l’apparition d’une nationalité, ‘libanaise’.
+				    </p>
+					<div class="columns has-text-centered">
+						<div class="column" style="position: relative;">
+							  <img src="images/fr_emigration_arbre.png" style="position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);" alt="Résultat 'arbre' du mot émigration en français">
+						</div>
+						<div class="column">
+							  <img src="images/fr_emigration_tab.png" alt="Résultat 'table' du mot émigration en français">
+						</div>
+				    </div>
+					<p class="block">
+						In fine, nous avons pu voir qu’‘immigration’ est bien plus présent dans le corpus qu’‘émigration’, ce qui témoigne d’un usage plus marqué. De plus, ces deux mots se retrouvent effectivement dans des contextes négatifs. Néanmoins, il faut nuancer la distinction d’intensité entre les deux ; le contexte d’‘immigration’ étant bien plus négativement marqué. Pour notre troisième hypothèse, le manque de présence du terme ‘émigration’ nous invite à ne pas avancer une réponse.
+					</p>
+					<img src="images/nuage_fr.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" alt="Nuage de mots en français">
+				    <!--analyse ru-->
 					<h2 class="title has-text-centered" style="color: #06213e; font-size: 32px; letter-spacing: -0.02em;">Russe</h2>
 					<p class="block">
 						En russe moderne, il semble n’y avoir pratiquement aucune différence entre les mots à première vue. Le locuteur russe moyen utilise ces mots comme synonymes. Mais le sont-ils vraiment, ou les gens perçoivent-ils encore inconsciemment des différences sémantiques entre ces mots ?
@@ -123,18 +170,26 @@
 					</p>
 					<!--analyse zh-->
 					<h2 class="title has-text-centered" style="color: #06213e; font-size: 32px; letter-spacing: -0.02em;">Chinois</h2>
-					<img src="images/zh_arbre.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" alt="Résultat 'arbre' du mot 移民 en chinois">
+					<div class="columns has-text-centered">
+						<div class="column" style="position: relative;">
+							<img src="images/zh_arbre.png" style="position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);" alt="Résultat 'arbre' du mot 移民 en chinois">
+						</div>
+						<div class="column">
+							<img src="images/zh_tab.png" alt="Résultat 'table' du mot 移民 en chinois">
+						</div>
+					</div>
 					<p class="block">
 						Le mot que nous avons choisi d’analyser en chinois mandarin est 移民 (yímín). Il s’agit d’un mot très polysémique, qui peut désigner diverses sortes de migration : immigration, émigration, déplacement… De plus, le chinois est une langue hautement contextuelles, et une de ses difficultés est la fluidité des catégories grammaticales. En effet, le mot choisi pour le chinois, 移民, peut se comporter tantôt comme un verbe, tantôt comme un nom. C’est au contact de ses cooccurrents que sa catégorie grammaticale se fige. Par exemple:
-						<ul style="list-style-type: disc; margin-left: 50px;">
-							<li>移民国外 (yímín guówài) = s’expatrier (litt. migrer à l’étranger),</li>
-							<li>移民政策 (yímín zhèngcè) = politiques migratoires,</li>
-							<li>富豪移民 (fùháo yímín) = migrant fortuné</li>
-						</ul>
 					</p>
+					<ul style="list-style-type: disc; margin-left: 50px; margin-bottom: 25px;">
+						<li>移民国外 (yímín guówài) = s’expatrier (litt. migrer à l’étranger),</li>
+						<li>移民政策 (yímín zhèngcè) = politiques migratoires,</li>
+						<li>富豪移民 (fùháo yímín) = migrant fortuné</li>
+					</ul>
 					<p class="block">
 						Par ailleurs, les outils standards de ligne de commande comme grep et sed ne gèrent pas le chinois par défaut. Il faut utiliser les Perl Compatible Regular Expressions (PCRE), qui fonctionnent avec grep mais pas avec sed. Ainsi, afin de procéder au nettoyage des données chinoises, une étape supplémentaire de tokenisation a été nécessaire. Elle est réalisée avec la bibliothèque de Python thulac, et le script produisant la tokenisation peut être téléchargé <a href="scripts/tokenize_chinese.py">ici</a>.
 					</p>
+					<img src="images/nuage_zh.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" alt="Nuage de mots en chinois">
 					<p class="block">
 						Les connotations du mot cible sont variées. Tout d'abord, la collocation la plus fréquente est 非法移民 (fēifǎ yímín, immigration clandestine). Associée à une l'autre collocation 移民问题 (yímín wèntí, problèmes migratoires), elle montre que le corpus traite le sujet de la migration comme d'un problème. Cette démarche culmine avec l'expression hyperbolique 移民潮 (yímíncháo, vague migratoire). Une connotation négative est donc associée au mot 移民. Toutefois, elle coexiste dans le corpus avec un usage plus neutre, qui décrit l'économie de la migration : 技术移民 (jìshù yímín, migrant hautement qualifié), 投资移民 (tóuzī yímín, migrant investisseur), 移民行业 (yímín hángyè, secteur de la migration). Il s'agit ici de décrire la typologie des migrations, en particulier le profil des émigrés chinois.
 					</p>
