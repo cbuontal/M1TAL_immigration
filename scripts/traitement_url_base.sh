@@ -186,7 +186,7 @@ do
 # compte du nombre d'occurrences
 NB_OCC=$(grep -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)
   # extraction des contextes
-grep -E -A2 -B2 $mot ./dumps-text/$basename-$lineno.txt > "./contextes/$basename-$lineno.txt" #хз почему но тут и дальше я указал в скобках путь к файлам
+grep -E -A2 -B2 $mot ./dumps-text/$basename-$lineno.txt > "./contextes/$basename-$lineno.txt" 
   # construction des concordance avec une commande externe
 bash scripts/concordance.sh ru ./dumps-text/$basename-$lineno.txt $mot > "./concordances/$basename-$lineno.html"
 
