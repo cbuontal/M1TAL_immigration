@@ -61,7 +61,7 @@
 					</p>
 					<pre>
 						<code>
-#!/usr/bin/env bash
+<span style="color: green;">#!/usr/bin/env bash
 
 #===============================================================================
 # VOUS DEVEZ MODIFIER CE BLOC DE COMMENTAIRES.
@@ -79,35 +79,35 @@
 
 # !!!!!!
 # ici on doit vérifier que nos deux paramètres existent, sinon on ferme!
-# !!!!!!
+# !!!!!!</span>
 
 
-if [ $# -ne 3 ]
-then
-	echo "Il faut trois paramètres."
-	echo "Utilisation : bash traitement_url_base.sh &lt;langue&gt; &lt;nom_fichier_URL&gt; &lt;nom_fichier_HTML&gt;"
-	exit
-fi
+<span style="color: blue;">if</span> [ <span style="color: orange;">$#</span> -ne <span style="color: red;">3</span> ]
+<span style="color: blue;">then
+	echo</span> <span style="color: gray;">"Il faut trois paramètres."</span>
+	<span style="color: blue;">echo</span> <span style="color: gray;">"Utilisation : bash traitement_url_base.sh &lt;langue&gt; &lt;nom_fichier_URL&gt; &lt;nom_fichier_HTML&gt;"</span>
+	<span style="color: blue;">exit
+fi</span>
 
-lang=$1
-fichier_urls=$2 # le fichier d'URL en entrée
-fichier_tableau=$3 # le fichier HTML en sortie
+lang=<span style="color: orange;">$1</span>
+fichier_urls=<span style="color: orange;">$2</span> <span style="color: green;"># le fichier d'URL en entrée</span>
+fichier_tableau=<span style="color: orange;">$3</span> <span style="color: green;"># le fichier HTML en sortie</span>
 
-basename=$(basename -s .txt $fichier_urls)
+basename=<span style="color: brown;">$(basename -s .txt $fichier_urls)</span>
 
-if [[ $lang == 'zh' ]]
-then
-	mot="移民"
-elif [[ $lang == 'ru' ]]
-then
-		mot="(иммигр\w+|эмигр\w+)"
-elif [[ $lang == 'fr' ]]
-then
-	mot="([Éé]migr\w+|[Ii]mmigr\w+)"
-fi
+<span style="color: blue;">if</span> [[ <span style="color: orange;">$lang</span> == <span style="color: gray;">'zh'</span> ]]
+<span style="color: blue;">then</span>
+	mot=<span style="color: gray;">"移民"</span>
+<span style="color: blue;">elif</span> [[ <span style="color: orange;">$lang</span> == <span style="color: gray;">'ru'</span> ]]
+<span style="color: blue;">then</span>
+		mot=<span style="color: gray;">"(иммигр\w+|эмигр\w+)"</span>
+<span style="color: blue;">elif</span> [[ <span style="color: orange;">$lang</span> == <span style="color: gray;">'fr'</span> ]]
+<span style="color: blue;">then</span>
+	mot=<span style="color: gray;">"([Éé]migr\w+|[Ii]mmigr\w+)"</span>
+<span style="color: blue;">fi</span>
 
 
-# on utilise la commande :
+<span style="color: green;"># on utilise la commande :
 # curl -I lien.html
 # pour obtenir seulement l'entête de la réponse du serveur
 # -L pour gérer les réponses 301 "moved permanently"
@@ -117,9 +117,9 @@ fi
 # on peut l'obtenir en extrayant la première ligne et en sélectionnant son 2è élément
 
 
-# curl -I nom_url | grep HTTP | cut -d ' ' -f 2
+# curl -I nom_url | grep HTTP | cut -d ' ' -f 2</span>
 
-echo 	"&lt;html&gt;
+<span style="color: blue;">echo</span> 	<span style="color: gray;">"&lt;html&gt;
 	&lt;head&gt;
 		&lt;meta charset=\"utf-8\" /&gt;
 		&lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css\"&gt;
@@ -130,199 +130,199 @@ echo 	"&lt;html&gt;
 		&lt;nav class=\"navbar is-light is-fixed-top\"&gt;&lt;div class=\"navbar-menu\"&gt;&lt;div class=\"navbar-start\"&gt;&lt;div class=\"navbar-item has-dropdown is-hoverable\"&gt;&lt;a class=\"navbar-item\" href=\"../index.html#introduction\"&gt;Introduction&lt;/a&gt;&lt;/div&gt;&lt;div class=\"navbar-item has-dropdown is-hoverable\"&gt;&lt;a class=\"navbar-item\" href=\"../index.html#analyse\"&gt;Analyse&lt;/a&gt;&lt;/div&gt;&lt;div class=\"navbar-item has-dropdown is-hoverable\"&gt;&lt;a class=\"navbar-item\" href=\"../scripts.html\"&gt;Scripts&lt;/a&gt;&lt;/div&gt;&lt;div class=\"navbar-item has-dropdown is-hoverable\"&gt;&lt;a class=\"navbar-item\"&gt;Tableaux&lt;/a&gt;&lt;div class=\"navbar-dropdown\"&gt;&lt;a class=\"navbar-item\" href=\"tableau_fr.html\"&gt;Français&lt;/a&gt;&lt;a class=\"navbar-item\" href=\"tableau_ru.html\"&gt;Russe&lt;/a&gt;&lt;a class=\"navbar-item\" href=\"tableau_zh.html\"&gt;Chinois&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=\"navbar-end\"&gt;&lt;div class=\"navbar-item has-dropdown is-hoverable\"&gt;&lt;a class=\"navbar-item\" href=\"../index.html#aPropos\"&gt;À propos&lt;/a&gt;&lt;/div&gt;&lt;div class=\"navbar-item\"&gt;&lt;a href=\"https://github.com/cbuontal/M1TAL_immigration\"&gt;&lt;img src=\"../images/github_logo.png\" alt=\"Github\"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;
 		&lt;h1 class=\"title\"&gt;Tableau des URLs $basename&lt;/h1&gt;
 		&lt;table class=\"table is-bordered\"&gt;
-			&lt;thead&gt;&lt;tr&gt;&lt;th&gt;ligne&lt;/th&gt;&lt;th&gt;code HTTP&lt;/th&gt;&lt;th&gt;URL&lt;/th&gt;&lt;th&gt;encodage&lt;/th&gt;&lt;th&gt;html&lt;/th&gt;&lt;th&gt;dump&lt;/th&gt;&lt;th&gt;occurrences&lt;/th&gt;&lt;th&gt;contextes&lt;/th&gt;&lt;th&gt;concordances&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;" &gt; "tableaux/$fichier_tableau"
+			&lt;thead&gt;&lt;tr&gt;&lt;th&gt;ligne&lt;/th&gt;&lt;th&gt;code HTTP&lt;/th&gt;&lt;th&gt;URL&lt;/th&gt;&lt;th&gt;encodage&lt;/th&gt;&lt;th&gt;html&lt;/th&gt;&lt;th&gt;dump&lt;/th&gt;&lt;th&gt;occurrences&lt;/th&gt;&lt;th&gt;contextes&lt;/th&gt;&lt;th&gt;concordances&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;" &gt; "tableaux/$fichier_tableau"</span>
 
 
-# pour chaque URL du fichier URL :
+<span style="color: green;"># pour chaque URL du fichier URL :</span>
 
-lineno=1;
+lineno=<span style="color: red;">1</span>;
 
-if [[ $lang == 'zh' ]]
-then
+<span style="color: blue;">if</span> [[ <span style="color: orange;">$lang</span> == <span style="color: gray;">'zh'</span> ]]
+<span style="color: blue;">then</span>
 
-# nécessaire pour le bon fonctionnement de `sed`
-lang_base=$LANG
-export LANG=C
+<span style="color: green;"># nécessaire pour le bon fonctionnement de `sed`</span>
+lang_base=<span style="color: orange;">$LANG</span>
+<span style="color: blue;">export</span> LANG=C
 
-while read -r URL;
-do
-	echo -e "\tURL : $URL";
+<span style="color: blue;">while read</span> -r URL;
+<span style="color: blue;">do
+	echo</span> -e <span style="color: gray;">"\tURL : $URL"</span>;
 
-	# réponse HTTP
-	code=$(curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)
-	# récupération de l'encodage
-	charset=$(curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" -Ls $URL -D - -o "./aspirations/fich-$lineno.html" | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
+	<span style="color: green;"># réponse HTTP</span>
+	code=<span style="color: brown;">$(curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)</span>
+	<span style="color: green;"># récupération de l'encodage</span>
+	charset=<span style="color: brown;">$(curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" -Ls $URL -D - -o "./aspirations/fich-$lineno.html" | grep -Eo "charset=(\w|-)+" | cut -d= -f2)</span>
 
-	if [[ -z $charset ]]
-	then
-		echo -e "\tencodage non détecté, on prendra UTF-8 par défaut.";
-		charset="UTF-8";
+	<span style="color: blue;">if</span> [[ <span style="color: blue;">-z</span> <span style="color: orange;">$charset</span> ]]
+	<span style="color: blue;">then
+		echo</span> -e <span style="color: gray;">"\tencodage non détecté, on prendra UTF-8 par défaut."</span>;
+		charset=<span style="color: gray;">"UTF-8"</span>;
+	<span style="color: blue;">else
+		echo</span> -e <span style="color: gray;">"\tencodage : $charset"</span>;
+	<span style="color: blue;">fi</span>
+	<span style="color: green;"># pour transformer les 'utf-8' en 'UTF-8' :</span>
+	charset=<span style="color: brown;">$(echo $charset | tr "[a-z]" "[A-Z]")</span>
+
+	<span style="color: green;"># cette page pose problème...</span>
+	<span style="color: blue;">if</span> [[ <span style="color: orange;">$URL</span> == <span style="color: gray;">"https://www.cnr.cn/sx/yw/20221129/t20221129_526078646.shtml"</span> ]]
+	<span style="color: blue;">then</span>
+		charset=<span style="color: gray;">"gb2312"</span>
+	<span style="color: ;">fi
+
+	if</span> [[ <span style="color: orange;">$code</span> -eq <span style="color: red;">200</span> ]]
+	<span style="color: blue;">then</span>
+		aspiration=<span style="color: brown;">$(curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" $URL)</span>
+
+		<span style="color: blue;">if</span> [[ <span style="color: orange;">$charset</span> == <span style="color: gray;">'UTF-8'</span> ]]
+		<span style="color: blue;">then</span>
+			dump=<span style="color: brown;">$(curl $URL | iconv -f UTF-8 -t UTF-8//IGNORE | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8 | sed -E "/(BUTTON)/d" | sed -E "/   [*+#_©×]/d" | sed -E "/   \[/d" | sed -E "/^IFRAME/d")</span>
+		<span style="color: blue;">else</span>
+			<span style="color: green;"># charset=$(curl $URL | urchardet)</span>
+			dump=<span style="color: brown;">$(curl $URL | iconv -f $charset -t UTF-8//IGNORE | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8 | sed -E "/(BUTTON)/d" | sed -E "/   [*+#_©×]/d" | sed -E "/   \[/d" | sed -E "/^IFRAME/d")</span>
+		<span style="color: blue;">fi
 	else
-		echo -e "\tencodage : $charset";
-	fi
-	# pour transformer les 'utf-8' en 'UTF-8' :
-	charset=$(echo $charset | tr "[a-z]" "[A-Z]")
+		echo</span> -e <span style="color: gray;">"\tcode différent de 200 utilisation d'un dump vide"</span>
+		dump=<span style="color: gray;">""</span>
+		charset=<span style="color: gray;">""</span>
+	<span style="color: blue;">fi
 
-	# cette page pose problème...
-	if [[ $URL == "https://www.cnr.cn/sx/yw/20221129/t20221129_526078646.shtml" ]]
-	then
-		charset="gb2312"
-	fi
+	echo</span> <span style="color: gray;">"$aspiration"</span> <span style="color: brown;">&gt;</span> <span style="color: gray;">"./aspirations/$basename-$lineno.html"</span>
 
-	if [[ $code -eq 200 ]]
-	then
-		aspiration=$(curl -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" $URL)
+	<span style="color: blue;">echo</span> <span style="color: gray;">"$dump"</span> <span style="color: brown;">&gt;</span> <span style="color: gray;">"./dumps-text/$basename-$lineno.txt"</span>
+	<span style="color: green;"># segmentation du dump avec thulac, on supprime aussi les indications du scripts qui polluent le dump :</span>
+	dumpseg=<span style="color: brown;">$(python3 scripts/tokenize_chinese.py "./dumps-text/$basename-$lineno.txt" | sed -E "/Model loaded succeed/d" | sed -E '/References/,$d')</span>
+	<span style="color: green;"># on écrase le dump non segmenté</span>
+	<span style="color: blue;">echo</span> <span style="color: gray;">"$dumpseg"</span> <span style="color: brown;">&gt;</span> <span style="color: gray;">"./dumps-text/$basename-$lineno.txt"</span>
 
-		if [[ $charset == 'UTF-8' ]]
-		then
-			dump=$(curl $URL | iconv -f UTF-8 -t UTF-8//IGNORE | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8 | sed -E "/(BUTTON)/d" | sed -E "/   [*+#_©×]/d" | sed -E "/   \[/d" | sed -E "/^IFRAME/d")
-		else
-			# charset=$(curl $URL | urchardet)
-			dump=$(curl $URL | iconv -f $charset -t UTF-8//IGNORE | lynx -stdin -dump -assume_charset=utf-8 -display_charset=utf-8 | sed -E "/(BUTTON)/d" | sed -E "/   [*+#_©×]/d" | sed -E "/   \[/d" | sed -E "/^IFRAME/d")
-		fi
-	else
-		echo -e "\tcode différent de 200 utilisation d'un dump vide"
-		dump=""
-		charset=""
-	fi
+	<span style="color: green;"># compte du nombre d'occurrences</span>
+	NB_OCC=<span style="color: brown;">$(grep -a -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)</span>
 
-	echo "$aspiration" &gt; "./aspirations/$basename-$lineno.html"
+	<span style="color: green;"># extraction des contextes</span>
+	<span style="color: blue;">grep</span> -E -A1 -B1 <span style="color: orange;">$mot</span> ./dumps-text/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt <span style="color: brown;">&gt;</span> ./contextes/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt
 
-	echo "$dump" &gt; "./dumps-text/$basename-$lineno.txt"
-	# segmentation du dump avec thulac, on supprime aussi les indications du scripts qui polluent le dump :
-	dumpseg=$(python3 scripts/tokenize_chinese.py "./dumps-text/$basename-$lineno.txt" | sed -E "/Model loaded succeed/d" | sed -E '/References/,$d')
-	# on écrase le dump non segmenté
-	echo "$dumpseg" &gt; "./dumps-text/$basename-$lineno.txt"
-
-	# compte du nombre d'occurrences
-	NB_OCC=$(grep -a -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)
-
-	# extraction des contextes
-	grep -E -A1 -B1 $mot ./dumps-text/$basename-$lineno.txt &gt; ./contextes/$basename-$lineno.txt
-
-	# construction des concordances avec une commande externe
-	bash scripts/concordance.sh zh ./dumps-text/$basename-$lineno.txt $mot &gt; ./concordances/$basename-$lineno.html
+	<span style="color: green;"># construction des concordances avec une commande externe</span>
+	<span style="color: blue;">bash</span> scripts/concordance.sh zh ./dumps-text/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt <span style="color: orange;">$mot</span> <span style="color: brown;">&gt;</span> ./concordances/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.html
 
 
-	echo "			&lt;tr&gt;&lt;td&gt;$lineno&lt;/td&gt;&lt;td&gt;$code&lt;/td&gt;&lt;td&gt;&lt;a href=\"$URL\"&gt;$URL&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$charset&lt;/td&gt;&lt;td&gt;&lt;a href="../aspirations/$basename-$lineno.html"&gt;html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="../dumps-text/$basename-$lineno.txt"&gt;text&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$NB_OCC&lt;/td&gt;&lt;td&gt;&lt;a href="../contextes/$basename-$lineno.txt"&gt;contextes&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="../concordances/$basename-$lineno.html"&gt;concordance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;" &gt;&gt; "tableaux/$fichier_tableau"
+	<span style="color: blue;">echo</span> <span style="color: gray;">"			&lt;tr&gt;&lt;td&gt;$lineno&lt;/td&gt;&lt;td&gt;$code&lt;/td&gt;&lt;td&gt;&lt;a href=\"$URL\"&gt;$URL&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$charset&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../aspirations/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.html<span style="color: gray;">"&gt;html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../dumps-text/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt<span style="color: gray;">"&gt;text&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$NB_OCC&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../contextes/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt<span style="color: gray;">"&gt;contextes&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../concordances/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.html<span style="color: gray;">"&gt;concordance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;"</span> <span style="color: brown;">&gt;&gt;</span> <span style="color: gray;">"tableaux/$fichier_tableau"</span>
 	lineno=$((lineno+1));
-done &lt; $fichier_urls
+<span style="color: blue;">done</span> <span style="color: brown;">&lt;</span> <span style="color: orange;">$fichier_urls</span>
 
-# on revient à la variable globale de base une fois le traitement terminé
-export LANG=lang_base
+<span style="color: green;"># on revient à la variable globale de base une fois le traitement terminé</span>
+<span style="color: blue;">export</span> LANG=lang_base
 
-elif [[ $lang == 'ru' ]]
-then
-while read -r URL;
-do
-			echo -e "\tURL : $URL";
-			code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1) # de la manière attendue, sans l'option -w de cURL
-			charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
-			charset=$(echo $charset | tr "[a-z]" "[A-Z]") #ici nous définissons pour la valeur sharset la commande "convertir toutes les petites lettres en majuscules, afin que toutes les lettres UTF-8 soient du même type
-			echo -e "\tcode : $code";
+<span style="color: blue;">elif</span> [[ <span style="color: orange;">$lang</span> == <span style="color: gray;">'ru'</span> ]]
+<span style="color: blue;">then
+while read</span> -r URL;
+<span style="color: blue;">do
+			echo</span> -e <span style="color: gray;">"\tURL : $URL"</span>;
+			code=<span style="color: brown;">$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)</span> <span style="color: green;"># de la manière attendue, sans l'option -w de cURL</span>
+			charset=<span style="color: brown;">$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)</span>
+			charset=<span style="color: brown;">$(echo $charset | tr "[a-z]" "[A-Z]")</span> <span style="color: green;">#ici nous définissons pour la valeur sharset la commande "convertir toutes les petites lettres en majuscules, afin que toutes les lettres UTF-8 soient du même type</span>
+			<span style="color: blue;">echo</span> -e <span style="color: gray;">"\tcode : $code"</span>;
 
-			if [[ -z $charset ]]
-			then
-						echo -e "\tencodage non détecté, on prendra UTF-8 par défaut.";
-						charset="UTF-8";
+			<span style="color: blue;">if</span> [[ <span style="color: blue;">-z</span> <span style="color: orange;">$charset</span> ]]
+			<span style="color: blue;">then
+						echo</span> -e <span style="color: gray;">"\tencodage non détecté, on prendra UTF-8 par défaut."</span>;
+						charset=<span style="color: gray;">"UTF-8"</span>;
+			<span style="color: blue;">else
+						echo</span> -e <span style="color: gray;">"\tencodage : $charset"</span>;
+			<span style="color: blue;">fi
+
+			if</span> [[  <span style="color: orange;">$code</span> -eq <span style="color: red;">200</span> || <span style="color: orange;">$code</span> -eq <span style="color: red;">403</span> ]]
+						<span style="color: blue;">then</span>
+						aspiration=<span style="color: brown;">$(curl $URL)</span>
+						dump=<span style="color: brown;">$(lynx -dump -nolist -accept_all_cookies -assume_charset=$charset -display_charset=$charset $URL)</span>
+						<span style="color: blue;">if</span> [[  <span style="color: orange;">$charset</span> -ne <span style="color: gray;">'UTF-8'</span> ]]
+						<span style="color: blue;">then</span>
+							dump=<span style="color: brown;">$(iconv -f $charset -t UTF-8)</span>
+						<span style="color: blue;">fi
 			else
-						echo -e "\tencodage : $charset";
-			fi
+						echo</span> -e <span style="color: gray;">"\tcode différent de 200 utilisation d'un dump vide"</span>
+						dump=<span style="color: gray;">""</span>
+						charset=<span style="color: gray;">""</span>
+			<span style="color: blue;">fi
 
-			if [[  $code -eq 200 || $code -eq 403 ]]
-						then
-						aspiration=$(curl $URL)
-						dump=$(lynx -dump -nolist -accept_all_cookies -assume_charset=$charset -display_charset=$charset $URL)
-						if [[  $charset -ne 'UTF-8' ]]
-						then
-							dump=$(iconv -f $charset -t UTF-8)
-						fi
-			else
-						echo -e "\tcode différent de 200 utilisation d'un dump vide"
-						dump=""
-						charset=""
-			fi
+			echo</span> <span style="color: gray;">"$dump"</span> <span style="color: brown;">&gt;</span> <span style="color: gray;">"./dumps-text/$basename-$lineno.txt"</span>
+			<span style="color: blue;">echo</span> <span style="color: gray;">"$aspiration"</span> <span style="color: brown;">&gt;</span> <span style="color: gray;">"./aspirations/$basename-$lineno.html"</span>
 
-			echo "$dump" &gt; "./dumps-text/$basename-$lineno.txt"
-			echo "$aspiration" &gt; "./aspirations/$basename-$lineno.html"
+<span style="color: green;"># compte du nombre d'occurrences</span>
+NB_OCC=<span style="color: brown;">$(grep -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)</span>
+	<span style="color: green;"># extraction des contextes</span>
+<span style="color: blue;">grep</span> -E -A2 -B2 <span style="color: orange;">$mot</span> ./dumps-text/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt <span style="color: brown;">&gt;</span> <span style="color: gray;">"./contextes/$basename-$lineno.txt"</span> <span style="color: green;">#хз почему но тут и дальше я указал в скобках путь к файлам
+	# construction des concordance avec une commande externe</span>
+<span style="color: blue;">bash</span> scripts/concordance.sh ru ./dumps-text/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt <span style="color: orange;">$mot</span> <span style="color: brown;">&gt;</span> <span style="color: gray;">"./concordances/$basename-$lineno.html"</span>
 
-# compte du nombre d'occurrences
-NB_OCC=$(grep -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)
-	# extraction des contextes
-grep -E -A2 -B2 $mot ./dumps-text/$basename-$lineno.txt &gt; "./contextes/$basename-$lineno.txt" #хз почему но тут и дальше я указал в скобках путь к файлам
-	# construction des concordance avec une commande externe
-bash scripts/concordance.sh ru ./dumps-text/$basename-$lineno.txt $mot &gt; "./concordances/$basename-$lineno.html"
-
-echo "&lt;tr&gt;&lt;td&gt;$lineno&lt;/td&gt;&lt;td&gt;$code&lt;/td&gt;&lt;td&gt;&lt;a href=\"$URL\"&gt;$URL&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$charset&lt;/td&gt;&lt;td&gt;&lt;a href="../aspirations/$basename-$lineno.html"&gt;html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="../dumps-text/$basename-$lineno.txt"&gt;text&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$NB_OCC&lt;/td&gt;&lt;td&gt;&lt;a href="../contextes/$basename-$lineno.txt"&gt;contextes&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="../concordances/$basename-$lineno.html"&gt;concordance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;" &gt;&gt; "tableaux/$fichier_tableau" #Nous spécifions ici où placer toutes les informations et notons qu'il n'est pas nécessaire de les supprimer à chaque itération
-echo -e "\t--------------------------------"
+<span style="color: blue;">echo</span> <span style="color: gray;">"&lt;tr&gt;&lt;td&gt;$lineno&lt;/td&gt;&lt;td&gt;$code&lt;/td&gt;&lt;td&gt;&lt;a href=\"$URL\"&gt;$URL&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$charset&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../aspirations/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.html<span style="color: gray;">"&gt;html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../dumps-text/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt<span style="color: gray;">"&gt;text&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$NB_OCC&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../contextes/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt<span style="color: gray;">"&gt;contextes&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../concordances/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.html<span style="color: gray;">"&gt;concordance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;"</span> <span style="color: brown;">&gt;&gt;</span> <span style="color: gray;">"tableaux/$fichier_tableau"</span> <span style="color: green;">#Nous spécifions ici où placer toutes les informations et notons qu'il n'est pas nécessaire de les supprimer à chaque itération</span>
+<span style="color: blue;">echo</span> -e <span style="color: gray;">"\t--------------------------------"</span>
 
 lineno=$((lineno+1));
 
-done  &lt; $fichier_urls
+<span style="color: blue;">done</span>  <span style="color: brown;">&lt;</span> <span style="color: orange;">$fichier_urls</span>
 
-elif [[ $lang == 'fr' ]]
-then
-while read -r URL;
-do
-			echo -e "\tURL : $URL";
-			code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1) # de la manière attendue, sans l'option -w de cURL
-			charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
-			charset=$(echo $charset | tr "[a-z]" "[A-Z]") #ici nous définissons pour la valeur sharset la commande "convertir toutes les petites lettres en majuscules, afin que toutes les lettres UTF-8 soient du même type
-			echo -e "\tcode : $code";
+<span style="color: blue;">elif</span> [[ <span style="color: orange;">$lang</span> == <span style="color: gray;">'fr'</span> ]]
+<span style="color: blue;">then
+while read</span> -r URL;
+<span style="color: blue;">do
+			echo</span> -e <span style="color: gray;">"\tURL : $URL"</span>;
+			code=<span style="color: brown;">$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)</span> <span style="color: green;"># de la manière attendue, sans l'option -w de cURL</span>
+			charset=<span style="color: brown;">$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)</span>
+			charset=<span style="color: brown;">$(echo $charset | tr "[a-z]" "[A-Z]")</span> <span style="color: green;">#ici nous définissons pour la valeur sharset la commande "convertir toutes les petites lettres en majuscules, afin que toutes les lettres UTF-8 soient du même type</span>
+			<span style="color: blue;">echo</span> -e <span style="color: gray;">"\tcode : $code"</span>;
 
-			if [[ -z $charset ]]
-			then
-						echo -e "\tencodage non détecté, on prendra UTF-8 par défaut.";
-						charset="UTF-8";
+			<span style="color: blue;">if</span> [[ <span style="color: blue;">-z</span> <span style="color: orange;">$charset</span> ]]
+			<span style="color: blue;">then
+						echo</span> -e <span style="color: gray;">"\tencodage non détecté, on prendra UTF-8 par défaut."</span>;
+						charset=<span style="color: gray;">"UTF-8"</span>;
+			<span style="color: blue;">else
+						echo</span> -e <span style="color: gray;">"\tencodage : $charset"</span>;
+			<span style="color: blue;">fi
+
+			if</span> [[  <span style="color: orange;">$code</span> -eq <span style="color: red;">200</span> || <span style="color: orange;">$code</span> -eq <span style="color: red;">403</span> ]]
+				<span style="color: blue;">then</span>
+						aspiration=<span style="color: brown;">$(curl $URL)</span>
+						dump=<span style="color: brown;">$(lynx -dump -nolist -accept_all_cookies -assume_charset=$charset -display_charset=$charset $URL)</span>
+						<span style="color: blue;">if</span> [[  <span style="color: orange;">$charset</span> -ne <span style="color: gray;">'UTF-8'</span> ]]
+						<span style="color: blue;">then</span>
+							dump=<span style="color: brown;">$(iconv -f $charset -t UTF-8)</span>
+						<span style="color: blue;">fi
 			else
-						echo -e "\tencodage : $charset";
-			fi
+						echo</span> -e <span style="color: gray;">"\tcode différent de 200 utilisation d'un dump vide"</span>
+						dump=<span style="color: gray;">""</span>
+						charset=<span style="color: gray;">""</span>
+			<span style="color: blue;">fi
 
-			if [[  $code -eq 200 || $code -eq 403 ]]
-				then
-						aspiration=$(curl $URL)
-						dump=$(lynx -dump -nolist -accept_all_cookies -assume_charset=$charset -display_charset=$charset $URL)
-						if [[  $charset -ne 'UTF-8' ]]
-						then
-							dump=$(iconv -f $charset -t UTF-8)
-						fi
-			else
-						echo -e "\tcode différent de 200 utilisation d'un dump vide"
-						dump=""
-						charset=""
-			fi
+			echo</span> <span style="color: gray;">"$dump"</span> <span style="color: brown;">&gt;</span> <span style="color: gray;">"./dumps-text/$basename-$lineno.txt"</span>
+			<span style="color: green;"># une fois le fichier créé, on peut utiliser la commande suivante pour supprimer les espaces en début de ligne :</span>
+			LANG=C sed -i.bak <span style="color: gray;">'s/^[[:space:]]*//' "./dumps-text/$basename-$lineno.txt"</span>
+			<span style="color: green;"># une fois les espaces de début de ligne supprimés, on peut nettoyer</span>
+			dump_propre=<span style="color: brown;">$(cat "./dumps-text/$basename-$lineno.txt" | LANG=C sed '/Également sur RFI/,$d' | LANG=C sed '/(BUTTON)/d' | LANG=C sed '/^[+*©►]/d' | LANG=C sed '/^Price:/,$d' | LANG=C sed '/^http/d' | LANG=C sed '/^IFRAME/d' )</span>
+			<span style="color: green;"># et on remplace le dump initial par le dump nettoyé</span>
+			echo <span style="color: gray;">"$dump_propre"</span> <span style="color: brown;">&gt;</span> <span style="color: gray;">"./dumps-text/$basename-$lineno.txt"</span>
 
-			echo "$dump" &gt; "./dumps-text/$basename-$lineno.txt"
-			# une fois le fichier créé, on peut utiliser la commande suivante pour supprimer les espaces en début de ligne :
-			LANG=C sed -i.bak 's/^[[:space:]]*//' "./dumps-text/$basename-$lineno.txt"
-			# une fois les espaces de début de ligne supprimés, on peut nettoyer
-			dump_propre=$(cat "./dumps-text/$basename-$lineno.txt" | LANG=C sed '/Également sur RFI/,$d' | LANG=C sed '/(BUTTON)/d' | LANG=C sed '/^[+*©►]/d' | LANG=C sed '/^Price:/,$d' | LANG=C sed '/^http/d' | LANG=C sed '/^IFRAME/d' )
-			# et on remplace le dump initial par le dump nettoyé
-			echo "$dump_propre" &gt; "./dumps-text/$basename-$lineno.txt"
+			<span style="color: blue;">echo</span> <span style="color: gray;">"$aspiration"</span> <span style="color: brown;">&gt;</span> <span style="color: gray;">"./aspirations/$basename-$lineno.html"</span>
 
-			echo "$aspiration" &gt; "./aspirations/$basename-$lineno.html"
+<span style="color: green;"># compte du nombre d'occurrences</span>
+NB_OCC=<span style="color: brown;">$(grep -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)</span>
+	<span style="color: green;"># extraction des contextes</span>
+<span style="color: blue;">grep</span> -E -A2 -B2 <span style="color: orange;">$mot</span> ./dumps-text/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt <span style="color: brown;">&gt;</span> <span style="color: gray;">"./contextes/$basename-$lineno.txt"</span>
+	<span style="color: green;"># construction des concordance avec une commande externe</span>
+<span style="color: blue;">bash</span> scripts/concordance.sh fr ./dumps-text/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt <span style="color: orange;">$mot</span> <span style="color: brown;">&gt;</span> <span style="color: gray;">"./concordances/$basename-$lineno.html"</span>
 
-# compte du nombre d'occurrences
-NB_OCC=$(grep -E -o $mot ./dumps-text/$basename-$lineno.txt | wc -l)
-	# extraction des contextes
-grep -E -A2 -B2 $mot ./dumps-text/$basename-$lineno.txt &gt; "./contextes/$basename-$lineno.txt"
-	# construction des concordance avec une commande externe
-bash scripts/concordance.sh fr ./dumps-text/$basename-$lineno.txt $mot &gt; "./concordances/$basename-$lineno.html"
-
-echo "&lt;tr&gt;&lt;td&gt;$lineno&lt;/td&gt;&lt;td&gt;$code&lt;/td&gt;&lt;td&gt;&lt;a href=\"$URL\"&gt;$URL&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$charset&lt;/td&gt;&lt;td&gt;&lt;a href="../aspirations/$basename-$lineno.html"&gt;html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="../dumps-text/$basename-$lineno.txt"&gt;text&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$NB_OCC&lt;/td&gt;&lt;td&gt;&lt;a href="../contextes/$basename-$lineno.txt"&gt;contextes&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="../concordances/$basename-$lineno.html"&gt;concordance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;" &gt;&gt; "tableaux/$fichier_tableau" #Nous spécifions ici où placer toutes les informations et notons qu'il n'est pas nécessaire de les supprimer à chaque itération
-echo -e "\t--------------------------------"
+<span style="color: blue;">echo</span> <span style="color: gray;">"&lt;tr&gt;&lt;td&gt;$lineno&lt;/td&gt;&lt;td&gt;$code&lt;/td&gt;&lt;td&gt;&lt;a href=\"$URL\"&gt;$URL&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$charset&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../aspirations/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.html<span style="color: gray;">"&gt;html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../dumps-text/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt<span style="color: gray;">"&gt;text&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$NB_OCC&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../contextes/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.txt<span style="color: gray;">"&gt;contextes&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="</span>../concordances/<span style="color: orange;">$basename</span>-<span style="color: orange;">$lineno</span>.html<span style="color: gray;">"&gt;concordance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;"</span> <span style="color: brown;">&gt;&gt;</span> <span style="color: gray;">"tableaux/$fichier_tableau"</span> <span style="color: green;">#Nous spécifions ici où placer toutes les informations et notons qu'il n'est pas nécessaire de les supprimer à chaque itération</span>
+<span style="color: blue;">echo</span> -e <span style="color: gray;">"\t--------------------------------"</span>
 
 lineno=$((lineno+1));
 
-done  &lt; $fichier_urls
+<span style="color: blue;">done</span>  <span style="color: brown;">&lt;</span> <span style="color: orange;">$fichier_urls</span>
 
-fi
+<span style="color: ;blue">fi</span>
 
 
-#on ferme le fichier
-echo "		&lt;/table&gt;
+<span style="color: green;">#on ferme le fichier</span>
+<span style="color: blue;">echo</span> <span style="color: gray;">"		&lt;/table&gt;
 	&lt;/body&gt;
-&lt;/html&gt;" &gt;&gt; "tableaux/$fichier_tableau"
+&lt;/html&gt;"</span> <span style="color: brown;">&gt;&gt;</span> <span style="color: gray;">"tableaux/$fichier_tableau"</span>
 						</code>
 					</pre>
 				</div>
@@ -338,44 +338,44 @@ echo "		&lt;/table&gt;
 					</p>
 					<pre>
 						<code>
-#!/usr/bin/env bash
+<span style="color: green;">#!/usr/bin/env bash
 
 #
 #		Script qui établit une table de concordance en HTML autour d'un motif
 #		usage : bash concordance.sh &lt;fichier&gt; &lt;motif&gt;
 #
-#
+#</span>
 
-lang=$1 # fr, ru, zh
-fichier_text=$2
-motif=$3
+lang=<span style="color: orange;">$1</span> <span style="color: green;"># fr, ru, zh</span>
+fichier_text=<span style="color: orange;">$2</span>
+motif=<span style="color: orange;">$3</span>
 
-if [[ $# -ne 3 ]]
-then
-	echo "Ce programme demande exactement trois arguments."
-	echo "Usage : $0 &lt;langue&gt; &lt;fichier&gt; &lt;motif&gt;"
-	exit
+<span style="color: blue;">if</span> [[ <span style="color: orange;">$#</span> -ne <span style="color: red;">3</span> ]]
+<span style="color: blue;">then
+	echo</span> <span style="color: gray;">"Ce programme demande exactement trois arguments."</span>
+	<span style="color: blue;">echo</span> <span style="color: gray;">"Usage : $0 &lt;langue&gt; &lt;fichier&gt; &lt;motif&gt;"</span>
+	<span style="color: blue;">exit
 fi
 
-if [[ ! -f $fichier_text ]]
-then
-	echo "le fichier $fichier_text n'existe pas"
-	exit
+if</span> [[ ! <span style="color: blue;">-f</span> <span style="color: orange;">$fichier_text</span> ]]
+<span style="color: blue;">then
+	echo</span> <span style="color: gray;">"le fichier $fichier_text n'existe pas"</span>
+	<span style="color: blue;">exit
 fi
 
-if [[ -z $motif ]]
-then
-	echo "le motif est vide"
-	exit
+if</span> [[ <span style="color: blue;">-z</span> <span style="color: orange;">$motif</span> ]]
+<span style="color: blue;">then
+	echo</span> <span style="color: gray;">"le motif est vide"</span>
+	<span style="color: blue;">exit
 fi
 
-if [[ $lang != 'fr' && $lang != 'ru' && $lang != 'zh' ]]
-then
-	echo "C'est quoi cette langue ?"
-	exit
+if</span> [[ <span style="color: orange;">$lang</span> != <span style="color: gray;">'fr'</span> && <span style="color: orange;">$lang</span> != <span style="color: gray;">'ru'</span> && <span style="color: orange;">$lang</span> != <span style="color: gray;">'zh'</span> ]]
+<span style="color: blue;">then
+	echo</span> <span style="color: gray;">"C'est quoi cette langue ?"</span>
+	<span style="color: blue;">exit
 fi
 
-echo 	"
+echo</span> 	<span style="color: gray;">"
 			&lt;html&gt;
 				&lt;html lang=\"$lang\"&gt;
 				&lt;head&gt;
@@ -395,26 +395,26 @@ echo 	"
 									&lt;th class=\"has-text-left\"&gt;Contexte droit&lt;/th&gt;
 									&lt;/tr&gt;
 									&lt;/thead&gt;
-									"
+									"</span>
 
-if [[ $lang == 'fr' ]]
-then
-	grep -E -o -i "(\w+\W+| {0,5})$motif\b(\W+\w+| ){0,5}" $fichier_text | sed -E -r "s/(.*)$motif(.*)/&lt;tr&gt;&lt;td class=\"has-text-right\"&gt;\1&lt;\/td&gt;&lt;td class=\"has-text-danger\"&gt;\2&lt;\/td&gt;&lt;td class=\"has-text-left\"&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/I"
-elif [[ $lang == 'ru' ]]
-then
-	#pour utiliser cette ligne, il faut installer gnu-sed : brew install gnu-sed. sinon utiliser "sed"
-	grep -E -o -i "(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}" $fichier_text | sed -E "s/(.*)$motif(.*)/&lt;tr&gt;&lt;td class=\"has-text-right\"&gt;\1&lt;\/td&gt;&lt;td class=\"has-text-danger\"&gt;\2&lt;\/td&gt;&lt;td class=\"has-text-left\"&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/I"
-elif [[ $lang == 'zh' ]]
-then
-	LANG=zh_CN.UTF-8 grep -Po "((\p{Han}|，){1,5} ){0,5}$motif( (\p{Han}|，){1,5}){0,5}" $fichier_text | LANG=C sed -E "s/(.*)($motif)(.*)/&lt;tr&gt;&lt;td class=\"has-text-right\"&gt;\1&lt;\/td&gt;&lt;td class=\"has-text-danger\"&gt;\2&lt;\/td&gt;&lt;td class=\"has-text-left\"&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/"
-fi
+<span style="color: blue;">if</span> [[ <span style="color: orange;">$lang</span> == <span style="color: gray;">'fr'</span> ]]
+<span style="color: blue;">then
+	grep</span> -E -o -i <span style="color: gray;">"(\w+\W+| {0,5})$motif\b(\W+\w+| ){0,5}"</span> <span style="color: orange;">$fichier_text</span> | <span style="color: blue;">sed</span> -E -r <span style="color: gray;">"s/(.*)$motif(.*)/&lt;tr&gt;&lt;td class=\"has-text-right\"&gt;\1&lt;\/td&gt;&lt;td class=\"has-text-danger\"&gt;\2&lt;\/td&gt;&lt;td class=\"has-text-left\"&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/I"</span>
+<span style="color: blue;">elif</span> [[ <span style="color: orange;">$lang</span> == <span style="color: gray;">'ru'</span> ]]
+<span style="color: blue;">then</span>
+	<span style="color: green;">#pour utiliser cette ligne, il faut installer gnu-sed : brew install gnu-sed. sinon utiliser "sed"</span>
+	<span style="color: blue;">grep</span> -E -o -i <span style="color: gray;">"(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}"</span> <span style="color: orange;">$fichier_text</span> | <span style="color: blue;">sed</span> -E <span style="color: gray;">"s/(.*)$motif(.*)/&lt;tr&gt;&lt;td class=\"has-text-right\"&gt;\1&lt;\/td&gt;&lt;td class=\"has-text-danger\"&gt;\2&lt;\/td&gt;&lt;td class=\"has-text-left\"&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/I"</span>
+<span style="color: blue;">elif</span> [[ <span style="color: orange;">$lang</span> == <span style="color: gray;">'zh'</span> ]]
+<span style="color: blue;">then</span>
+	LANG=zh_CN.UTF-8 grep -Po <span style="color: gray;">"((\p{Han}|，){1,5} ){0,5}$motif( (\p{Han}|，){1,5}){0,5}"</span> <span style="color: orange;">$fichier_text</span> | LANG=C sed -E <span style="color: gray;">"s/(.*)($motif)(.*)/&lt;tr&gt;&lt;td class=\"has-text-right\"&gt;\1&lt;\/td&gt;&lt;td class=\"has-text-danger\"&gt;\2&lt;\/td&gt;&lt;td class=\"has-text-left\"&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/"</span>
+<span style="color: blue;">fi
 
-echo "
+echo</span> <span style="color: gray;">"
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-"
+"</span>
 						</code>
 					</pre>
 				</div>
@@ -430,26 +430,26 @@ echo "
 					</p>
 					<pre>
 						<code>
-#!/usr/bin/env python3
+<span style="color: green;">#!/usr/bin/env python3</span>
 
-import thulac
-import errno
-import fileinput
+<span style="color: blue;">import</span> thulac
+<span style="color: blue;">import</span> errno
+<span style="color: blue;">import</span> fileinput
 
-# utilisation : python3 tokenize_chinese.py chinois.txt
+<span style="color: green;"># utilisation : python3 tokenize_chinese.py chinois.txt
 # possibilité de rediriger la sortie avec >, >>
 
 # autre possibilité, lancer la commande:
 # python3 -m thulac chinois.txt chinois_seg_output.txt -seg_only
-# Mais ne permet pas les redirections d'entrées/sorties
+# Mais ne permet pas les redirections d'entrées/sorties</span>
 
-seg = thulac.thulac(seg_only=True)
-try:
-	for line in fileinput.input():
-		print(seg.cut(line, text=True))
-except IOError as e:
-	if e.errno != errno.EPIPE:
-		raise							
+seg = thulac.thulac(seg_only=<span style="color: blue;">True</span>)
+<span style="color: blue;">try</span>:
+	<span style="color: blue;">for</span> line <span style="color: blue;">in</span> fileinput.input():
+		<span style="color: blue;">print</span>(seg.cut(line, text=<span style="color: blue;">True</span>))
+<span style="color: blue;">except</span> IOError <span style="color: blue;">as</span> e:
+	<span style="color: blue;">if</span> e.errno != errno.EPIPE:
+		<span style="color: blue;">raise</span>							
 						</code>
 					</pre>
 				</div>
@@ -467,47 +467,47 @@ except IOError as e:
 					</p>
 					<pre>
 						<code>
-import string
-import re
-import matplotlib.pyplot as plt
-import nltk
-from nltk.corpus import stopwords
-from nltk import word_tokenize
-from wordcloud import WordCloud
+<span style="color: blue;">import</span> string
+<span style="color: blue;">import</span> re
+<span style="color: blue;">import</span> matplotlib.pyplot <span style="color: blue;">as</span> plt
+<span style="color: blue;">import</span> nltk
+<span style="color: blue;">from</span> nltk.corpus <span style="color: blue;">import</span> stopwords
+<span style="color: blue;">from</span> nltk <span style="color: blue;">import</span> word_tokenize
+<span style="color: blue;">from</span> wordcloud <span style="color: blue;">import</span> WordCloud
 
-## À EXÉCUTER DEPUIS LA RACINE DU DOSSIER
+<span style="color: green;">## À EXÉCUTER DEPUIS LA RACINE DU DOSSIER</span>
 
 text = str()
-with open("./dumps-text/ru_total2.txt", "r") as f:
+<span style="color: blue;">with</span> open(<span style="color: gray;">"./dumps-text/ru_total2.txt"</span>, <span style="color: gray;">"r"</span>) <span style="color: blue;">as</span> f:
 	text = f.read()
 
-# passage en minuscule et suppression des ponctuations et lignes vides
+<span style="color: green;"># passage en minuscule et suppression des ponctuations et lignes vides</span>
 text = text.lower()
-spec_chars = string.punctuation + '\n\xa0«»\t—…'
-text = re.sub('\n', '', text)
-text = "".join([ch for ch in text if ch not in spec_chars])
-# suppression des mots contenant des caractères latins
+spec_chars = string.punctuation + <span style="color: gray;">'\n\xa0«»\t—…'</span>
+text = re.sub(<span style="color: gray;">'\n'</span>, <span style="color: gray;">''</span>, text)
+text = <span style="color: gray;">""</span>.join([ch <span style="color: blue;">for</span> ch <span style="color: blue;">in</span> text <span style="color: blue;">if</span> ch <span style="color: blue;">not in</span> spec_chars])
+<span style="color: green;"># suppression des mots contenant des caractères latins</span>
 mots_texte = text.split()
-for idx, mot in enumerate(mots_texte):
-	if 'a' in mot or 'b' in mot or 'c' in mot or 'd' in mot or 'e' in mot or 'f' in mot or 'g' in mot or 'h' in mot or 'i' in mot or 'j' in mot or 'k' in mot or 'l' in mot or 'm' in mot or 'n' in mot or 'o' in mot or 'p' in mot or 'q' in mot or 'r' in mot or 's' in mot or 't' in mot or 'u' in mot or 'v' in mot or 'w' in mot or 'x' in mot or 'y' in mot or 'z' in mot :
+<span style="color: blue;">for</span> idx, mot <span style="color: blue;">in</span> enumerate(mots_texte):
+	<span style="color: blue;">if</span> <span style="color: gray;">'a'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'b'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'c'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'d'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'e'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'f'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'g'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'h'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'i'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'j'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'k'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'l'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'m'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'n'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'o'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'p'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'q'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'r'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'s'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'t'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'u'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'v'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'w'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'x'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'y'</span> <span style="color: blue;">in</span> mot <span style="color: blue;">or</span> <span style="color: gray;">'z'</span> <span style="color: blue;">in</span> mot :
 		mots_texte.remove(mot)
-text = " ".join(mots_texte)
+text = <span style="color: gray;">" "</span>.join(mots_texte)
 
 text_tokens = word_tokenize(text)
 text = nltk.Text(text_tokens)
 
-russian_stopwords = stopwords.words("russian")
-#liste de mots indésirables
-russian_stopwords.extend(['это', 'iframe', 'году', 'нею', 'button', 'twitter', 'telegram', 'livejournal', 'года', 'который', 'изза'])
+russian_stopwords = stopwords.words(<span style="color: gray;">"russian"</span>)
+<span style="color: green;">#liste de mots indésirables</span>
+russian_stopwords.extend([<span style="color: gray;">'это'</span>, <span style="color: gray;">'iframe'</span>, <span style="color: gray;">'году'</span>, <span style="color: gray;">'нею'</span>, <span style="color: gray;">'button'</span>, <span style="color: gray;">'twitter'</span>, <span style="color: gray;">'telegram'</span>, <span style="color: gray;">'livejournal'</span>, <span style="color: gray;">'года'</span>, <span style="color: gray;">'который'</span>, <span style="color: gray;">'изза'</span>])
 
-text_tokens = [token.strip() for token in text_tokens if token not in russian_stopwords]
+text_tokens = [token.strip() <span style="color: blue;">for</span> token <span style="color: blue;">in</span> text_tokens <span style="color: blue;">if</span> token <span style="color: blue;">not in</span> russian_stopwords]
 text = nltk.Text(text_tokens)
 
-## création du nuage de mots
-text_raw = " ".join(text)
-wordcloud = WordCloud(max_font_size=50, max_words=100, background_color="white").generate(text_raw)
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis("off")
+<span style="color: green;">## création du nuage de mots</span>
+text_raw = <span style="color: gray;">" "</span>.join(text)
+wordcloud = WordCloud(max_font_size=<span style="color: red;">50</span>, max_words=<span style="color: red;">100</span>, background_color=<span style="color: gray;">"white"</span>).generate(text_raw)
+plt.imshow(wordcloud, interpolation=<span style="color: gray;">'bilinear'</span>)
+plt.axis(<span style="color: gray;">"off"</span>)
 plt.show()
 						</code>
 					</pre>
@@ -518,34 +518,34 @@ plt.show()
 					</p>
 					<pre>
 						<code>
-import jieba, codecs, sys, pandas
-import numpy as np
-from wordcloud import WordCloud
-from imageio import imread
-from wordcloud import WordCloud, ImageColorGenerator
-from os import listdir
-from os.path import isfile, join
-import matplotlib.pyplot as plt
+<span style="color: blue;">import</span> jieba, codecs, sys, pandas
+<span style="color: blue;">import</span> numpy <span style="color: blue;">as</span> np
+<span style="color: blue;">from</span> wordcloud <span style="color: blue;">import</span> WordCloud
+<span style="color: blue;">from</span> imageio <span style="color: blue;">import</span> imread
+<span style="color: blue;">from</span> wordcloud <span style="color: blue;">import</span> WordCloud, ImageColorGenerator
+<span style="color: blue;">from</span> os <span style="color: blue;">import</span> listdir
+<span style="color: blue;">from</span> os.path <span style="color: blue;">import</span> isfile, join
+<span style="color: blue;">import</span> matplotlib.pyplot <span style="color: blue;">as</span> plt
 
-#
+<span style="color: green;">#
 #   Pour bien fonctionner, ce script a besoin de deux fichiers :
 #       - un fichier .txt contenant les stopwords chinois
 #       - un fichier .ttf contenant la police à utiliser
 #
 #   Ces fichiers sont rangés dans un sous-dossier data/
 #
-#
+#</span>
 
 
 
-stopwords_filename = 'data/stopwords_zh.txt'
-font_filename = 'data/simkai.ttf'
+stopwords_filename = <span style="color: gray;">'data/stopwords_zh.txt'</span>
+font_filename = <span style="color: gray;">'data/simkai.ttf'</span>
 
-def contain_latin(txt):
-	return ('a' in txt or 'b' in txt or 'c' in txt or 'd' in txt or 'e' in txt or 'f' in txt or 'g' in txt or 'h' in txt or 'i' in txt or 'j' in txt or 'k' in txt or 'l' in txt or 'm' in txt or 'n' in txt or 'o' in txt or 'p' in txt or 'q' in txt or 'r' in txt or 's' in txt or 't' in txt or 'u' in txt or 'v' in txt or 'w' in txt or 'x' in txt or 'y' in txt or 'z' in txt)
+<span style="color: blue;">def</span> <span style="color: magenta;">contain_latin</span>(txt):
+	<span style="color: blue;">return</span> (<span style="color: gray;">'a'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'b'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'c'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'d'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'e'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'f'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'g'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'h'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'i'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'j'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'k'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'l'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'m'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'n'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'o'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'p'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'q'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'r'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'s'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'t'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'u'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'v'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'w'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'x'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'y'</span> <span style="color: blue;">in</span> txt <span style="color: blue;">or</span> <span style="color: gray;">'z'</span> <span style="color: blue;">in</span> txt)
 
-def filter_numbers(txt):
-	"""
+<span style="color: blue;">def</span> <span style="color: magenta;">filter_numbers</span>(txt):
+	<span style="color: green;">"""
 		Renvoie vrai si l'argument passé en paramètre est une chaîne de caractères
 		constituée uniquement de chiffres et de longueur strictement supérieure à 4
 		- renvoie False si la chaîne est une suite de chiffres de longueur &gt; 4
@@ -553,43 +553,43 @@ def filter_numbers(txt):
 
 		But = ne garder que les nombres assimilables à des années, ou éventuellement
 		des pourcentages
-	"""
-	if txt.isdigit() and len(txt) &gt; 4:
-		return False
-	else:
-		return True
+	"""</span>
+	<span style="color: blue;">if</span> txt.isdigit() <span style="color: blue;">and</span> len(txt) <span style="color: blue;">&gt;</span> <span style="color: red;">4</span>:
+		<span style="color: blue;">return False
+	else</span>:
+		<span style="color: blue;">return True
 
-def main(input_filename):
-	content = '\n'.join([line.strip()
-						for line in codecs.open(input_filename, 'r', 'utf-8')
-						if len(line.strip()) &gt; 0])
+def</span> <span style="color: magenta;">main</span>(input_filename):
+	content = <span style="color: gray;">'\n'</span>.join([line.strip()
+						<span style="color: blue;">for</span> line <span style="color: blue;">in</span> codecs.open(input_filename, <span style="color: gray;">'r'</span>, <span style="color: gray;">'utf-8'</span>)
+						<span style="color: blue;">if</span> len(line.strip()) <span style="color: blue;">&gt;</span> <span style="color: red;">0</span>])
 	stopwords = set([line.strip()
-					for line in codecs.open(stopwords_filename, 'r', 'utf-8')])
+					<span style="color: blue;">for</span> line <span style="color: blue;">in</span> codecs.open(stopwords_filename, <span style="color: gray;">'r'</span>, <span style="color: gray;">'utf-8'</span>)])
 
 	segs = jieba.cut(content)
 	words = []
-	for seg in segs:
+	<span style="color: blue;">for</span> seg <span style="color: blue;">in</span> segs:
 		word = seg.strip().lower()
-		# nettoyage des mots indésirables
-		if len(word) &gt; 1 and word not in stopwords and not contain_latin(word) and filter_numbers(word) and word != '-%':
+		<span style="color: green;"># nettoyage des mots indésirables</span>
+		<span style="color: blue;">if</span> len(word) <span style="color: blue;">&gt;</span> <span style="color: red;">1</span> <span style="color: blue;">and</span> word <span style="color: blue;">not in</span> stopwords <span style="color: blue;">and not</span> contain_latin(word) <span style="color: blue;">and</span> filter_numbers(word) <span style="color: blue;">and</span> word != <span style="color: gray;">'-%'</span>:
 			words.append(word)
 
-	words_df = pandas.DataFrame({'word':words})
-	words_stat = words_df.groupby(by=['word'])['word'].agg(number=np.size)
-	words_stat = words_stat.reset_index().sort_values(by="number",ascending=False)
+	words_df = pandas.DataFrame({<span style="color: gray;">'word'</span>:words})
+	words_stat = words_df.groupby(by=[<span style="color: gray;">'word'</span>])[<span style="color: gray;">'word'</span>].agg(number=np.size)
+	words_stat = words_stat.reset_index().sort_values(by=<span style="color: gray;">"number"</span>,ascending=<span style="color: blue;">False</span>)
 
-	print('# of different words =', len(words_stat))
+	<span style="color: blue;">print</span>(<span style="color: gray;">'# of different words ='</span>, len(words_stat))
 
-	wordcloud = WordCloud(font_path=font_filename, max_font_size=50, random_state=100, max_words=100, background_color="white")
-	wordcloud = wordcloud.fit_words(dict(words_stat.head(4000).itertuples(index=False)))
-	print("Sauvegarde du nuage")
-	wordcloud.to_file('nuage_chinois.png')
+	wordcloud = WordCloud(font_path=font_filename, max_font_size=<span style="color: red;">50</span>, random_state=<span style="color: red;">100</span>, max_words=<span style="color: red;">100</span>, background_color=<span style="color: gray;">"white"</span>)
+	wordcloud = wordcloud.fit_words(dict(words_stat.head(<span style="color: red;">4000</span>).itertuples(index=<span style="color: blue;">False</span>)))
+	<span style="color: blue;">print</span>(<span style="color: gray;">"Sauvegarde du nuage"</span>)
+	wordcloud.to_file(<span style="color: gray;">'nuage_chinois.png'</span>)
 
-if __name__ == '__main__':
-	if len(sys.argv) == 2:
-		main(sys.argv[1])
-	else:
-		print('[usage] &lt;input&gt;')														
+<span style="color: blue;">if</span> __name__ <span style="color: blue;">==</span> <span style="color: gray;">'__main__'</span>:
+	<span style="color: blue;">if</span> len(sys.argv) <span style="color: blue;">==</Span> <span style="color: red;">2</span>:
+		main(sys.argv[<span style="color: red;">1</span>])
+	<span style="color: blue;">else</span>:
+		<span style="color: blue;">print</span>(<span style="color: gray;">'[usage] &lt;input&gt;'</span>)														
 						</code>
 					</pre>
 				</div>
